@@ -1,0 +1,39 @@
+site_name: C# Cheat Sheet
+
+nav:
+    - Übersicht: index.md
+    - String: string.md
+    - Verzweigung: verzweigung.md
+    - Schleifen: schleifen.md
+    - Dateien: dateien.md
+
+theme: 
+    name: material
+    palette:
+        - scheme: slate
+    language: de
+    features:
+    - content.code.copy
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  
+plugins:
+  - offline
