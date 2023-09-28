@@ -239,15 +239,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#spring-splitten-split" class="md-nav__link">
-    Spring Splitten (Split)
+  <a href="#spring-teilen-split" class="md-nav__link">
+    Spring Teilen (Split)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#upper-und-lowercase" class="md-nav__link">
-    Upper- und Lowercase
+  <a href="#gro-und-kleinbuchstaben-toupper-tolower" class="md-nav__link">
+    Groß- und Kleinbuchstaben (ToUpper, ToLower)
   </a>
   
 </li>
@@ -360,15 +360,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#spring-splitten-split" class="md-nav__link">
-    Spring Splitten (Split)
+  <a href="#spring-teilen-split" class="md-nav__link">
+    Spring Teilen (Split)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#upper-und-lowercase" class="md-nav__link">
-    Upper- und Lowercase
+  <a href="#gro-und-kleinbuchstaben-toupper-tolower" class="md-nav__link">
+    Groß- und Kleinbuchstaben (ToUpper, ToLower)
   </a>
   
 </li>
@@ -440,10 +440,55 @@
 </span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="c1">// Original string: &quot;1 2 3 4 5 6 7 8 9&quot;</span>
 </span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="c1">// New string:      &quot;1,2,3,4,5,6,7,8,9&quot;</span>
 </span></code></pre></div></p>
-<h2 id="spring-splitten-split">Spring Splitten (Split)</h2>
-<h2 id="upper-und-lowercase">Upper- und Lowercase</h2>
-<p>toUpper, ToLower</p>
+<h2 id="spring-teilen-split">Spring Teilen (Split)</h2>
+<p>Mit Split() wird ein String am angegebenen Zeichen. Gibt ein Array zurück, das die String-Teile ohne Trennzeichen enthält. Das Trennzeichen wird dabei gelöscht.
+<div class="language-cs highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kt">string</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;You win some. You lose some.&quot;</span><span class="p">;</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="kt">string</span><span class="p">[]</span><span class="w"> </span><span class="n">subs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">s</span><span class="p">.</span><span class="n">Split</span><span class="p">(</span><span class="sc">&#39; &#39;</span><span class="p">);</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Substring: {subs[0]}&quot;</span><span class="p">);</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Substring: {subs[4]}&quot;</span><span class="p">);</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Substring: {subs[5]}&quot;</span><span class="p">);</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="c1">// This example produces the following output:</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="c1">//</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="c1">// Substring: You</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="c1">// Substring: lose</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="c1">// Substring: some.</span>
+</span></code></pre></div></p>
+<h2 id="gro-und-kleinbuchstaben-toupper-tolower">Groß- und Kleinbuchstaben (ToUpper, ToLower)</h2>
+<p>Mit den Methoden ToUpper() und ToLower() wird ein String in Groß- bzw. Kleinbuchstaben ausgegeben:
+<div class="language-cs highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kt">string</span><span class="w"> </span><span class="n">karen</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;i wAnT tO sPEak wiTh yOuR mAnaGer&quot;</span><span class="p">;</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="kt">string</span><span class="w"> </span><span class="n">upperKaren</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">karen</span><span class="p">.</span><span class="n">ToUpper</span><span class="p">();</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="kt">string</span><span class="w"> </span><span class="n">lowerKaren</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">karen</span><span class="p">.</span><span class="n">ToLower</span><span class="p">();</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Uppercase: {upperKaren}&quot;</span><span class="p">);</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Lowercase: {lowerKaren}&quot;</span><span class="p">);</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="c1">// This example produces the following output:</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="c1">//</span>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="c1">// Uppercase: I WANT TO SPEAK WITH YOUR MANAGER</span>
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="c1">// Lowercase: i want to speak with your manager</span>
+</span></code></pre></div></p>
 <h2 id="uberflussige-leerzeichen-entfernen-trim">Überflüssige Leerzeichen entfernen (Trim)</h2>
+<p>Mit Trim() werden Leerzeichen am Anfang bzw. am Ende entfernt. TrimStart() entfernt Leerzeichen vor dem ersten Zeichen, TrimEnd() entfernt Leerzeichen am Ende. Trim() entfernt die Leerzeichen am Anfang und am Ende.
+<div class="language-cs highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kt">string</span><span class="w"> </span><span class="n">whiteSpace</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;    Teststring    &quot;</span><span class="p">;</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="kt">string</span><span class="w"> </span><span class="n">trimStart</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">whiteSpace</span><span class="p">.</span><span class="n">TrimStart</span><span class="p">();</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="kt">string</span><span class="w"> </span><span class="n">trimEnd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">whiteSpace</span><span class="p">.</span><span class="n">TrimEnd</span><span class="p">();</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="kt">string</span><span class="w"> </span><span class="n">trim</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">whiteSpace</span><span class="p">.</span><span class="n">Trim</span><span class="p">();</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;TrimStart: \&quot;{trimStart}\&quot;&quot;</span><span class="p">);</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;TrimEnd: \&quot;{trimEnd}\&quot;&quot;</span><span class="p">);</span>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Trim: \&quot;{trim}\&quot;&quot;</span><span class="p">);</span>
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="c1">// This example produces the following output:</span>
+</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="c1">//</span>
+</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="c1">// TrimStart: &quot;Teststring    &quot;</span>
+</span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a><span class="c1">// TrimEnd: &quot;    Teststring&quot;</span>
+</span><span id="__span-5-15"><a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a><span class="c1">// Trim: &quot;Teststring&quot;</span>
+</span></code></pre></div></p>
 
 
 
