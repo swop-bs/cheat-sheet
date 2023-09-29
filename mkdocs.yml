@@ -13,7 +13,9 @@ theme:
         - scheme: slate
     language: de
     features:
-    - content.code.copy
+      - content.code.copy
+      - search.suggest
+      - search.share
 
 markdown_extensions:
   - admonition
@@ -34,6 +36,9 @@ markdown_extensions:
   - def_list
   - pymdownx.tasklist:
       custom_checkbox: true
+  - toc:
+      permalink: "#"
   
 plugins:
   - offline
+  - search
