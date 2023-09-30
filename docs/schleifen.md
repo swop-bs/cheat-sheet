@@ -9,7 +9,8 @@ while(BEDINGUNG == true)
 !!! warning "Wichtig!"
 	Stellen Sie sicher, dass die Schleifenbedingung `while` zu "false" wechselt, nachdem Sie den Code ausgeführt haben. Andernfalls erstellen Sie eine Endlosschleife, durch die das Programm niemals beendet wird.
 
-## Kopfgesteuerte `while`-Schleife
+## while
+
 ``` cs
 int counter = 0;
 while (counter < 5)
@@ -27,7 +28,7 @@ while (counter < 5)
 // Hello World! The counter is 4
 ```
 	
-## Fußgesteuerte `while`-Schleife
+### do...while
 Die `do...while`-Schleife führt den Code zuerst aus und überprüft anschließend die Bedingung. Die `do...while`-Schleife wird im folgenden Code gezeigt:
 ``` cs
 int counter = 0;
@@ -67,7 +68,9 @@ while(BEDINGUNG)
 ```
 
 
-### Beispiel
+### Beispiele
+
+#### counter
 
 ``` cs
 for (int counter = 0; counter < 5; counter++) 
@@ -84,7 +87,7 @@ for (int counter = 0; counter < 5; counter++)
 // Hello World! The counter is 4
 ```
 
-### Beispiel Array
+#### Array
 ``` cs
 string[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
 
@@ -120,7 +123,10 @@ foreach(type variableName in arrayName)
 
 In der `foreach`-Schleife wird `variableName` in jedem Durchgang mit dem nächsten Array- bzw. Listenelement belegt.
 
-### Beispiel Array
+### Beispiele
+
+#### Array
+
 ``` cs
 string[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
 
@@ -139,7 +145,7 @@ foreach (string car in cars)
 Diese Schleife ist equivalent zum [Array-Beispiel der for-Schleife](#beispiel-array).
 
 
-### Beispiel Liste
+#### Liste
 ``` cs
 List<string> cars = new List<string>;
 cars.Add("Volvo");
