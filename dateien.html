@@ -57,7 +57,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
     
@@ -117,30 +117,20 @@
             
             
             
-            <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+            <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
             
-              <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_3" hidden>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9h-1.9M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69m-9.15 3.96h2.3L12 9l-1.15 3.65Z"/></svg>
+              <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_2" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
               </label>
             
           
             
             
             
-            <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+            <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
             
               <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
-              </label>
-            
-          
-            
-            
-            
-            <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_3">
-            
-              <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_2" hidden>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
               </label>
             
           
@@ -311,23 +301,23 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#dateien-offnen-und-schlieen-using-oder-close" class="md-nav__link">
-    Dateien öffnen und schließen (using oder Close())
+  <a href="#dateien-offnen-und-schlieen" class="md-nav__link">
+    Dateien öffnen und schließen
   </a>
   
-    <nav class="md-nav" aria-label="Dateien öffnen und schließen (using oder Close())">
+    <nav class="md-nav" aria-label="Dateien öffnen und schließen">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#datei-mit-close-schlieen" class="md-nav__link">
-    Datei mit Close() schließen
+  <a href="#close" class="md-nav__link">
+    Close()
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#datei-mit-using-schlieen" class="md-nav__link">
-    Datei mit using schließen
+  <a href="#using" class="md-nav__link">
+    using
   </a>
   
 </li>
@@ -338,16 +328,16 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#datei-einlesen-streamreader" class="md-nav__link">
-    Datei einlesen (StreamReader)
+  <a href="#streamreader-datei-lesen" class="md-nav__link">
+    StreamReader (Datei lesen)
   </a>
   
-    <nav class="md-nav" aria-label="Datei einlesen (StreamReader)">
+    <nav class="md-nav" aria-label="StreamReader (Datei lesen)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#streamreader-methoden" class="md-nav__link">
-    StreamReader Methoden
+  <a href="#methoden" class="md-nav__link">
+    Methoden
   </a>
   
 </li>
@@ -358,8 +348,28 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#datei-schreiben-streamwriter" class="md-nav__link">
-    Datei schreiben (StreamWriter)
+  <a href="#streamwriter-datei-schreiben" class="md-nav__link">
+    StreamWriter (Datei schreiben)
+  </a>
+  
+    <nav class="md-nav" aria-label="StreamWriter (Datei schreiben)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#methoden_1" class="md-nav__link">
+    Methoden
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#beispiel" class="md-nav__link">
+    Beispiel
   </a>
   
 </li>
@@ -399,23 +409,23 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#dateien-offnen-und-schlieen-using-oder-close" class="md-nav__link">
-    Dateien öffnen und schließen (using oder Close())
+  <a href="#dateien-offnen-und-schlieen" class="md-nav__link">
+    Dateien öffnen und schließen
   </a>
   
-    <nav class="md-nav" aria-label="Dateien öffnen und schließen (using oder Close())">
+    <nav class="md-nav" aria-label="Dateien öffnen und schließen">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#datei-mit-close-schlieen" class="md-nav__link">
-    Datei mit Close() schließen
+  <a href="#close" class="md-nav__link">
+    Close()
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#datei-mit-using-schlieen" class="md-nav__link">
-    Datei mit using schließen
+  <a href="#using" class="md-nav__link">
+    using
   </a>
   
 </li>
@@ -426,16 +436,16 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#datei-einlesen-streamreader" class="md-nav__link">
-    Datei einlesen (StreamReader)
+  <a href="#streamreader-datei-lesen" class="md-nav__link">
+    StreamReader (Datei lesen)
   </a>
   
-    <nav class="md-nav" aria-label="Datei einlesen (StreamReader)">
+    <nav class="md-nav" aria-label="StreamReader (Datei lesen)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#streamreader-methoden" class="md-nav__link">
-    StreamReader Methoden
+  <a href="#methoden" class="md-nav__link">
+    Methoden
   </a>
   
 </li>
@@ -446,8 +456,28 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#datei-schreiben-streamwriter" class="md-nav__link">
-    Datei schreiben (StreamWriter)
+  <a href="#streamwriter-datei-schreiben" class="md-nav__link">
+    StreamWriter (Datei schreiben)
+  </a>
+  
+    <nav class="md-nav" aria-label="StreamWriter (Datei schreiben)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#methoden_1" class="md-nav__link">
+    Methoden
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#beispiel" class="md-nav__link">
+    Beispiel
   </a>
   
 </li>
@@ -469,11 +499,11 @@
 
 <h1 id="lesen-und-schreiben-von-dateien">Lesen und Schreiben von Dateien<a class="headerlink" href="#lesen-und-schreiben-von-dateien" title="Permanent link">#</a></h1>
 <p>In diesem Abschnitt wird beschrieben, wie Sie mit Hilfe der Objekte StreamReader und StreamWriter Dateien lesen bzw. schreiben können.</p>
-<h2 id="dateien-offnen-und-schlieen-using-oder-close">Dateien öffnen und schließen (using oder Close())<a class="headerlink" href="#dateien-offnen-und-schlieen-using-oder-close" title="Permanent link">#</a></h2>
+<h2 id="dateien-offnen-und-schlieen">Dateien öffnen und schließen<a class="headerlink" href="#dateien-offnen-und-schlieen" title="Permanent link">#</a></h2>
 <p>Um eine Datei zu lesen bzw. zu schreiben muss diese zuerst geöffnet werden.</p>
 <p>Ist eine Datei geöffnet, kann Sie (je nach Verwendungszweck) eventuell nicht von anderen Prozessen verwendet werden.</p>
 <p>Um die Datei für andere Prozesse wieder frei zu geben, muss der Stream bzw. die Datei wieder geschlossen werden:</p>
-<h3 id="datei-mit-close-schlieen">Datei mit Close() schließen<a class="headerlink" href="#datei-mit-close-schlieen" title="Permanent link">#</a></h3>
+<h3 id="close">Close()<a class="headerlink" href="#close" title="Permanent link">#</a></h3>
 <div class="language-cs highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">// StreamReader initialisieren (Datei öffnen) (1)</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">StreamReader</span><span class="w"> </span><span class="n">sr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">StreamReader</span><span class="p">(</span><span class="s">&quot;TestDatei.txt&quot;</span><span class="p">);</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
@@ -486,7 +516,7 @@
 <li>Beim Erstellen des StreamReader bzw. StreamWriter-Objkets wird die Datei TestDatei.txt geöffnet.</li>
 <li>Close() schließt die Datei und gibt sie somit wieder frei.</li>
 </ol>
-<h3 id="datei-mit-using-schlieen">Datei mit <code>using</code> schließen<a class="headerlink" href="#datei-mit-using-schlieen" title="Permanent link">#</a></h3>
+<h3 id="using">using<a class="headerlink" href="#using" title="Permanent link">#</a></h3>
 <p>Da das Schließen der Datei oft vergessen wird, kann alternativ <code>using</code> verwendet werden:</p>
 <div class="language-cs highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">// StreamReader initialisieren (1)</span>
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="k">using</span><span class="w"> </span><span class="p">(</span><span class="n">StreamReader</span><span class="w"> </span><span class="n">sr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">StreamReader</span><span class="p">(</span><span class="s">&quot;TestDatei.txt&quot;</span><span class="p">))</span>
@@ -499,7 +529,7 @@
 <li>Beim Erstellen des StreamReader bzw. StreamWriter-Objkets wird die Datei TestDatei.txt geöffnet.</li>
 <li>Beim Verlassen des Codeblocks wird der StreamReader automatisch geschlossen. Kein explizites aufrufen von Close() nötig.</li>
 </ol>
-<h2 id="datei-einlesen-streamreader">Datei einlesen (StreamReader)<a class="headerlink" href="#datei-einlesen-streamreader" title="Permanent link">#</a></h2>
+<h2 id="streamreader-datei-lesen">StreamReader (Datei lesen)<a class="headerlink" href="#streamreader-datei-lesen" title="Permanent link">#</a></h2>
 <p>In der Regel werden Dateien zeilenweise mittels ReadLine() gelesen:</p>
 <div class="language-cs highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">// StreamReader Initialisieren (1)</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="k">using</span><span class="w"> </span><span class="p">(</span><span class="n">StreamReader</span><span class="w"> </span><span class="n">sr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">StreamReader</span><span class="p">(</span><span class="s">&quot;TestDatei.txt&quot;</span><span class="p">))</span>
@@ -522,7 +552,7 @@
 <li>Das "Verarbeiten" ist hier eine einfach Konsolenausgabe. Natürlich kann hier alles erdenkliche mit der Zeile passieren.</li>
 <li>Hier wird die nächste Zeile eingelesen. Dieser Schritt ist in der Regel immer der letzte Schritt in der Schleife, da danach wieder geprüft werden muss, ob es noch etwas einzulesen gibt.</li>
 </ol>
-<h3 id="streamreader-methoden">StreamReader Methoden<a class="headerlink" href="#streamreader-methoden" title="Permanent link">#</a></h3>
+<h3 id="methoden">Methoden<a class="headerlink" href="#methoden" title="Permanent link">#</a></h3>
 <table>
 <thead>
 <tr>
@@ -553,16 +583,73 @@
 </tr>
 </tbody>
 </table>
-<h2 id="datei-schreiben-streamwriter">Datei schreiben (StreamWriter)<a class="headerlink" href="#datei-schreiben-streamwriter" title="Permanent link">#</a></h2>
-<div class="language-cs highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1">// StreamReader Initialisieren (1)</span>
+<h2 id="streamwriter-datei-schreiben">StreamWriter (Datei schreiben)<a class="headerlink" href="#streamwriter-datei-schreiben" title="Permanent link">#</a></h2>
+<p>In der Regel werden Dateien zeilenweise mittels WriteLine() geschrieben:</p>
+<div class="language-cs highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1">// StreamWriter Initialisieren (1)</span>
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="k">using</span><span class="w"> </span><span class="p">(</span><span class="n">StreamWriter</span><span class="w"> </span><span class="n">sw</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">StreamWriter</span><span class="p">(</span><span class="s">&quot;TestDatei.txt&quot;</span><span class="p">))</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="p">{</span><span class="w"> </span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="c1">//Write a line of text</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="p">{</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="c1">// Schreibe erste Zeile in TestDatei.txt</span>
 </span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span><span class="n">sw</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Hello World!!&quot;</span><span class="p">);</span>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">    </span><span class="c1">//Write a second line of text</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">    </span><span class="c1">// Schreibe zweite Zeile in TestDatei.txt</span>
 </span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">    </span><span class="n">sw</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;From the StreamWriter class&quot;</span><span class="p">);</span>
 </span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="p">}</span><span class="w"> </span>
 </span></code></pre></div>
+<ol>
+<li><a href="#datei-mit-using-schlieen"><code>using</code></a> stellt sicher, dass die Datei wieder freigegeben wird.</li>
+</ol>
+<h3 id="methoden_1">Methoden<a class="headerlink" href="#methoden_1" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>Methode</th>
+<th>Erklärung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://learn.microsoft.com/en-us/dotnet/api/system.io.streamwriter.close?view=net-7.0#system-io-streamwriter-close">Close()</a></td>
+<td>Closes the current StreamWriter object and the underlying stream.</td>
+</tr>
+<tr>
+<td><a href="https://learn.microsoft.com/en-us/dotnet/api/system.io.streamwriter.write?view=net-7.0#system-io-streamwriter-write(system-string)">Write(String)</a></td>
+<td>Writes a string to the stream.</td>
+</tr>
+<tr>
+<td><a href="https://learn.microsoft.com/en-us/dotnet/api/system.io.textwriter.writeline?view=net-7.0#system-io-textwriter-writeline">WriteLine()</a></td>
+<td>Writes a line terminator to the text stream.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="beispiel">Beispiel<a class="headerlink" href="#beispiel" title="Permanent link">#</a></h2>
+<p>In diesem Beispiel wird ein Text einer Datei in Großbuchstaben umgewandlet:</p>
+<div class="language-cs highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">Program</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="p">{</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">        </span><span class="c1">// Streams initialisieren (1)</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">        </span><span class="k">using</span><span class="w"> </span><span class="p">(</span><span class="n">StreamReader</span><span class="w"> </span><span class="n">sr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">StreamReader</span><span class="p">(</span><span class="s">&quot;kleinBuchstaben.txt))</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">        </span><span class="k">using</span><span class="w"> </span><span class="p">(</span><span class="n">StreamWriter</span><span class="w"> </span><span class="n">sw</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">StreamWriter</span><span class="p">(</span><span class="s">&quot;grossBuchstaben.txt&quot;</span><span class="p">))</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">        </span><span class="p">{</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">            </span><span class="c1">// Erste Zeile lesen</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="w">            </span><span class="kt">string</span><span class="w"> </span><span class="n">zeile</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sr</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">();</span>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="w">            </span><span class="c1">// Solange es etwas zu lesen gibt</span>
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="w">            </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">zeile</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="k">null</span><span class="p">)</span>
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="w">            </span><span class="p">{</span>
+</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="w">                </span><span class="c1">// Inhalt der Zeile groß schreiben</span>
+</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="w">                </span><span class="kt">string</span><span class="w"> </span><span class="n">zeileGross</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">zeile</span><span class="p">.</span><span class="n">ToUpper</span><span class="p">();</span>
+</span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="w">                </span><span class="c1">// Grossgeschriebene Zeile in Textdatei schreiben</span>
+</span><span id="__span-4-17"><a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="w">                </span><span class="n">sw</span><span class="p">.</span><span class="n">writeLine</span><span class="p">(</span><span class="n">zeileGross</span><span class="p">);</span>
+</span><span id="__span-4-18"><a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a><span class="w">                </span><span class="c1">// Nächste Zeile lesen</span>
+</span><span id="__span-4-19"><a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a><span class="w">                </span><span class="n">zeile</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sr</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">();</span>
+</span><span id="__span-4-20"><a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a><span class="w">            </span><span class="p">}</span>
+</span><span id="__span-4-21"><a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-4-22"><a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a><span class="w">        </span><span class="c1">// Streams werden automatisch geschlossen</span>
+</span><span id="__span-4-23"><a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-4-24"><a id="__codelineno-4-24" name="__codelineno-4-24" href="#__codelineno-4-24"></a><span class="p">}</span>
+</span></code></pre></div>
+<ol>
+<li>using kann auch hintereinander geschrieben werden, um mehrere Objekte zu verwalten.</li>
+</ol>
 
 
 
