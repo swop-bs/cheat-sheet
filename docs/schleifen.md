@@ -47,7 +47,7 @@ do
 // Hello World! The counter is 4
 ```
 
-## `for`-Schleife
+## for-Schleife
 Da die Operationen INITIALISIERUNG, Prüfung der BEDINGUNG und die WERTVERÄNDERUNG sehr oft in einer Schleife benötigt werden, wird hierfür oft die `for-Schleife` verwendet. Diese ist übersichtlicher, da die drei Operationen direkt an einem Ort stehen:
 ``` cs
 for (INITIALISIERUNG; BEDINGUNG; WERTVERÄNDERUNG) 

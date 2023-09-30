@@ -1,0 +1,1 @@
+Output wie bei String überarbeiten.
