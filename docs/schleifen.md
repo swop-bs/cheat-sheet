@@ -18,15 +18,16 @@ while (counter < 5)
     Console.WriteLine($"Hello World! The counter is {counter}");
     counter++;
 }
-
-// This example produces the following output:
-//
-// Hello World! The counter is 0
-// Hello World! The counter is 1
-// Hello World! The counter is 2
-// Hello World! The counter is 3
-// Hello World! The counter is 4
 ```
+
+??? quote "Output"
+    ``` text
+    Hello World! The counter is 0
+    Hello World! The counter is 1
+    Hello World! The counter is 2
+    Hello World! The counter is 3
+    Hello World! The counter is 4
+	```
 	
 ### do...while
 Die `do...while`-Schleife führt den Code zuerst aus und überprüft anschließend die Bedingung. Die `do...while`-Schleife wird im folgenden Code gezeigt:
@@ -37,15 +38,16 @@ do
     Console.WriteLine($"Hello World! The counter is {counter}");
     counter++;
 } while (counter < 5);
-
-// This example produces the following output:
-//
-// Hello World! The counter is 0
-// Hello World! The counter is 1
-// Hello World! The counter is 2
-// Hello World! The counter is 3
-// Hello World! The counter is 4
 ```
+
+??? quote "Output"
+    ``` text
+    Hello World! The counter is 0
+    Hello World! The counter is 1
+    Hello World! The counter is 2
+    Hello World! The counter is 3
+    Hello World! The counter is 4
+    ```
 
 ## for-Schleife
 Da die Operationen INITIALISIERUNG, Prüfung der BEDINGUNG und die WERTVERÄNDERUNG sehr oft in einer Schleife benötigt werden, wird hierfür oft die `for-Schleife` verwendet. Diese ist übersichtlicher, da die drei Operationen direkt an einem Ort stehen:
@@ -77,15 +79,16 @@ for (int counter = 0; counter < 5; counter++)
 {
     Console.WriteLine($"Hello World! The counter is {counter}");
 }
-
-// This example produces the following output:
-//
-// Hello World! The counter is 0
-// Hello World! The counter is 1
-// Hello World! The counter is 2
-// Hello World! The counter is 3
-// Hello World! The counter is 4
 ```
+
+??? quote "Output"
+    ``` text
+    Hello World! The counter is 0
+    Hello World! The counter is 1
+    Hello World! The counter is 2
+    Hello World! The counter is 3
+    Hello World! The counter is 4
+    ```
 
 #### Array
 ``` cs
@@ -95,15 +98,17 @@ for(int i = 0; i < cars.Length; i++)
 {
   Console.WriteLine(cars[i]);
 }
-
-// This example produces the following output:
-//
-// Volvo
-// BMW
-// Ford
-// Mazda
 ```
-Diese Schleife ist equivalent zum [Array-Beispiel der foreach-Schleife](#beispiel-array_1).
+
+??? quote "Output"
+    ``` text
+    Volvo
+    BMW
+    Ford
+    Mazda
+    ```
+
+Diese Schleife ist equivalent zum [Array-Beispiel der foreach-Schleife](#array_1).
 
 
 Dieses Beispiel hat das gleiche Verhalten wie die [while-Schleife](#kopfgesteuerte-while-schleife), jedoch sind die Initialisierung, Bedingung und Wertänderung an einer Stelle. Der Vorteil zeigt sich vor allem bei längeren Codeblöcken, bei denen bei der `while`-Schleife erst am Ende des Blocks die Wertänderung stattfinden würde.
@@ -134,15 +139,17 @@ foreach (string car in cars)
 {
   Console.WriteLine(car);
 }
-
-// This example produces the following output:
-//
-// Volvo
-// BMW
-// Ford
-// Mazda
 ```
-Diese Schleife ist equivalent zum [Array-Beispiel der for-Schleife](#beispiel-array).
+
+??? quote "Output"
+    ``` text
+    Volvo
+    BMW
+    Ford
+    Mazda
+    ```
+
+Diese Schleife ist equivalent zum [Array-Beispiel der for-Schleife](#array).
 
 
 #### Liste
@@ -157,11 +164,12 @@ foreach (string car in cars)
 {
   Console.WriteLine(car);
 }
-
-// This example produces the following output:
-//
-// Volvo
-// BMW
-// Ford
-// Mazda
 ```
+
+??? quote "Output"
+    ``` text
+    Volvo
+    BMW
+    Ford
+    Mazda
+    ```
