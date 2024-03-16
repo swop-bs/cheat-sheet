@@ -6,6 +6,18 @@ nav:
     #- Verzweigung: verzweigung.md
     - Schleifen: schleifen.md
     - Dateien: dateien.md
+    - Datenbankanbindung:
+      - db/index.md
+      - Installation: db/datanbankanbindung.md
+      - Verbindung herstellen: db/verbindung.md
+      - Daten lesen: db/daten-lesen.md
+      - Daten schreiben: db/daten-schreiben.md
+      - Beispiel: db/beispiel.md
+    - Reflection:
+      - reflection/index.md
+      - Beispielklasse Mitarbeiter: reflection/klasse-mitarbeiter.md
+      - Datentyp dynamisch ermitteln: reflection/datentyp-ermitteln.md
+      - Objekte dynamisch erstellen: reflection/objekte-erstellen.md
 
 theme: 
     name: material
@@ -23,9 +35,10 @@ theme:
     language: de
     features:
       - content.code.copy
+      - content.code.annotate
       - search.suggest
       - search.share
-      - content.code.annotate
+      - navigation.indexes
 
 markdown_extensions:
   - admonition
@@ -51,8 +64,15 @@ markdown_extensions:
   # Annotations
   - attr_list
   - md_in_html
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   
 plugins:
   - offline
   - search
+
+extra_css:
+  - stylesheets/extra.css
