@@ -9,21 +9,25 @@
       
       
       
+        <link rel="prev" href="daten-lesen.html">
       
       
-      <link rel="icon" href="/assets/images/favicon.png">
+        <link rel="next" href="beispiel.html">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.13">
     
     
       
-        <title>C# Cheat Sheet</title>
+        <title>Daten schreiben - C# Cheat Sheet</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.7e359304.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e359304.min.css">
       
         
-        <link rel="stylesheet" href="/assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -44,9 +48,9 @@
       
     
     
-      <link rel="stylesheet" href="/stylesheets/extra.css">
+      <link rel="stylesheet" href="../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -71,6 +75,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#schreiben-von-daten-in-die-datenbank" class="md-skip">
+          Zum Inhalt
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -83,7 +92,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Kopfzeile">
-    <a href="/index.html" title="C# Cheat Sheet" class="md-header__button md-logo" aria-label="C# Cheat Sheet" data-md-component="logo">
+    <a href="../index.html" title="C# Cheat Sheet" class="md-header__button md-logo" aria-label="C# Cheat Sheet" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -103,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Daten schreiben
             
           </span>
         </div>
@@ -211,7 +220,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/index.html" title="C# Cheat Sheet" class="md-nav__button md-logo" aria-label="C# Cheat Sheet" data-md-component="logo">
+    <a href="../index.html" title="C# Cheat Sheet" class="md-nav__button md-logo" aria-label="C# Cheat Sheet" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -229,7 +238,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/index.html" class="md-nav__link">
+      <a href="../index.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -249,7 +258,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/string.html" class="md-nav__link">
+      <a href="../string.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -269,7 +278,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/schleifen.html" class="md-nav__link">
+      <a href="../schleifen.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -289,7 +298,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/dateien.html" class="md-nav__link">
+      <a href="../dateien.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -306,6 +315,8 @@
       
   
   
+    
+  
   
   
     
@@ -328,16 +339,16 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="/db/index.html" class="md-nav__link ">
+            <a href="index.html" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -354,7 +365,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Datenbankanbindung
@@ -370,7 +381,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/db/datanbankanbindung.html" class="md-nav__link">
+      <a href="datanbankanbindung.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -391,7 +402,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/db/verbindung.html" class="md-nav__link">
+      <a href="verbindung.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -412,7 +423,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/db/daten-lesen.html" class="md-nav__link">
+      <a href="daten-lesen.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -430,10 +441,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/db/daten-schreiben.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="daten-schreiben.html" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -442,6 +462,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -454,7 +475,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/db/beispiel.html" class="md-nav__link">
+      <a href="beispiel.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -492,6 +513,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -503,8 +526,40 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+<h1 id="schreiben-von-daten-in-die-datenbank">Schreiben von Daten in die Datenbank<a class="headerlink" href="#schreiben-von-daten-in-die-datenbank" title="Permanent link">#</a></h1>
+<p>Das Einfügen neuer Daten in eine MySQL-Datenbank ist ein grundlegender Bestandteil der Interaktion mit relationalen Datenbanken. In C# kann dies effizient mit einem <code>MySqlCommand</code>-Objekt erreicht werden, das einen SQL-Insert-Befehl ausführt. Hier ist ein Beispiel, wie Sie Daten in die Tabelle <code>person</code> schreiben können, die Felder wie <code>id</code>, <code>Vorname</code>, <code>Nachname</code>, <code>GebDatum</code> und <code>Gehalt</code> enthält:</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">// Anlegen einer Beispielperson</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">Person</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Person</span><span class="p">(...);</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1">// Hier wird der SQL-Befehl zusammengesetzt</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="kt">string</span><span class="w"> </span><span class="n">insertQuery</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="err">@</span><span class="s">$&quot;INSERT INTO person ({p.Id}, {p.Vorname}, {p.Nachname}, {p.GebDatum}, {p.Gehalt}) </span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">                       </span><span class="n">VALUES</span><span class="w"> </span><span class="p">(</span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="n">Vorname</span><span class="p">,</span><span class="w"> </span><span class="n">Nachname</span><span class="p">,</span><span class="w"> </span><span class="n">GebDatum</span><span class="p">,</span><span class="w"> </span><span class="n">Gehalt</span><span class="p">)</span><span class="s">&quot;;</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="c1">// Zuerst den Command erstellen</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="k">using</span><span class="w"> </span><span class="p">(</span><span class="n">MySqlCommand</span><span class="w"> </span><span class="n">cmd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">MySqlCommand</span><span class="p">(</span><span class="n">insertQuery</span><span class="p">,</span><span class="w"> </span><span class="n">con</span><span class="p">))</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="p">{</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">    </span><span class="c1">// Führt den Insert-Befehl aus</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">    </span><span class="n">cmd</span><span class="p">.</span><span class="n">ExecuteNonQuery</span><span class="p">();</span><span class="w"> </span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>In diesem Beispiel wird der SQL-Insert-Befehl als String mit Werten vorbereitet.</p>
+<p>Das Ausführen des Befehls erfolgt durch Aufrufen von <code>cmd.ExecuteNonQuery()</code>. Diese Methode ist ideal für SQL-Statements, die keine Daten zurückgeben, wie INSERT, UPDATE oder DELETE. Vor dem Ausführen des Insert-Befehls sollte sichergestellt werden, dass die Datenbankverbindung geöffnet ist (<code>con.Open()</code>).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -538,10 +593,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "/", "features": ["content.code.copy", "content.code.annotate", "search.suggest", "search.share", "navigation.indexes"], "search": "/assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "In Zwischenablage kopiert", "clipboard.copy": "In Zwischenablage kopieren", "search.result.more.one": "1 weiteres Suchergebnis auf dieser Seite", "search.result.more.other": "# weitere Suchergebnisse auf dieser Seite", "search.result.none": "Keine Suchergebnisse", "search.result.one": "1 Suchergebnis", "search.result.other": "# Suchergebnisse", "search.result.placeholder": "Suchbegriff eingeben", "search.result.term.missing": "Es fehlt", "select.version": "Version ausw\u00e4hlen"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "content.code.annotate", "search.suggest", "search.share", "navigation.indexes"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "In Zwischenablage kopiert", "clipboard.copy": "In Zwischenablage kopieren", "search.result.more.one": "1 weiteres Suchergebnis auf dieser Seite", "search.result.more.other": "# weitere Suchergebnisse auf dieser Seite", "search.result.none": "Keine Suchergebnisse", "search.result.one": "1 Suchergebnis", "search.result.other": "# Suchergebnisse", "search.result.placeholder": "Suchbegriff eingeben", "search.result.term.missing": "Es fehlt", "select.version": "Version ausw\u00e4hlen"}}</script>
     
     
-      <script src="/assets/javascripts/bundle.c8d2eff1.min.js"></script>
+      <script src="../assets/javascripts/bundle.c8d2eff1.min.js"></script>
       
     
   </body>
