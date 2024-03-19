@@ -642,9 +642,10 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="Verwendung des Activators">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#erklarung" class="md-nav__link">
     <span class="md-ellipsis">
       Erklärung
@@ -652,13 +653,60 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#vorteile-und-uberlegungen" class="md-nav__link">
     <span class="md-ellipsis">
       Vorteile und Überlegungen
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dynamische-wertzuweisung-zu-properties-von-objekten" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dynamische Wertzuweisung zu Properties von Objekten
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dynamische Wertzuweisung zu Properties von Objekten">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dynamische-initialisierung-von-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dynamische Initialisierung von Properties
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#erklarung_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Erklärung
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wichtig-zu-beachten" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wichtig zu beachten
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -711,9 +759,10 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="Verwendung des Activators">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#erklarung" class="md-nav__link">
     <span class="md-ellipsis">
       Erklärung
@@ -721,13 +770,60 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#vorteile-und-uberlegungen" class="md-nav__link">
     <span class="md-ellipsis">
       Vorteile und Überlegungen
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dynamische-wertzuweisung-zu-properties-von-objekten" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dynamische Wertzuweisung zu Properties von Objekten
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dynamische Wertzuweisung zu Properties von Objekten">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dynamische-initialisierung-von-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dynamische Initialisierung von Properties
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#erklarung_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Erklärung
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wichtig-zu-beachten" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wichtig zu beachten
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -773,7 +869,7 @@
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>Vorname: Max, Nachname: Mustermann, Gehalt: 50000, Arbeitsort: Berlin
 </span></code></pre></div>
 </details>
-<h2 id="erklarung">Erklärung<a class="headerlink" href="#erklarung" title="Permanent link">#</a></h2>
+<h3 id="erklarung">Erklärung<a class="headerlink" href="#erklarung" title="Permanent link">#</a></h3>
 <ul>
 <li>
 <p><strong><code>Activator.CreateInstance(typeof(Mitarbeiter))</code></strong>: Diese Zeile erstellt eine neue Instanz von <code>Mitarbeiter</code> unter Verwendung des Standardkonstruktors. Da <code>CreateInstance</code> ein Objekt vom Typ <code>object</code> zurückgibt, ist ein explizites Casting auf den Typ <code>Mitarbeiter</code> notwendig.</p>
@@ -782,9 +878,54 @@
 <p><strong><code>Activator.CreateInstance(typeof(Mitarbeiter), parameters)</code></strong>: Hier wird eine neue Instanz von <code>Mitarbeiter</code> erstellt, wobei ein Array von Objekten als Parameter für den Konstruktor übergeben wird. Diese Methode ist nützlich, wenn der zu verwendende Konstruktor Parameter erwartet. Auch hier ist ein Casting erforderlich.</p>
 </li>
 </ul>
-<h2 id="vorteile-und-uberlegungen">Vorteile und Überlegungen<a class="headerlink" href="#vorteile-und-uberlegungen" title="Permanent link">#</a></h2>
+<h3 id="vorteile-und-uberlegungen">Vorteile und Überlegungen<a class="headerlink" href="#vorteile-und-uberlegungen" title="Permanent link">#</a></h3>
 <p>Die Verwendung des <code>Activator</code> zum Erstellen von Objekten bietet eine flexible Lösung für die dynamische Instanziierung von Klassen zur Laufzeit. Dies kann in Situationen nützlich sein, in denen der exakte Typ eines Objekts erst zur Laufzeit bekannt ist, beispielsweise beim Laden von Plugins oder bei der Implementierung von Fabrikmethoden in Designmustern.</p>
 <p>Es ist jedoch wichtig zu beachten, dass der Einsatz von Reflection und insbesondere des <code>Activator</code> zur Objekterstellung Overhead verursacht und die Performance beeinträchtigen kann. Deshalb sollte der Einsatz wohlüberlegt und in Performance-kritischen Bereichen vermieden oder minimiert werden.</p>
+<h2 id="dynamische-wertzuweisung-zu-properties-von-objekten">Dynamische Wertzuweisung zu Properties von Objekten<a class="headerlink" href="#dynamische-wertzuweisung-zu-properties-von-objekten" title="Permanent link">#</a></h2>
+<p>In Szenarien, wo die Properties eines Objekts zur Laufzeit nicht bekannt sind, bietet Reflection in C# die Möglichkeit, dynamisch auf diese Properties zuzugreifen und ihnen Werte zuzuweisen. Dies kann besonders nützlich sein, wenn man mit Objekten arbeitet, deren Struktur erst zur Laufzeit bestimmt wird, wie es beispielsweise bei der dynamischen Erzeugung von Objekten aus Datenbankabfragen oder bei der Deserialisierung von JSON-Objekten der Fall ist.</p>
+<p>Um dieses Konzept zu demonstrieren, verwenden wir wieder die <code>Mitarbeiter</code>-Klasse. Wir zeigen, wie man die Properties eines <code>Mitarbeiter</code>-Objekts dynamisch abfragen und mit Standardwerten initialisieren kann.</p>
+<h3 id="dynamische-initialisierung-von-properties">Dynamische Initialisierung von Properties<a class="headerlink" href="#dynamische-initialisierung-von-properties" title="Permanent link">#</a></h3>
+<p>Der Schlüssel zur dynamischen Arbeit mit Properties ist die Verwendung der <code>GetProperty</code>- und <code>SetValue</code>-Methoden des <code>Type</code>-Objekts, die über Reflection zugänglich sind. Hier ist ein grundlegendes Beispiel, das die Properties mit Standardwerten belegt:</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">// Erstellen eines Objekts vom Typ Mitarbeiter zur Laufzeit</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">Mitarbeiter</span><span class="w"> </span><span class="n">mitarbeiter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">Mitarbeiter</span><span class="p">)</span><span class="n">Activator</span><span class="p">.</span><span class="n">CreateInstance</span><span class="p">(</span><span class="k">typeof</span><span class="p">(</span><span class="n">Mitarbeiter</span><span class="p">));</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c1">// Dynamische Initialisierung von Properties</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="n">PropertyInfo</span><span class="p">[]</span><span class="w"> </span><span class="n">properties</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">typeof</span><span class="p">(</span><span class="n">Mitarbeiter</span><span class="p">).</span><span class="n">GetProperties</span><span class="p">();</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="k">foreach</span><span class="w"> </span><span class="p">(</span><span class="kt">var</span><span class="w"> </span><span class="n">property</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">properties</span><span class="p">)</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="p">{</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">property</span><span class="p">.</span><span class="n">PropertyType</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="k">typeof</span><span class="p">(</span><span class="kt">string</span><span class="p">))</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">        </span><span class="n">property</span><span class="p">.</span><span class="n">SetValue</span><span class="p">(</span><span class="n">mitarbeiter</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Standardwert&quot;</span><span class="p">);</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">    </span><span class="k">else</span><span class="w"> </span><span class="nf">if</span><span class="w"> </span><span class="p">(</span><span class="n">property</span><span class="p">.</span><span class="n">PropertyType</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="k">typeof</span><span class="p">(</span><span class="kt">double</span><span class="p">))</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">        </span><span class="n">property</span><span class="p">.</span><span class="n">SetValue</span><span class="p">(</span><span class="n">mitarbeiter</span><span class="p">,</span><span class="w"> </span><span class="m">0.0</span><span class="p">);</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="w">    </span><span class="c1">// Fügen Sie hier weitere Typüberprüfungen und -zuweisungen hinzu, je nach Bedarf</span>
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="p">}</span>
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>
+</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="c1">// Ausgabe zur Demonstration der dynamischen Initialisierung</span>
+</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="n">mitarbeiter</span><span class="p">.</span><span class="n">AnzeigenInformationen</span><span class="p">();</span>
+</span></code></pre></div>
+<details class="quote">
+<summary>Output</summary>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Vorname: Standardwert, Nachname: Standardwert, Gehalt: 0, Arbeitsort: Standardwert
+</span></code></pre></div>
+</details>
+<h3 id="erklarung_1">Erklärung<a class="headerlink" href="#erklarung_1" title="Permanent link">#</a></h3>
+<ul>
+<li>Zunächst wird ein <code>Mitarbeiter</code>-Objekt zur Laufzeit erstellt.</li>
+<li>Anschließend wird das <code>Type</code>-Objekt des <code>Mitarbeiter</code>-Typs verwendet, um alle öffentlichen Properties zu erhalten.</li>
+<li>Für jede Property wird überprüft, welchen Typ sie hat (<code>string</code>, <code>double</code> usw.), und es wird ein entsprechender Standardwert zugewiesen. Im Beispiel wird allen <code>string</code>-Properties der Wert <code>"Standardwert"</code> und allen <code>double</code>-Properties der Wert <code>0.0</code> zugewiesen.</li>
+<li>Schließlich wird eine Methode des Objekts aufgerufen, um die Ergebnisse der dynamischen Property-Zuweisungen zu überprüfen.</li>
+</ul>
+<h3 id="wichtig-zu-beachten">Wichtig zu beachten<a class="headerlink" href="#wichtig-zu-beachten" title="Permanent link">#</a></h3>
+<ul>
+<li>Diese Methode der dynamischen Wertzuweisung ist sehr flexibel, kann aber auch fehleranfällig sein, wenn die Typen der Properties nicht korrekt gehandhabt werden.</li>
+<li>Reflection kann die Performance beeinträchtigen, daher sollte sie mit Bedacht eingesetzt werden, insbesondere in leistungskritischen Anwendungen.</li>
+<li>Die Sicherheit des Zugriffs auf Properties sollte ebenfalls berücksichtigt werden, da die Verwendung von Reflection potenziell unsichere oder unerwünschte Zugriffe auf Objekte ermöglichen kann.</li>
+</ul>
+<p>Diese Technik ermöglicht es Entwicklern, sehr dynamisch mit Objekten zu arbeiten, deren Struktur im Voraus nicht vollständig bekannt ist, und bietet eine mächtige Methode zur Laufzeitmanipulation und -initialisierung von Objekten in C#.</p>
 
 
 
