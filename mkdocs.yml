@@ -2,10 +2,11 @@ site_name: C# Cheat Sheet
 
 nav:
     - Übersicht: index.md
-    - String: string.md
-    #- Verzweigung: verzweigung.md
-    - Schleifen: schleifen.md
-    - Dateien: dateien.md
+    - Grundlagen:
+        - String: grundlagen/string.md
+        #- Verzweigung: grundlagen/verzweigung.md
+        - Schleifen: grundlagen/schleifen.md
+        - Dateien: grundlagen/dateien.md
     - Datenbankanbindung:
       - db/index.md
       - Installation: db/datanbankanbindung.md
@@ -39,6 +40,8 @@ theme:
       - search.suggest
       - search.share
       - navigation.indexes
+      - navigation.path
+      #- toc.integrate # Headers on the left instead of right side
 
 markdown_extensions:
   - admonition
