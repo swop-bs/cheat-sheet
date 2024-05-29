@@ -19,6 +19,12 @@ nav:
       - Beispielklasse Mitarbeiter: reflection/klasse-mitarbeiter.md
       - Datentyp dynamisch ermitteln: reflection/datentyp-ermitteln.md
       - Objekte dynamisch erstellen: reflection/objekte-erstellen.md
+    - Spieleentwicklung:
+      - gamedev/index.md
+      - Einrichtung des Projekts: gamedev/einrichtung.md
+      - Projektübersicht: gamedev/uebersicht.md
+      - Spielobjekt hinzufügen: gamedev/objekt_hinzufuegen.md
+      - Spielobjekt bewegen: gamedev/objekt_bewegen.md
 
 theme: 
     name: material
@@ -76,6 +82,7 @@ markdown_extensions:
 plugins:
   - offline
   - search
+  - glightbox 
 
 extra_css:
   - stylesheets/extra.css
