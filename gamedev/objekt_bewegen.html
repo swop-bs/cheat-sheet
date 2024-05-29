@@ -14,7 +14,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.13">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.25">
     
     
       
@@ -22,7 +22,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.7e359304.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.6543a935.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
@@ -938,6 +938,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Erweiterung der Navigation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 2
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1073,6 +1097,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Erweiterung der Navigation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 2
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1122,13 +1170,19 @@
 </span></code></pre></div>
 <h2 id="erklarung-des-codes">Erklärung des Codes<a class="headerlink" href="#erklarung-des-codes" title="Permanent link">#</a></h2>
 <h3 id="geschwindigkeit-der-bewegung">Geschwindigkeit der Bewegung<a class="headerlink" href="#geschwindigkeit-der-bewegung" title="Permanent link">#</a></h3>
+<div class="admonition quote">
+<p class="admonition-title">Quote</p>
 <div class="language-csharp highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kt">float</span><span class="w"> </span><span class="n">speed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1000</span><span class="p">;</span>
 </span></code></pre></div>
+</div>
 <p>Hier definieren wir eine Variable <code>speed</code>, die die Geschwindigkeit der Bewegung des Objekts festlegt. Der Wert 1000 bedeutet, dass das Objekt sich schnell bewegen wird.</p>
 <h3 id="speichern-und-aktualisieren-der-position">Speichern und Aktualisieren der Position<a class="headerlink" href="#speichern-und-aktualisieren-der-position" title="Permanent link">#</a></h3>
+<div class="admonition quote">
+<p class="admonition-title">Quote</p>
 <div class="language-csharp highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kt">var</span><span class="w"> </span><span class="n">pos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="n">Position</span><span class="p">;</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kt">var</span><span class="w"> </span><span class="n">deltaPos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">float</span><span class="p">)(</span><span class="n">delta</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">speed</span><span class="p">);</span>
 </span></code></pre></div>
+</div>
 <ul>
 <li><code>var pos = this.Position;</code> speichert die aktuelle Position des Objekts in der Variablen <code>pos</code>. Diese Variable ist vom Typ <code>Vector2</code>, einer Struktur, die die x- und y-Koordinaten des Objekts enthält.</li>
 <li><code>var deltaPos = (float)(delta * speed);</code> berechnet die Änderung der Position basierend auf der Zeit (<code>delta</code>), die seit dem letzten Frame vergangen ist, und der festgelegten Geschwindigkeit (<code>speed</code>).</li>
@@ -1138,6 +1192,8 @@
 <p>Da <code>Vector2</code> ein Werttyp (struct) und kein Referenztyp ist, speichern wir die aktuelle Position zuerst in einer Variablen, ändern sie und weisen sie dann wieder der <code>Position</code>-Eigenschaft zu. Dies ist notwendig, weil wir nicht direkt auf die Eigenschaften einer Struktur zugreifen und sie ändern können.</p>
 </div>
 <h3 id="tastenuberprufung-und-positionsanderung">Tastenüberprüfung und Positionsänderung<a class="headerlink" href="#tastenuberprufung-und-positionsanderung" title="Permanent link">#</a></h3>
+<div class="admonition quote">
+<p class="admonition-title">Quote</p>
 <div class="language-csharp highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">Input</span><span class="p">.</span><span class="n">IsKeyPressed</span><span class="p">(</span><span class="n">Key</span><span class="p">.</span><span class="n">Left</span><span class="p">))</span>
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="p">{</span>
 </span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="n">pos</span><span class="p">.</span><span class="n">X</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="n">deltaPos</span><span class="p">;</span>
@@ -1147,6 +1203,7 @@
 </span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">    </span><span class="n">pos</span><span class="p">.</span><span class="n">X</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">deltaPos</span><span class="p">;</span>
 </span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="p">}</span>
 </span></code></pre></div>
+</div>
 <p>Hier überprüfen wir, ob eine der Pfeiltasten gedrückt wird, und ändern entsprechend die x- oder y-Koordinate der Position:</p>
 <ul>
 <li>
@@ -1157,8 +1214,11 @@
 </li>
 </ul>
 <h3 id="aktualisieren-der-position">Aktualisieren der Position<a class="headerlink" href="#aktualisieren-der-position" title="Permanent link">#</a></h3>
+<div class="admonition quote">
+<p class="admonition-title">Quote</p>
 <div class="language-csharp highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">this</span><span class="p">.</span><span class="n">Position</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pos</span><span class="p">;</span>
 </span></code></pre></div>
+</div>
 <p>Am Ende der Methode wird die aktualisierte Position dem Objekt zugewiesen. Dadurch wird die neue Position des Objekts auf dem Bildschirm reflektiert.</p>
 <h2 id="wichtige-funktionen-und-konzepte">Wichtige Funktionen und Konzepte<a class="headerlink" href="#wichtige-funktionen-und-konzepte" title="Permanent link">#</a></h2>
 <h3 id="inputiskeypressed">Input.IsKeyPressed<a class="headerlink" href="#inputiskeypressed" title="Permanent link">#</a></h3>
@@ -1166,7 +1226,11 @@
 <h3 id="vector2-als-struktur">Vector2 als Struktur<a class="headerlink" href="#vector2-als-struktur" title="Permanent link">#</a></h3>
 <p>Die <code>Position</code>-Eigenschaft eines <code>Node2D</code>-Objekts ist vom Typ <code>Vector2</code>, einer Struktur, die zwei float-Werte (x und y) speichert. Da <code>Vector2</code> ein Werttyp ist, müssen wir die Position erst in einer Variablen speichern, ändern und dann zurückschreiben, anstatt direkt die Eigenschaften zu ändern.</p>
 <h2 id="erweiterung-der-navigation">Erweiterung der Navigation<a class="headerlink" href="#erweiterung-der-navigation" title="Permanent link">#</a></h2>
-<p>Aufgabe 1: Erweitern Sie den Code, damit der Kreis auch nach oben und unten (Y-Richtung) mit den entsprechenden Pfeiltasten navigiert werden kann.</p>
+<h3 id="aufgabe-1">Aufgabe 1<a class="headerlink" href="#aufgabe-1" title="Permanent link">#</a></h3>
+<div class="admonition question">
+<p class="admonition-title">Aufgabe</p>
+<p>Erweitern Sie den Code, damit der Kreis auch nach oben und unten (Y-Richtung) mit den entsprechenden Pfeiltasten navigiert werden kann.</p>
+</div>
 <details class="success">
 <summary>Lösung</summary>
 <div class="language-csharp highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">public</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">_Process</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">delta</span><span class="p">)</span>
@@ -1196,7 +1260,11 @@
 </span><span id="__span-5-25"><a id="__codelineno-5-25" name="__codelineno-5-25" href="#__codelineno-5-25"></a><span class="p">}</span>
 </span></code></pre></div>
 </details>
-<p>Aufgabe 2: Erweitern Sie den Code so, dass der Kreis nicht aus dem Fenster bewegt werden kann.</p>
+<h3 id="aufgabe-2">Aufgabe 2<a class="headerlink" href="#aufgabe-2" title="Permanent link">#</a></h3>
+<div class="admonition question">
+<p class="admonition-title">Aufgabe</p>
+<p>Erweitern Sie den Code so, dass der Kreis nicht aus dem Fenster bewegt werden kann.</p>
+</div>
 <details class="success">
 <summary>Lösung</summary>
 <div class="language-csharp highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">public</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">_Process</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">delta</span><span class="p">)</span>
@@ -1275,7 +1343,7 @@
     <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "content.code.annotate", "search.suggest", "search.share", "navigation.indexes", "navigation.path"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "In Zwischenablage kopiert", "clipboard.copy": "In Zwischenablage kopieren", "search.result.more.one": "1 weiteres Suchergebnis auf dieser Seite", "search.result.more.other": "# weitere Suchergebnisse auf dieser Seite", "search.result.none": "Keine Suchergebnisse", "search.result.one": "1 Suchergebnis", "search.result.other": "# Suchergebnisse", "search.result.placeholder": "Suchbegriff eingeben", "search.result.term.missing": "Es fehlt", "select.version": "Version ausw\u00e4hlen"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.c8d2eff1.min.js"></script>
+      <script src="../assets/javascripts/bundle.081f42fc.min.js"></script>
       
     
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
