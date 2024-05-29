@@ -20,7 +20,7 @@ Das Programm muss nicht installiert werden. Den heruntergeladenen Ordner können
 
 ## Einrichtung des Projekts
 
-Wir erstellen das gesamte Spiel in einem C#-Projekt, ohne die Verwendung der Godot-IDE. Hierfür gibt es ein bereits vorgefertigtes Projekt.
+Wir erstellen das gesamte Spiel in einem C#-Projekt, ohne die Verwendung der Godot-IDE. Hierfür gibt es ein bereits vorgefertigtes Projekt. Beziehen Sie dieses von der Dateiablage.
 
 ### Debugging aktivieren
 

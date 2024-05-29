@@ -153,7 +153,7 @@ public partial class EinRechteck : Node2D
   
 - **_Draw()**: Diese Methode wird aufgerufen, um die Node zu zeichnen. Hier wird das Rechteck gezeichnet. Der Vektor `(0, 0)` gibt die Position relativ zur Node-Position an, und der zweite Vektor gibt die Breite und Höhe des Rechtecks an. Die Farbe des Rechtecks wird über `this.Modulate` auf Blau gesetzt, während die Zeichenfarbe `Colors.White` ist.
 
-## Aufgaben
+## Erweiterung
 
 ### Aufgabe 1
 
@@ -163,7 +163,7 @@ Wenn Sie den Code für das Rechteck in Ihr Projekt übernehmen und ausführen, w
 
     Wie beim Kreis muss auch eine Instanz von EinRecheck in der Klasse Root erstellt werden.
 
-??? quote "Lösung"
+??? success "Lösung"
 
     In der Funktion _Ready der Root-Klasse:
 
@@ -187,4 +187,16 @@ Wenn Sie den Code für das Rechteck in Ihr Projekt übernehmen und ausführen, w
     }
 
     ```
-    
+
+### Aufgabe 2
+
+Das Rechteck wird nicht wie der Kreis in der Mitte gezeichnet. Das liegt daran, dass der Nullpunkt des Kreises sein Mittelpunkt ist, der Nullpunkt des Rechtecks aber Oben links. Erweitern Sie den Code, damit das Rechteck seinen Ursprung auch immer (unabhängig von seiner Größe und Position) in seinem Mittplpunkt hat.
+
+??? success "Lösung"
+
+    Durch die Anpassung des Poisition-Parameters der DrawRect-Methode wird das Rechteck immer an die richtige Position gezeichnet (Vorzeichen beachten!):
+
+    ```csharp
+    // In _Draw() von EinRechteck
+    DrawRect(new Rect2(new Vector2(-(_width / 2), -(_height / 2)), new Vector2(_width, _height)), Colors.White);
+    ```

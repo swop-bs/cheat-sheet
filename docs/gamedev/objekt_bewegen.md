@@ -96,7 +96,7 @@ Die `Position`-Eigenschaft eines `Node2D`-Objekts ist vom Typ `Vector2`, einer S
 
 Aufgabe 1: Erweitern Sie den Code, damit der Kreis auch nach oben und unten (Y-Richtung) mit den entsprechenden Pfeiltasten navigiert werden kann.
 
-??? quote "Lösung"
+??? success "Lösung"
 
     ```csharp
     public override void _Process(double delta)
@@ -128,7 +128,7 @@ Aufgabe 1: Erweitern Sie den Code, damit der Kreis auch nach oben und unten (Y-R
 
 Aufgabe 2: Erweitern Sie den Code so, dass der Kreis nicht aus dem Fenster bewegt werden kann.
 
-??? quote "Lösung"
+??? success "Lösung"
 
     ```csharp
     public override void _Process(double delta)
