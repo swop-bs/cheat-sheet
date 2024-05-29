@@ -157,7 +157,9 @@ public partial class EinRechteck : Node2D
 
 ### Aufgabe 1
 
-Wenn Sie den Code für das Rechteck in Ihr Projekt übernehmen und ausführen, werden Sie merken, dass das Rechteck nicht gezeichnet wird. Fixen Sie diesen Bug!
+!!! question "Aufgabe"
+
+    Wenn Sie den Code für das Rechteck in Ihr Projekt übernehmen und ausführen, werden Sie merken, dass das Rechteck nicht gezeichnet wird. Fixen Sie diesen Bug!
 
 ??? tip
 
@@ -190,7 +192,8 @@ Wenn Sie den Code für das Rechteck in Ihr Projekt übernehmen und ausführen, w
 
 ### Aufgabe 2
 
-Das Rechteck wird nicht wie der Kreis in der Mitte gezeichnet. Das liegt daran, dass der Nullpunkt des Kreises sein Mittelpunkt ist, der Nullpunkt des Rechtecks aber Oben links. Erweitern Sie den Code, damit das Rechteck seinen Ursprung auch immer (unabhängig von seiner Größe und Position) in seinem Mittplpunkt hat.
+!!! question "Aufgabe"
+    Das Rechteck wird nicht wie der Kreis in der Mitte gezeichnet. Das liegt daran, dass der Nullpunkt des Kreises sein Mittelpunkt ist, der Nullpunkt des Rechtecks aber Oben links. Erweitern Sie den Code, damit das Rechteck seinen Ursprung auch immer (unabhängig von seiner Größe und Position) in seinem Mittplpunkt hat.
 
 ??? success "Lösung"
 

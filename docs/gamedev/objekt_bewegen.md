@@ -36,18 +36,20 @@ public override void _Process(double delta)
 
 ### Geschwindigkeit der Bewegung
 
-```csharp
-float speed = 1000;
-```
+!!! quote
+    ```csharp
+    float speed = 1000;
+    ```
 
 Hier definieren wir eine Variable `speed`, die die Geschwindigkeit der Bewegung des Objekts festlegt. Der Wert 1000 bedeutet, dass das Objekt sich schnell bewegen wird.
 
 ### Speichern und Aktualisieren der Position
 
-```csharp
-var pos = this.Position;
-var deltaPos = (float)(delta * speed);
-```
+!!! quote
+    ```csharp
+    var pos = this.Position;
+    var deltaPos = (float)(delta * speed);
+    ```
 
 - `var pos = this.Position;` speichert die aktuelle Position des Objekts in der Variablen `pos`. Diese Variable ist vom Typ `Vector2`, einer Struktur, die die x- und y-Koordinaten des Objekts enthält.
 - `var deltaPos = (float)(delta * speed);` berechnet die Änderung der Position basierend auf der Zeit (`delta`), die seit dem letzten Frame vergangen ist, und der festgelegten Geschwindigkeit (`speed`).
@@ -57,16 +59,17 @@ var deltaPos = (float)(delta * speed);
 
 ### Tastenüberprüfung und Positionsänderung
 
-```csharp
-if (Input.IsKeyPressed(Key.Left))
-{
-    pos.X -= deltaPos;
-}
-if (Input.IsKeyPressed(Key.Right))
-{
-    pos.X += deltaPos;
-}
-```
+!!! quote
+    ```csharp
+    if (Input.IsKeyPressed(Key.Left))
+    {
+        pos.X -= deltaPos;
+    }
+    if (Input.IsKeyPressed(Key.Right))
+    {
+        pos.X += deltaPos;
+    }
+    ```
 
 Hier überprüfen wir, ob eine der Pfeiltasten gedrückt wird, und ändern entsprechend die x- oder y-Koordinate der Position:
 
@@ -76,9 +79,10 @@ Hier überprüfen wir, ob eine der Pfeiltasten gedrückt wird, und ändern entsp
 
 ### Aktualisieren der Position
 
-```csharp
-this.Position = pos;
-```
+!!! quote 
+    ```csharp
+    this.Position = pos;
+    ```
 
 Am Ende der Methode wird die aktualisierte Position dem Objekt zugewiesen. Dadurch wird die neue Position des Objekts auf dem Bildschirm reflektiert.
 
@@ -94,7 +98,10 @@ Die `Position`-Eigenschaft eines `Node2D`-Objekts ist vom Typ `Vector2`, einer S
 
 ## Erweiterung der Navigation
 
-Aufgabe 1: Erweitern Sie den Code, damit der Kreis auch nach oben und unten (Y-Richtung) mit den entsprechenden Pfeiltasten navigiert werden kann.
+### Aufgabe 1
+
+!!! question "Aufgabe"
+    Erweitern Sie den Code, damit der Kreis auch nach oben und unten (Y-Richtung) mit den entsprechenden Pfeiltasten navigiert werden kann.
 
 ??? success "Lösung"
 
@@ -126,7 +133,10 @@ Aufgabe 1: Erweitern Sie den Code, damit der Kreis auch nach oben und unten (Y-R
     }
     ```
 
-Aufgabe 2: Erweitern Sie den Code so, dass der Kreis nicht aus dem Fenster bewegt werden kann.
+### Aufgabe 2
+
+!!! question "Aufgabe"
+    Erweitern Sie den Code so, dass der Kreis nicht aus dem Fenster bewegt werden kann.
 
 ??? success "Lösung"
 

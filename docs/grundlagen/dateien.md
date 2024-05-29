@@ -43,7 +43,7 @@ using (StreamReader sr = new StreamReader("TestDatei.txt"))
 
 In der Regel werden Dateien zeilenweise mittels ReadLine() gelesen:
 
-``` cs
+```csharp
 // StreamReader Initialisieren (1)
 using (StreamReader sr = new StreamReader("TestDatei.txt"))
 { 
@@ -57,13 +57,17 @@ using (StreamReader sr = new StreamReader("TestDatei.txt"))
         // Einlesen der nächsten Zeile (4)
         line = sr.ReadLine();
     }
-} 
+}
+
 ```
 
-1. Das [`using`-Keyword](#datei-mit-using-schlieen) stellt sicher, dass der StreamReader wieder geschlossen wird
-2. Hier wird line mit der ersten Zeile von TestDatei.txt initialisiert
-3. Das "Verarbeiten" ist hier eine einfach Konsolenausgabe. Natürlich kann hier alles erdenkliche mit der Zeile passieren.
-4. Hier wird die nächste Zeile eingelesen. Dieser Schritt ist in der Regel immer der letzte Schritt in der Schleife, da danach wieder geprüft werden muss, ob es noch etwas einzulesen gibt.
+!!! info
+
+	1. Das [`using`-Keyword](#using) stellt sicher, dass der StreamReader wieder geschlossen wird
+	1. Hier wird line mit der ersten Zeile von TestDatei.txt initialisiert
+	1. Das "Verarbeiten" ist hier eine einfach Konsolenausgabe. Natürlich kann hier alles erdenkliche mit der Zeile passieren.
+	1. Hier wird die nächste Zeile eingelesen. Dieser Schritt ist in der Regel immer der letzte Schritt in der Schleife, da danach wieder geprüft werden muss, ob es noch etwas einzulesen gibt.
+
 
 ### Methoden
 
@@ -79,7 +83,7 @@ using (StreamReader sr = new StreamReader("TestDatei.txt"))
 
 In der Regel werden Dateien zeilenweise mittels WriteLine() geschrieben:
 
-``` cs
+```csharp
 // StreamWriter Initialisieren (1)
 using (StreamWriter sw = new StreamWriter("TestDatei.txt"))
 {
@@ -90,7 +94,9 @@ using (StreamWriter sw = new StreamWriter("TestDatei.txt"))
 } 
 ```
 
-1. [`using`](#datei-mit-using-schlieen) stellt sicher, dass die Datei wieder freigegeben wird.
+!!! info
+
+	[`using`](#using) stellt sicher, dass die Datei wieder freigegeben wird.
 
 ### Methoden
 
@@ -104,7 +110,7 @@ using (StreamWriter sw = new StreamWriter("TestDatei.txt"))
 
 In diesem Beispiel wird ein Text einer Datei in Großbuchstaben umgewandlet:
 
-``` cs
+```csharp
 class Program
 {
 	static void main()
@@ -132,4 +138,5 @@ class Program
 
 ```
 
-1. using kann auch hintereinander geschrieben werden, um mehrere Objekte zu verwalten.
+!!! info
+	using kann auch hintereinander geschrieben werden, um mehrere Objekte zu verwalten.

@@ -111,7 +111,7 @@ for(int i = 0; i < cars.Length; i++)
 Diese Schleife ist equivalent zum [Array-Beispiel der foreach-Schleife](#array_1).
 
 
-Dieses Beispiel hat das gleiche Verhalten wie die [while-Schleife](#kopfgesteuerte-while-schleife), jedoch sind die Initialisierung, Bedingung und Wertänderung an einer Stelle. Der Vorteil zeigt sich vor allem bei längeren Codeblöcken, bei denen bei der `while`-Schleife erst am Ende des Blocks die Wertänderung stattfinden würde.
+Dieses Beispiel hat das gleiche Verhalten wie die [while-Schleife](#while), jedoch sind die Initialisierung, Bedingung und Wertänderung an einer Stelle. Der Vorteil zeigt sich vor allem bei längeren Codeblöcken, bei denen bei der `while`-Schleife erst am Ende des Blocks die Wertänderung stattfinden würde.
 
 ## `foreach`-Schleife
 
