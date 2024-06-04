@@ -1245,7 +1245,7 @@
 </span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">        </span><span class="c1">// Erstellen einer Instanz der Klasse EinKreis</span>
 </span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">        </span><span class="n">EinKreis</span><span class="w"> </span><span class="n">kreis</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">EinKreis</span><span class="p">();</span>
 </span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">        </span><span class="c1">// Hinzufügen des Kreises als Kindknoten zur Root-Node</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">        </span><span class="c1">// Hinzufuegen des Kreises als Kindknoten zur Root-Node</span>
 </span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">        </span><span class="n">AddChild</span><span class="p">(</span><span class="n">kreis</span><span class="p">);</span>
 </span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">    </span><span class="p">}</span>
 </span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>
@@ -1254,6 +1254,10 @@
 </span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">    </span><span class="p">}</span>
 </span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="p">}</span>
 </span></code></pre></div>
+<div class="admonition bug">
+<p class="admonition-title">Vorsicht</p>
+<p>Da das Godot-Framework die Datei Root.cs im Hintergrund verwendet, dürfen keine Speziellen Character, wie z. B. <strong>Umlaute (ä, ö, ü)</strong> in dieser Datei vorhanden sein! Alle anderen Dateien, die Sie im Projekt anlegen können diese Character enthalten.</p>
+</div>
 <p>In diesem Beispiel wird im <code>_Ready</code>-Methode der <code>Root</code>-Klasse eine Instanz der <code>EinKreis</code>-Klasse erstellt und zur Root-Node hinzugefügt. Dadurch wird der Kreis im Fenster angezeigt.</p>
 <h2 id="beispiel-rechteck">Beispiel Rechteck<a class="headerlink" href="#beispiel-rechteck" title="Permanent link">#</a></h2>
 <p>In diesem Absatz erklären wir anhand des folgenden Beispielcodes, wie anstatt eines Kreises (<code>EinKreis</code>) ein Rechteck hinzugefügt wird.</p>
