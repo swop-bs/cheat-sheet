@@ -23,6 +23,9 @@ public partial class Root : Node2D
 }
 ```
 
+!!! bug "Vorsicht"
+    Da das Godot-Framework die Datei Root.cs im Hintergrund verwendet, dürfen keine Speziellen Character, wie z. B. **Umlaute (ä, ö, ü)** in dieser Datei vorhanden sein! Alle anderen Dateien, die Sie im Projekt anlegen können diese Character enthalten.
+
 ## Erklärung der Klasse `Root`
 
 Die Klasse `Root` erbt von `Node2D`, einer von Godot vordefinierten Klasse. Godot bietet viele vordefinierte Klassen, von denen geerbt werden kann, um verschiedene Funktionalitäten im Spiel zu implementieren.
