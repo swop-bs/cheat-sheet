@@ -79,7 +79,7 @@ public partial class Root : Node2D
         // Erstellen einer Instanz der Klasse EinKreis
         EinKreis kreis = new EinKreis();
 
-        // Hinzufügen des Kreises als Kindknoten zur Root-Node
+        // Hinzufuegen des Kreises als Kindknoten zur Root-Node
         AddChild(kreis);
     }
 
