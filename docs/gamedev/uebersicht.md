@@ -24,7 +24,7 @@ public partial class Root : Node2D
 ```
 
 !!! bug "Vorsicht"
-    Da das Godot-Framework die Datei Root.cs im Hintergrund verwendet, dürfen keine Speziellen Character, wie z. B. **Umlaute (ä, ö, ü)** in dieser Datei vorhanden sein! Alle anderen Dateien, die Sie im Projekt anlegen können diese Character enthalten.
+    Da das Godot-Framework die Datei Root.cs im Hintergrund verwendet, dürfen keine Speziellen Character, wie z. B. **Umlaute (ä, ö, ü)** in dieser Datei vorhanden sein! Alle anderen Dateien, die Sie im Projekt anlegen, können diese Character enthalten.
 
 ## Erklärung der Klasse `Root`
 
