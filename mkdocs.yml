@@ -26,6 +26,7 @@ nav:
       - Projektübersicht: gamedev/uebersicht.md
       - Spielobjekt hinzufügen: gamedev/objekt_hinzufuegen.md
       - Spielobjekt bewegen: gamedev/objekt_bewegen.md
+      - Signale (Events): gamedev/godot_events.md
 
 theme: 
     name: material
