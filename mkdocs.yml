@@ -6,6 +6,7 @@ nav:
         - String: grundlagen/string.md
         #- Verzweigung: grundlagen/verzweigung.md
         - Schleifen: grundlagen/schleifen.md
+        - Events: grundlagen/events.md
         - Dateien: grundlagen/dateien.md
     - Datenbankanbindung:
       - db/index.md
