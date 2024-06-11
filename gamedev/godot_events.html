@@ -9,10 +9,8 @@
       
       
       
-        <link rel="prev" href="einrichtung.html">
+        <link rel="prev" href="objekt_bewegen.html">
       
-      
-        <link rel="next" href="objekt_hinzufuegen.html">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +18,7 @@
     
     
       
-        <title>Projektübersicht - C# Cheat Sheet</title>
+        <title>Signale (Events) - C# Cheat Sheet</title>
       
     
     
@@ -85,7 +83,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ubersicht-uber-das-projekt" class="md-skip">
+        <a href="#verwendung-von-signalen-in-godot" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -121,7 +119,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Projektübersicht
+              Signale (Events)
             
           </span>
         </div>
@@ -784,30 +782,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Projektübersicht
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="uebersicht.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="uebersicht.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -816,77 +794,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Inhaltsverzeichnis
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#projektstruktur" class="md-nav__link">
-    <span class="md-ellipsis">
-      Projektstruktur
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#erklarung-der-klasse-root" class="md-nav__link">
-    <span class="md-ellipsis">
-      Erklärung der Klasse Root
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Erklärung der Klasse Root">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#wichtige-eigenschaften-von-node2d" class="md-nav__link">
-    <span class="md-ellipsis">
-      Wichtige Eigenschaften von Node2D
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#methoden-der-klasse-root" class="md-nav__link">
-    <span class="md-ellipsis">
-      Methoden der Klasse Root
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#funktion-der-klasse-root" class="md-nav__link">
-    <span class="md-ellipsis">
-      Funktion der Klasse Root
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -938,10 +845,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="godot_events.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Signale (Events)
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="godot_events.html" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -950,6 +877,95 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#grundlagen-von-signalen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grundlagen von Signalen
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Grundlagen von Signalen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#beispiel-verwendung-von-signalen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Beispiel: Verwendung von Signalen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-1-signal-deklarieren-und-auslosen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Schritt 1: Signal deklarieren und auslösen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#erklarung-des-codes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Erklärung des Codes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-2-signal-in-der-root-klasse-verknupfen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Schritt 2: Signal in der Root-Klasse verknüpfen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#erklarung-des-codes_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Erklärung des Codes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -989,46 +1005,55 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#projektstruktur" class="md-nav__link">
+  <a href="#grundlagen-von-signalen" class="md-nav__link">
     <span class="md-ellipsis">
-      Projektstruktur
+      Grundlagen von Signalen
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#erklarung-der-klasse-root" class="md-nav__link">
-    <span class="md-ellipsis">
-      Erklärung der Klasse Root
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Erklärung der Klasse Root">
+    <nav class="md-nav" aria-label="Grundlagen von Signalen">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#wichtige-eigenschaften-von-node2d" class="md-nav__link">
+  <a href="#beispiel-verwendung-von-signalen" class="md-nav__link">
     <span class="md-ellipsis">
-      Wichtige Eigenschaften von Node2D
+      Beispiel: Verwendung von Signalen
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#methoden-der-klasse-root" class="md-nav__link">
+  <a href="#schritt-1-signal-deklarieren-und-auslosen" class="md-nav__link">
     <span class="md-ellipsis">
-      Methoden der Klasse Root
+      Schritt 1: Signal deklarieren und auslösen
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#funktion-der-klasse-root" class="md-nav__link">
+  <a href="#erklarung-des-codes" class="md-nav__link">
     <span class="md-ellipsis">
-      Funktion der Klasse Root
+      Erklärung des Codes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-2-signal-in-der-root-klasse-verknupfen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Schritt 2: Signal in der Root-Klasse verknüpfen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#erklarung-des-codes_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Erklärung des Codes
     </span>
   </a>
   
@@ -1036,6 +1061,15 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zusammenfassung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zusammenfassung
+    </span>
+  </a>
   
 </li>
       
@@ -1054,51 +1088,80 @@
                   
 
 
-<h1 id="ubersicht-uber-das-projekt">Übersicht über das Projekt<a class="headerlink" href="#ubersicht-uber-das-projekt" title="Permanent link">#</a></h1>
-<p>In diesem Abschnitt geben wir eine Übersicht über das vorgefertigte Projekt, das wir für die Kursteilnehmer vorbereitet haben. Da wir das Spiel in der Programmiersprache C# erstellen und nicht die Godot-Oberfläche verwenden, konzentrieren wir uns auf den vorhandenen Code und dessen Struktur.</p>
-<h2 id="projektstruktur">Projektstruktur<a class="headerlink" href="#projektstruktur" title="Permanent link">#</a></h2>
-<p>Das Projekt enthält aktuell eine Datei namens <code>Root.cs</code>. Der Inhalt dieser Datei ist wie folgt:</p>
+<h1 id="verwendung-von-signalen-in-godot">Verwendung von Signalen in Godot<a class="headerlink" href="#verwendung-von-signalen-in-godot" title="Permanent link">#</a></h1>
+<p>Godot verwendet ein Signalsystem (<a href="../grundlagen/events.html">Events</a>), um Ereignisse zu handhaben und Kommunikation zwischen Nodes zu ermöglichen. Signale sind ein wichtiges Konzept in Godot, da sie eine flexible und entkoppelte Art der Interaktion zwischen verschiedenen Teilen des Spiels bieten.</p>
+<h2 id="grundlagen-von-signalen">Grundlagen von Signalen<a class="headerlink" href="#grundlagen-von-signalen" title="Permanent link">#</a></h2>
+<p>Signale sind benutzerdefinierte oder eingebaute Ereignisse, die von Nodes gesendet werden und von anderen Nodes empfangen werden können. Sie ermöglichen es, auf bestimmte Ereignisse zu reagieren, ohne dass die beteiligten Nodes direkt miteinander kommunizieren müssen.</p>
+<h3 id="beispiel-verwendung-von-signalen">Beispiel: Verwendung von Signalen<a class="headerlink" href="#beispiel-verwendung-von-signalen" title="Permanent link">#</a></h3>
+<p>In diesem Beispiel erstellen wir eine einfache Anwendung, in der ein Signal ausgelöst wird, wenn die Leertaste gedrückt wird. Das Signal wird in der <code>Root</code>-Klasse verknüpft, und eine andere Node reagiert auf dieses Signal.</p>
+<h3 id="schritt-1-signal-deklarieren-und-auslosen">Schritt 1: Signal deklarieren und auslösen<a class="headerlink" href="#schritt-1-signal-deklarieren-und-auslosen" title="Permanent link">#</a></h3>
+<p>Zuerst deklarieren wir ein Signal in einer benutzerdefinierten Node-Klasse und lösen es aus, wenn eine Bedingung erfüllt ist.</p>
 <div class="language-csharp highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">using</span><span class="w"> </span><span class="nn">Godot</span><span class="p">;</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="k">public</span><span class="w"> </span><span class="k">partial</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">Root</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">Node2D</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="p">{</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="c1">// Called when the node enters the scene tree for the first time.</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">_Ready</span><span class="p">()</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">    </span><span class="p">{</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">using</span><span class="w"> </span><span class="nn">System</span><span class="p">;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="k">public</span><span class="w"> </span><span class="k">partial</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">SpaceShip</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">Node2D</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="p">{</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="c1">// Deklariert ein Signal</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">    </span><span class="na">[Signal]</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">delegate</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">WeaponFiredEventHandler</span><span class="p">(</span><span class="n">Vector2</span><span class="w"> </span><span class="n">SpaceShipNosePosition</span><span class="p">);</span>
 </span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">    </span><span class="c1">// Called every frame. &#39;delta&#39; is the elapsed time since the previous frame.</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">_Process</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">delta</span><span class="p">)</span>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">    </span><span class="p">{</span>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="p">}</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">_Process</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">delta</span><span class="p">)</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">        </span><span class="c1">// Bedingung: Löst das Signal aus, wenn die Leertaste gedrückt wird</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">Input</span><span class="p">.</span><span class="n">IsKeyPressed</span><span class="p">(</span><span class="n">Key</span><span class="p">.</span><span class="n">Space</span><span class="p">))</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">        </span><span class="p">{</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">            </span><span class="n">Vector2</span><span class="w"> </span><span class="n">weaponPos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Vector2</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="p">);</span><span class="w"> </span><span class="c1">// Platzhalterwert, richtige Position muss berechnet werden</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">            </span><span class="c1">// Hier muss die richtige Position noch berechnet werden </span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">            </span><span class="c1">// Zum Beispiel: weaponPos = this.GlobalPosition + new Vector2(0, -10);</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">            </span><span class="n">EmitSignal</span><span class="p">(</span><span class="n">SignalName</span><span class="p">.</span><span class="n">WeaponFired</span><span class="p">,</span><span class="w"> </span><span class="n">weaponPos</span><span class="p">);</span>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="p">}</span>
 </span></code></pre></div>
-<div class="admonition bug">
-<p class="admonition-title">Vorsicht</p>
-<p>Da das Godot-Framework die Datei Root.cs im Hintergrund verwendet, dürfen keine Speziellen Character, wie z. B. <strong>Umlaute (ä, ö, ü)</strong> in dieser Datei vorhanden sein! Alle anderen Dateien, die Sie im Projekt anlegen, können diese Character enthalten.</p>
-</div>
-<h2 id="erklarung-der-klasse-root">Erklärung der Klasse <code>Root</code><a class="headerlink" href="#erklarung-der-klasse-root" title="Permanent link">#</a></h2>
-<p>Die Klasse <code>Root</code> erbt von <code>Node2D</code>, einer von Godot vordefinierten Klasse. Godot bietet viele vordefinierte Klassen, von denen geerbt werden kann, um verschiedene Funktionalitäten im Spiel zu implementieren.</p>
-<h3 id="wichtige-eigenschaften-von-node2d">Wichtige Eigenschaften von <code>Node2D</code><a class="headerlink" href="#wichtige-eigenschaften-von-node2d" title="Permanent link">#</a></h3>
+<h3 id="erklarung-des-codes">Erklärung des Codes<a class="headerlink" href="#erklarung-des-codes" title="Permanent link">#</a></h3>
 <ul>
-<li><strong>Position</strong>: Die Position der Node im Raum.</li>
-<li><strong>Rotation</strong>: Die Rotation der Node.</li>
-<li><strong>Scale</strong>: Die Skalierung der Node.</li>
-<li><strong>Modulate</strong>: Definiert die Farbe der Node.</li>
+<li><strong>[Signal] public delegate void WeaponFiredEventHandler(Vector2 SpaceShipNosePosition)</strong>: Deklariert ein Signal namens <code>WeaponFiredEventHandler</code>, das die Position der Nasenspitze des Raumschiffs als Argument übergibt.</li>
+<li><strong>_Process(double delta)</strong>: Diese Methode wird jeden Frame aufgerufen. Sie überprüft, ob die Leertaste gedrückt wird. Wenn dies der Fall ist, wird das Signal <code>WeaponFiredEventHandler</code> ausgelöst und die Position der Waffe als Argument übergeben.</li>
 </ul>
-<h3 id="methoden-der-klasse-root">Methoden der Klasse <code>Root</code><a class="headerlink" href="#methoden-der-klasse-root" title="Permanent link">#</a></h3>
+<h3 id="schritt-2-signal-in-der-root-klasse-verknupfen">Schritt 2: Signal in der Root-Klasse verknüpfen<a class="headerlink" href="#schritt-2-signal-in-der-root-klasse-verknupfen" title="Permanent link">#</a></h3>
+<p>In der <code>Root</code>-Klasse verknüpfen wir das Signal, damit eine andere Methode darauf reagieren kann.</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">using</span><span class="w"> </span><span class="nn">Godot</span><span class="p">;</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="k">public</span><span class="w"> </span><span class="k">partial</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">Root</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">Node2D</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="p">{</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">_Ready</span><span class="p">()</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">        </span><span class="c1">// Erstellen und Hinzufügen einer Instanz der SpaceShip-Klasse</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">        </span><span class="n">SpaceShip</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">SpaceShip</span><span class="p">();</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">        </span><span class="c1">// Verknüpfen des Signals mit einer Methode</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">        </span><span class="n">s</span><span class="p">.</span><span class="n">WeaponFiredEventHandler</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">OnWeaponFired</span><span class="p">;</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">        </span><span class="n">AddChild</span><span class="p">(</span><span class="n">s</span><span class="p">);</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">    </span><span class="c1">// Methode, die auf das Signal reagiert</span>
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w">    </span><span class="k">private</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">OnWeaponFired</span><span class="p">(</span><span class="n">Vector2</span><span class="w"> </span><span class="n">SpaceShipNosePosition</span><span class="p">)</span>
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="w">        </span><span class="c1">// Erstellen einer neuen Waffe an der Position der Nasenspitze des Raumschiffs</span>
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="w">        </span><span class="n">Weapon</span><span class="w"> </span><span class="n">w</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Weapon</span><span class="p">(</span><span class="n">SpaceShipNosePosition</span><span class="p">);</span>
+</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="w">        </span><span class="n">AddChild</span><span class="p">(</span><span class="n">w</span><span class="p">);</span>
+</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>
+</span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">_Process</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">delta</span><span class="p">)</span>
+</span><span id="__span-1-25"><a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-1-26"><a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-1-27"><a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a><span class="p">}</span>
+</span></code></pre></div>
+<h3 id="erklarung-des-codes_1">Erklärung des Codes<a class="headerlink" href="#erklarung-des-codes_1" title="Permanent link">#</a></h3>
 <ul>
-<li><strong>_Ready()</strong>: Diese Methode wird aufgerufen, sobald das Objekt das erste Mal verarbeitet wird. Sie eignet sich für Initialisierungen.</li>
-<li><strong>_Process(double delta)</strong>: Diese Methode wird jeden Frame einmal aufgerufen. Der Parameter <code>delta</code> gibt die vergangene Zeit seit dem vorherigen Frame an.</li>
+<li><strong>_Ready()</strong>: Diese Methode wird aufgerufen, wenn die Root-Node in die Szene eingefügt wird. Hier wird eine Instanz der <code>SpaceShip</code>-Klasse erstellt, das Signal <code>WeaponFiredEventHandler</code> mit der Methode <code>OnWeaponFired</code> verknüpft und die Instanz als Kindknoten hinzugefügt.</li>
+<li><strong>OnWeaponFired(Vector2 SpaceShipNosePosition)</strong>: Diese Methode wird aufgerufen, wenn das Signal <code>WeaponFiredEventHandler</code> ausgelöst wird. Sie erstellt eine neue Instanz der <code>Weapon</code>-Klasse an der angegebenen Position und fügt sie als Kindknoten hinzu.</li>
 </ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Die überschriebenen Methoden <code>_Ready()</code> und <code>_Process(double delta)</code> werden von Godot automatisch zu einem bestimmten Zeitpunkt aufgerufen. Sie sind essenziell für die Spielentwicklung, da sie grundlegende Lebenszyklusmethoden eines Nodes darstellen.</p>
-</div>
-<p>Im weiteren Verlauf werden wir diese Klasse erweitern und die grundlegenden Spielmechaniken implementieren. Dabei werden wir auf die Eigenschaften und Methoden von <code>Node2D</code> und anderen Godot-Klassen zurückgreifen, um unser Spiel zu entwickeln.</p>
-<h3 id="funktion-der-klasse-root">Funktion der Klasse Root<a class="headerlink" href="#funktion-der-klasse-root" title="Permanent link">#</a></h3>
-<p>Die Klasse Root wird in unserem Projekt kein eigentliches Objekt im Spiel sein. Stattdessen ist diese Klasse der Einstiegspunkt für weitere Klassen, die von dieser Klasse erstellt und verwaltet werden. Dies ermöglicht eine klare Struktur und Verwaltung der verschiedenen Spielkomponenten und -logiken.</p>
-<p>Im weiteren Verlauf werden wir diese Klasse erweitern und die grundlegenden Spielmechaniken implementieren. Dabei werden wir auf die Eigenschaften und Methoden von Node2D und anderen Godot-Klassen zurückgreifen, um unser Spiel zu entwickeln.</p>
+<h2 id="zusammenfassung">Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permanent link">#</a></h2>
+<p>Signale bieten eine leistungsstarke und flexible Möglichkeit, Ereignisse in Godot zu handhaben. Durch die Deklaration und Verknüpfung von Signalen können verschiedene Teile eines Spiels auf eine entkoppelte Weise miteinander interagieren. In diesem Beispiel haben wir gezeigt, wie ein Signal in einer Node-Klasse deklariert und in der <code>Root</code>-Klasse verknüpft wird, um auf eine bestimmte Bedingung zu reagieren und darauf basierend eine Aktion auszuführen.</p>
 
 
 
