@@ -82,13 +82,13 @@ Eine WPF-Anwendung besteht aus mehreren Hauptkomponenten, die zusammenarbeiten, 
 Das Bild zeigt die typische Struktur einer WPF-Anwendung in Visual Studio:
 
 <figure markdown="span">
-  ![Image title](wpf_project_overview.png){ width="300" }
+  ![Image title](wpf_project_overview_colored.png){ width="800" }
   <figcaption>Leeres Beispielprojekt</figcaption>
 </figure>
 
-- **Projektmappen-Explorer**: Zeigt die Dateien und Ordner des Projekts. Hier sehen Sie die `App.xaml`, `MainWindow.xaml`, und deren zugehörige Code-Behind-Dateien.
-- **Toolbox**: Enthält eine Liste der verfügbaren Steuerelemente, die in die Benutzeroberfläche gezogen und dort verwendet werden können. Wird diese nicht angezeigt, kann Sie entweder unter dem Menüpunkt "Ansicht" oder via Tastenkombination `Strg + W, X` eingeblendet werden.
-- **XAML-Editor und Designer**: Der obere Bereich zeigt den visuellen Designer, in dem Sie die Benutzeroberfläche visuell bearbeiten können. Der untere Bereich zeigt den XAML-Code, in dem Sie die Benutzeroberfläche in XAML definieren können.
+- <span style="color: #B85450">**Toolbox**: </span>Enthält eine Liste der verfügbaren Steuerelemente, die in die Benutzeroberfläche gezogen und dort verwendet werden können. Wird diese nicht angezeigt, kann Sie entweder unter dem Menüpunkt "Ansicht" oder via Tastenkombination `Strg + W, X` eingeblendet werden.
+- <span style="color: #82B366">**XAML-Editor und Designer**: </span>Der obere Bereich zeigt den visuellen Designer, in dem Sie die Benutzeroberfläche visuell bearbeiten können. Der untere Bereich zeigt den XAML-Code, in dem Sie die Benutzeroberfläche in XAML definieren können.
+- <span style="color: #6C8EBF">**Projektmappen-Explorer**: </span>Zeigt die Dateien und Ordner des Projekts. Hier sehen Sie die `App.xaml`, `MainWindow.xaml`, und deren zugehörige Code-Behind-Dateien.
 
 !!! info
     Die Projektstruktur und die Hauptkomponenten einer WPF-Anwendung sind entscheidend für die Organisation und Verwaltung des Codes. Eine klare Trennung von Layout (XAML) und Logik (C#) fördert die Wartbarkeit und Erweiterbarkeit der Anwendung.
