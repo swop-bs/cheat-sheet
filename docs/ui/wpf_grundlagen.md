@@ -1,5 +1,3 @@
-Hier ist der ausgearbeitete Abschnitt "Aufbau einer WPF-Anwendung" anhand des angefügten Projekts in Markdown:
-
 # Grundlagen von WPF
 
 ## Aufbau einer WPF-Anwendung
