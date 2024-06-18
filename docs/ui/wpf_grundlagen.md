@@ -65,6 +65,7 @@ Die wichtigsten Bestandteile einer WPF-Anwendung sind:
           }
       }
   }
+  
   ```
 
 ### Hauptkomponenten
