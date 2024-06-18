@@ -8,6 +8,11 @@ nav:
         - Schleifen: grundlagen/schleifen.md
         - Events: grundlagen/events.md
         - Dateien: grundlagen/dateien.md
+    - Oberflächenprogrammierung (WPF):
+      - ui/index.md
+      - WPF Grundlagen: ui/wpf_grundlagen.md
+      - WPF Elemente: ui/elemente.md
+      - Datenbindung: ui/databinding.md
     - Datenbankanbindung:
       - db/index.md
       - Installation: db/datanbankanbindung.md
