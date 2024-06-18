@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../db/beispiel.html">
+        <link rel="prev" href="databinding.html">
       
       
-        <link rel="next" href="klasse-mitarbeiter.html">
+        <link rel="next" href="button_binding.html">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Einleitung zu Reflection in C - C# Cheat Sheet</title>
+        <title>Daten an Label binden - C# Cheat Sheet</title>
       
     
     
@@ -85,7 +85,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#einleitung-zu-reflection-in-c" class="md-skip">
+        <a href="#daten-an-ein-element-binden" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -121,7 +121,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Einleitung zu Reflection in C
+              Daten an Label binden
             
           </span>
         </div>
@@ -400,6 +400,8 @@
       
   
   
+    
+  
   
   
     
@@ -420,16 +422,16 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../ui/index.html" class="md-nav__link ">
+            <a href="index.html" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -446,7 +448,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Oberflächenprogrammierung (WPF)
@@ -462,7 +464,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ui/create_wpf_project.html" class="md-nav__link">
+      <a href="create_wpf_project.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -483,7 +485,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ui/wpf_grundlagen.html" class="md-nav__link">
+      <a href="wpf_grundlagen.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -504,7 +506,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ui/elemente.html" class="md-nav__link">
+      <a href="elemente.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -522,8 +524,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -536,11 +540,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" checked>
         
           
           <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
@@ -554,7 +558,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_5">
             <span class="md-nav__icon md-icon"></span>
             Datenbindung
@@ -568,7 +572,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ui/databinding.html" class="md-nav__link">
+      <a href="databinding.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -586,10 +590,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../ui/label_binding.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Daten an Label binden
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="label_binding.html" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -598,6 +622,77 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#variable-fur-den-inhalt-im-viewmodel-anlegen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variable für den Inhalt im ViewModel anlegen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#datacontext-im-grid-des-mainwindow-setzen" class="md-nav__link">
+    <span class="md-ellipsis">
+      DataContext im Grid des MainWindow setzen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#erklarung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Erklärung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inhalt-des-labels-an-die-variable-des-viewmodels-binden" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inhalt des Labels an die Variable des ViewModels binden
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Inhalt des Labels an die Variable des ViewModels binden">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#erklarung_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Erklärung
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -610,7 +705,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ui/button_binding.html" class="md-nav__link">
+      <a href="button_binding.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -816,8 +911,6 @@
       
   
   
-    
-  
   
   
     
@@ -836,16 +929,16 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="index.html" class="md-nav__link md-nav__link--active">
+            <a href="../reflection/index.html" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -856,13 +949,13 @@
             </a>
             
               
-              <label class="md-nav__link md-nav__link--active" for="__nav_5" id="__nav_5_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Reflection
@@ -878,7 +971,7 @@
   
   
     <li class="md-nav__item">
-      <a href="klasse-mitarbeiter.html" class="md-nav__link">
+      <a href="../reflection/klasse-mitarbeiter.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -899,7 +992,7 @@
   
   
     <li class="md-nav__item">
-      <a href="datentyp-ermitteln.html" class="md-nav__link">
+      <a href="../reflection/datentyp-ermitteln.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -920,7 +1013,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objekte-erstellen.html" class="md-nav__link">
+      <a href="../reflection/objekte-erstellen.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1134,6 +1227,65 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#variable-fur-den-inhalt-im-viewmodel-anlegen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variable für den Inhalt im ViewModel anlegen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#datacontext-im-grid-des-mainwindow-setzen" class="md-nav__link">
+    <span class="md-ellipsis">
+      DataContext im Grid des MainWindow setzen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#erklarung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Erklärung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inhalt-des-labels-an-die-variable-des-viewmodels-binden" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inhalt des Labels an die Variable des ViewModels binden
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Inhalt des Labels an die Variable des ViewModels binden">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#erklarung_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Erklärung
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1147,11 +1299,77 @@
                   
 
 
-<h1 id="einleitung-zu-reflection-in-c">Einleitung zu Reflection in C<a class="headerlink" href="#einleitung-zu-reflection-in-c" title="Permanent link">#</a></h1>
-<p>Reflection in C# ist ein mächtiges Feature, das Entwicklern die Möglichkeit gibt, zur Laufzeit Informationen über Assemblies, Module und Typen zu ermitteln und zu manipulieren. Dies umfasst die Fähigkeit, Details über Klassen, Attribute, Eigenschaften (Properties) und Methoden eines Programms zu entdecken, ohne im Vorfeld deren Namen oder Typen zu kennen. Mit Reflection können Entwickler dynamisch Instanzen von Klassen erstellen, Methoden aufrufen und auf Eigenschaften zugreifen, was für eine Vielzahl von Anwendungen nützlich ist, einschließlich der Entwicklung von Frameworks, Debugging-Tools und dynamischen Benutzeroberflächen.</p>
-<p>Reflection bietet eine <a href="https://de.wiktionary.org/wiki/introspektiv" target="_blank">introspektive</a> Fähigkeit in C#, die es erlaubt, den Typ eines Objekts zu untersuchen, auf dessen Metadaten zuzugreifen und diese Informationen zu nutzen, um Entscheidungen zur Laufzeit zu treffen. Dies bedeutet, dass Entwickler nicht nur herausfinden können, welche Klassen, Methoden oder Attribute vorhanden sind, sondern auch deren Signaturen, Zugriffsmodifikatoren, benutzerdefinierte Attribute und viele andere Details untersuchen können. </p>
-<p>Die Verwendung von Reflection kann jedoch auch Nachteile haben, wie z.B. Leistungseinbußen, da der Zugriff auf Typinformationen zur Laufzeit mehr Ressourcen erfordert als der direkte Zugriff zur Kompilierungszeit. Zudem erfordert die Nutzung von Reflection ein tiefes Verständnis der Struktur des Zielprogramms, was die Komplexität erhöhen kann. Trotz dieser Herausforderungen bleibt Reflection ein unverzichtbares Werkzeug in der Toolbox eines C#-Entwicklers, das für spezielle Anwendungsfälle, wo Flexibilität und dynamische Typisierung erforderlich sind, von unschätzbarem Wert ist.</p>
-<p>Diese Dokumentation führt Sie durch die Grundlagen der Reflection in C#, einschließlich der Untersuchung von Typen, dem Zugriff auf Attribute, Properties und Methoden sowie deren Anwendung in realen Szenarien.</p>
+<h1 id="daten-an-ein-element-binden">Daten an ein Element binden<a class="headerlink" href="#daten-an-ein-element-binden" title="Permanent link">#</a></h1>
+<p>In diesem Abschnitt erklären wir, wie Sie Daten an ein Element in Ihrer WPF-Anwendung binden können. Wir verwenden dazu das <code>Label</code> und den <code>Button</code>, die wir bereits in unserem Beispiel verwendet haben.</p>
+<h2 id="variable-fur-den-inhalt-im-viewmodel-anlegen">Variable für den Inhalt im ViewModel anlegen<a class="headerlink" href="#variable-fur-den-inhalt-im-viewmodel-anlegen" title="Permanent link">#</a></h2>
+<p>Zuerst müssen wir im <code>MainWindowViewModel</code> eine Variable für den Inhalt anlegen. Fügen Sie dazu den folgenden Code in <code>MainWindowViewModel.cs</code> ein:</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">namespace</span><span class="w"> </span><span class="nn">WpfApp1</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="p">{</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">MainWindowViewModel</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">INotifyPropertyChanged</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">        </span><span class="c1">// Private Variable für den Label-Inhalt</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">        </span><span class="k">private</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">labelTest</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;TestLabel&quot;</span><span class="p">;</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">        </span><span class="c1">// Öffentliche Eigenschaft für den Label-Inhalt</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">        </span><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">LabelTest</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">        </span><span class="p">{</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">            </span><span class="k">get</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">labelTest</span><span class="p">;</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">            </span><span class="k">set</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">            </span><span class="p">{</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">                </span><span class="n">labelTest</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">value</span><span class="p">;</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">            </span><span class="p">}</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">        </span><span class="c1">// Deklarieren des PropertyChanged-Ereignisses</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">        </span><span class="k">public</span><span class="w"> </span><span class="k">event</span><span class="w"> </span><span class="n">PropertyChangedEventHandler</span><span class="o">?</span><span class="w"> </span><span class="n">PropertyChanged</span><span class="p">;</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">        </span><span class="c1">// OnPropertyChanged löst das PropertyChanged-Ereignis aus und übergibt</span>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">        </span><span class="c1">// die Quelleigenschaft, die aktualisiert wird.</span>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="w">        </span><span class="k">protected</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">OnPropertyChanged</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">propertyName</span><span class="p">)</span>
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="w">        </span><span class="p">{</span>
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="n">PropertyChanged</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="k">null</span><span class="p">)</span>
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="w">            </span><span class="p">{</span>
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="w">                </span><span class="n">PropertyChanged</span><span class="p">(</span><span class="k">this</span><span class="p">,</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">PropertyChangedEventArgs</span><span class="p">(</span><span class="n">propertyName</span><span class="p">));</span>
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="w">            </span><span class="p">}</span>
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="p">}</span>
+</span></code></pre></div>
+<h2 id="datacontext-im-grid-des-mainwindow-setzen">DataContext im Grid des MainWindow setzen<a class="headerlink" href="#datacontext-im-grid-des-mainwindow-setzen" title="Permanent link">#</a></h2>
+<p>Damit wir das ViewModel in der Benutzeroberfläche verwenden können, muss es im <code>Grid</code> des <code>MainWindow</code> deklariert werden. Ändern Sie den XAML-Code von <code>MainWindow.xaml</code> wie folgt:</p>
+<div class="language-xml highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="cm">&lt;!-- App.xaml --&gt;</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nt">&lt;Window</span><span class="w"> </span><span class="na">x:Class=</span><span class="s">&quot;WpfApp1.MainWindow&quot;</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">        </span><span class="na">xmlns=</span><span class="s">&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">        </span><span class="na">xmlns:x=</span><span class="s">&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">        </span><span class="na">xmlns:d=</span><span class="s">&quot;http://schemas.microsoft.com/expression/blend/2008&quot;</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">        </span><span class="na">xmlns:mc=</span><span class="s">&quot;http://schemas.openxmlformats.org/markup-compatibility/2006&quot;</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">        </span><span class="na">xmlns:local=</span><span class="s">&quot;clr-namespace:WpfApp1&quot;</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">        </span><span class="na">mc:Ignorable=</span><span class="s">&quot;d&quot;</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">        </span><span class="na">Title=</span><span class="s">&quot;MainWindow&quot;</span><span class="w"> </span><span class="na">Height=</span><span class="s">&quot;450&quot;</span><span class="w"> </span><span class="na">Width=</span><span class="s">&quot;800&quot;</span><span class="nt">&gt;</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">    </span><span class="nt">&lt;Grid</span><span class="w"> </span><span class="na">DataContext=</span><span class="s">&quot;{StaticResource mwvm}&quot;</span><span class="nt">&gt;</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">        </span><span class="nt">&lt;Label</span><span class="w"> </span><span class="na">Content=</span><span class="s">&quot;{Binding LabelTest}&quot;</span><span class="w"> </span><span class="na">FontSize=</span><span class="s">&quot;30&quot;</span><span class="w"> </span><span class="na">HorizontalAlignment=</span><span class="s">&quot;Center&quot;</span><span class="w"> </span><span class="na">Margin=</span><span class="s">&quot;0,67,0,0&quot;</span><span class="w"> </span><span class="na">VerticalAlignment=</span><span class="s">&quot;Top&quot;</span><span class="nt">/&gt;</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">        </span><span class="nt">&lt;Button</span><span class="w"> </span><span class="na">Content=</span><span class="s">&quot;Beispiel-Button&quot;</span><span class="w"> </span><span class="na">FontSize=</span><span class="s">&quot;30&quot;</span><span class="w"> </span><span class="na">HorizontalAlignment=</span><span class="s">&quot;Center&quot;</span><span class="w"> </span><span class="na">Margin=</span><span class="s">&quot;0,217,0,0&quot;</span><span class="w"> </span><span class="na">VerticalAlignment=</span><span class="s">&quot;Top&quot;</span><span class="w"> </span><span class="na">Height=</span><span class="s">&quot;110&quot;</span><span class="w"> </span><span class="na">Width=</span><span class="s">&quot;278&quot;</span><span class="nt">/&gt;</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">    </span><span class="nt">&lt;/Grid&gt;</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="nt">&lt;/Window&gt;</span>
+</span></code></pre></div>
+<h2 id="erklarung">Erklärung<a class="headerlink" href="#erklarung" title="Permanent link">#</a></h2>
+<p>Wir haben das MainWindowViewModel "mwvm" <a href="databinding.html#instanziieren-der-viewmodel-klasse-in-appxaml">bereits instanziiert</a>. Dies können wir nun in unserer Anwendung verwenden.</p>
+<ul>
+<li><strong>DataContext setzen</strong>: Durch das Setzen des <code>DataContext</code> im <code>Grid</code> auf <code>{StaticResource mwvm}</code> wird das <code>MainWindowViewModel</code> als Datenkontext für alle untergeordneten Elemente des <code>Grid</code> festgelegt. Dadurch können die UI-Elemente auf die Eigenschaften des ViewModels zugreifen.</li>
+</ul>
+<h2 id="inhalt-des-labels-an-die-variable-des-viewmodels-binden">Inhalt des Labels an die Variable des ViewModels binden<a class="headerlink" href="#inhalt-des-labels-an-die-variable-des-viewmodels-binden" title="Permanent link">#</a></h2>
+<p>Nun können wir den Inhalt des Labels auf die Variable des ViewModels binden. Ändern Sie den <code>Label</code>-Tag wie folgt:</p>
+<div class="language-xml highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nt">&lt;Label</span><span class="w"> </span><span class="na">Content=</span><span class="s">&quot;{Binding LabelTest}&quot;</span><span class="w"> </span><span class="na">FontSize=</span><span class="s">&quot;30&quot;</span><span class="w"> </span><span class="na">HorizontalAlignment=</span><span class="s">&quot;Center&quot;</span><span class="w"> </span><span class="na">Margin=</span><span class="s">&quot;0,67,0,0&quot;</span><span class="w"> </span><span class="na">VerticalAlignment=</span><span class="s">&quot;Top&quot;</span><span class="nt">/&gt;</span>
+</span></code></pre></div>
+<h3 id="erklarung_1">Erklärung<a class="headerlink" href="#erklarung_1" title="Permanent link">#</a></h3>
+<ul>
+<li><strong>Binding</strong>: Das <code>Content</code>-Attribut des <code>Label</code>-Elements ist an die Eigenschaft <code>LabelTest</code> des ViewModels gebunden. Dies bedeutet, dass der Text des Labels automatisch den Wert der <code>LabelTest</code>-Eigenschaft anzeigt.</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Eigentlich können alle Eigenschaften von XAML-Elementen an Eigenschaften des ViewModels gebunden werden. In diesem Beispiel binden wir den <code>Content</code>, der beschreibt, welchen Text das Label beinhaltet. Sie könnten jedoch auch andere Eigenschaften wie <code>FontSize</code>, <code>Visibility</code> usw. binden.</p>
+</div>
+<p>Durch die Verwendung von Datenbindung können Sie eine lose Kopplung zwischen der Benutzeroberfläche und der Geschäftslogik erreichen, was die Wartbarkeit und Flexibilität Ihrer Anwendung verbessert.</p>
 
 
 
