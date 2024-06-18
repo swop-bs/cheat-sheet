@@ -1,5 +1,7 @@
 site_name: C# Cheat Sheet
 
+site_url: https://aeup-cs.github.io/CheatSheet/
+
 nav:
     - Übersicht: index.md
     - Grundlagen:
@@ -58,6 +60,8 @@ theme:
       - search.share
       - navigation.indexes
       - navigation.path
+      - navigation.instant
+      - navigation.instant.progress
       #- toc.integrate # Headers on the left instead of right side
 
 markdown_extensions:
