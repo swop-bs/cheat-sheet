@@ -10,9 +10,13 @@ nav:
         - Dateien: grundlagen/dateien.md
     - Oberflächenprogrammierung (WPF):
       - ui/index.md
+      - WPF Projekt erstellen in Visual Studio: ui/create_wpf_project.md
       - WPF Grundlagen: ui/wpf_grundlagen.md
       - WPF Elemente: ui/elemente.md
-      - Datenbindung: ui/databinding.md
+      - Datenbindung: 
+        - Vorbereitung: ui/databinding.md
+        - Daten an Label binden: ui/label_binding.md
+        - Text mit Button ändern: ui/button_binding.md
     - Datenbankanbindung:
       - db/index.md
       - Installation: db/datanbankanbindung.md

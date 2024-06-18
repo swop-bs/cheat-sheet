@@ -1,17 +1,11 @@
-# Welcome to MkDocs
+# C# Dokumentation
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Diese Webseite bietet eine umfassende Übersicht über C# und deckt wichtige Themen wie Grundlagen, Oberflächenprogrammierung mit WPF, Datenbankanbindung, Reflection und Spieleentwicklung ab. 
 
-## Commands
+## Themenübersicht:
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+- **Grundlagen:** Einführung in Strings, Schleifen, Events und Dateiverarbeitung.
+- **Oberflächenprogrammierung (WPF):** Grundlagen, Elemente und Datenbindung.
+- **Datenbankanbindung:** Installation, Verbindung, Daten lesen und schreiben.
+- **Reflection:** Dynamische Ermittlung von Datentypen und Erstellung von Objekten.
+- **Spieleentwicklung:** Projektsetup, Spielobjekte und Eventmanagement.

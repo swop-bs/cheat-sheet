@@ -76,6 +76,9 @@ Damit die `MainWindowViewModel`-Klasse in der Anwendung verwendet werden kann, m
 </Application>
 ```
 
+!!! bug
+    Die hinzugefügte Zeile wird von der IDE beim ersten Hinzufügen in der Regel als fehlerhaft makiert. Starten Sie die Anwendung einmal, damit dieser Fehler nicht mehr auftritt.
+
 ### Erklärung des Inhalts von Application.Resources
 
 - **Application.Resources**: Ein Bereich, in dem Ressourcen definiert werden, die in der gesamten Anwendung verwendet werden können.
@@ -86,3 +89,4 @@ Durch das Hinzufügen des ViewModels zu den Anwendungsressourcen können wir es 
 
 !!! info
     Durch die Verwendung des MVVM-Musters und die Implementierung der Datenbindung in WPF können Sie die Benutzeroberfläche und die Geschäftslogik klar trennen. Dies erleichtert die Wartbarkeit und Testbarkeit Ihrer Anwendung erheblich.
+
