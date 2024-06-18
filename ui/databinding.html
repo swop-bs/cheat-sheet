@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="klasse-mitarbeiter.html">
+        <link rel="prev" href="elemente.html">
       
       
-        <link rel="next" href="objekte-erstellen.html">
+        <link rel="next" href="../db/index.html">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Datentyp dynamisch ermitteln - C# Cheat Sheet</title>
+        <title>Datenbindung - C# Cheat Sheet</title>
       
     
     
@@ -85,7 +85,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#datentyp-dynamisch-zur-laufzeit-ermitteln" class="md-skip">
+        <a href="#datenbindung" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -121,7 +121,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Datentyp dynamisch ermitteln
+              Datenbindung
             
           </span>
         </div>
@@ -400,6 +400,8 @@
       
   
   
+    
+  
   
   
     
@@ -418,16 +420,16 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../ui/index.html" class="md-nav__link ">
+            <a href="index.html" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -444,7 +446,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Oberflächenprogrammierung (WPF)
@@ -460,7 +462,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ui/wpf_grundlagen.html" class="md-nav__link">
+      <a href="wpf_grundlagen.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -481,7 +483,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ui/elemente.html" class="md-nav__link">
+      <a href="elemente.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -499,10 +501,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../ui/databinding.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Datenbindung
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="databinding.html" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -511,6 +533,92 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#mvvm-modell" class="md-nav__link">
+    <span class="md-ellipsis">
+      MVVM-Modell
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#erstellen-einer-klasse-mainwindowviewmodelcs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Erstellen einer Klasse "MainWindowViewModel.cs"
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Erstellen einer Klasse "MainWindowViewModel.cs"">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#erklarung-des-codes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Erklärung des Codes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#das-propertychanged-ereignis-im-detail" class="md-nav__link">
+    <span class="md-ellipsis">
+      Das PropertyChanged-Ereignis im Detail
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instanziieren-der-viewmodel-klasse-in-appxaml" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instanziieren der ViewModel-Klasse in App.xaml
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Instanziieren der ViewModel-Klasse in App.xaml">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#erklarung-des-inhalts-von-applicationresources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Erklärung des Inhalts von Application.Resources
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -700,8 +808,6 @@
       
   
   
-    
-  
   
   
     
@@ -720,16 +826,16 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="index.html" class="md-nav__link ">
+            <a href="../reflection/index.html" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -746,7 +852,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Reflection
@@ -762,7 +868,7 @@
   
   
     <li class="md-nav__item">
-      <a href="klasse-mitarbeiter.html" class="md-nav__link">
+      <a href="../reflection/klasse-mitarbeiter.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -780,30 +886,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Datentyp dynamisch ermitteln
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="datentyp-ermitteln.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../reflection/datentyp-ermitteln.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -812,95 +898,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Inhaltsverzeichnis
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#type-objekt" class="md-nav__link">
-    <span class="md-ellipsis">
-      Type-Objekt
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Type-Objekt">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#typ-eines-objekts-ermitteln" class="md-nav__link">
-    <span class="md-ellipsis">
-      Typ eines Objekts ermitteln
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#getfields" class="md-nav__link">
-    <span class="md-ellipsis">
-      GetFields()
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#getproperties" class="md-nav__link">
-    <span class="md-ellipsis">
-      GetProperties()
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#getmethods" class="md-nav__link">
-    <span class="md-ellipsis">
-      GetMethods()
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#getconstructors" class="md-nav__link">
-    <span class="md-ellipsis">
-      GetConstructors()
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#getparameters" class="md-nav__link">
-    <span class="md-ellipsis">
-      GetParameters()
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -913,7 +910,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objekte-erstellen.html" class="md-nav__link">
+      <a href="../reflection/objekte-erstellen.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1134,19 +1131,37 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#type-objekt" class="md-nav__link">
+  <a href="#mvvm-modell" class="md-nav__link">
     <span class="md-ellipsis">
-      Type-Objekt
+      MVVM-Modell
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Type-Objekt">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#erstellen-einer-klasse-mainwindowviewmodelcs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Erstellen einer Klasse "MainWindowViewModel.cs"
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Erstellen einer Klasse "MainWindowViewModel.cs"">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#typ-eines-objekts-ermitteln" class="md-nav__link">
+  <a href="#erklarung-des-codes" class="md-nav__link">
     <span class="md-ellipsis">
-      Typ eines Objekts ermitteln
+      Erklärung des Codes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#das-propertychanged-ereignis-im-detail" class="md-nav__link">
+    <span class="md-ellipsis">
+      Das PropertyChanged-Ereignis im Detail
     </span>
   </a>
   
@@ -1158,47 +1173,26 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#getfields" class="md-nav__link">
+  <a href="#instanziieren-der-viewmodel-klasse-in-appxaml" class="md-nav__link">
     <span class="md-ellipsis">
-      GetFields()
+      Instanziieren der ViewModel-Klasse in App.xaml
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Instanziieren der ViewModel-Klasse in App.xaml">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#erklarung-des-inhalts-von-applicationresources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Erklärung des Inhalts von Application.Resources
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#getproperties" class="md-nav__link">
-    <span class="md-ellipsis">
-      GetProperties()
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#getmethods" class="md-nav__link">
-    <span class="md-ellipsis">
-      GetMethods()
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#getconstructors" class="md-nav__link">
-    <span class="md-ellipsis">
-      GetConstructors()
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#getparameters" class="md-nav__link">
-    <span class="md-ellipsis">
-      GetParameters()
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1217,123 +1211,80 @@
                   
 
 
-<h1 id="datentyp-dynamisch-zur-laufzeit-ermitteln">Datentyp dynamisch zur Laufzeit ermitteln<a class="headerlink" href="#datentyp-dynamisch-zur-laufzeit-ermitteln" title="Permanent link">#</a></h1>
-<h2 id="type-objekt">Type-Objekt<a class="headerlink" href="#type-objekt" title="Permanent link">#</a></h2>
-<p>Um den Typ eines Objekts zur Laufzeit zu ermitteln, können verschiedene Methoden verwendet werden. Diese Methoden geben ein <code>Type</code>-Objekt zurück, das alle relevanten Metainformationen über die Klasse bzw. das Objekt enthält.</p>
+<h1 id="datenbindung">Datenbindung<a class="headerlink" href="#datenbindung" title="Permanent link">#</a></h1>
+<p>Datenbindung ist ein zentrales Konzept in WPF, das es ermöglicht, die Benutzeroberfläche (View) mit der Geschäftslogik (Model) zu verbinden. Dies wird oft im Rahmen des MVVM-Modells (Model-View-ViewModel) umgesetzt.</p>
+<h2 id="mvvm-modell">MVVM-Modell<a class="headerlink" href="#mvvm-modell" title="Permanent link">#</a></h2>
+<p>MVVM (Model-View-ViewModel) ist ein Architekturdesignmuster, das speziell für die Entwicklung von WPF-Anwendungen entwickelt wurde. Es trennt die Logik der Anwendung in drei Hauptkomponenten:</p>
 <ul>
-<li><strong><code>m.GetType()</code></strong>: Ermittelt den Typ einer Instanz <code>m</code>.</li>
-<li><strong><code>typeof(Mitarbeiter)</code></strong>: Ermittelt den Typ der Klasse <code>Mitarbeiter</code>.</li>
-<li><strong><code>Type.GetType("Mitarbeiter")</code></strong>: Ermittelt den Typ basierend auf dem qualifizierten Namen der Klasse.</li>
+<li><strong>Model</strong>: Repräsentiert die Daten und die Geschäftslogik der Anwendung.</li>
+<li><strong>View</strong>: Repräsentiert die Benutzeroberfläche. Sie zeigt die Daten des Models an und sendet Benutzeraktionen an das ViewModel.</li>
+<li><strong>ViewModel</strong>: Vermittelt zwischen Model und View. Es hält die Zustände der View, verarbeitet Benutzerinteraktionen und aktualisiert das Model.</li>
 </ul>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Im ersten Schritt muss immer das Typen-Objekt erstellt werden. Dieses Objekt bildet die Grundlage zur Ermittlung der Ermittlung der Metadaten.</p>
-</div>
-<h3 id="typ-eines-objekts-ermitteln">Typ eines Objekts ermitteln<a class="headerlink" href="#typ-eines-objekts-ermitteln" title="Permanent link">#</a></h3>
-<p>Nachdem wir die Klasse <code>Mitarbeiter</code> definiert haben, verwenden wir die Reflection-Methoden, um Metainformationen zur Laufzeit zu extrahieren.</p>
-<div class="language-csharp highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">Mitarbeiter</span><span class="w"> </span><span class="n">mitarbeiter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Mitarbeiter</span><span class="p">(</span><span class="s">&quot;Max&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Mustermann&quot;</span><span class="p">,</span><span class="w"> </span><span class="m">50000</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Berlin&quot;</span><span class="p">);</span>
+<h2 id="erstellen-einer-klasse-mainwindowviewmodelcs">Erstellen einer Klasse "MainWindowViewModel.cs"<a class="headerlink" href="#erstellen-einer-klasse-mainwindowviewmodelcs" title="Permanent link">#</a></h2>
+<p>Um die Datenbindung in einer WPF-Anwendung zu implementieren, erstellen wir eine ViewModel-Klasse. Führen Sie die folgenden Schritte aus, um eine neue Klasse "MainWindowViewModel.cs" hinzuzufügen:</p>
+<ol>
+<li>Rechtsklick auf das Projekt im Projektmappen-Explorer.</li>
+<li>Wählen Sie <strong>Hinzufügen</strong> &gt; <strong>Klasse...</strong>.</li>
+<li>Benennen Sie die Klasse <code>MainWindowViewModel.cs</code>.</li>
+</ol>
+<p>Fügen Sie den folgenden Code in die Datei <code>MainWindowViewModel.cs</code> ein:</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">using</span><span class="w"> </span><span class="nn">System.ComponentModel</span><span class="p">;</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="c1">// Typinformationen ermitteln</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">Type</span><span class="w"> </span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mitarbeiter</span><span class="p">.</span><span class="n">GetType</span><span class="p">();</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">type</span><span class="p">.</span><span class="n">ToString</span><span class="p">());</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="k">namespace</span><span class="w"> </span><span class="nn">WpfApp1</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="p">{</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">MainWindowViewModel</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">INotifyPropertyChanged</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">        </span><span class="c1">// Deklarieren des PropertyChanged-Ereignisses</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">        </span><span class="k">public</span><span class="w"> </span><span class="k">event</span><span class="w"> </span><span class="n">PropertyChangedEventHandler</span><span class="o">?</span><span class="w"> </span><span class="n">PropertyChanged</span><span class="p">;</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">        </span><span class="c1">// OnPropertyChanged löst das PropertyChanged-Ereignis aus und übergibt</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">        </span><span class="c1">// die Quelleigenschaft, die aktualisiert wird.</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">        </span><span class="k">protected</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">OnPropertyChanged</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">propertyName</span><span class="p">)</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">        </span><span class="p">{</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="n">PropertyChanged</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="k">null</span><span class="p">)</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">            </span><span class="p">{</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">                </span><span class="n">PropertyChanged</span><span class="p">(</span><span class="k">this</span><span class="p">,</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">PropertyChangedEventArgs</span><span class="p">(</span><span class="n">propertyName</span><span class="p">));</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">            </span><span class="p">}</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="p">}</span>
 </span></code></pre></div>
-<details class="quote">
-<summary>Output</summary>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Mitarbeiter
+<h3 id="erklarung-des-codes">Erklärung des Codes<a class="headerlink" href="#erklarung-des-codes" title="Permanent link">#</a></h3>
+<ul>
+<li><strong>INotifyPropertyChanged</strong>: Ein Interface, das eine Benachrichtigung bereitstellt, wenn sich der Wert einer Eigenschaft ändert. Dies ist wichtig für die Datenbindung.</li>
+<li><strong>PropertyChanged-Ereignis</strong>: Ein Ereignis, das ausgelöst wird, wenn sich der Wert einer Eigenschaft ändert.</li>
+<li><strong>OnPropertyChanged-Methode</strong>: Eine Methode, die das <code>PropertyChanged</code>-Ereignis auslöst und den Namen der geänderten Eigenschaft übergibt.</li>
+</ul>
+<h3 id="das-propertychanged-ereignis-im-detail">Das PropertyChanged-Ereignis im Detail<a class="headerlink" href="#das-propertychanged-ereignis-im-detail" title="Permanent link">#</a></h3>
+<p>Das PropertyChanged-Ereignis spielt eine entscheidende Rolle in der Kommunikation zwischen dem ViewModel und der View. Das ViewModel kennt die Funktionalität der View nicht direkt, und dies ermöglicht eine lose Kopplung zwischen beiden Komponenten. Wenn sich der Wert einer Eigenschaft im ViewModel ändert, wird das PropertyChanged-Ereignis ausgelöst. Die View, die an diese Eigenschaft gebunden ist, wird benachrichtigt und kann entsprechend reagieren, z.B. durch das Aktualisieren der Anzeige.</p>
+<p><a class="glightbox" href="on_property_changed.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Abbildung On Property Changed" src="on_property_changed.png" /></a> </p>
+<p>Diese lose Kopplung ist wichtig, weil:</p>
+<ul>
+<li>Trennung der Verantwortlichkeiten: Die View kennt die Funktionen des ViewModels und kann sie aufrufen, um Daten anzuzeigen oder Benutzerinteraktionen zu verarbeiten. Das ViewModel kennt jedoch die Details der View nicht und ist nicht dafür verantwortlich, wie die Daten angezeigt werden.</li>
+<li>Flexibilität und Wiederverwendbarkeit: Durch die Entkopplung der View und des ViewModels können Sie die Benutzeroberfläche ändern, ohne die Geschäftslogik zu beeinflussen, und umgekehrt.</li>
+</ul>
+<h2 id="instanziieren-der-viewmodel-klasse-in-appxaml">Instanziieren der ViewModel-Klasse in App.xaml<a class="headerlink" href="#instanziieren-der-viewmodel-klasse-in-appxaml" title="Permanent link">#</a></h2>
+<p>Damit die <code>MainWindowViewModel</code>-Klasse in der Anwendung verwendet werden kann, müssen wir sie in der <code>App.xaml</code>-Datei instanziieren. Hier ist der Code, der in <code>App.xaml</code> eingefügt werden muss:</p>
+<div class="language-xml highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nt">&lt;Application</span><span class="w"> </span><span class="na">x:Class=</span><span class="s">&quot;WpfApp1.App&quot;</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">             </span><span class="na">xmlns=</span><span class="s">&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">             </span><span class="na">xmlns:x=</span><span class="s">&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">             </span><span class="na">xmlns:local=</span><span class="s">&quot;clr-namespace:WpfApp1&quot;</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">             </span><span class="na">StartupUri=</span><span class="s">&quot;MainWindow.xaml&quot;</span><span class="nt">&gt;</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">    </span><span class="nt">&lt;Application.Resources&gt;</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">        </span><span class="nt">&lt;local:MainWindowViewModel</span><span class="w"> </span><span class="na">x:Key=</span><span class="s">&quot;mwvm&quot;</span><span class="nt">/&gt;</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">    </span><span class="nt">&lt;/Application.Resources&gt;</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="nt">&lt;/Application&gt;</span>
 </span></code></pre></div>
-</details>
-<h2 id="getfields"><code>GetFields()</code><a class="headerlink" href="#getfields" title="Permanent link">#</a></h2>
-<p>Liefert die Attribute (Felder) der Klasse zurück.</p>
-<div class="language-csharp highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">FieldInfo</span><span class="p">[]</span><span class="w"> </span><span class="n">fields</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">type</span><span class="p">.</span><span class="n">GetFields</span><span class="p">(</span><span class="n">BindingFlags</span><span class="p">.</span><span class="n">Public</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">BindingFlags</span><span class="p">.</span><span class="n">NonPublic</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">BindingFlags</span><span class="p">.</span><span class="n">Instance</span><span class="p">);</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="k">foreach</span><span class="w"> </span><span class="p">(</span><span class="kt">var</span><span class="w"> </span><span class="n">field</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">fields</span><span class="p">)</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="p">{</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;{field.Name}: {field.FieldType}&quot;</span><span class="p">);</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="p">}</span>
-</span></code></pre></div>
-<details class="quote">
-<summary>Output</summary>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>_vorname: System.String
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>_nachname: System.String
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>_gehalt: System.Double
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>_arbeitsort: System.String
-</span></code></pre></div>
-</details>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Beachte, dass private Felder nur mit entsprechenden <code>BindingFlags</code> sichtbar sind.</p>
-</div>
-<h2 id="getproperties"><code>GetProperties()</code><a class="headerlink" href="#getproperties" title="Permanent link">#</a></h2>
-<p>Liefert die Properties (Eigenschaften) einer Klasse zurück.</p>
-<div class="language-csharp highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">PropertyInfo</span><span class="p">[]</span><span class="w"> </span><span class="n">properties</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">type</span><span class="p">.</span><span class="n">GetProperties</span><span class="p">();</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="k">foreach</span><span class="w"> </span><span class="p">(</span><span class="kt">var</span><span class="w"> </span><span class="n">property</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">properties</span><span class="p">)</span>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="p">{</span>
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;{property.Name}: {property.PropertyType}&quot;</span><span class="p">);</span>
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="p">}</span>
-</span></code></pre></div>
-<details class="quote">
-<summary>Output</summary>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>Vorname: System.String
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>Nachname: System.String
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>Gehalt: System.Double
-</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>Arbeitsort: System.String
-</span></code></pre></div>
-</details>
-<h2 id="getmethods"><code>GetMethods()</code><a class="headerlink" href="#getmethods" title="Permanent link">#</a></h2>
-<p>Liefert die Methoden einer Klasse zurück.</p>
-<div class="language-csharp highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">MethodInfo</span><span class="p">[]</span><span class="w"> </span><span class="n">methods</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">type</span><span class="p">.</span><span class="n">GetMethods</span><span class="p">();</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="k">foreach</span><span class="w"> </span><span class="p">(</span><span class="kt">var</span><span class="w"> </span><span class="n">method</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">methods</span><span class="p">)</span>
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="p">{</span>
-</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;{method.Name}&quot;</span><span class="p">);</span>
-</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="p">}</span>
-</span></code></pre></div>
-<details class="quote">
-<summary>Output</summary>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>AnzeigenInformationen
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>ErhoeheGehalt
-</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>BerechneJahresgehalt
-</span></code></pre></div>
-</details>
+<h3 id="erklarung-des-inhalts-von-applicationresources">Erklärung des Inhalts von Application.Resources<a class="headerlink" href="#erklarung-des-inhalts-von-applicationresources" title="Permanent link">#</a></h3>
+<ul>
+<li><strong>Application.Resources</strong>: Ein Bereich, in dem Ressourcen definiert werden, die in der gesamten Anwendung verwendet werden können.</li>
+<li><strong>local:MainWindowViewModel</strong>: Instanziiert die <code>MainWindowViewModel</code>-Klasse.</li>
+<li><strong>x:Key</strong>: Ein eindeutiger Schlüssel, mit dem die Ressource referenziert werden kann.</li>
+</ul>
+<p>Durch das Hinzufügen des ViewModels zu den Anwendungsressourcen können wir es in der gesamten Anwendung verwenden und an die UI-Elemente binden.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>Diese Liste enthält auch geerbte Methoden von <code>Object</code>, wie <code>ToString</code>, <code>Equals</code> usw.</p>
-</div>
-<h2 id="getconstructors"><code>GetConstructors()</code><a class="headerlink" href="#getconstructors" title="Permanent link">#</a></h2>
-<p>Liefert die Konstruktoren einer Klasse zurück</p>
-<div class="language-csharp highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">ConstructorInfo</span><span class="p">[]</span><span class="w"> </span><span class="n">constructors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">type</span><span class="p">.</span><span class="n">GetConstructors</span><span class="p">();</span>
-</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="k">foreach</span><span class="w"> </span><span class="p">(</span><span class="kt">var</span><span class="w"> </span><span class="n">constructor</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">constructors</span><span class="p">)</span>
-</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="p">{</span>
-</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Konstruktor: {constructor.ToString()}&quot;</span><span class="p">);</span>
-</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="p">}</span>
-</span></code></pre></div>
-<details class="quote">
-<summary>Output</summary>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>Konstruktor: Void .ctor()
-</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>Konstruktor: Void .ctor(System.String, System.String, System.Double, System.String)
-</span></code></pre></div>
-</details>
-<h2 id="getparameters"><code>GetParameters()</code><a class="headerlink" href="#getparameters" title="Permanent link">#</a></h2>
-<p>Liefert die Paramter von Konstruktoren bzw. Methoden zurück.</p>
-<div class="language-csharp highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="k">foreach</span><span class="w"> </span><span class="p">(</span><span class="kt">var</span><span class="w"> </span><span class="n">constructor</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">constructors</span><span class="p">)</span>
-</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="p">{</span>
-</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="w">    </span><span class="n">ParameterInfo</span><span class="p">[]</span><span class="w"> </span><span class="n">parameters</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">constructor</span><span class="p">.</span><span class="n">GetParameters</span><span class="p">();</span>
-</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="w">    </span><span class="k">foreach</span><span class="w"> </span><span class="p">(</span><span class="kt">var</span><span class="w"> </span><span class="n">parameter</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">parameters</span><span class="p">)</span>
-</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="w">    </span><span class="p">{</span>
-</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;{parameter.Name}: {parameter.ParameterType}&quot;</span><span class="p">);</span>
-</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a><span class="p">}</span>
-</span></code></pre></div>
-<details class="quote">
-<summary>Output</summary>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>vorname: System.String
-</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>nachname: System.String
-</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>gehalt: System.Double
-</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>arbeitsort: System.String
-</span></code></pre></div>
-</details>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>Analog können die Parameter auch für Methoden ausgegeben werden!</p>
+<p>Durch die Verwendung des MVVM-Musters und die Implementierung der Datenbindung in WPF können Sie die Benutzeroberfläche und die Geschäftslogik klar trennen. Dies erleichtert die Wartbarkeit und Testbarkeit Ihrer Anwendung erheblich.</p>
 </div>
 
 
