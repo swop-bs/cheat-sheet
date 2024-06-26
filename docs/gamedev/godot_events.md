@@ -60,7 +60,7 @@ public partial class Root : Node2D
         SpaceShip s = new SpaceShip();
         
         // Verknüpfen des Signals mit einer Methode
-        s.WeaponFiredEventHandler += OnWeaponFired;
+        s.WeaponFired += OnWeaponFired;
         
         AddChild(s);
     }
