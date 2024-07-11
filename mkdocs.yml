@@ -62,6 +62,7 @@ theme:
       - navigation.path
       - navigation.instant
       - navigation.instant.progress
+      - navigation.footer
       #- toc.integrate # Headers on the left instead of right side
 
 markdown_extensions:
