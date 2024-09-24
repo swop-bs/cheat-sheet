@@ -20,8 +20,10 @@ nav:
         - Daten an Label binden: ui/label_binding.md
         - Text mit Button ändern: ui/button_binding.md
     - Git:
-      - git/index.md
-      - git/git_short.md
+      - Git Kommandozeile: git/git_cmd.md
+      - Git Kommandozeile Kurzübersicht: git/git_cmd_short.md
+      - Git Visual Studio: git/git_vs.md
+      - Git Visual Sutio Kurzübersicht: git/git_vs_short.md
     - Datenbankanbindung:
       - db/index.md
       - Installation: db/datanbankanbindung.md

@@ -1,4 +1,4 @@
-# Git
+# Git in Kommandozeile
 
 ![alt text](git-workflow-1.png)
 

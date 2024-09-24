@@ -1,4 +1,6 @@
-# Git Workflow Kurzübersicht
+# Git in Kommandozeile Kurzübersicht
+
+![alt text](git_cmd_short.png)
 
 ## 1. Repository von Remote kopieren:
 
@@ -27,5 +29,3 @@ git commit -m "Neue Klasse Person erstellt"
 ```
 git push -o bfi11a_max_mustermann
 ```
-
-![alt text](image.png)
