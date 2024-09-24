@@ -26,28 +26,63 @@ Anstatt auf dem Haupt-Produktions-Branch zu arbeiten, solltest du einen eigenen 
 
 Nichts, was du hier tust, ist in Stein gemeißelt, also experimentiere so viel du möchtest mit dem Code.
 
-In der Befehlszeile würdest du den Befehl git branch verwenden, um deinen lokalen Klon des Repositories auf einen neuen Branch zu verschieben. 
+In der Befehlszeile verwendest du den Befehl `git branch`, um deinen lokalen Klon des Repositories auf einen neuen Branch zu verschieben.
 
-##Schritt 3 - Stufe deine Änderungen an den Dateien
+Für die Schule verwendest du bitte immer folgendes Schema für den Branchnamen:
 
-Wenn du Änderungen an den Dateien vorgenommen hast, die du auf deinem Branch festhalten möchtest, musst du sie zuerst stagen, was sie als logischen Speicherpunkt zusammenfasst.
+```
+klasse_vorname_nachname
+```
 
-In der Befehlszeile würdest du dies mit dem Befehl git stage tun. Dein Branch bleibt unverändert, bis du die Änderungen stagst und dann im nächsten Schritt committest. 
+Konkret:
 
-##Schritt 4 - Committe deine gestagten Änderungen im lokalen Repository
+```
+git branch bfi11a_max_mustermann
+```
 
-Sobald du mit deinen gestagten Änderungen zufrieden bist, ist es an der Zeit, sie in deinem Branch zu committen.
+Vergiss nicht, den neu erstellten Branch dann zu aktivieren (auszuchecken):
 
-In der Befehlszeile würdest du dies mit dem Befehl git commit durchführen.
+```
+git checkout bfi11a_max_mustermann
+```
 
-Um diesen Commit für den Rest deines Teams sichtbar zu machen, musst du ihn im nächsten Schritt in das Remote-Repository pushen. 
+### Alternative Brancherstellung:
 
-##Schritt 5 - Pushe deine Änderungen ins Remote-Repository und öffne eine Pull-Request
+Da man eigentlich fast immer den neu erstellten Branch direkt danach auschecken möchte, gibt es einen besseren Befehl, der den Branch erstellt und diesen automatisch auscheckt. Dadurch muss der Branch vorher nicht via `git branch` erstellt werden.
 
+```
+git checkout -b bfi11a_max_mustermann
+```
+
+##Schritt 3 - Änderungen ins lokale Repository übernehmen
+
+Mit dem Befehl `git add *` fügst du alle Änderungen in die Staging Area hinzu.
+
+Nachfolgend fügst du deine Änderungen mit dem Befehl `git commit -m "Commit Nachricht"` hinzu (du Commitest deine Änderungen).
+
+Beispiel in Kommandozeile:
+
+```
+git add *
+git commit -m "Ich habe viele tolle Änderungen gemacht"
+```
+
+Wiederhole das Hinzufügen von Änderungen so oft du möchtest. Commite lieber zu oft als zu wenig!
+
+##Schritt 5 - Pushe deine Änderungen ins Remote-Repository
+
+Um deine Änderungen in das Remote Repository hochzuladen, musst du diese `Pushen`.
+
+Da es deinen Branch aktuell nur lokal gibt, musst du den Namen beim Pushen nochmals angeben:
+
+```
+git push 
+```
+  
 Durch das Pushen deiner Commits können alle anderen im Team deine Codeänderungen herunterladen und testen.
 
 In der Befehlszeile würdest du dies mit dem Befehl git push tun.
 
 Wenn du bereit bist, deine Änderungen in die Produktion zu übernehmen, kannst du nun eine Pull-Request öffnen, um deinen Code von jemand anderem im Team überprüfen zu lassen.
 
-Wenn du ohne Merging zusammenarbeiten möchtest, pushe einfach deinen Branch ins Remote-Repository und bitte deinen Kollegen, einen Pull durchzuführen, um eine Kopie deines Branches zu erhalten.
+Wenn du ohne Merging zusammenarbeiten möchtest, pushe einfach deinen Branch ins Remote-Repository und bitte deinen Kollegen, einen Pull durchzuführen, um eine Kopie deines Branches zu erhalten.  
