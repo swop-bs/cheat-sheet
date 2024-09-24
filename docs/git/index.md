@@ -74,8 +74,7 @@ Wiederhole das Hinzufügen von Änderungen so oft du möchtest. Commite lieber z
 Um deine Änderungen in das Remote Repository hochzuladen, musst du diese `Pushen`.
 
 Da es deinen Branch aktuell nur lokal gibt, musst du den Namen beim Pushen nochmals angeben:
-
-```
+  
 git push 
 ```
   
