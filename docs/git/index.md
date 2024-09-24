@@ -60,7 +60,7 @@ Mit dem Befehl `git add *` fügst du alle Änderungen in die Staging Area hinzu.
 
 Nachfolgend fügst du deine Änderungen mit dem Befehl `git commit -m "Commit Nachricht"` hinzu (du Commitest deine Änderungen).
 
-Beispiel in Kommandozeile:
+Beispiel in Kommandozeile:  
 
 ```
 git add *
