@@ -19,6 +19,8 @@ nav:
         - Vorbereitung: ui/databinding.md
         - Daten an Label binden: ui/label_binding.md
         - Text mit Button ändern: ui/button_binding.md
+    - Git:
+      - git/index.md
     - Datenbankanbindung:
       - db/index.md
       - Installation: db/datanbankanbindung.md
