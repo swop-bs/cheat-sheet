@@ -30,7 +30,7 @@ Namen für den Branch vergeben (klasse_vorname_nachname) und von welchem Branch 
 
 Unter `Git Changes` Commit-Message eingegeben. Commit All fügt die angezeigten Änderungen automatisch zur Staging-Area hinzu und commitet im Anschluss automatisch mit der eingegebenen Commit-Message.
 
-![alt text](git_commit_message.png)
+![alt text](git_commit_message.png){ width="500" }
 
 ## 4. Code in eigenen Branch pushen:
 

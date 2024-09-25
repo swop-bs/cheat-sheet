@@ -59,7 +59,7 @@ Mit Doppelklick auf die angezeigt Datei werden die Änderung in der Datei angeze
 
 Unter `Git Changes` kann eine Commit-Message eingegeben werden. Commit All fügt die angezeigten Änderungen automatisch zur Staging-Area hinzu und commitet im Anschluss automatisch mit der eingegebenen Commit-Message.
 
-![alt text](git_commit_message.png)
+![alt text](git_commit_message.png){ width="500" }
 
 Die Änderung wird nach dem Commit auch in der Übersicht dargestellt:
 
