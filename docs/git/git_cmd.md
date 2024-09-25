@@ -1,6 +1,9 @@
 # Git in Kommandozeile
 
-![alt text](git-workflow-1.png)
+<figure markdown="span">
+  ![Image title](git-workflow-1.png)
+  <figcaption>Quelle: https://www.getdbt.com/ui/img/guides/analytics-engineering/git-workflow-1.png</figcaption>
+</figure>
 
 ##Schritt 1 - Klone das Original-Repository
 
@@ -12,7 +15,7 @@ Beispiel:
 
 Remote Repository URL kopieren:
 
-![alt text](remote-repo-url.png)
+![alt text](remote-repo-url.png){ width="800" }
 
 In Kommandozeile:
 

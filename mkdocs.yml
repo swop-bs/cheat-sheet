@@ -23,7 +23,7 @@ nav:
       - Git Kommandozeile: git/git_cmd.md
       - Git Kommandozeile Kurzübersicht: git/git_cmd_short.md
       - Git Visual Studio: git/git_vs.md
-      - Git Visual Sutio Kurzübersicht: git/git_vs_short.md
+      - Git Visual Studio Kurzübersicht: git/git_vs_short.md
     - Datenbankanbindung:
       - db/index.md
       - Installation: db/datanbankanbindung.md
