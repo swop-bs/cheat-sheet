@@ -10,6 +10,7 @@ nav:
         - Schleifen: grundlagen/schleifen.md
         - Events: grundlagen/events.md
         - Dateien: grundlagen/dateien.md
+        - Coding Conventions: grundlagen/coding_convention.md
     - Oberflächenprogrammierung (WPF):
       - ui/index.md
       - WPF Projekt erstellen in Visual Studio: ui/create_wpf_project.md
