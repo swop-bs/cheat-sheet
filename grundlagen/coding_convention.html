@@ -697,6 +697,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Official Reference">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#credits-to" class="md-nav__link">
+    <span class="md-ellipsis">
+      Credits to
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1843,6 +1858,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Official Reference">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#credits-to" class="md-nav__link">
+    <span class="md-ellipsis">
+      Credits to
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1861,155 +1891,6 @@
 
 
 <h1 id="c-coding-standards-and-naming-conventions">C# Coding Standards and Naming Conventions<a class="headerlink" href="#c-coding-standards-and-naming-conventions" title="Permanent link">#</a></h1>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Object Name</th>
-<th style="text-align: left;">Notation</th>
-<th style="text-align: right;">Length</th>
-<th style="text-align: left;">Plural</th>
-<th style="text-align: left;">Prefix</th>
-<th style="text-align: left;">Suffix</th>
-<th style="text-align: left;">Abbreviation</th>
-<th style="text-align: left;">Char Mask</th>
-<th style="text-align: left;">Underscores</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">Namespace name</td>
-<td style="text-align: left;">PascalCase</td>
-<td style="text-align: right;">128</td>
-<td style="text-align: left;">Yes</td>
-<td style="text-align: left;">Yes</td>
-<td style="text-align: left;">No</td>
-<td style="text-align: left;">No</td>
-<td style="text-align: left;">[A-z][0-9]</td>
-<td style="text-align: left;">No</td>
-</tr>
-<tr>
-<td style="text-align: left;">Class name</td>
-<td style="text-align: left;">PascalCase</td>
-<td style="text-align: right;">128</td>
-<td style="text-align: left;">No</td>
-<td style="text-align: left;">No</td>
-<td style="text-align: left;">Yes</td>
-<td style="text-align: left;">No</td>
-<td style="text-align: left;">[A-z][0-9]</td>
-<td style="text-align: left;">No</td>
-</tr>
-<tr>
-<td style="text-align: left;">Constructor name</td>
-<td style="text-align: left;">PascalCase</td>
-<td style="text-align: right;">128</td>
-<td style="text-align: left;">No</td>
-<td style="text-align: left;">No</td>
-<td style="text-align: left;">Yes</td>
-<td style="text-align: left;">No</td>
-<td style="text-align: left;">[A-z][0-9]</td>
-<td style="text-align: left;">No</td>
-</tr>
-<tr>
-<td style="text-align: left;">Method name</td>
-<td style="text-align: left;">PascalCase</td>
-<td style="text-align: right;">128</td>
-<td style="text-align: left;">Yes</td>
-<td style="text-align: left;">No</td>
-<td style="text-align: left;">No</td>
-<td style="text-align: left;">No</td>
-<td style="text-align: left;">[A-z][0-9]</td>
-<td style="text-align: left;">No</td>
-</tr>
-<tr>
-<td style="text-align: left;">Method arguments</td>
-<td style="text-align: left;">camelCase</td>
-<td style="text-align: right;">128</td>
-<td style="text-align: left;">Yes</td>
-<td style="text-align: left;">No</td>
-<td style="text-align: left;">No</td>
-<td style="text-align: left;">Yes</td>
-<td style="text-align: left;">[A-z][0-9]</td>
-<td style="text-align: left;">No</td>
-</tr>
-<tr>
-<td style="text-align: left;">Local variables</td>
-<td style="text-align: left;">camelCase</td>
-<td style="text-align: right;">50</td>
-<td style="text-align: left;">Yes</td>
-<td style="text-align: left;">No</td>
-<td style="text-align: left;">No</td>
-<td style="text-align: left;">Yes</td>
-<td style="text-align: left;">[A-z][0-9]</td>
-<td style="text-align: left;">No</td>
-</tr>
-<tr>
-<td style="text-align: left;">Constants name</td>
-<td style="text-align: left;">PascalCase</td>
-<td style="text-align: right;">50</td>
-<td style="text-align: left;">No</td>
-<td style="text-align: left;">No</td>
-<td style="text-align: left;">No</td>
-<td style="text-align: left;">No</td>
-<td style="text-align: left;">[A-z][0-9]</td>
-<td style="text-align: left;">No</td>
-</tr>
-<tr>
-<td style="text-align: left;">Field name Public</td>
-<td style="text-align: left;">PascalCase</td>
-<td style="text-align: right;">50</td>
-<td style="text-align: left;">Yes</td>
-<td style="text-align: left;">No</td>
-<td style="text-align: left;">No</td>
-<td style="text-align: left;">Yes</td>
-<td style="text-align: left;">[A-z][0-9]</td>
-<td style="text-align: left;">No</td>
-</tr>
-<tr>
-<td style="text-align: left;">Field name Private</td>
-<td style="text-align: left;">_camelCase</td>
-<td style="text-align: right;">50</td>
-<td style="text-align: left;">Yes</td>
-<td style="text-align: left;">No</td>
-<td style="text-align: left;">No</td>
-<td style="text-align: left;">Yes</td>
-<td style="text-align: left;">_[A-z][0-9]</td>
-<td style="text-align: left;">Yes</td>
-</tr>
-<tr>
-<td style="text-align: left;">Properties name</td>
-<td style="text-align: left;">PascalCase</td>
-<td style="text-align: right;">50</td>
-<td style="text-align: left;">Yes</td>
-<td style="text-align: left;">No</td>
-<td style="text-align: left;">No</td>
-<td style="text-align: left;">Yes</td>
-<td style="text-align: left;">[A-z][0-9]</td>
-<td style="text-align: left;">No</td>
-</tr>
-<tr>
-<td style="text-align: left;">Delegate name</td>
-<td style="text-align: left;">PascalCase</td>
-<td style="text-align: right;">128</td>
-<td style="text-align: left;">No</td>
-<td style="text-align: left;">No</td>
-<td style="text-align: left;">Yes</td>
-<td style="text-align: left;">Yes</td>
-<td style="text-align: left;">[A-z]</td>
-<td style="text-align: left;">No</td>
-</tr>
-<tr>
-<td style="text-align: left;">Enum type name</td>
-<td style="text-align: left;">PascalCase</td>
-<td style="text-align: right;">128</td>
-<td style="text-align: left;">Yes</td>
-<td style="text-align: left;">No</td>
-<td style="text-align: left;">No</td>
-<td style="text-align: left;">No</td>
-<td style="text-align: left;">[A-z]</td>
-<td style="text-align: left;">No</td>
-</tr>
-</tbody>
-</table>
 <h4 id="1-do-use-pascalcasing-for-class-names-and-method-names">1. Do use PascalCasing for class names and method names:<a class="headerlink" href="#1-do-use-pascalcasing-for-class-names-and-method-names" title="Permanent link">#</a></h4>
 <div class="language-csharp highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">ClientActivity</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="p">{</span>
@@ -2341,6 +2222,8 @@
 <li><a href="https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions">Common C# Coding Conventions</a></li>
 <li><a href="https://github.com/dotnet/runtime/blob/main/docs/coding-guidelines/coding-style.md">Github C# Coding Style</a></li>
 </ol>
+<h3 id="credits-to">Credits to<a class="headerlink" href="#credits-to" title="Permanent link">#</a></h3>
+<p><a href="https://github.com/ktaranov/naming-convention/blob/master/C%23%20Coding%20Standards%20and%20Naming%20Conventions.md">ktaranov</a></p>
 
 
 
