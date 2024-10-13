@@ -1,21 +1,5 @@
 # C# Coding Standards and Naming Conventions
 
-
-| Object Name               | Notation   | Length | Plural | Prefix | Suffix | Abbreviation | Char Mask          | Underscores |
-|:--------------------------|:-----------|-------:|:-------|:-------|:-------|:-------------|:-------------------|:------------|
-| Namespace name            | PascalCase |    128 | Yes    | Yes    | No     | No           | [A-z][0-9]         | No          |
-| Class name                | PascalCase |    128 | No     | No     | Yes    | No           | [A-z][0-9]         | No          |
-| Constructor name          | PascalCase |    128 | No     | No     | Yes    | No           | [A-z][0-9]         | No          |
-| Method name               | PascalCase |    128 | Yes    | No     | No     | No           | [A-z][0-9]         | No          |
-| Method arguments          | camelCase  |    128 | Yes    | No     | No     | Yes          | [A-z][0-9]         | No          |
-| Local variables           | camelCase  |     50 | Yes    | No     | No     | Yes          | [A-z][0-9]         | No          |
-| Constants name            | PascalCase |     50 | No     | No     | No     | No           | [A-z][0-9]         | No          |
-| Field name Public         | PascalCase |     50 | Yes    | No     | No     | Yes          | [A-z][0-9]         | No          |
-| Field name Private        | _camelCase |     50 | Yes    | No     | No     | Yes          | _[A-z][0-9]        | Yes         |
-| Properties name           | PascalCase |     50 | Yes    | No     | No     | Yes          | [A-z][0-9]         | No          |
-| Delegate name             | PascalCase |    128 | No     | No     | Yes    | Yes          | [A-z]              | No          |
-| Enum type name            | PascalCase |    128 | Yes    | No     | No     | No           | [A-z]              | No          |
-
 #### 1. Do use PascalCasing for class names and method names:
 
 ```csharp
@@ -455,3 +439,7 @@ DoSomething(foo: "someString", bar: 1);
 4. [MSDN Framework Design Guidelines](http://msdn.microsoft.com/en-us/library/ms229042.aspx)
 5. [Common C# Coding Conventions](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions)
 6. [Github C# Coding Style](https://github.com/dotnet/runtime/blob/main/docs/coding-guidelines/coding-style.md)
+
+### Credits to
+
+[ktaranov](https://github.com/ktaranov/naming-convention/blob/master/C%23%20Coding%20Standards%20and%20Naming%20Conventions.md)
