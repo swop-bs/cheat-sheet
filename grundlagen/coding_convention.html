@@ -11,6 +11,10 @@
         <link rel="canonical" href="https://aeup-cs.github.io/CheatSheet/grundlagen/coding_convention.html">
       
       
+        <link rel="prev" href="dateien.html">
+      
+      
+        <link rel="next" href="../ui/index.html">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -18,7 +22,7 @@
     
     
       
-        <title>C# Coding Standards and Naming Conventions - C# Cheat Sheet</title>
+        <title>Coding Conventions - C# Cheat Sheet</title>
       
     
     
@@ -119,7 +123,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              C# Coding Standards and Naming Conventions
+              Coding Conventions
             
           </span>
         </div>
@@ -262,8 +266,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -275,14 +281,16 @@
       
         
       
+        
+      
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -296,7 +304,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Grundlagen
@@ -382,6 +390,319 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Coding Conventions
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="coding_convention.html" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Coding Conventions
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-do-use-pascalcasing-for-class-names-and-method-names" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Do use PascalCasing for class names and method names:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-do-use-camelcasing-for-method-arguments-and-local-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Do use camelCasing for method arguments and local variables:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-do-not-use-hungarian-notation-or-any-other-type-identification-in-identifiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Do not use Hungarian notation or any other type identification in identifiers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-do-not-use-screaming-caps-for-constants-or-readonly-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Do not use Screaming Caps for constants or readonly variables:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-use-meaningful-names-for-variables-the-following-example-uses-seattlecustomers-for-customers-who-are-located-in-seattle" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Use meaningful names for variables. The following example uses seattleCustomers for customers who are located in Seattle:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-avoid-using-abbreviations-exceptions-abbreviations-commonly-used-as-names-such-as-id-xml-ftp-uri" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Avoid using Abbreviations. Exceptions: abbreviations commonly used as names, such as Id, Xml, Ftp, Uri.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-do-use-pascalcasing-or-camelcasing-depending-on-the-identifier-type-for-abbreviations-3-characters-or-more-2-chars-are-both-uppercase-when-pascalcasing-is-appropriate-or-inside-the-identifier" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Do use PascalCasing or camelCasing (Depending on the identifier type) for abbreviations 3 characters or more (2 chars are both uppercase when PascalCasing is appropriate or inside the identifier).:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-do-not-use-underscores-in-identifiers-exception-you-can-prefix-private-fields-with-an-underscore" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Do not use Underscores in identifiers. Exception: you can prefix private fields with an underscore:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-do-use-predefined-type-names-c-aliases-like-int-float-string-for-local-parameter-and-member-declarations-do-use-net-framework-names-like-int32-single-string-when-accessing-the-types-static-members-like-int32tryparse-or-stringjoin" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Do use predefined type names (C# aliases) like int, float, string for local, parameter and member declarations. Do use .NET Framework names like Int32, Single, String when accessing the type's static members like Int32.TryParse or String.Join.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-do-use-implicit-type-var-for-local-variable-declarations-exception-primitive-types-int-string-double-etc-use-predefined-names" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Do use implicit type var for local variable declarations. Exception: primitive types (int, string, double, etc) use predefined names.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-do-use-noun-or-noun-phrases-to-name-a-class" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. Do use noun or noun phrases to name a class.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-do-prefix-interfaces-with-the-letter-i-interface-names-are-noun-phrases-or-adjectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      12. Do prefix interfaces with the letter I. Interface names are noun (phrases) or adjectives.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-do-name-source-files-according-to-their-main-classes-exception-file-names-with-partial-classes-reflect-their-source-or-purpose-eg-designer-generated-etc" class="md-nav__link">
+    <span class="md-ellipsis">
+      13. Do name source files according to their main classes. Exception: file names with partial classes reflect their source or purpose, e.g. designer, generated, etc.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-do-organize-namespaces-with-a-clearly-defined-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      14. Do organize namespaces with a clearly defined structure:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-do-vertically-align-curly-brackets" class="md-nav__link">
+    <span class="md-ellipsis">
+      15. Do vertically align curly brackets:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-do-declare-all-member-variables-at-the-top-of-a-class-with-static-variables-at-the-very-top" class="md-nav__link">
+    <span class="md-ellipsis">
+      16. Do declare all member variables at the top of a class, with static variables at the very top.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17-do-use-singular-names-for-enums-exception-bit-field-enums" class="md-nav__link">
+    <span class="md-ellipsis">
+      17. Do use singular names for enums. Exception: bit field enums.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18-do-not-explicitly-specify-a-type-of-an-enum-or-values-of-enums-except-bit-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      18. Do not explicitly specify a type of an enum or values of enums (except bit fields):
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#19-do-not-use-an-enum-suffix-in-enum-type-names" class="md-nav__link">
+    <span class="md-ellipsis">
+      19. Do not use an "Enum" suffix in enum type names:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20-do-not-use-flag-or-flags-suffixes-in-enum-type-names" class="md-nav__link">
+    <span class="md-ellipsis">
+      20. Do not use "Flag" or "Flags" suffixes in enum type names:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#21-do-use-suffix-eventargs-at-creation-of-the-new-classes-comprising-the-information-on-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      21. Do use suffix EventArgs at creation of the new classes comprising the information on event:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#22-do-name-event-handlers-delegates-used-as-types-of-events-with-the-eventhandler-suffix-as-shown-in-the-following-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      22. Do name event handlers (delegates used as types of events) with the "EventHandler" suffix, as shown in the following example:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#23-do-not-create-names-of-parameters-in-methods-or-constructors-which-differ-only-by-the-register" class="md-nav__link">
+    <span class="md-ellipsis">
+      23. Do not create names of parameters in methods (or constructors) which differ only by the register:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#24-do-use-two-parameters-named-sender-and-e-in-event-handlers-the-sender-parameter-represents-the-object-that-raised-the-event-the-sender-parameter-is-typically-of-type-object-even-if-it-is-possible-to-employ-a-more-specific-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      24. Do use two parameters named sender and e in event handlers. The sender parameter represents the object that raised the event. The sender parameter is typically of type object, even if it is possible to employ a more specific type.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#25-do-use-suffix-exception-at-creation-of-the-new-classes-comprising-the-information-on-exception" class="md-nav__link">
+    <span class="md-ellipsis">
+      25. Do use suffix Exception at creation of the new classes comprising the information on exception:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#26-do-use-prefix-any-is-have-or-similar-keywords-for-boolean-identifier" class="md-nav__link">
+    <span class="md-ellipsis">
+      26. Do use prefix Any, Is, Have or similar keywords for boolean identifier:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#27-use-named-arguments-in-method-calls" class="md-nav__link">
+    <span class="md-ellipsis">
+      27. Use Named Arguments in method calls:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#official-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      Official Reference
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2044,6 +2365,44 @@
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Fußzeile" >
+        
+          
+          <a href="dateien.html" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Dateien">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Zurück
+              </span>
+              <div class="md-ellipsis">
+                Dateien
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../ui/index.html" class="md-footer__link md-footer__link--next" aria-label="Weiter: Oberflächenprogrammierung Einführung">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Weiter
+              </span>
+              <div class="md-ellipsis">
+                Oberflächenprogrammierung Einführung
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
