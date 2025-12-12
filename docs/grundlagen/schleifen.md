@@ -154,7 +154,7 @@ Diese Schleife ist equivalent zum [Array-Beispiel der for-Schleife](#array).
 
 #### Liste
 ``` cs
-List<string> cars = new List<string>;
+List<string> cars = new List<string>();
 cars.Add("Volvo");
 cars.Add("BMW");
 cars.Add("Ford");

@@ -21,7 +21,7 @@ StreamReader sr = new StreamReader("TestDatei.txt");
 sr.Close();
 ```
 
-1. Beim Erstellen des StreamReader bzw. StreamWriter-Objkets wird die Datei TestDatei.txt geöffnet.
+1. Beim Erstellen des StreamReader bzw. StreamWriter-Objekts wird die Datei TestDatei.txt geöffnet.
 2. Close() schließt die Datei und gibt sie somit wieder frei.
 
 ### using
@@ -116,7 +116,7 @@ class Program
 	static void main()
 	{
 		// Streams initialisieren (1)
-		using (StreamReader sr = new StreamReader("kleinBuchstaben.txt))
+		using (StreamReader sr = new StreamReader("kleinBuchstaben.txt"))
 		using (StreamWriter sw = new StreamWriter("grossBuchstaben.txt"))
 		{
 			// Erste Zeile lesen
@@ -127,7 +127,7 @@ class Program
 				// Inhalt der Zeile groß schreiben
 				string zeileGross = zeile.ToUpper();
 				// Grossgeschriebene Zeile in Textdatei schreiben
-				sw.writeLine(zeileGross);
+				sw.WriteLine(zeileGross);
 				// Nächste Zeile lesen
 				zeile = sr.ReadLine();
 			}

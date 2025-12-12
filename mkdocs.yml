@@ -27,7 +27,7 @@ nav:
       - Git Visual Studio Kurzübersicht: git/git_vs_short.md
     - Datenbankanbindung:
       - db/index.md
-      - Installation: db/datanbankanbindung.md
+      - Installation: db/datenbankanbindung.md
       - Verbindung herstellen: db/verbindung.md
       - Daten lesen: db/daten-lesen.md
       - Daten schreiben: db/daten-schreiben.md

@@ -16,14 +16,20 @@ namespace MySQLConnectionExample
             
             using (MySqlConnection con = new MySqlConnection(connectionString))
             {
+                con.Open();
                 try
                 {
                     // Schreiben von Daten in die Datenbank
-                    string insertQuery = @$"INSERT INTO person ({p.Id}, {p.Vorname}, {p.Nachname}, {p.GebDatum}, {p.Gehalt}) 
-                       VALUES (id, Vorname, Nachname, GebDatum, Gehalt)";
+                    string insertQuery = "INSERT INTO person (id, Vorname, Nachname, GebDatum, Gehalt) VALUES (@id, @vorname, @nachname, @gebDatum, @gehalt)";
 
                     using (MySqlCommand cmd = new MySqlCommand(insertQuery, con))
                     {
+                        cmd.Parameters.AddWithValue("@id", 1);
+                        cmd.Parameters.AddWithValue("@vorname", "Max");
+                        cmd.Parameters.AddWithValue("@nachname", "Mustermann");
+                        cmd.Parameters.AddWithValue("@gebDatum", new DateTime(2000, 1, 1));
+                        cmd.Parameters.AddWithValue("@gehalt", 3500.50);
+
                         cmd.ExecuteNonQuery();
                         Console.WriteLine("Datensatz erfolgreich hinzugefügt.");
                     }

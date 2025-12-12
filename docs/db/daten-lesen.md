@@ -8,7 +8,7 @@ MySqlDataReader rdr = cmd.ExecuteReader();
 
 while (rdr.Read())
 {
-    int id = rdr.GetInt32("Id");
+    int id = rdr.GetInt32("id");
     string vn = rdr.GetString("Vorname");
     string nn = rdr.GetString("Nachname");
     DateTime datum = rdr.GetDateTime("GebDatum");
