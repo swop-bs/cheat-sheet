@@ -6,11 +6,18 @@ nav:
     - Übersicht: index.md
     - Grundlagen:
         - String: grundlagen/string.md
-        #- Verzweigung: grundlagen/verzweigung.md
+        - Verzweigung: grundlagen/verzweigung.md
         - Schleifen: grundlagen/schleifen.md
-        - Events: grundlagen/events.md
         - Dateien: grundlagen/dateien.md
+        - Events: grundlagen/events.md
         - Coding Conventions: grundlagen/coding_convention.md
+    - Objektorientierung:
+        - Übersicht: oop/index.md
+        - Klassen & Objekte: oop/klasse_objekt.md
+        - Kapselung: oop/kapselung.md
+        - Vererbung: oop/vererbung.md
+        - Polymorphie: oop/polymorphie.md
+        - Abstraktion: oop/abstraktion.md
     - Oberflächenprogrammierung (WPF):
       - ui/index.md
       - WPF Projekt erstellen in Visual Studio: ui/create_wpf_project.md
@@ -44,7 +51,7 @@ nav:
       - Spielobjekt hinzufügen: gamedev/objekt_hinzufuegen.md
       - Spielobjekt bewegen: gamedev/objekt_bewegen.md
       - Signale (Events): gamedev/godot_events.md
-
+      
 theme: 
     name: material
     palette:
