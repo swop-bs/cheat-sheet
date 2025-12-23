@@ -69,7 +69,11 @@
          <lastmod>2025-12-23</lastmod>
     </url>
     <url>
-         <loc>https://aeup-cs.github.io/CheatSheet/grundlagen/coding_convention.html</loc>
+         <loc>https://aeup-cs.github.io/CheatSheet/grundlagen/coding_convention_cs.html</loc>
+         <lastmod>2025-12-23</lastmod>
+    </url>
+    <url>
+         <loc>https://aeup-cs.github.io/CheatSheet/grundlagen/coding_convention_java.html</loc>
          <lastmod>2025-12-23</lastmod>
     </url>
     <url>
@@ -78,6 +82,10 @@
     </url>
     <url>
          <loc>https://aeup-cs.github.io/CheatSheet/grundlagen/events.html</loc>
+         <lastmod>2025-12-23</lastmod>
+    </url>
+    <url>
+         <loc>https://aeup-cs.github.io/CheatSheet/grundlagen/exceptions.html</loc>
          <lastmod>2025-12-23</lastmod>
     </url>
     <url>

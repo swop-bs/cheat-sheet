@@ -5,13 +5,13 @@
       
       
       
-        <link rel="canonical" href="https://aeup-cs.github.io/CheatSheet/grundlagen/coding_convention.html">
+        <link rel="canonical" href="https://aeup-cs.github.io/CheatSheet/grundlagen/coding_convention_cs.html">
       
       
         <link rel="prev" href="events.html">
       
       
-        <link rel="next" href="../oop/index.html">
+        <link rel="next" href="coding_convention_java.html">
       
       
         
@@ -22,7 +22,7 @@
     
     
       
-        <title>Coding Conventions - Cheat Sheet</title>
+        <title>C# - Cheat Sheet</title>
       
     
     
@@ -87,7 +87,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#c-coding-standards-and-naming-conventions" class="md-skip">
+        <a href="#c-coding-conventions" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -123,7 +123,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Coding Conventions
+              C#
             
           </span>
         </div>
@@ -282,6 +282,8 @@
   
     
     
+      
+        
       
         
       
@@ -454,6 +456,34 @@
   
   
     <li class="md-nav__item">
+      <a href="exceptions.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exception Handling
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="events.html" class="md-nav__link">
         
   
@@ -483,6 +513,61 @@
   
   
   
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_7" id="__nav_2_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coding Conventions
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Coding Conventions
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
     <li class="md-nav__item md-nav__item--active">
       
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
@@ -498,7 +583,7 @@
   <span class="md-ellipsis">
     
   
-    Coding Conventions
+    C#
   
 
     
@@ -509,14 +594,14 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="coding_convention.html" class="md-nav__link md-nav__link--active">
+      <a href="coding_convention_cs.html" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
     
   
-    Coding Conventions
+    C#
   
 
     
@@ -542,6 +627,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#c-coding-standards-and-naming-conventions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C# Coding Standards and Naming Conventions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="C# Coding Standards and Naming Conventions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#1-do-use-pascalcasing-for-class-names-and-method-names" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -551,8 +648,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#2-do-use-camelcasing-for-method-arguments-and-local-variables" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -562,8 +659,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#3-do-not-use-hungarian-notation-or-any-other-type-identification-in-identifiers" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -573,8 +670,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#4-do-not-use-screaming-caps-for-constants-or-readonly-variables" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -584,8 +681,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#5-use-meaningful-names-for-variables-the-following-example-uses-seattlecustomers-for-customers-who-are-located-in-seattle" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -595,8 +692,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#6-avoid-using-abbreviations-exceptions-abbreviations-commonly-used-as-names-such-as-id-xml-ftp-uri" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -606,8 +703,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#7-do-use-pascalcasing-or-camelcasing-depending-on-the-identifier-type-for-abbreviations-3-characters-or-more-2-chars-are-both-uppercase-when-pascalcasing-is-appropriate-or-inside-the-identifier" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -617,8 +714,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#8-do-not-use-underscores-in-identifiers-exception-you-can-prefix-private-fields-with-an-underscore" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -628,8 +725,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#9-do-use-predefined-type-names-c-aliases-like-int-float-string-for-local-parameter-and-member-declarations-do-use-net-framework-names-like-int32-single-string-when-accessing-the-types-static-members-like-int32tryparse-or-stringjoin" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -639,8 +736,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#10-do-use-implicit-type-var-for-local-variable-declarations-exception-primitive-types-int-string-double-etc-use-predefined-names" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -650,8 +747,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#11-do-use-noun-or-noun-phrases-to-name-a-class" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -661,8 +758,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#12-do-prefix-interfaces-with-the-letter-i-interface-names-are-noun-phrases-or-adjectives" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -672,8 +769,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#13-do-name-source-files-according-to-their-main-classes-exception-file-names-with-partial-classes-reflect-their-source-or-purpose-eg-designer-generated-etc" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -683,8 +780,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#14-do-organize-namespaces-with-a-clearly-defined-structure" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -694,8 +791,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#15-do-vertically-align-curly-brackets" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -705,8 +802,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#16-do-declare-all-member-variables-at-the-top-of-a-class-with-static-variables-at-the-very-top" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -716,8 +813,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#17-do-use-singular-names-for-enums-exception-bit-field-enums" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -727,8 +824,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#18-do-not-explicitly-specify-a-type-of-an-enum-or-values-of-enums-except-bit-fields" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -738,8 +835,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#19-do-not-use-an-enum-suffix-in-enum-type-names" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -749,8 +846,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#20-do-not-use-flag-or-flags-suffixes-in-enum-type-names" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -760,8 +857,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#21-do-use-suffix-eventargs-at-creation-of-the-new-classes-comprising-the-information-on-event" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -771,8 +868,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#22-do-name-event-handlers-delegates-used-as-types-of-events-with-the-eventhandler-suffix-as-shown-in-the-following-example" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -782,8 +879,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#23-do-not-create-names-of-parameters-in-methods-or-constructors-which-differ-only-by-the-register" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -793,8 +890,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#24-do-use-two-parameters-named-sender-and-e-in-event-handlers-the-sender-parameter-represents-the-object-that-raised-the-event-the-sender-parameter-is-typically-of-type-object-even-if-it-is-possible-to-employ-a-more-specific-type" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -804,8 +901,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#25-do-use-suffix-exception-at-creation-of-the-new-classes-comprising-the-information-on-exception" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -815,8 +912,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#26-do-use-prefix-any-is-have-or-similar-keywords-for-boolean-identifier" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -826,8 +923,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#27-use-named-arguments-in-method-calls" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -835,6 +932,11 @@
       
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -869,6 +971,42 @@
     </ul>
   
 </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="coding_convention_java.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Java
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
       
     </li>
   
@@ -2209,6 +2347,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#c-coding-standards-and-naming-conventions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C# Coding Standards and Naming Conventions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="C# Coding Standards and Naming Conventions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#1-do-use-pascalcasing-for-class-names-and-method-names" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2218,8 +2368,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#2-do-use-camelcasing-for-method-arguments-and-local-variables" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2229,8 +2379,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#3-do-not-use-hungarian-notation-or-any-other-type-identification-in-identifiers" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2240,8 +2390,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#4-do-not-use-screaming-caps-for-constants-or-readonly-variables" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2251,8 +2401,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#5-use-meaningful-names-for-variables-the-following-example-uses-seattlecustomers-for-customers-who-are-located-in-seattle" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2262,8 +2412,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#6-avoid-using-abbreviations-exceptions-abbreviations-commonly-used-as-names-such-as-id-xml-ftp-uri" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2273,8 +2423,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#7-do-use-pascalcasing-or-camelcasing-depending-on-the-identifier-type-for-abbreviations-3-characters-or-more-2-chars-are-both-uppercase-when-pascalcasing-is-appropriate-or-inside-the-identifier" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2284,8 +2434,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#8-do-not-use-underscores-in-identifiers-exception-you-can-prefix-private-fields-with-an-underscore" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2295,8 +2445,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#9-do-use-predefined-type-names-c-aliases-like-int-float-string-for-local-parameter-and-member-declarations-do-use-net-framework-names-like-int32-single-string-when-accessing-the-types-static-members-like-int32tryparse-or-stringjoin" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2306,8 +2456,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#10-do-use-implicit-type-var-for-local-variable-declarations-exception-primitive-types-int-string-double-etc-use-predefined-names" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2317,8 +2467,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#11-do-use-noun-or-noun-phrases-to-name-a-class" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2328,8 +2478,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#12-do-prefix-interfaces-with-the-letter-i-interface-names-are-noun-phrases-or-adjectives" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2339,8 +2489,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#13-do-name-source-files-according-to-their-main-classes-exception-file-names-with-partial-classes-reflect-their-source-or-purpose-eg-designer-generated-etc" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2350,8 +2500,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#14-do-organize-namespaces-with-a-clearly-defined-structure" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2361,8 +2511,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#15-do-vertically-align-curly-brackets" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2372,8 +2522,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#16-do-declare-all-member-variables-at-the-top-of-a-class-with-static-variables-at-the-very-top" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2383,8 +2533,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#17-do-use-singular-names-for-enums-exception-bit-field-enums" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2394,8 +2544,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#18-do-not-explicitly-specify-a-type-of-an-enum-or-values-of-enums-except-bit-fields" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2405,8 +2555,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#19-do-not-use-an-enum-suffix-in-enum-type-names" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2416,8 +2566,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#20-do-not-use-flag-or-flags-suffixes-in-enum-type-names" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2427,8 +2577,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#21-do-use-suffix-eventargs-at-creation-of-the-new-classes-comprising-the-information-on-event" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2438,8 +2588,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#22-do-name-event-handlers-delegates-used-as-types-of-events-with-the-eventhandler-suffix-as-shown-in-the-following-example" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2449,8 +2599,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#23-do-not-create-names-of-parameters-in-methods-or-constructors-which-differ-only-by-the-register" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2460,8 +2610,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#24-do-use-two-parameters-named-sender-and-e-in-event-handlers-the-sender-parameter-represents-the-object-that-raised-the-event-the-sender-parameter-is-typically-of-type-object-even-if-it-is-possible-to-employ-a-more-specific-type" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2471,8 +2621,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#25-do-use-suffix-exception-at-creation-of-the-new-classes-comprising-the-information-on-exception" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2482,8 +2632,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#26-do-use-prefix-any-is-have-or-similar-keywords-for-boolean-identifier" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2493,8 +2643,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#27-use-named-arguments-in-method-calls" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2502,6 +2652,11 @@
       
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2588,6 +2743,24 @@
   
 
       
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="coding_convention_cs.html" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Coding Conventions
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
     </ol>
   </nav>
 
@@ -2598,7 +2771,8 @@
 
 
 
-<h1 id="c-coding-standards-and-naming-conventions">C# Coding Standards and Naming Conventions<a class="headerlink" href="#c-coding-standards-and-naming-conventions" title="Permanent link">#</a></h1>
+<h1 id="c-coding-conventions">C# Coding Conventions<a class="headerlink" href="#c-coding-conventions" title="Permanent link">#</a></h1>
+<h2 id="c-coding-standards-and-naming-conventions">C# Coding Standards and Naming Conventions<a class="headerlink" href="#c-coding-standards-and-naming-conventions" title="Permanent link">#</a></h2>
 <h4 id="1-do-use-pascalcasing-for-class-names-and-method-names">1. Do use PascalCasing for class names and method names:<a class="headerlink" href="#1-do-use-pascalcasing-for-class-names-and-method-names" title="Permanent link">#</a></h4>
 <div class="language-csharp highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">ClientActivity</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="p">{</span>
@@ -2980,13 +3154,13 @@
         
         
           
-          <a href="../oop/index.html" class="md-footer__link md-footer__link--next" aria-label="Weiter: Übersicht">
+          <a href="coding_convention_java.html" class="md-footer__link md-footer__link--next" aria-label="Weiter: Java">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Weiter
               </span>
               <div class="md-ellipsis">
-                Übersicht
+                Java
               </div>
             </div>
             <div class="md-footer__button md-icon">
