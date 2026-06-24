@@ -76,6 +76,7 @@ theme:
     features:
       - content.code.copy
       - content.code.annotate
+      - content.tabs.link
       - search.suggest
       - search.share
       - navigation.indexes
