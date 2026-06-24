@@ -11,55 +11,107 @@ Ist eine Datei geöffnet, kann Sie (je nach Verwendungszweck) eventuell nicht vo
 Um die Datei für andere Prozesse wieder frei zu geben, muss der Stream bzw. die Datei wieder geschlossen werden:
 
 ### Close()
-``` cs
-// StreamReader initialisieren (Datei öffnen) (1)
-StreamReader sr = new StreamReader("TestDatei.txt");
+=== "C#"
 
-// StreamReader wird in diesem Abschnitt verwendet
+    ``` cs
+    // StreamReader initialisieren (Datei öffnen) (1)
+    StreamReader sr = new StreamReader("TestDatei.txt");
 
-// Datei freigeben (2)
-sr.Close();
-```
+    // StreamReader wird in diesem Abschnitt verwendet
 
-1. Beim Erstellen des StreamReader bzw. StreamWriter-Objekts wird die Datei TestDatei.txt geöffnet.
-2. Close() schließt die Datei und gibt sie somit wieder frei.
+    // Datei freigeben (2)
+    sr.Close();
+    ```
+
+    1. Beim Erstellen des StreamReader bzw. StreamWriter-Objekts wird die Datei TestDatei.txt geöffnet.
+    2. Close() schließt die Datei und gibt sie somit wieder frei.
+
+=== "Java"
+
+    ``` java
+    import java.io.BufferedReader;
+    import java.io.FileReader;
+    import java.io.IOException;
+
+    // BufferedReader initialisieren (Datei öffnen)
+    try {
+        BufferedReader br = new BufferedReader(new FileReader("TestDatei.txt"));
+
+        // BufferedReader wird hier verwendet
+
+        // Datei freigeben
+        br.close();
+    } catch (IOException e) {
+        e.printStackTrace();
+    }
+    ```
 
 ### using
 Da das Schließen der Datei oft vergessen wird, kann alternativ `using` verwendet werden:
 
-``` cs
-// StreamReader initialisieren (1)
-using (StreamReader sr = new StreamReader("TestDatei.txt"))
-{
-	// StreamReader wird in diesem Codeblock verwendet
-} 
-// Datei wird automatisch freigegeben (2)
-```
+=== "C#"
 
-1. Beim Erstellen des StreamReader bzw. StreamWriter-Objkets wird die Datei TestDatei.txt geöffnet.
-2. Beim Verlassen des Codeblocks wird der StreamReader automatisch geschlossen. Kein explizites aufrufen von Close() nötig.
+    ``` cs
+    // StreamReader initialisieren (1)
+    using (StreamReader sr = new StreamReader("TestDatei.txt"))
+    {
+    	// StreamReader wird in diesem Codeblock verwendet
+    } 
+    // Datei wird automatisch freigegeben (2)
+    ```
+
+    1. Beim Erstellen des StreamReader bzw. StreamWriter-Objkets wird die Datei TestDatei.txt geöffnet.
+    2. Beim Verlassen des Codeblocks wird der StreamReader automatisch geschlossen. Kein explizites aufrufen von Close() nötig.
+
+=== "Java"
+
+    ``` java
+    // Try-with-resources (seit Java 7)
+    try (BufferedReader br = new BufferedReader(new FileReader("TestDatei.txt"))) {
+        // BufferedReader wird hier verwendet
+    } catch (IOException e) {
+        e.printStackTrace();
+    }
+    // Datei wird automatisch freigegeben
+    ```
 
 ## StreamReader (Datei lesen)
 
 In der Regel werden Dateien zeilenweise mittels ReadLine() gelesen:
 
-```csharp
-// StreamReader Initialisieren (1)
-using (StreamReader sr = new StreamReader("TestDatei.txt"))
-{ 
-	// Erste Zeile einlesen (2)
-	string line = sr.ReadLine();
-    // Solange es etwas zu lesen gibt
-    while (line != null)
-    {
-        // Verarbeiten der Zeile (3)
-        Console.WriteLine(line);
-        // Einlesen der nächsten Zeile (4)
-        line = sr.ReadLine();
-    }
-}
+=== "C#"
 
-```
+    ```csharp
+    // StreamReader Initialisieren (1)
+    using (StreamReader sr = new StreamReader("TestDatei.txt"))
+    { 
+    	// Erste Zeile einlesen (2)
+    	string line = sr.ReadLine();
+        // Solange es etwas zu lesen gibt
+        while (line != null)
+        {
+            // Verarbeiten der Zeile (3)
+            Console.WriteLine(line);
+            // Einlesen der nächsten Zeile (4)
+            line = sr.ReadLine();
+        }
+    }
+
+    ```
+
+=== "Java"
+
+    ``` java
+    try (BufferedReader br = new BufferedReader(new FileReader("TestDatei.txt"))) {
+        String line = br.readLine();
+        while (line != null) {
+            System.out.println(line);
+            line = br.readLine();
+        }
+    } catch (IOException e) {
+        e.printStackTrace();
+    }
+    ```
 
 !!! info
 
@@ -83,16 +135,34 @@ using (StreamReader sr = new StreamReader("TestDatei.txt"))
 
 In der Regel werden Dateien zeilenweise mittels WriteLine() geschrieben:
 
-```csharp
-// StreamWriter Initialisieren (1)
-using (StreamWriter sw = new StreamWriter("TestDatei.txt"))
-{
-	// Schreibe erste Zeile in TestDatei.txt
-	sw.WriteLine("Hello World!!");
-	// Schreibe zweite Zeile in TestDatei.txt
-	sw.WriteLine("From the StreamWriter class");
-} 
-```
+=== "C#"
+
+    ```csharp
+    // StreamWriter Initialisieren (1)
+    using (StreamWriter sw = new StreamWriter("TestDatei.txt"))
+    {
+    	// Schreibe erste Zeile in TestDatei.txt
+    	sw.WriteLine("Hello World!!");
+    	// Schreibe zweite Zeile in TestDatei.txt
+    	sw.WriteLine("From the StreamWriter class");
+    } 
+    ```
+
+=== "Java"
+
+    ``` java
+    import java.io.BufferedWriter;
+    import java.io.FileWriter;
+
+    try (BufferedWriter bw = new BufferedWriter(new FileWriter("TestDatei.txt"))) {
+        bw.write("Hello World!!");
+        bw.newLine(); // Neue Zeile
+        bw.write("From the StreamWriter class");
+        bw.newLine();
+    } catch (IOException e) {
+        e.printStackTrace();
+    }
+    ```
 
 !!! info
 
@@ -110,33 +180,57 @@ using (StreamWriter sw = new StreamWriter("TestDatei.txt"))
 
 In diesem Beispiel wird ein Text einer Datei in Großbuchstaben umgewandlet:
 
-```csharp
-class Program
-{
-	static void main()
-	{
-		// Streams initialisieren (1)
-		using (StreamReader sr = new StreamReader("kleinBuchstaben.txt"))
-		using (StreamWriter sw = new StreamWriter("grossBuchstaben.txt"))
-		{
-			// Erste Zeile lesen
-			string zeile = sr.ReadLine();
-			// Solange es etwas zu lesen gibt
-			while (zeile != null)
-			{
-				// Inhalt der Zeile groß schreiben
-				string zeileGross = zeile.ToUpper();
-				// Grossgeschriebene Zeile in Textdatei schreiben
-				sw.WriteLine(zeileGross);
-				// Nächste Zeile lesen
-				zeile = sr.ReadLine();
-			}
-		}
-		// Streams werden automatisch geschlossen
-	}
-}
+=== "C#"
 
-```
+    ```csharp
+    class Program
+    {
+    	static void main()
+    	{
+    		// Streams initialisieren (1)
+    		using (StreamReader sr = new StreamReader("kleinBuchstaben.txt"))
+    		using (StreamWriter sw = new StreamWriter("grossBuchstaben.txt"))
+    		{
+    			// Erste Zeile lesen
+    			string zeile = sr.ReadLine();
+    			// Solange es etwas zu lesen gibt
+    			while (zeile != null)
+    			{
+    				// Inhalt der Zeile groß schreiben
+    				string zeileGross = zeile.ToUpper();
+    				// Grossgeschriebene Zeile in Textdatei schreiben
+    				sw.WriteLine(zeileGross);
+    				// Nächste Zeile lesen
+    				zeile = sr.ReadLine();
+    			}
+    		}
+    		// Streams werden automatisch geschlossen
+    	}
+    }
+
+    ```
+
+=== "Java"
+
+    ``` java
+    public class Program {
+        public static void main(String[] args) {
+            try (BufferedReader br = new BufferedReader(new FileReader("kleinBuchstaben.txt"));
+                 BufferedWriter bw = new BufferedWriter(new FileWriter("grossBuchstaben.txt"))) {
+
+                String zeile = br.readLine();
+                while (zeile != null) {
+                    String zeileGross = zeile.toUpperCase();
+                    bw.write(zeileGross);
+                    bw.newLine();
+                    zeile = br.readLine();
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+    ```
 
 !!! info
 	using kann auch hintereinander geschrieben werden, um mehrere Objekte zu verwalten.

@@ -1,6 +1,6 @@
-# C# Dokumentation
+# Coding Cheat Sheet
 
-Diese Webseite bietet eine umfassende Übersicht über C# und deckt wichtige Themen wie Grundlagen, Oberflächenprogrammierung mit WPF, Datenbankanbindung, Serialisierung, Reflection und Spieleentwicklung ab. 
+Diese Webseite bietet eine umfassende Übersicht über C# (und Java im Bereich Grundlagen/OOP) und deckt wichtige Themen wie Grundlagen, Oberflächenprogrammierung mit WPF, Datenbankanbindung, Serialisierung, Reflection und Spieleentwicklung ab. 
 
 ## Themenübersicht:
 

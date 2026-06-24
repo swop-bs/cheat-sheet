@@ -1,4 +1,4 @@
-site_name: C# Cheat Sheet
+site_name: Coding Cheat Sheet
 
 site_url: https://aeup-cs.github.io/CheatSheet/
 
@@ -9,8 +9,11 @@ nav:
         - Verzweigung: grundlagen/verzweigung.md
         - Schleifen: grundlagen/schleifen.md
         - Dateien: grundlagen/dateien.md
+        - Exception Handling: grundlagen/exceptions.md
         - Events: grundlagen/events.md
-        - Coding Conventions: grundlagen/coding_convention.md
+        - Coding Conventions:
+            - C#: grundlagen/coding_convention_cs.md
+            - Java: grundlagen/coding_convention_java.md
     - Objektorientierung:
         - Übersicht: oop/index.md
         - Klassen & Objekte: oop/klasse_objekt.md
@@ -98,6 +101,8 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.mark
   - pymdownx.tilde
+  - pymdownx.tabbed:
+      alternate_style: true
   - def_list
   - pymdownx.tasklist:
       custom_checkbox: true

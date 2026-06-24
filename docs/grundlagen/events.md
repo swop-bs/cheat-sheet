@@ -18,51 +18,86 @@ In C# werden Events verwendet, um die Ereignisbehandlung zu ermöglichen. Dies i
 
 Ein einfaches Beispiel zur Veranschaulichung:
 
-```csharp
-public class Sensor 
-{
-    private Alarm _alarm; // Referenz auf ein Alarm-Objekt
-    private Logger _logger; // Referenz auf ein Logger-Objekt
-    private int _threshold = 100; // Definierter Schwellenwert
+=== "C#"
 
-    // Konstruktor, der Alarm- und Logger-Objekte akzeptiert und speichert
-    public Sensor(Alarm a, Logger l) 
+    ```csharp
+    public class Sensor 
     {
-        _alarm = a;
-        _logger = l;
-    }
+        private Alarm _alarm; // Referenz auf ein Alarm-Objekt
+        private Logger _logger; // Referenz auf ein Logger-Objekt
+        private int _threshold = 100; // Definierter Schwellenwert
 
-    // Methode zur Überprüfung des tatsächlichen Wertes im Vergleich zum Schwellenwert
-    public void CheckThreshold(int actualValue) 
-    {
-        // Wenn der tatsächliche Wert den Schwellenwert überschreitet
-        if (actualValue > _threshold) 
+        // Konstruktor, der Alarm- und Logger-Objekte akzeptiert und speichert
+        public Sensor(Alarm a, Logger l) 
         {
-            _alarm.Ring(); // Alarm auslösen
-            _logger.LogThresholdReached(); // Protokolleintrag erstellen
+            _alarm = a;
+            _logger = l;
+        }
+
+        // Methode zur Überprüfung des tatsächlichen Wertes im Vergleich zum Schwellenwert
+        public void CheckThreshold(int actualValue) 
+        {
+            // Wenn der tatsächliche Wert den Schwellenwert überschreitet
+            if (actualValue > _threshold) 
+            {
+                _alarm.Ring(); // Alarm auslösen
+                _logger.LogThresholdReached(); // Protokolleintrag erstellen
+            }
         }
     }
-}
 
-public class Alarm 
-{
-    // Methode zum Auslösen des Alarms
-    public void Ring() 
+    public class Alarm 
     {
-        Console.WriteLine("Alarm: Threshold reached!");
+        // Methode zum Auslösen des Alarms
+        public void Ring() 
+        {
+            Console.WriteLine("Alarm: Threshold reached!");
+        }
     }
-}
 
-public class Logger 
-{
-    // Methode zum Protokollieren, dass der Schwellenwert erreicht wurde
-    public void LogThresholdReached() 
+    public class Logger 
     {
-        Console.WriteLine("Logger: Threshold reached! Logging data...");
+        // Methode zum Protokollieren, dass der Schwellenwert erreicht wurde
+        public void LogThresholdReached() 
+        {
+            Console.WriteLine("Logger: Threshold reached! Logging data...");
+        }
     }
-}
+    ```
 
-```
+=== "Java"
+
+    ``` java
+    public class Sensor {
+        private Alarm alarm;
+        private Logger logger;
+        private int threshold = 100;
+
+        public Sensor(Alarm a, Logger l) {
+            this.alarm = a;
+            this.logger = l;
+        }
+
+        public void checkThreshold(int actualValue) {
+            if (actualValue > threshold) {
+                alarm.ring();
+                logger.logThresholdReached();
+            }
+        }
+    }
+
+    public class Alarm {
+        public void ring() {
+            System.out.println("Alarm: Threshold reached!");
+        }
+    }
+
+    public class Logger {
+        public void logThresholdReached() {
+            System.out.println("Logger: Threshold reached! Logging data...");
+        }
+    }
+    ```
 
 Die `Sensor`-Klasse enthält Referenzen auf `Alarm`- und `Logger`-Objekte und überprüft, ob ein gegebener Wert einen bestimmten Schwellenwert überschreitet. Wenn der Wert den Schwellenwert überschreitet, wird ein Alarm ausgelöst und ein Protokolleintrag erstellt.
 
@@ -88,64 +123,128 @@ Eine bessere Lösung zur Vermeidung dieser Probleme ist die Verwendung von Event
 
 Hier ist ein Beispiel, wie dies mit Events aussehen könnte:
 
-```csharp
-using System;
+=== "C#"
 
-public class Sensor 
-{
-    private int _threshold = 100;
+    ```csharp
+    using System;
 
-    // Event declaration
-    public event EventHandler ThresholdReached;
-
-    public void CheckThreshold(int actualValue) 
+    public class Sensor 
     {
-        if (actualValue > _threshold) 
+        private int _threshold = 100;
+
+        // Event declaration
+        public event EventHandler ThresholdReached;
+
+        public void CheckThreshold(int actualValue) 
         {
-            OnThresholdReached(EventArgs.Empty);
+            if (actualValue > _threshold) 
+            {
+                OnThresholdReached(EventArgs.Empty);
+            }
+        }
+
+        protected virtual void OnThresholdReached(EventArgs e)
+        {
+            ThresholdReached?.Invoke(this, e);
         }
     }
 
-    protected virtual void OnThresholdReached(EventArgs e)
+    public class Alarm 
     {
-        ThresholdReached?.Invoke(this, e);
+        public void OnThresholdReached(object sender, EventArgs e) 
+        {
+            Console.WriteLine("Alarm: Threshold reached!");
+        }
     }
-}
 
-public class Alarm 
-{
-    public void OnThresholdReached(object sender, EventArgs e) 
+    public class Logger 
     {
-        Console.WriteLine("Alarm: Threshold reached!");
+        public void OnThresholdReached(object sender, EventArgs e) 
+        {
+            Console.WriteLine("Logger: Threshold reached! Logging data...");
+        }
     }
-}
 
-public class Logger 
-{
-    public void OnThresholdReached(object sender, EventArgs e) 
+    public class Program 
     {
-        Console.WriteLine("Logger: Threshold reached! Logging data...");
+        static void Main(string[] args) 
+        {
+            Sensor sensor = new Sensor();
+
+            Alarm alarm = new Alarm();
+            Logger logger = new Logger();
+
+            // Subscribe to the event
+            sensor.ThresholdReached += alarm.OnThresholdReached;
+            sensor.ThresholdReached += logger.OnThresholdReached;
+
+            // Simulate adding values to the sensor
+            sensor.CheckThreshold(105); // This should trigger the event
+        }
     }
-}
+    ```
 
-public class Program 
-{
-    static void Main(string[] args) 
-    {
-        Sensor sensor = new Sensor();
+=== "Java"
 
-        Alarm alarm = new Alarm();
-        Logger logger = new Logger();
+    ``` java
+    import java.util.ArrayList;
+    import java.util.List;
 
-        // Subscribe to the event
-        sensor.ThresholdReached += alarm.OnThresholdReached;
-        sensor.ThresholdReached += logger.OnThresholdReached;
-
-        // Simulate adding values to the sensor
-        sensor.CheckThreshold(105); // This should trigger the event
+    // Interface für den Listener (Observer Pattern)
+    interface ThresholdListener {
+        void onThresholdReached();
     }
-}
-```
+
+    public class Sensor {
+        private int threshold = 100;
+        private List<ThresholdListener> listeners = new ArrayList<>();
+
+        public void addListener(ThresholdListener listener) {
+            listeners.add(listener);
+        }
+
+        public void checkThreshold(int actualValue) {
+            if (actualValue > threshold) {
+                notifyListeners();
+            }
+        }
+
+        private void notifyListeners() {
+            for (ThresholdListener listener : listeners) {
+                listener.onThresholdReached();
+            }
+        }
+    }
+
+    public class Alarm implements ThresholdListener {
+        @Override
+        public void onThresholdReached() {
+            System.out.println("Alarm: Threshold reached!");
+        }
+    }
+
+    public class Logger implements ThresholdListener {
+        @Override
+        public void onThresholdReached() {
+            System.out.println("Logger: Threshold reached! Logging data...");
+        }
+    }
+
+    public class Main {
+        public static void main(String[] args) {
+            Sensor sensor = new Sensor();
+            Alarm alarm = new Alarm();
+            Logger logger = new Logger();
+
+            // Listener hinzufügen
+            sensor.addListener(alarm);
+            sensor.addListener(logger);
+
+            // Wert prüfen
+            sensor.checkThreshold(105);
+        }
+    }
+    ```
 
 ### Vorteile der Verwendung von Events:
 

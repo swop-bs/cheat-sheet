@@ -13,25 +13,50 @@ In C# steuern Modifizierer, wer auf Klassenmember zugreifen darf:
 ## Properties (Eigenschaften)
 Statt öffentliche Felder (`public int Speed;`) zu nutzen, verwendet man in C# **Properties** mit `get` und `set` Accessoren.
 
-```csharp
-public class BankKonto
-{
-    private decimal _kontostand; // Privates Feld
+=== "C#"
 
-    public decimal Kontostand
+    ```csharp
+    public class BankKonto
     {
-        get { return _kontostand; } // Lesezugriff erlaubt
-        // set ist privat oder fehlt -> Schreibschutz von außen
-    }
+        private decimal _kontostand; // Privates Feld
 
-    public void Einzahlen(decimal betrag)
-    {
-        if (betrag > 0)
+        public decimal Kontostand
         {
-            _kontostand += betrag;
+            get { return _kontostand; } // Lesezugriff erlaubt
+            // set ist privat oder fehlt -> Schreibschutz von außen
+        }
+
+        public void Einzahlen(decimal betrag)
+        {
+            if (betrag > 0)
+            {
+                _kontostand += betrag;
+            }
         }
     }
-}
-```
+    ```
+
+=== "Java"
+
+    ``` java
+    import java.math.BigDecimal;
+
+    public class BankKonto {
+        private BigDecimal kontostand = BigDecimal.ZERO; // Privates Feld
+
+        // Getter erlauben Lesezugriff
+        public BigDecimal getKontostand() { 
+            return kontostand; 
+        }
+
+        // Kein Setter -> Schreibschutz von außen
+
+        public void einzahlen(BigDecimal betrag) {
+            if (betrag.compareTo(BigDecimal.ZERO) > 0) {
+                kontostand = kontostand.add(betrag);
+            }
+        }
+    }
+    ```
 
 Mit Kapselung zwingen wir den Benutzer der Klasse, die Methode `Einzahlen` zu nutzen (die Validierung enthalten kann), anstatt den `_kontostand` direkt beliebig zu ändern.

@@ -1,4 +1,6 @@
-# C# Coding Standards and Naming Conventions
+# C# Coding Conventions
+
+## C# Coding Standards and Naming Conventions
 
 #### 1. Do use PascalCasing for class names and method names:
 
