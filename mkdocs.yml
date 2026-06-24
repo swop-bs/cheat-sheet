@@ -39,6 +39,10 @@ nav:
       - Daten lesen: db/daten-lesen.md
       - Daten schreiben: db/daten-schreiben.md
       - Beispiel: db/beispiel.md
+    - Serialisierung:
+      - serialisierung/index.md
+      - JSON (System.Text.Json): serialisierung/json.md
+      - XML (System.Xml.Serialization): serialisierung/xml.md
     - Reflection:
       - reflection/index.md
       - Beispielklasse Mitarbeiter: reflection/klasse-mitarbeiter.md
