@@ -274,3 +274,125 @@ Diese Schleife ist equivalent zum [Array-Beispiel der for-Schleife](#array).
     Ford
     Mazda
     ```
+
+## Eindeutige Werte in einer Liste sammeln
+
+Häufig steht ein Wert in vielen Datensätzen mehrfach, und man braucht ihn nur einmal – zum Beispiel, um anschließend Gruppe für Gruppe weiterzuarbeiten.
+
+Das Muster dafür ist immer gleich: eine zweite, zunächst leere Liste anlegen, alle Datensätze durchlaufen und jeden Wert nur dann aufnehmen, wenn er noch nicht enthalten ist. Ob er schon enthalten ist, beantwortet `Contains`.
+
+=== "C#"
+
+    ``` csharp
+    List<string> bestellungen = new List<string>();
+    bestellungen.Add("Fürth");
+    bestellungen.Add("Ansbach");
+    bestellungen.Add("Fürth");
+    bestellungen.Add("Bamberg");
+    bestellungen.Add("Ansbach");
+
+    List<string> orte = new List<string>();
+
+    foreach (string ort in bestellungen)
+    {
+        // Contains liefert true, wenn der Wert schon in der Liste steht (1)
+        if (!orte.Contains(ort))
+        {
+            orte.Add(ort);
+        }
+    }
+
+    foreach (string ort in orte)
+    {
+        Console.WriteLine(ort);
+    }
+    ```
+
+    1. Das Ausrufezeichen kehrt die Bedingung um: aufgenommen wird nur, was **noch nicht** enthalten ist.
+
+=== "Java"
+
+    ``` java
+    import java.util.ArrayList;
+    import java.util.List;
+
+    List<String> bestellungen = new ArrayList<>();
+    bestellungen.add("Fürth");
+    bestellungen.add("Ansbach");
+    bestellungen.add("Fürth");
+    bestellungen.add("Bamberg");
+    bestellungen.add("Ansbach");
+
+    List<String> orte = new ArrayList<>();
+
+    for (String ort : bestellungen) {
+        if (!orte.contains(ort)) {
+            orte.add(ort);
+        }
+    }
+
+    for (String ort : orte) {
+        System.out.println(ort);
+    }
+    ```
+
+??? quote "Output"
+    ``` text
+    Fürth
+    Ansbach
+    Bamberg
+    ```
+
+Die Reihenfolge ist dabei die des ersten Auftretens, nicht die alphabetische.
+
+### Danach gruppenweise weiterarbeiten
+
+Mit der Liste der eindeutigen Werte lässt sich anschließend für jede Gruppe getrennt rechnen. Dazu wird die Ausgangsliste je Gruppe noch einmal durchlaufen:
+
+=== "C#"
+
+    ``` csharp
+    foreach (string ort in orte)
+    {
+        int anzahl = 0;
+
+        foreach (string bestellung in bestellungen)
+        {
+            if (bestellung == ort)
+            {
+                anzahl++;
+            }
+        }
+
+        Console.WriteLine(ort + ": " + anzahl);
+    }
+    ```
+
+=== "Java"
+
+    ``` java
+    for (String ort : orte) {
+        int anzahl = 0;
+
+        for (String bestellung : bestellungen) {
+            if (bestellung.equals(ort)) {
+                anzahl++;
+            }
+        }
+
+        System.out.println(ort + ": " + anzahl);
+    }
+    ```
+
+??? quote "Output"
+    ``` text
+    Fürth: 2
+    Ansbach: 2
+    Bamberg: 1
+    ```
+
+!!! info "Zwei verschachtelte Schleifen"
+	Die äußere Schleife läuft über die Gruppen, die innere über alle Datensätze. Das ist für überschaubare Datenmengen völlig ausreichend und gut nachvollziehbar. Für sehr große Datenmengen gibt es schnellere Verfahren; die kommen später im Jahr.
+
+!!! warning "Vergleich von Zeichenketten"
+	In C# vergleicht `==` bei `string` den Inhalt. In Java muss dafür `equals` verwendet werden – `==` würde dort prüfen, ob es dasselbe Objekt ist, und liefert oft `false`, obwohl der Text gleich aussieht.

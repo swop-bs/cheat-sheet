@@ -27,5 +27,8 @@ git commit -m "Neue Klasse Person erstellt"
 ## 4. Code in eigenen Branch pushen:
 
 ```
-git push -o bfi11a_max_mustermann
+git push -u origin bfi11a_max_mustermann
 ```
+
+!!! info
+    `-u origin` ist nur beim **ersten** Push eines Branches nötig. Danach genügt `git push`.

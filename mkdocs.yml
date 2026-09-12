@@ -8,6 +8,10 @@ nav:
         - String: grundlagen/string.md
         - Verzweigung: grundlagen/verzweigung.md
         - Schleifen: grundlagen/schleifen.md
+        - Dictionary: grundlagen/dictionary.md
+        - Enum: grundlagen/enum.md
+        - Datum und Zeit: grundlagen/datum_zeit.md
+        - Zufall: grundlagen/zufall.md
         - Dateien: grundlagen/dateien.md
         - Exception Handling: grundlagen/exceptions.md
         - Events: grundlagen/events.md
@@ -26,11 +30,15 @@ nav:
       - WPF Projekt erstellen in Visual Studio: ui/create_wpf_project.md
       - WPF Grundlagen: ui/wpf_grundlagen.md
       - WPF Elemente: ui/elemente.md
+      - Ereignisse: ui/ereignisse.md
+      - Liste anzeigen: ui/liste_anzeigen.md
+      - Dialoge: ui/dialoge.md
       - Datenbindung: 
         - Vorbereitung: ui/databinding.md
         - Daten an Label binden: ui/label_binding.md
         - Text mit Button ändern: ui/button_binding.md
     - Git:
+      - Bestehendes Projekt unter Git stellen: git/bestehendes_projekt.md
       - Git Kommandozeile: git/git_cmd.md
       - Git Kommandozeile Kurzübersicht: git/git_cmd_short.md
       - Git Visual Studio: git/git_vs.md

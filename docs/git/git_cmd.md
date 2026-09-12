@@ -76,14 +76,20 @@ Wiederhole das Hinzufügen von Änderungen so oft du möchtest. Commite lieber z
 
 Um deine Änderungen in das Remote Repository hochzuladen, musst du diese `Pushen`.
 
-Da es deinen Branch aktuell nur lokal gibt, musst du den Namen beim Pushen nochmals angeben:
+Da es deinen Branch bisher nur lokal gibt, musst du beim **ersten** Push angeben, wohin er gehört. `origin` ist der Name des Remote-Repositories, aus dem du geklont hast. Das `-u` merkt sich die Zuordnung:
 
 ```
-git push -o branchname
+git push -u origin branchname
 ```
 
 Beispiel:
 
 ```
-git push -o bfi11a_max_mustermann
+git push -u origin bfi11a_max_mustermann
+```
+
+Ab dem zweiten Mal genügt für denselben Branch:
+
+```
+git push
 ```

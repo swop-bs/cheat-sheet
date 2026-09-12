@@ -8,7 +8,10 @@ Eine typische WPF-Anwendung besteht aus mehreren Dateien und Ordnern, die zusamm
 
 Die wichtigsten Bestandteile einer WPF-Anwendung sind:
 
-- **App.xaml und App.xaml.cs**: Diese Dateien definieren die Anwendungsressourcen und das Startverhalten der Anwendung. `App.xaml` enthält allgemeine Ressourcen wie Stile und Vorlagen, während `App.xaml.cs` den Einstiegspunkt der Anwendung (Main-Methode) und Initialisierungslogik enthält.
+- **App.xaml und App.xaml.cs**: Diese Dateien definieren die Anwendungsressourcen und das Startverhalten der Anwendung. `App.xaml` enthält allgemeine Ressourcen wie Stile und Vorlagen; das Attribut `StartupUri` legt fest, welches Fenster beim Start geöffnet wird. `App.xaml.cs` ist zunächst leer und nimmt eigene Initialisierungslogik auf.
+
+!!! info "Wo ist die Main-Methode?"
+	In einem WPF-Projekt schreiben Sie keine `Main`-Methode. Sie wird beim Übersetzen aus `App.xaml` erzeugt und ruft die Anwendung mit dem Fenster auf, das in `StartupUri` steht. Deshalb finden Sie sie im Projektmappen-Explorer nicht.
   
   ```xml
   <!-- App.xaml -->
@@ -93,3 +96,47 @@ Das Bild zeigt die typische Struktur einer WPF-Anwendung in Visual Studio:
 
 !!! info
     Die Projektstruktur und die Hauptkomponenten einer WPF-Anwendung sind entscheidend für die Organisation und Verwaltung des Codes. Eine klare Trennung von Layout (XAML) und Logik (C#) fördert die Wartbarkeit und Erweiterbarkeit der Anwendung.
+
+## Was `InitializeComponent()` macht
+
+In jedem Fenster steht diese eine Zeile im Konstruktor, und sie steht dort immer als Erste:
+
+```csharp
+public MainWindow()
+{
+    InitializeComponent();
+}
+```
+
+Die Methode schreiben Sie nicht selbst — sie wird beim Übersetzen aus der `.xaml`-Datei erzeugt.
+Sie tut vier Dinge:
+
+1. Sie liest die XAML-Beschreibung des Fensters.
+2. Sie erzeugt daraus die Steuerelemente und setzt ihre Eigenschaften.
+3. Sie füllt für jedes Element mit `x:Name` das gleichnamige Feld, über das Sie es später im Code
+   ansprechen.
+4. Sie hängt die Ereignismethoden an die Elemente, deren Namen in Attributen wie
+   `Click="..."` stehen.
+
+!!! warning "Vor dieser Zeile gibt es kein einziges Steuerelement"
+	Wer im Konstruktor **vor** `InitializeComponent()` auf ein Element zugreift, bekommt eine
+	`NullReferenceException`. Alles, was das Fenster füllt oder einstellt, gehört danach — am
+	besten in das Ereignis `Loaded` des Fensters.
+
+	Dass ein Ereignis sogar **während** dieser Zeile laufen kann, steht unter
+	[Ereignisse](ereignisse.md).
+
+## XAML und Code-Behind: was wohin gehört
+
+| Datei | Inhalt | Frage, die sie beantwortet |
+| --- | --- | --- |
+| `MainWindow.xaml` | Aufbau des Fensters: welche Elemente, wo, wie beschriftet, welche Methode bei welchem Ereignis | *Wie sieht es aus?* |
+| `MainWindow.xaml.cs` | Die Ereignismethoden und die Hilfsmethoden des Fensters | *Was passiert?* |
+
+Beide Dateien beschreiben **dieselbe Klasse** — deshalb steht `partial` davor. Im XAML sagt
+`x:Class="WpfApp1.MainWindow"`, zu welcher Klasse die Beschreibung gehört. Stimmen Namensraum
+oder Klassenname nicht überein, lässt sich das Projekt nicht übersetzen.
+
+!!! info "Warum die Trennung?"
+	Das Aussehen lässt sich ändern, ohne das Verhalten anzufassen — und umgekehrt. Wie weit sich
+	diese Trennung treiben lässt, zeigt später die [Datenbindung](databinding.md) mit MVVM.

@@ -7,6 +7,16 @@ Windows Presentation Foundation (WPF) ist ein grafisches Subsystem von Microsoft
 !!! note
     WPF bietet zahlreiche Vorteile wie Datenbindung, Vorlagen, Animationen und Medienintegration, die es Entwicklern erleichtern, reichhaltige und interaktive Benutzeroberflächen zu erstellen.
 
+!!! info "Erst Code-Behind, dann MVVM"
+    Die einfachste Art, eine WPF-Oberfläche zu bauen, ist der **Code-Behind**: Zu jedem Fenster gehört eine
+    `.xaml.cs`-Datei, in der die Methoden stehen, die beim Anklicken einer Schaltfläche aufgerufen werden. Die
+    Liste wird dabei von Hand gefüllt und nach einer Änderung neu aufgebaut
+    (siehe [Liste anzeigen](liste_anzeigen.md) und [Dialoge](dialoge.md)).
+
+    Das genügt für kleine Oberflächen und ist der übliche Einstieg. Sobald mehrere Fenster dieselben Daten
+    anzeigen oder eine Änderung an mehreren Stellen gleichzeitig sichtbar werden soll, wird das Neubefüllen
+    von Hand mühsam und fehleranfällig. Genau an dieser Stelle setzen Datenbindung und MVVM an.
+
 ## Was ist MVVM?
 
 MVVM (Model-View-ViewModel) ist ein Architekturdesignmuster, das speziell für die Trennung der Entwicklungsaufgaben bei der Erstellung von Anwendungen mit grafischen Benutzeroberflächen entwickelt wurde. MVVM trennt die Benutzeroberfläche (View), die Geschäftslogik (Model) und die Vermittlung zwischen beiden (ViewModel).
