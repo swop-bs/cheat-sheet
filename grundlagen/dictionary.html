@@ -5,13 +5,13 @@
       
       
       
-        <link rel="canonical" href="https://aeup-cs.github.io/CheatSheet/grundlagen/dateien.html">
+        <link rel="canonical" href="https://aeup-cs.github.io/CheatSheet/grundlagen/dictionary.html">
       
       
-        <link rel="prev" href="zufall.html">
+        <link rel="prev" href="schleifen.html">
       
       
-        <link rel="next" href="exceptions.html">
+        <link rel="next" href="enum.html">
       
       
         
@@ -22,7 +22,7 @@
     
     
       
-        <title>Dateien - Coding Cheat Sheet</title>
+        <title>Dictionary - Coding Cheat Sheet</title>
       
     
     
@@ -87,7 +87,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#lesen-und-schreiben-von-dateien" class="md-skip">
+        <a href="#dictionary" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -123,7 +123,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Dateien
+              Dictionary
             
           </span>
         </div>
@@ -433,10 +433,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="dictionary.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dictionary
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="dictionary.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -452,6 +479,142 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#anlegen-und-fullen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anlegen und füllen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#auf-einen-wert-zugreifen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Auf einen Wert zugreifen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prufen-ob-ein-schlussel-vorhanden-ist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prüfen, ob ein Schlüssel vorhanden ist
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Prüfen, ob ein Schlüssel vorhanden ist">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#trygetvalue-prufen-und-holen-in-einem-schritt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TryGetValue: prüfen und holen in einem Schritt
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entfernen-und-zahlen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entfernen und zählen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#durchlaufen-mit-foreach" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Durchlaufen mit foreach
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#objekte-als-wert" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objekte als Wert
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zahlen-mit-einem-dictionary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zählen mit einem Dictionary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#liste-oder-dictionary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Liste oder Dictionary?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#haufige-fehler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Häufige Fehler
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -545,37 +708,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Dateien
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="dateien.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="dateien.html" class="md-nav__link">
         
   
   
@@ -591,132 +727,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Inhaltsverzeichnis
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-      
-        <li class="md-nav__item">
-  <a href="#dateien-offnen-und-schlieen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Dateien öffnen und schließen
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Dateien öffnen und schließen">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#close" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Close()
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#using" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        using
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#streamreader-datei-lesen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        StreamReader (Datei lesen)
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="StreamReader (Datei lesen)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#methoden" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Methoden
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#streamwriter-datei-schreiben" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        StreamWriter (Datei schreiben)
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="StreamWriter (Datei schreiben)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#methoden_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Methoden
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#beispiel" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Beispiel
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -2478,33 +2488,44 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
-  <a href="#dateien-offnen-und-schlieen" class="md-nav__link">
+  <a href="#anlegen-und-fullen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Dateien öffnen und schließen
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Dateien öffnen und schließen">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#close" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Close()
+        Anlegen und füllen
       
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#using" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#auf-einen-wert-zugreifen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        using
+        Auf einen Wert zugreifen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prufen-ob-ein-schlussel-vorhanden-ist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prüfen, ob ein Schlüssel vorhanden ist
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Prüfen, ob ein Schlüssel vorhanden ist">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#trygetvalue-prufen-und-holen-in-einem-schritt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TryGetValue: prüfen und holen in einem Schritt
       
     </span>
   </a>
@@ -2517,66 +2538,65 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#streamreader-datei-lesen" class="md-nav__link">
+  <a href="#entfernen-und-zahlen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        StreamReader (Datei lesen)
+        Entfernen und zählen
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="StreamReader (Datei lesen)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#methoden" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Methoden
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#streamwriter-datei-schreiben" class="md-nav__link">
+  <a href="#durchlaufen-mit-foreach" class="md-nav__link">
     <span class="md-ellipsis">
       
-        StreamWriter (Datei schreiben)
+        Durchlaufen mit foreach
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="StreamWriter (Datei schreiben)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#methoden_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Methoden
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#beispiel" class="md-nav__link">
+  <a href="#objekte-als-wert" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Beispiel
+        Objekte als Wert
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zahlen-mit-einem-dictionary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zählen mit einem Dictionary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#liste-oder-dictionary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Liste oder Dictionary?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#haufige-fehler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Häufige Fehler
       
     </span>
   </a>
@@ -2648,268 +2668,290 @@
 
 
 
-<h1 id="lesen-und-schreiben-von-dateien">Lesen und Schreiben von Dateien<a class="headerlink" href="#lesen-und-schreiben-von-dateien" title="Permanent link">#</a></h1>
-<p>In diesem Abschnitt wird beschrieben, wie Sie mit Hilfe der Objekte StreamReader und StreamWriter Dateien lesen bzw. schreiben können.</p>
-<h2 id="dateien-offnen-und-schlieen">Dateien öffnen und schließen<a class="headerlink" href="#dateien-offnen-und-schlieen" title="Permanent link">#</a></h2>
-<p>Um eine Datei zu lesen bzw. zu schreiben muss diese zuerst geöffnet werden.</p>
-<p>Ist eine Datei geöffnet, kann Sie (je nach Verwendungszweck) eventuell nicht von anderen Prozessen verwendet werden.</p>
-<p>Um die Datei für andere Prozesse wieder frei zu geben, muss der Stream bzw. die Datei wieder geschlossen werden:</p>
-<h3 id="close">Close()<a class="headerlink" href="#close" title="Permanent link">#</a></h3>
+<h1 id="dictionary">Dictionary<a class="headerlink" href="#dictionary" title="Permanent link">#</a></h1>
+<p>Eine <strong>Liste</strong> kennt ihre Einträge über die Position: <code>liste[0]</code>, <code>liste[1]</code>, … Wer einen bestimmten Eintrag sucht, muss die Liste durchlaufen und vergleichen.</p>
+<p>Ein <strong>Dictionary</strong> kennt seine Einträge über einen <strong>Schlüssel</strong>, den Sie selbst festlegen: eine Nummer, ein Kürzel, ein Name. Der Zugriff geht damit in einem Schritt, ohne Suche.</p>
+<table>
+<thead>
+<tr>
+<th>Was?</th>
+<th>C#</th>
+<th>Java</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Zuordnung Schlüssel → Wert</td>
+<td><code>Dictionary&lt;TKey, TValue&gt;</code></td>
+<td><code>HashMap&lt;K, V&gt;</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="anlegen-und-fullen">Anlegen und füllen<a class="headerlink" href="#anlegen-und-fullen" title="Permanent link">#</a></h2>
+<p>In den spitzen Klammern stehen zwei Typen: zuerst der des <strong>Schlüssels</strong>, dann der des <strong>Wertes</strong>.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio"><input id="__tabbed_1_2" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">C#</label><label for="__tabbed_1_2">Java</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="language-cs highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">// StreamReader initialisieren (Datei öffnen) (1)</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">StreamReader</span><span class="w"> </span><span class="n">sr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">StreamReader</span><span class="p">(</span><span class="s">"TestDatei.txt"</span><span class="p">);</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1">// StreamReader wird in diesem Abschnitt verwendet</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="c1">// Datei freigeben (2)</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="n">sr</span><span class="p">.</span><span class="n">Close</span><span class="p">();</span>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">Dictionary</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="o">&gt;</span><span class="w"> </span><span class="n">telefonliste</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Dictionary</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="o">&gt;</span><span class="p">();</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">telefonliste</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="mi">101</span><span class="p">,</span><span class="w"> </span><span class="s">"Frau Berger"</span><span class="p">);</span><span class="w">     </span><span class="c1">// (1)</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">telefonliste</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="mi">102</span><span class="p">,</span><span class="w"> </span><span class="s">"Herr Yilmaz"</span><span class="p">);</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="n">telefonliste</span><span class="p">[</span><span class="mi">103</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Frau Vogel"</span><span class="p">;</span><span class="w">         </span><span class="c1">// (2)</span>
 </span></code></pre></div>
 <ol>
-<li>Beim Erstellen des StreamReader bzw. StreamWriter-Objekts wird die Datei TestDatei.txt geöffnet.</li>
-<li>Close() schließt die Datei und gibt sie somit wieder frei.</li>
+<li><code>Add</code> legt einen neuen Eintrag an. Ist der Schlüssel schon vergeben, gibt es eine Ausnahme.</li>
+<li>Die Schreibweise mit eckigen Klammern legt neu an <strong>oder überschreibt</strong>, ohne sich zu beschweren.</li>
 </ol>
 </div>
 <div class="tabbed-block">
-<div class="language-java highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">java.io.BufferedReader</span><span class="p">;</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">java.io.FileReader</span><span class="p">;</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="kn">import</span><span class="w"> </span><span class="nn">java.io.IOException</span><span class="p">;</span>
+<div class="language-java highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.HashMap</span><span class="p">;</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">HashMap</span><span class="o">&lt;</span><span class="n">Integer</span><span class="p">,</span><span class="w"> </span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">telefonliste</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HashMap</span><span class="o">&lt;&gt;</span><span class="p">();</span>
 </span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="c1">// BufferedReader initialisieren (Datei öffnen)</span>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="k">try</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">    </span><span class="n">BufferedReader</span><span class="w"> </span><span class="n">br</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">BufferedReader</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">FileReader</span><span class="p">(</span><span class="s">"TestDatei.txt"</span><span class="p">));</span>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">    </span><span class="c1">// BufferedReader wird hier verwendet</span>
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>
-</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">    </span><span class="c1">// Datei freigeben</span>
-</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">    </span><span class="n">br</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
-</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">IOException</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">    </span><span class="n">e</span><span class="p">.</span><span class="na">printStackTrace</span><span class="p">();</span>
-</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="p">}</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="n">telefonliste</span><span class="p">.</span><span class="na">put</span><span class="p">(</span><span class="mi">101</span><span class="p">,</span><span class="w"> </span><span class="s">"Frau Berger"</span><span class="p">);</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="n">telefonliste</span><span class="p">.</span><span class="na">put</span><span class="p">(</span><span class="mi">102</span><span class="p">,</span><span class="w"> </span><span class="s">"Herr Yilmaz"</span><span class="p">);</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="n">telefonliste</span><span class="p">.</span><span class="na">put</span><span class="p">(</span><span class="mi">103</span><span class="p">,</span><span class="w"> </span><span class="s">"Frau Vogel"</span><span class="p">);</span>
 </span></code></pre></div>
 </div>
 </div>
 </div>
-<h3 id="using">using<a class="headerlink" href="#using" title="Permanent link">#</a></h3>
-<p>Da das Schließen der Datei oft vergessen wird, kann alternativ <code>using</code> verwendet werden:</p>
+<div class="admonition warning">
+<p class="admonition-title"><code>Add</code> oder eckige Klammern?</p>
+<p><code>Add</code> bei einem vorhandenen Schlüssel wirft eine <code>ArgumentException</code>. Das ist manchmal genau richtig — wenn ein Doppeleintrag ein Fehler wäre, soll er auffallen. Wo ein Überschreiben in Ordnung ist, nimmt man die eckigen Klammern.</p>
+</div>
+<h2 id="auf-einen-wert-zugreifen">Auf einen Wert zugreifen<a class="headerlink" href="#auf-einen-wert-zugreifen" title="Permanent link">#</a></h2>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio"><input id="__tabbed_2_2" name="__tabbed_2" type="radio"><div class="tabbed-labels"><label for="__tabbed_2_1">C#</label><label for="__tabbed_2_2">Java</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="language-cs highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">// StreamReader initialisieren (1)</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="k">using</span><span class="w"> </span><span class="p">(</span><span class="n">StreamReader</span><span class="w"> </span><span class="n">sr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">StreamReader</span><span class="p">(</span><span class="s">"TestDatei.txt"</span><span class="p">))</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="p">{</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span><span class="c1">// StreamReader wird in diesem Codeblock verwendet</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="p">}</span><span class="w"> </span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="c1">// Datei wird automatisch freigegeben (2)</span>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kt">string</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">telefonliste</span><span class="p">[</span><span class="mi">102</span><span class="p">];</span><span class="w">      </span><span class="c1">// "Herr Yilmaz"</span>
 </span></code></pre></div>
-<ol>
-<li>Beim Erstellen des StreamReader bzw. StreamWriter-Objkets wird die Datei TestDatei.txt geöffnet.</li>
-<li>Beim Verlassen des Codeblocks wird der StreamReader automatisch geschlossen. Kein explizites aufrufen von Close() nötig.</li>
-</ol>
 </div>
 <div class="tabbed-block">
-<div class="language-java highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1">// Try-with-resources (seit Java 7)</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="k">try</span><span class="w"> </span><span class="p">(</span><span class="n">BufferedReader</span><span class="w"> </span><span class="n">br</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">BufferedReader</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">FileReader</span><span class="p">(</span><span class="s">"TestDatei.txt"</span><span class="p">)))</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="c1">// BufferedReader wird hier verwendet</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">IOException</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span><span class="n">e</span><span class="p">.</span><span class="na">printStackTrace</span><span class="p">();</span>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="p">}</span>
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="c1">// Datei wird automatisch freigegeben</span>
+<div class="language-java highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">telefonliste</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="mi">102</span><span class="p">);</span><span class="w">  </span><span class="c1">// "Herr Yilmaz"</span>
 </span></code></pre></div>
 </div>
 </div>
 </div>
-<h2 id="streamreader-datei-lesen">StreamReader (Datei lesen)<a class="headerlink" href="#streamreader-datei-lesen" title="Permanent link">#</a></h2>
-<p>In der Regel werden Dateien zeilenweise mittels ReadLine() gelesen:</p>
+<div class="admonition danger">
+<p class="admonition-title">Ein Schlüssel, den es nicht gibt</p>
+<p>In C# wirft <code>telefonliste[999]</code> eine <code>KeyNotFoundException</code>. In Java liefert <code>get(999)</code> einfach <code>null</code> — der Fehler fällt dann erst später auf. Beides ist unangenehm; prüfen Sie deshalb vorher.</p>
+</div>
+<h2 id="prufen-ob-ein-schlussel-vorhanden-ist">Prüfen, ob ein Schlüssel vorhanden ist<a class="headerlink" href="#prufen-ob-ein-schlussel-vorhanden-ist" title="Permanent link">#</a></h2>
 <div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio"><input id="__tabbed_3_2" name="__tabbed_3" type="radio"><div class="tabbed-labels"><label for="__tabbed_3_1">C#</label><label for="__tabbed_3_2">Java</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="language-csharp highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1">// StreamReader Initialisieren (1)</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="k">using</span><span class="w"> </span><span class="p">(</span><span class="n">StreamReader</span><span class="w"> </span><span class="n">sr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">StreamReader</span><span class="p">(</span><span class="s">"TestDatei.txt"</span><span class="p">))</span>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="p">{</span><span class="w"> </span>
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">    </span><span class="c1">// Erste Zeile einlesen (2)</span>
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">    </span><span class="kt">string</span><span class="w"> </span><span class="n">line</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sr</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">();</span>
-</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">    </span><span class="c1">// Solange es etwas zu lesen gibt</span>
-</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">line</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="k">null</span><span class="p">)</span>
-</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">    </span><span class="p">{</span>
-</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">        </span><span class="c1">// Verarbeiten der Zeile (3)</span>
-</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">line</span><span class="p">);</span>
-</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="w">        </span><span class="c1">// Einlesen der nächsten Zeile (4)</span>
-</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="w">        </span><span class="n">line</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sr</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">();</span>
-</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="p">}</span>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">telefonliste</span><span class="p">.</span><span class="n">ContainsKey</span><span class="p">(</span><span class="mi">102</span><span class="p">))</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="p">{</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">telefonliste</span><span class="p">[</span><span class="mi">102</span><span class="p">]);</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="p">}</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="k">else</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="p">{</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">"Diese Nummer ist nicht vergeben."</span><span class="p">);</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="p">}</span>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="language-java highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">try</span><span class="w"> </span><span class="p">(</span><span class="n">BufferedReader</span><span class="w"> </span><span class="n">br</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">BufferedReader</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">FileReader</span><span class="p">(</span><span class="s">"TestDatei.txt"</span><span class="p">)))</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">    </span><span class="n">String</span><span class="w"> </span><span class="n">line</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">br</span><span class="p">.</span><span class="na">readLine</span><span class="p">();</span>
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">line</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="kc">null</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">line</span><span class="p">);</span>
-</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">        </span><span class="n">line</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">br</span><span class="p">.</span><span class="na">readLine</span><span class="p">();</span>
-</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">IOException</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="w">    </span><span class="n">e</span><span class="p">.</span><span class="na">printStackTrace</span><span class="p">();</span>
-</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="p">}</span>
+<div class="language-java highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">telefonliste</span><span class="p">.</span><span class="na">containsKey</span><span class="p">(</span><span class="mi">102</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">telefonliste</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="mi">102</span><span class="p">));</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Diese Nummer ist nicht vergeben."</span><span class="p">);</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="p">}</span>
 </span></code></pre></div>
 </div>
 </div>
 </div>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<ol>
-<li>Das <a href="#using"><code>using</code>-Keyword</a> stellt sicher, dass der StreamReader wieder geschlossen wird</li>
-<li>Hier wird line mit der ersten Zeile von TestDatei.txt initialisiert</li>
-<li>Das "Verarbeiten" ist hier eine einfach Konsolenausgabe. Natürlich kann hier alles erdenkliche mit der Zeile passieren.</li>
-<li>Hier wird die nächste Zeile eingelesen. Dieser Schritt ist in der Regel immer der letzte Schritt in der Schleife, da danach wieder geprüft werden muss, ob es noch etwas einzulesen gibt.</li>
-</ol>
-</div>
-<h3 id="methoden">Methoden<a class="headerlink" href="#methoden" title="Permanent link">#</a></h3>
-<table>
-<thead>
-<tr>
-<th>Methode</th>
-<th>Erklärung</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://learn.microsoft.com/en-us/dotnet/api/system.io.streamreader.close?view=net-7.0#system-io-streamreader-close">Close()</a></td>
-<td>Closes the StreamReader object and the underlying stream, and releases any system resources associated with the reader.</td>
-</tr>
-<tr>
-<td><a href="https://learn.microsoft.com/en-us/dotnet/api/system.io.streamreader.peek?view=net-7.0#system-io-streamreader-peek">Peek()</a></td>
-<td>Returns the next available character but does not consume it. Calling this method multiple times will always return the same character (as Opposed to Read()).</td>
-</tr>
-<tr>
-<td><a href="https://learn.microsoft.com/en-us/dotnet/api/system.io.streamreader.read?view=net-7.0#system-io-streamreader-read">Read()</a></td>
-<td>Reads the next character from the input stream and advances the character position by one character.</td>
-</tr>
-<tr>
-<td><a href="https://learn.microsoft.com/en-us/dotnet/api/system.io.streamreader.read?view=net-7.0#system-io-streamreader-read(system-char()-system-int32-system-int32)">Read(Char[], Int32, Int32)</a></td>
-<td>Reads a specified maximum of characters from the current stream into a buffer, beginning at the specified index.</td>
-</tr>
-<tr>
-<td><a href="https://learn.microsoft.com/en-us/dotnet/api/system.io.streamreader.readline?view=net-7.0#system-io-streamreader-readline">ReadLine()</a></td>
-<td>Reads a line of characters from the current stream and returns the data as a string.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="streamwriter-datei-schreiben">StreamWriter (Datei schreiben)<a class="headerlink" href="#streamwriter-datei-schreiben" title="Permanent link">#</a></h2>
-<p>In der Regel werden Dateien zeilenweise mittels WriteLine() geschrieben:</p>
+<h3 id="trygetvalue-prufen-und-holen-in-einem-schritt"><code>TryGetValue</code>: prüfen und holen in einem Schritt<a class="headerlink" href="#trygetvalue-prufen-und-holen-in-einem-schritt" title="Permanent link">#</a></h3>
+<p><code>TryGetValue</code> liefert <code>true</code>, wenn der Schlüssel vorhanden war, und legt den Wert in der Variablen ab, die mit <code>out</code> übergeben wurde. So wird nur einmal nachgeschlagen statt zweimal.</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kt">string</span><span class="w"> </span><span class="n">name</span><span class="p">;</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">telefonliste</span><span class="p">.</span><span class="n">TryGetValue</span><span class="p">(</span><span class="mi">102</span><span class="p">,</span><span class="w"> </span><span class="k">out</span><span class="w"> </span><span class="n">name</span><span class="p">))</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="p">{</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">name</span><span class="p">);</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="p">}</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="k">else</span>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="p">{</span>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">"Diese Nummer ist nicht vergeben."</span><span class="p">);</span>
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="p">}</span>
+</span></code></pre></div>
+<h2 id="entfernen-und-zahlen">Entfernen und zählen<a class="headerlink" href="#entfernen-und-zahlen" title="Permanent link">#</a></h2>
 <div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio"><input id="__tabbed_4_2" name="__tabbed_4" type="radio"><div class="tabbed-labels"><label for="__tabbed_4_1">C#</label><label for="__tabbed_4_2">Java</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="language-csharp highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1">// StreamWriter Initialisieren (1)</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="k">using</span><span class="w"> </span><span class="p">(</span><span class="n">StreamWriter</span><span class="w"> </span><span class="n">sw</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">StreamWriter</span><span class="p">(</span><span class="s">"TestDatei.txt"</span><span class="p">))</span>
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="p">{</span>
-</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">    </span><span class="c1">// Schreibe erste Zeile in TestDatei.txt</span>
-</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">    </span><span class="n">sw</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">"Hello World!!"</span><span class="p">);</span>
-</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">    </span><span class="c1">// Schreibe zweite Zeile in TestDatei.txt</span>
-</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">    </span><span class="n">sw</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">"From the StreamWriter class"</span><span class="p">);</span>
-</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="p">}</span><span class="w"> </span>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">telefonliste</span><span class="p">.</span><span class="n">Remove</span><span class="p">(</span><span class="mi">101</span><span class="p">);</span><span class="w">              </span><span class="c1">// (1)</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="kt">int</span><span class="w"> </span><span class="n">anzahl</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">telefonliste</span><span class="p">.</span><span class="n">Count</span><span class="p">;</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="n">telefonliste</span><span class="p">.</span><span class="n">Clear</span><span class="p">();</span><span class="w">                  </span><span class="c1">// alles weg</span>
+</span></code></pre></div>
+<ol>
+<li><code>Remove</code> liefert <code>true</code>, wenn es den Schlüssel gab, und <code>false</code> sonst. Es wirft keine Ausnahme.</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<div class="language-java highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">telefonliste</span><span class="p">.</span><span class="na">remove</span><span class="p">(</span><span class="mi">101</span><span class="p">);</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="kt">int</span><span class="w"> </span><span class="n">anzahl</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">telefonliste</span><span class="p">.</span><span class="na">size</span><span class="p">();</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="n">telefonliste</span><span class="p">.</span><span class="na">clear</span><span class="p">();</span>
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<h2 id="durchlaufen-mit-foreach">Durchlaufen mit <code>foreach</code><a class="headerlink" href="#durchlaufen-mit-foreach" title="Permanent link">#</a></h2>
+<p>Es gibt drei Wege: nur die Schlüssel, nur die Werte, oder beides als Paar.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio"><input id="__tabbed_5_2" name="__tabbed_5" type="radio"><div class="tabbed-labels"><label for="__tabbed_5_1">C#</label><label for="__tabbed_5_2">Java</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c1">// nur die Schluessel</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="k">foreach</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">nummer</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">telefonliste</span><span class="p">.</span><span class="n">Keys</span><span class="p">)</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="p">{</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">nummer</span><span class="p">);</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="p">}</span>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="c1">// nur die Werte</span>
+</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="k">foreach</span><span class="w"> </span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">telefonliste</span><span class="p">.</span><span class="n">Values</span><span class="p">)</span>
+</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="p">{</span>
+</span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a><span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">name</span><span class="p">);</span>
+</span><span id="__span-9-11"><a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a><span class="p">}</span>
+</span><span id="__span-9-12"><a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>
+</span><span id="__span-9-13"><a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a><span class="c1">// beides zusammen</span>
+</span><span id="__span-9-14"><a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a><span class="k">foreach</span><span class="w"> </span><span class="p">(</span><span class="n">KeyValuePair</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="o">&gt;</span><span class="w"> </span><span class="n">eintrag</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">telefonliste</span><span class="p">)</span>
+</span><span id="__span-9-15"><a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a><span class="p">{</span>
+</span><span id="__span-9-16"><a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a><span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">eintrag</span><span class="p">.</span><span class="n">Key</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">": "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">eintrag</span><span class="p">.</span><span class="n">Value</span><span class="p">);</span>
+</span><span id="__span-9-17"><a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a><span class="p">}</span>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="language-java highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">java.io.BufferedWriter</span><span class="p">;</span>
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">java.io.FileWriter</span><span class="p">;</span>
-</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
-</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="k">try</span><span class="w"> </span><span class="p">(</span><span class="n">BufferedWriter</span><span class="w"> </span><span class="n">bw</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">BufferedWriter</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">FileWriter</span><span class="p">(</span><span class="s">"TestDatei.txt"</span><span class="p">)))</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="w">    </span><span class="n">bw</span><span class="p">.</span><span class="na">write</span><span class="p">(</span><span class="s">"Hello World!!"</span><span class="p">);</span>
-</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="w">    </span><span class="n">bw</span><span class="p">.</span><span class="na">newLine</span><span class="p">();</span><span class="w"> </span><span class="c1">// Neue Zeile</span>
-</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="w">    </span><span class="n">bw</span><span class="p">.</span><span class="na">write</span><span class="p">(</span><span class="s">"From the StreamWriter class"</span><span class="p">);</span>
-</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="w">    </span><span class="n">bw</span><span class="p">.</span><span class="na">newLine</span><span class="p">();</span>
-</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">IOException</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="w">    </span><span class="n">e</span><span class="p">.</span><span class="na">printStackTrace</span><span class="p">();</span>
-</span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="p">}</span>
+<div class="language-java highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">Integer</span><span class="w"> </span><span class="n">nummer</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">telefonliste</span><span class="p">.</span><span class="na">keySet</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">nummer</span><span class="p">);</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="p">}</span>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">telefonliste</span><span class="p">.</span><span class="na">values</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">name</span><span class="p">);</span>
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="p">}</span>
+</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>
+</span><span id="__span-10-9"><a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">Map</span><span class="p">.</span><span class="na">Entry</span><span class="o">&lt;</span><span class="n">Integer</span><span class="p">,</span><span class="w"> </span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">eintrag</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">telefonliste</span><span class="p">.</span><span class="na">entrySet</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-10-10"><a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">eintrag</span><span class="p">.</span><span class="na">getKey</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">": "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">eintrag</span><span class="p">.</span><span class="na">getValue</span><span class="p">());</span>
+</span><span id="__span-10-11"><a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a><span class="p">}</span>
 </span></code></pre></div>
 </div>
 </div>
 </div>
 <div class="admonition info">
-<p class="admonition-title">Info</p>
-<p><a href="#using"><code>using</code></a> stellt sicher, dass die Datei wieder freigegeben wird.</p>
+<p class="admonition-title">Die Reihenfolge liegt nicht fest</p>
+<p>Ein Dictionary ist ein Haufen, keine Reihe. In welcher Reihenfolge <code>foreach</code> die Einträge liefert, ist nicht zugesichert und kann sich ändern.</p>
+<p>Wer eine geordnete Ausgabe braucht, sammelt die Schlüssel in einer Liste, sortiert diese und geht dann darüber:</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="n">List</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">nummern</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">List</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">();</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="k">foreach</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">nummer</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">telefonliste</span><span class="p">.</span><span class="n">Keys</span><span class="p">)</span>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="p">{</span>
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="w">    </span><span class="n">nummern</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">nummer</span><span class="p">);</span>
+</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="p">}</span>
+</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>
+</span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a><span class="n">nummern</span><span class="p">.</span><span class="n">Sort</span><span class="p">();</span>
+</span><span id="__span-11-9"><a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a>
+</span><span id="__span-11-10"><a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="k">foreach</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">nummer</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">nummern</span><span class="p">)</span>
+</span><span id="__span-11-11"><a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a><span class="p">{</span>
+</span><span id="__span-11-12"><a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a><span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">nummer</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">": "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">telefonliste</span><span class="p">[</span><span class="n">nummer</span><span class="p">]);</span>
+</span><span id="__span-11-13"><a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a><span class="p">}</span>
+</span></code></pre></div>
 </div>
-<h3 id="methoden_1">Methoden<a class="headerlink" href="#methoden_1" title="Permanent link">#</a></h3>
+<h2 id="objekte-als-wert">Objekte als Wert<a class="headerlink" href="#objekte-als-wert" title="Permanent link">#</a></h2>
+<p>Der Wert muss kein Text sein — meist ist es ein ganzes Objekt. Der Schlüssel ist dann die Kennung, unter der man das Objekt sucht.</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="n">Dictionary</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="w"> </span><span class="n">Fahrzeug</span><span class="o">&gt;</span><span class="w"> </span><span class="n">fuhrpark</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Dictionary</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="w"> </span><span class="n">Fahrzeug</span><span class="o">&gt;</span><span class="p">();</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="n">Fahrzeug</span><span class="w"> </span><span class="n">neuesFahrzeug</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Fahrzeug</span><span class="p">(</span><span class="s">"N-XY 123"</span><span class="p">,</span><span class="w"> </span><span class="mi">18</span><span class="p">);</span>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="n">fuhrpark</span><span class="p">[</span><span class="n">neuesFahrzeug</span><span class="p">.</span><span class="n">Nummer</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">neuesFahrzeug</span><span class="p">;</span>
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>
+</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="c1">// spaeter, ohne die Sammlung zu durchlaufen:</span>
+</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">fuhrpark</span><span class="p">.</span><span class="n">ContainsKey</span><span class="p">(</span><span class="mi">7</span><span class="p">))</span>
+</span><span id="__span-12-8"><a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a><span class="p">{</span>
+</span><span id="__span-12-9"><a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a><span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">fuhrpark</span><span class="p">[</span><span class="mi">7</span><span class="p">].</span><span class="n">Kennzeichen</span><span class="p">);</span>
+</span><span id="__span-12-10"><a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a><span class="p">}</span>
+</span></code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Der Schlüssel darf sich nicht ändern</p>
+<p>Legen Sie ein Objekt unter seiner Nummer ab und ändern danach diese Nummer im Objekt, dann liegt es immer noch unter dem alten Schlüssel. Das Dictionary merkt davon nichts. Deshalb eignen sich nur Angaben als Schlüssel, die sich nie ändern.</p>
+</div>
+<h2 id="zahlen-mit-einem-dictionary">Zählen mit einem Dictionary<a class="headerlink" href="#zahlen-mit-einem-dictionary" title="Permanent link">#</a></h2>
+<p>Ein häufiges Muster: nachsehen, ob der Schlüssel schon da ist, sonst mit 0 anlegen, dann um eins hochzählen.</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="n">Dictionary</span><span class="o">&lt;</span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">haeufigkeit</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Dictionary</span><span class="o">&lt;</span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="o">&gt;</span><span class="p">();</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="k">foreach</span><span class="w"> </span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">wort</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">woerter</span><span class="p">)</span>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="p">{</span>
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">haeufigkeit</span><span class="p">.</span><span class="n">ContainsKey</span><span class="p">(</span><span class="n">wort</span><span class="p">))</span>
+</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="w">        </span><span class="n">haeufigkeit</span><span class="p">[</span><span class="n">wort</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-13-9"><a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a>
+</span><span id="__span-13-10"><a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a><span class="w">    </span><span class="n">haeufigkeit</span><span class="p">[</span><span class="n">wort</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">haeufigkeit</span><span class="p">[</span><span class="n">wort</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+</span><span id="__span-13-11"><a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a><span class="p">}</span>
+</span></code></pre></div>
+<h2 id="liste-oder-dictionary">Liste oder Dictionary?<a class="headerlink" href="#liste-oder-dictionary" title="Permanent link">#</a></h2>
 <table>
 <thead>
 <tr>
-<th>Methode</th>
-<th>Erklärung</th>
+<th></th>
+<th>Liste</th>
+<th>Dictionary</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><a href="https://learn.microsoft.com/en-us/dotnet/api/system.io.streamwriter.close?view=net-7.0#system-io-streamwriter-close">Close()</a></td>
-<td>Closes the current StreamWriter object and the underlying stream.</td>
+<td>Zugriff über</td>
+<td>Position (0, 1, 2, …)</td>
+<td>selbst gewählten Schlüssel</td>
 </tr>
 <tr>
-<td><a href="https://learn.microsoft.com/en-us/dotnet/api/system.io.streamwriter.write?view=net-7.0#system-io-streamwriter-write(system-string)">Write(String)</a></td>
-<td>Writes a string to the stream.</td>
+<td>Einen bestimmten Eintrag finden</td>
+<td>durchlaufen und vergleichen</td>
+<td>in einem Schritt</td>
 </tr>
 <tr>
-<td><a href="https://learn.microsoft.com/en-us/dotnet/api/system.io.textwriter.writeline?view=net-7.0#system-io-textwriter-writeline">WriteLine()</a></td>
-<td>Writes a line terminator to the text stream.</td>
+<td>Reihenfolge</td>
+<td>bleibt, wie eingefügt</td>
+<td>nicht zugesichert</td>
+</tr>
+<tr>
+<td>Doppelte</td>
+<td>erlaubt</td>
+<td>Schlüssel nur einmal</td>
+</tr>
+<tr>
+<td>Passt für</td>
+<td>„alle der Reihe nach"</td>
+<td>„genau den mit der Nummer 4711"</td>
 </tr>
 </tbody>
 </table>
-<h2 id="beispiel">Beispiel<a class="headerlink" href="#beispiel" title="Permanent link">#</a></h2>
-<p>In diesem Beispiel wird ein Text einer Datei in Großbuchstaben umgewandlet:</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio"><input id="__tabbed_5_2" name="__tabbed_5" type="radio"><div class="tabbed-labels"><label for="__tabbed_5_1">C#</label><label for="__tabbed_5_2">Java</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="language-csharp highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">Program</span>
-</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="p">{</span>
-</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span>
-</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="w">    </span><span class="p">{</span>
-</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="w">        </span><span class="c1">// Streams initialisieren (1)</span>
-</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="w">        </span><span class="k">using</span><span class="w"> </span><span class="p">(</span><span class="n">StreamReader</span><span class="w"> </span><span class="n">sr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">StreamReader</span><span class="p">(</span><span class="s">"kleinBuchstaben.txt"</span><span class="p">))</span>
-</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="w">        </span><span class="k">using</span><span class="w"> </span><span class="p">(</span><span class="n">StreamWriter</span><span class="w"> </span><span class="n">sw</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">StreamWriter</span><span class="p">(</span><span class="s">"grossBuchstaben.txt"</span><span class="p">))</span>
-</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="w">        </span><span class="p">{</span>
-</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="w">            </span><span class="c1">// Erste Zeile lesen</span>
-</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="w">            </span><span class="kt">string</span><span class="w"> </span><span class="n">zeile</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sr</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">();</span>
-</span><span id="__span-8-11"><a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="w">            </span><span class="c1">// Solange es etwas zu lesen gibt</span>
-</span><span id="__span-8-12"><a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a><span class="w">            </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">zeile</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="k">null</span><span class="p">)</span>
-</span><span id="__span-8-13"><a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a><span class="w">            </span><span class="p">{</span>
-</span><span id="__span-8-14"><a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a><span class="w">                </span><span class="c1">// Inhalt der Zeile groß schreiben</span>
-</span><span id="__span-8-15"><a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a><span class="w">                </span><span class="kt">string</span><span class="w"> </span><span class="n">zeileGross</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">zeile</span><span class="p">.</span><span class="n">ToUpper</span><span class="p">();</span>
-</span><span id="__span-8-16"><a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a><span class="w">                </span><span class="c1">// Grossgeschriebene Zeile in Textdatei schreiben</span>
-</span><span id="__span-8-17"><a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a><span class="w">                </span><span class="n">sw</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">zeileGross</span><span class="p">);</span>
-</span><span id="__span-8-18"><a id="__codelineno-8-18" name="__codelineno-8-18" href="#__codelineno-8-18"></a><span class="w">                </span><span class="c1">// Nächste Zeile lesen</span>
-</span><span id="__span-8-19"><a id="__codelineno-8-19" name="__codelineno-8-19" href="#__codelineno-8-19"></a><span class="w">                </span><span class="n">zeile</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sr</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">();</span>
-</span><span id="__span-8-20"><a id="__codelineno-8-20" name="__codelineno-8-20" href="#__codelineno-8-20"></a><span class="w">            </span><span class="p">}</span>
-</span><span id="__span-8-21"><a id="__codelineno-8-21" name="__codelineno-8-21" href="#__codelineno-8-21"></a><span class="w">        </span><span class="p">}</span>
-</span><span id="__span-8-22"><a id="__codelineno-8-22" name="__codelineno-8-22" href="#__codelineno-8-22"></a><span class="w">        </span><span class="c1">// Streams werden automatisch geschlossen</span>
-</span><span id="__span-8-23"><a id="__codelineno-8-23" name="__codelineno-8-23" href="#__codelineno-8-23"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-8-24"><a id="__codelineno-8-24" name="__codelineno-8-24" href="#__codelineno-8-24"></a><span class="p">}</span>
-</span></code></pre></div>
-</div>
-<div class="tabbed-block">
-<div class="language-java highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Program</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">        </span><span class="k">try</span><span class="w"> </span><span class="p">(</span><span class="n">BufferedReader</span><span class="w"> </span><span class="n">br</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">BufferedReader</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">FileReader</span><span class="p">(</span><span class="s">"kleinBuchstaben.txt"</span><span class="p">));</span>
-</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="w">             </span><span class="n">BufferedWriter</span><span class="w"> </span><span class="n">bw</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">BufferedWriter</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">FileWriter</span><span class="p">(</span><span class="s">"grossBuchstaben.txt"</span><span class="p">)))</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>
-</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="w">            </span><span class="n">String</span><span class="w"> </span><span class="n">zeile</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">br</span><span class="p">.</span><span class="na">readLine</span><span class="p">();</span>
-</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="w">            </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">zeile</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="kc">null</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="w">                </span><span class="n">String</span><span class="w"> </span><span class="n">zeileGross</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">zeile</span><span class="p">.</span><span class="na">toUpperCase</span><span class="p">();</span>
-</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="w">                </span><span class="n">bw</span><span class="p">.</span><span class="na">write</span><span class="p">(</span><span class="n">zeileGross</span><span class="p">);</span>
-</span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a><span class="w">                </span><span class="n">bw</span><span class="p">.</span><span class="na">newLine</span><span class="p">();</span>
-</span><span id="__span-9-11"><a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a><span class="w">                </span><span class="n">zeile</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">br</span><span class="p">.</span><span class="na">readLine</span><span class="p">();</span>
-</span><span id="__span-9-12"><a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a><span class="w">            </span><span class="p">}</span>
-</span><span id="__span-9-13"><a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a><span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">IOException</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-9-14"><a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a><span class="w">            </span><span class="n">e</span><span class="p">.</span><span class="na">printStackTrace</span><span class="p">();</span>
-</span><span id="__span-9-15"><a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a><span class="w">        </span><span class="p">}</span>
-</span><span id="__span-9-16"><a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-9-17"><a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a><span class="p">}</span>
-</span></code></pre></div>
-</div>
-</div>
-</div>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>using kann auch hintereinander geschrieben werden, um mehrere Objekte zu verwalten.</p>
-</div>
+<p><strong>Faustregel:</strong> Sobald es eine natürliche Kennung gibt, unter der etwas gesucht wird — eine Nummer, ein Kürzel, ein Kennzeichen —, ist das Dictionary die richtige Wahl. Geht es nur darum, alles der Reihe nach zu haben, genügt die Liste.</p>
+<h2 id="haufige-fehler">Häufige Fehler<a class="headerlink" href="#haufige-fehler" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Fehlerbild</th>
+<th>Ursache</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>KeyNotFoundException</code></td>
+<td>Zugriff auf einen Schlüssel, den es nicht gibt. Vorher mit <code>ContainsKey</code> oder <code>TryGetValue</code> prüfen.</td>
+</tr>
+<tr>
+<td><code>ArgumentException: An item with the same key has already been added</code></td>
+<td><code>Add</code> mit einem Schlüssel, der schon vergeben ist. Entweder ist das ein echter Fehler in den Daten, oder es sollten die eckigen Klammern sein.</td>
+</tr>
+<tr>
+<td>Die Ausgabe ist jedes Mal anders sortiert</td>
+<td>Die Reihenfolge im Dictionary ist nicht zugesichert. Schlüssel sammeln und sortieren.</td>
+</tr>
+<tr>
+<td>Ein Eintrag ist plötzlich „weg"</td>
+<td>Der Wert, der als Schlüssel dient, wurde im Objekt nachträglich geändert.</td>
+</tr>
+<tr>
+<td><code>foreach</code> über das Dictionary und dabei <code>Remove</code></td>
+<td>Während des Durchlaufens darf die Sammlung nicht verändert werden. Erst die betroffenen Schlüssel sammeln, danach entfernen.</td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -2941,7 +2983,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Fußzeile">
         
           
-          <a href="zufall.html" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Zufall">
+          <a href="schleifen.html" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Schleifen">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
@@ -2951,20 +2993,20 @@
                 Zurück
               </span>
               <div class="md-ellipsis">
-                Zufall
+                Schleifen
               </div>
             </div>
           </a>
         
         
           
-          <a href="exceptions.html" class="md-footer__link md-footer__link--next" aria-label="Weiter: Exception Handling">
+          <a href="enum.html" class="md-footer__link md-footer__link--next" aria-label="Weiter: Enum">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Weiter
               </span>
               <div class="md-ellipsis">
-                Exception Handling
+                Enum
               </div>
             </div>
             <div class="md-footer__button md-icon">
