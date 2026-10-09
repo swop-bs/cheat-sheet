@@ -5,18 +5,21 @@ Dieses Kapitel verwendet die Beispielklasse `Mitarbeiter` mit privaten Attribute
 ```mermaid
 classDiagram
     class Mitarbeiter {
-        - string _vorname
-        - string _nachname
-        - double _gehalt
-        - string _arbeitsort
-        «property» + string Vorname
-        «property» + string Nachname
-        «property» + double Gehalt
-        «property» + string Arbeitsort
+        + vorname : string
+        + nachname : string
+        + gehalt : double
+        + arbeitsort : string
         + Mitarbeiter()
-        + Mitarbeiter(string vorname, string nachname, double gehalt, string arbeitsort)
-        + void AnzeigenInformationen()
-        + void ErhoeheGehalt(double betrag)
-        + double BerechneJahresgehalt()
+        + Mitarbeiter(vorname : string, nachname : string, gehalt : double, arbeitsort : string)
+        + anzeigenInformationen() void
+        + erhoeheGehalt(betrag : double) void
+        + berechneJahresgehalt() double
     }
 ```
+
+Das Diagramm schreibt die Namen sprachneutral wie auf der Seite
+[Klassendiagramm](../methoden/uml/klassendiagramm.md): Ein privates Feld mit seiner Property ist
+**ein** Attribut, klein und ohne Unterstrich. Im C#-Code heißen die privaten Felder `_vorname`,
+`_nachname`, `_gehalt` und `_arbeitsort`, die Properties `Vorname`, `Nachname`, `Gehalt` und
+`Arbeitsort`, und die Methoden beginnen groß (`AnzeigenInformationen()`). Genau diese Namen
+liefert Reflection: `GetFields()` die Felder, `GetProperties()` die Properties.

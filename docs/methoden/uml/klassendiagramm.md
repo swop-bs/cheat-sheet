@@ -28,8 +28,8 @@ Beide Richtungen benutzen dieselbe Notation.
 | Element | Bedeutung |
 |--------------------------------------|-------------------------------------------------------------|
 | Klasse (Rechteck mit drei Feldern) | Oben der Name (Einzahl, groß), in der Mitte die Attribute, unten die Operationen. Leere Felder dürfen wegfallen, die Reihenfolge nicht. |
-| Attribut | `sichtbarkeit name : Typ`, z. B. `- _plaetze : int`. Ein fester Anfangswert wird angehängt: `= 5000,00`. |
-| Operation | `sichtbarkeit name(parameter : Typ) : Rückgabetyp`, z. B. `+ PlatzBelegen() : bool`. Gibt sie nichts zurück, steht dort `void`. |
+| Attribut | `sichtbarkeit name : Typ`, z. B. `- belegt : int`. Der Name beginnt klein, ohne Unterstrich. Ein fester Anfangswert wird angehängt: `= 5000,00`. |
+| Operation | `sichtbarkeit name(parameter : Typ) : Rückgabetyp`, z. B. `+ platzBelegen() : bool`. Der Name beginnt klein. Gibt sie nichts zurück, steht dort `void`. |
 | Sichtbarkeit | `-` privat (nur innerhalb der Klasse), `+` öffentlich (von außen benutzbar), `#` geschützt (Klasse und Unterklassen). |
 | Assoziation (durchgezogene Linie) | Die eine Klasse kennt die andere dauerhaft, weil sie ein Feld von diesem Typ hat. |
 | Aggregation (leere Raute am Ganzen) | Ein Teil-Ganzes-Verhältnis. Das Teil kann auch ohne das Ganze bestehen. |
@@ -38,7 +38,13 @@ Beide Richtungen benutzen dieselbe Notation.
 | Abhängigkeit (gestrichelter Pfeil) | Die eine Klasse benutzt die andere nur vorübergehend, meist als Parameter oder Rückgabewert, und speichert sie nicht. |
 | Multiplizität | Steht an beiden Enden einer Verbindung: `1`, `0..1`, `1..*`, `0..*`. |
 
-!!! info "Regel für C#-Eigenschaften"
+!!! info "Vom C#-Quelltext ins Diagramm"
+    Ein Klassendiagramm ist unabhängig von der Programmiersprache. Klassennamen beginnen groß,
+    Attribute und Operationen klein; besteht ein Name aus mehreren Wörtern, beginnt jedes weitere
+    Wort groß (`platzBelegen()`). Die Schreibweisen von C# bleiben im Quelltext: Aus dem Feld
+    `_plaetze` wird im Diagramm `plaetze`, aus der Methode `IstFrei()` wird `istFrei()`. Nur der
+    Konstruktor heißt wie die Klasse und beginnt deshalb groß.
+
     Ein privates Feld mit einer öffentlichen Eigenschaft (property)
     davor wird als **ein** Attribut mit der Sichtbarkeit der Eigenschaft dargestellt; das Feld
     dahinter ist eine Umsetzungsfrage. Gibt es nur einen lesenden Zugriff, wird `{nur lesen}`
@@ -86,7 +92,7 @@ Drei Punkte lohnen einen zweiten Blick:
 - Zwischen `Lizenz` und `Arbeitsplatz` steht eine Assoziation `0..*` zu `0..*`: Ein Arbeitsplatz
   kann mehrere Lizenzen belegen, eine Netzwerklizenz mehrere Arbeitsplätze bedienen.
 - `Einzelplatzlizenz` und `Netzwerklizenz` erben Schlüssel, Plätze und alle Operationen. Sie
-  unterscheiden sich nur darin, wie sie `IstFrei()` beantworten. Genau dafür ist die
+  unterscheiden sich nur darin, wie sie `istFrei()` beantworten. Genau dafür ist die
   Generalisierung da: Was gleich ist, steht einmal.
 
 ## Aggregation oder Komposition
@@ -166,7 +172,9 @@ finden die meisten Abweichungen:
 
 1. Steht jede Klasse des Diagramms im Quelltext — und umgekehrt jede Klasse des Quelltextes im
    Diagramm?
-2. Stimmen Namen, Typen und Sichtbarkeiten der Attribute und Operationen?
+2. Stimmen Namen, Typen und Sichtbarkeiten der Attribute und Operationen? Verglichen wird ohne
+   Unterstrich und ohne Rücksicht auf den ersten Buchstaben: `_titel` im Quelltext ist `titel` im
+   Diagramm.
 3. Ist jede eingezeichnete Verbindung an einer Zeile belegbar? Steht dort ein Feld dieses Typs?
 4. Stimmen die Multiplizitäten mit dem, was der Quelltext zulässt? Eine Liste erlaubt `0..*`,
    auch wenn in der Praxis nie mehr als drei drin sind.
@@ -183,7 +191,7 @@ an den Quelltext angepasst; die Abweichung ist das Ergebnis.
 
 | Prüfen Sie zum Schluss | Frage |
 |--------------------|-------------------------------------------------------------|
-| Namen | Steht jeder Klassenname in der Einzahl und groß geschrieben? |
+| Namen | Steht jeder Klassenname in der Einzahl und groß geschrieben? Beginnen Attribute und Operationen klein und ohne Unterstrich? |
 | Drei Felder | Hat jede Klasse Name, Attribute und Operationen in dieser Reihenfolge? |
 | Sichtbarkeit | Steht vor jedem Attribut und jeder Operation `+`, `-` oder `#`? |
 | Typen | Hat jedes Attribut einen Typ und jede Operation einen Rückgabetyp? |
@@ -193,6 +201,7 @@ an den Quelltext angepasst; die Abweichung ist das Ergebnis.
 | Beleg | Lässt sich jede Verbindung an einer Zeile oder einem Satz belegen? |
 | Kein Ablauf | Steht im Diagramm versehentlich eine Reihenfolge? Die gehört ins Aktivitätsdiagramm. |
 
-Typische Fehler: Klassennamen in der Mehrzahl („Kunden"); ein Attribut, das in Wirklichkeit eine
+Typische Fehler: Klassennamen in der Mehrzahl („Kunden"); Namen aus dem C#-Quelltext mit
+Unterstrich oder großem Anfangsbuchstaben übernommen (`_name`, `IstFrei()`); ein Attribut, das in Wirklichkeit eine
 eigene Klasse ist; Multiplizität nur an einem Ende; Komposition, wo eine einfache Assoziation
 gemeint ist; Pfeile zwischen Klassen, die einen Ablauf meinen.

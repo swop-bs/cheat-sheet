@@ -62,11 +62,15 @@ Auf beiden Folgeseiten wird dieselbe einfache Beispielklasse verwendet. So läss
 ```mermaid
 classDiagram
     class WeatherForecast {
-        «property» + DateTimeOffset Date
-        «property» + int TemperatureCelsius
-        «property» + string? Summary
+        + date : DateTimeOffset
+        + temperatureCelsius : int
+        + summary : string?
     }
 ```
+
+Im Diagramm stehen die Namen sprachneutral klein (siehe [Klassendiagramm](../methoden/uml/klassendiagramm.md)).
+Im C#-Code heißen die Properties `Date`, `TemperatureCelsius` und `Summary`; unter diesen Namen
+stehen sie, wenn nichts anderes eingestellt ist, auch in JSON und XML.
 
 ```csharp
 public class WeatherForecast
