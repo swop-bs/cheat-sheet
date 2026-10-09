@@ -1942,6 +1942,8 @@
       
         
       
+        
+      
     
     
     
@@ -1992,6 +1994,34 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix="">
             
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="klasse-mitarbeiter.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Beispielklasse Mitarbeiter
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
               
             
               
@@ -3711,7 +3741,7 @@
 <p>Ein zentraler Aspekt von Reflection in C# ist die Fähigkeit, Objekte zur Laufzeit zu erstellen. Diese Fähigkeit ist besonders nützlich in Szenarien, in denen Typen dynamisch zur Laufzeit geladen oder instanziiert werden müssen, ohne dass sie zur Kompilierungszeit bekannt sind. Ein häufig verwendetes Werkzeug dafür ist die Klasse <code>Activator</code>, die Teil des .NET Frameworks ist.</p>
 <h2 id="verwendung-des-activators">Verwendung des Activators<a class="headerlink" href="#verwendung-des-activators" title="Permanent link">#</a></h2>
 <p>Die <code>Activator</code>-Klasse bietet mehrere Methoden, um Instanzen von Typen zur Laufzeit zu erstellen. Eine der gebräuchlichsten Methoden ist <code>CreateInstance</code>. Diese Methode hat mehrere Überladungen, die es ermöglichen, Objekte auf verschiedene Arten zu instanziieren, unter anderem durch Angabe des Typs, der Parameter für den Konstruktor und sogar durch Angabe des Assemblynamens, in dem sich der Typ befindet.</p>
-<p>Um ein Objekt vom Typ <code>Mitarbeiter</code> zur Laufzeit zu erstellen, können wir folgenden Ansatz verfolgen:</p>
+<p>Um ein Objekt vom Typ <a href="klasse-mitarbeiter.html"><code>Mitarbeiter</code></a> zur Laufzeit zu erstellen, können wir folgenden Ansatz verfolgen:</p>
 <div class="language-csharp highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">// Erstellen eines Objekts vom Typ Mitarbeiter ohne Parameter (nutzt den Standardkonstruktor)</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">Mitarbeiter</span><span class="w"> </span><span class="n">mitarbeiter1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">Mitarbeiter</span><span class="p">)</span><span class="n">Activator</span><span class="p">.</span><span class="n">CreateInstance</span><span class="p">(</span><span class="k">typeof</span><span class="p">(</span><span class="n">Mitarbeiter</span><span class="p">));</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="c1">// Initialisierung der Attribute für mitarbeiter1</span>
@@ -3737,7 +3767,7 @@
 <h3 id="erklarung">Erklärung<a class="headerlink" href="#erklarung" title="Permanent link">#</a></h3>
 <ul>
 <li>
-<p><strong><code>Activator.CreateInstance(typeof(Mitarbeiter))</code></strong>: Diese Zeile erstellt eine neue Instanz von <code>Mitarbeiter</code> unter Verwendung des Standardkonstruktors. Da <code>CreateInstance</code> ein Objekt vom Typ <code>object</code> zurückgibt, ist ein explizites Casting auf den Typ <code>Mitarbeiter</code> notwendig.</p>
+<p><strong><code>Activator.CreateInstance(typeof(Mitarbeiter))</code></strong>: Diese Zeile erstellt eine neue Instanz von <a href="klasse-mitarbeiter.html"><code>Mitarbeiter</code></a> unter Verwendung des Standardkonstruktors. Da <code>CreateInstance</code> ein Objekt vom Typ <code>object</code> zurückgibt, ist ein explizites Casting auf den Typ <code>Mitarbeiter</code> notwendig.</p>
 </li>
 <li>
 <p><strong><code>Activator.CreateInstance(typeof(Mitarbeiter), parameters)</code></strong>: Hier wird eine neue Instanz von <code>Mitarbeiter</code> erstellt, wobei ein Array von Objekten als Parameter für den Konstruktor übergeben wird. Diese Methode ist nützlich, wenn der zu verwendende Konstruktor Parameter erwartet. Auch hier ist ein Casting erforderlich.</p>
@@ -3748,7 +3778,7 @@
 <p>Es ist jedoch wichtig zu beachten, dass der Einsatz von Reflection und insbesondere des <code>Activator</code> zur Objekterstellung Overhead verursacht und die Performance beeinträchtigen kann. Deshalb sollte der Einsatz wohlüberlegt und in Performance-kritischen Bereichen vermieden oder minimiert werden.</p>
 <h2 id="dynamische-wertzuweisung-zu-properties-von-objekten">Dynamische Wertzuweisung zu Properties von Objekten<a class="headerlink" href="#dynamische-wertzuweisung-zu-properties-von-objekten" title="Permanent link">#</a></h2>
 <p>In Szenarien, wo die Properties eines Objekts zur Laufzeit nicht bekannt sind, bietet Reflection in C# die Möglichkeit, dynamisch auf diese Properties zuzugreifen und ihnen Werte zuzuweisen. Dies kann besonders nützlich sein, wenn man mit Objekten arbeitet, deren Struktur erst zur Laufzeit bestimmt wird, wie es beispielsweise bei der dynamischen Erzeugung von Objekten aus Datenbankabfragen oder bei der Deserialisierung von JSON-Objekten der Fall ist.</p>
-<p>Um dieses Konzept zu demonstrieren, verwenden wir wieder die <code>Mitarbeiter</code>-Klasse. Wir zeigen, wie man die Properties eines <code>Mitarbeiter</code>-Objekts dynamisch abfragen und mit Standardwerten initialisieren kann.</p>
+<p>Um dieses Konzept zu demonstrieren, verwenden wir wieder die <a href="klasse-mitarbeiter.html"><code>Mitarbeiter</code></a>-Klasse. Wir zeigen, wie man die Properties eines <code>Mitarbeiter</code>-Objekts dynamisch abfragen und mit Standardwerten initialisieren kann.</p>
 <h3 id="dynamische-initialisierung-von-properties">Dynamische Initialisierung von Properties<a class="headerlink" href="#dynamische-initialisierung-von-properties" title="Permanent link">#</a></h3>
 <p>Der Schlüssel zur dynamischen Arbeit mit Properties ist die Verwendung der <code>GetProperty</code>- und <code>SetValue</code>-Methoden des <code>Type</code>-Objekts, die über Reflection zugänglich sind. Hier ist ein grundlegendes Beispiel, das die Properties mit Standardwerten belegt:</p>
 <div class="language-csharp highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">// Erstellen eines Objekts vom Typ Mitarbeiter zur Laufzeit</span>
@@ -3779,7 +3809,7 @@
 </details>
 <h3 id="erklarung_1">Erklärung<a class="headerlink" href="#erklarung_1" title="Permanent link">#</a></h3>
 <ul>
-<li>Zunächst wird ein <code>Mitarbeiter</code>-Objekt zur Laufzeit erstellt.</li>
+<li>Zunächst wird ein <a href="klasse-mitarbeiter.html"><code>Mitarbeiter</code></a>-Objekt zur Laufzeit erstellt.</li>
 <li>Anschließend wird das <code>Type</code>-Objekt des <code>Mitarbeiter</code>-Typs verwendet, um alle öffentlichen Properties zu erhalten.</li>
 <li>Für jede Property wird überprüft, welchen Typ sie hat (<code>string</code>, <code>double</code> usw.), und es wird ein entsprechender Standardwert zugewiesen. Im Beispiel wird allen <code>string</code>-Properties der Wert <code>"Standardwert"</code> und allen <code>double</code>-Properties der Wert <code>0.0</code> zugewiesen.</li>
 <li>Schließlich wird eine Methode des Objekts aufgerufen, um die Ergebnisse der dynamischen Property-Zuweisungen zu überprüfen.</li>

@@ -1931,6 +1931,8 @@
       
         
       
+        
+      
     
     
     
@@ -1981,6 +1983,34 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix="">
             
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reflection/klasse-mitarbeiter.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Beispielklasse Mitarbeiter
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
               
             
               
@@ -3679,11 +3709,11 @@ sich ein Aufwand abschätzen lässt.</p>
 </tr>
 <tr>
 <td>Attribut</td>
-<td><code>sichtbarkeit name : Typ</code>, z. B. <code>- _plaetze : int</code>. Ein fester Anfangswert wird angehängt: <code>= 5000,00</code>.</td>
+<td><code>sichtbarkeit name : Typ</code>, z. B. <code>- belegt : int</code>. Der Name beginnt klein, ohne Unterstrich. Ein fester Anfangswert wird angehängt: <code>= 5000,00</code>.</td>
 </tr>
 <tr>
 <td>Operation</td>
-<td><code>sichtbarkeit name(parameter : Typ) : Rückgabetyp</code>, z. B. <code>+ PlatzBelegen() : bool</code>. Gibt sie nichts zurück, steht dort <code>void</code>.</td>
+<td><code>sichtbarkeit name(parameter : Typ) : Rückgabetyp</code>, z. B. <code>+ platzBelegen() : bool</code>. Der Name beginnt klein. Gibt sie nichts zurück, steht dort <code>void</code>.</td>
 </tr>
 <tr>
 <td>Sichtbarkeit</td>
@@ -3716,7 +3746,12 @@ sich ein Aufwand abschätzen lässt.</p>
 </tbody>
 </table>
 <div class="admonition info">
-<p class="admonition-title">Regel für C#-Eigenschaften</p>
+<p class="admonition-title">Vom C#-Quelltext ins Diagramm</p>
+<p>Ein Klassendiagramm ist unabhängig von der Programmiersprache. Klassennamen beginnen groß,
+Attribute und Operationen klein; besteht ein Name aus mehreren Wörtern, beginnt jedes weitere
+Wort groß (<code>platzBelegen()</code>). Die Schreibweisen von C# bleiben im Quelltext: Aus dem Feld
+<code>_plaetze</code> wird im Diagramm <code>plaetze</code>, aus der Methode <code>IstFrei()</code> wird <code>istFrei()</code>. Nur der
+Konstruktor heißt wie die Klasse und beginnt deshalb groß.</p>
 <p>Ein privates Feld mit einer öffentlichen Eigenschaft (property)
 davor wird als <strong>ein</strong> Attribut mit der Sichtbarkeit der Eigenschaft dargestellt; das Feld
 dahinter ist eine Umsetzungsfrage. Gibt es nur einen lesenden Zugriff, wird <code>{nur lesen}</code>
@@ -3761,7 +3796,7 @@ Plätze. Die Betreuung will wissen, wie viele Plätze eines Produkts noch frei s
 <li>Zwischen <code>Lizenz</code> und <code>Arbeitsplatz</code> steht eine Assoziation <code>0..*</code> zu <code>0..*</code>: Ein Arbeitsplatz
   kann mehrere Lizenzen belegen, eine Netzwerklizenz mehrere Arbeitsplätze bedienen.</li>
 <li><code>Einzelplatzlizenz</code> und <code>Netzwerklizenz</code> erben Schlüssel, Plätze und alle Operationen. Sie
-  unterscheiden sich nur darin, wie sie <code>IstFrei()</code> beantworten. Genau dafür ist die
+  unterscheiden sich nur darin, wie sie <code>istFrei()</code> beantworten. Genau dafür ist die
   Generalisierung da: Was gleich ist, steht einmal.</li>
 </ul>
 <h2 id="aggregation-oder-komposition">Aggregation oder Komposition<a class="headerlink" href="#aggregation-oder-komposition" title="Permanent link">#</a></h2>
@@ -3857,7 +3892,9 @@ finden die meisten Abweichungen:</p>
 <ol>
 <li>Steht jede Klasse des Diagramms im Quelltext — und umgekehrt jede Klasse des Quelltextes im
    Diagramm?</li>
-<li>Stimmen Namen, Typen und Sichtbarkeiten der Attribute und Operationen?</li>
+<li>Stimmen Namen, Typen und Sichtbarkeiten der Attribute und Operationen? Verglichen wird ohne
+   Unterstrich und ohne Rücksicht auf den ersten Buchstaben: <code>_titel</code> im Quelltext ist <code>titel</code> im
+   Diagramm.</li>
 <li>Ist jede eingezeichnete Verbindung an einer Zeile belegbar? Steht dort ein Feld dieses Typs?</li>
 <li>Stimmen die Multiplizitäten mit dem, was der Quelltext zulässt? Eine Liste erlaubt <code>0..*</code>,
    auch wenn in der Praxis nie mehr als drei drin sind.</li>
@@ -3880,7 +3917,7 @@ an den Quelltext angepasst; die Abweichung ist das Ergebnis.</p>
 <tbody>
 <tr>
 <td>Namen</td>
-<td>Steht jeder Klassenname in der Einzahl und groß geschrieben?</td>
+<td>Steht jeder Klassenname in der Einzahl und groß geschrieben? Beginnen Attribute und Operationen klein und ohne Unterstrich?</td>
 </tr>
 <tr>
 <td>Drei Felder</td>
@@ -3916,7 +3953,8 @@ an den Quelltext angepasst; die Abweichung ist das Ergebnis.</p>
 </tr>
 </tbody>
 </table>
-<p>Typische Fehler: Klassennamen in der Mehrzahl („Kunden"); ein Attribut, das in Wirklichkeit eine
+<p>Typische Fehler: Klassennamen in der Mehrzahl („Kunden"); Namen aus dem C#-Quelltext mit
+Unterstrich oder großem Anfangsbuchstaben übernommen (<code>_name</code>, <code>IstFrei()</code>); ein Attribut, das in Wirklichkeit eine
 eigene Klasse ist; Multiplizität nur an einem Ende; Komposition, wo eine einfache Assoziation
 gemeint ist; Pfeile zwischen Klassen, die einen Ablauf meinen.</p>
 

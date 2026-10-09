@@ -1942,6 +1942,8 @@
       
         
       
+        
+      
     
     
     
@@ -1992,6 +1994,34 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix="">
             
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reflection/klasse-mitarbeiter.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Beispielklasse Mitarbeiter
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
               
             
               
@@ -3591,10 +3621,13 @@
 <p>Auf beiden Folgeseiten wird dieselbe einfache Beispielklasse verwendet. So lässt sich gut vergleichen, wie JSON und XML mit demselben Objekt umgehen.</p>
 <pre class="mermaid"><code>classDiagram
     class WeatherForecast {
-        «property» + DateTimeOffset Date
-        «property» + int TemperatureCelsius
-        «property» + string? Summary
+        + date : DateTimeOffset
+        + temperatureCelsius : int
+        + summary : string?
     }</code></pre>
+<p>Im Diagramm stehen die Namen sprachneutral klein (siehe <a href="../methoden/uml/klassendiagramm.html">Klassendiagramm</a>).
+Im C#-Code heißen die Properties <code>Date</code>, <code>TemperatureCelsius</code> und <code>Summary</code>; unter diesen Namen
+stehen sie, wenn nichts anderes eingestellt ist, auch in JSON und XML.</p>
 <div class="language-csharp highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">WeatherForecast</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="p">{</span>
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="n">DateTimeOffset</span><span class="w"> </span><span class="n">Date</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
