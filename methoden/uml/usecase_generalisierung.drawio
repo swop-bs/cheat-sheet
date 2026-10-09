@@ -1,0 +1,55 @@
+<mxfile host="drawio" agent="Campus IT Solutions" version="24.7.17">
+  <diagram id="usecase_generalisierung" name="Generalisierung im Abwesenheitsplaner">
+    <mxGraphModel dx="1000" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="780" pageHeight="350" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="titel" value="Generalisierung im Abwesenheitsplaner" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;strokeColor=none;fillColor=none;fontFamily=Helvetica;fontSize=14;fontStyle=1;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="20" y="10" width="400" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="systemgrenze_abwesenheitsplaner" value="Abwesenheitsplaner" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;verticalAlign=top;align=center;spacingTop=6;fontFamily=Helvetica;fontSize=13;fontStyle=1;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="290" y="50" width="470" height="280" as="geometry"/>
+        </mxCell>
+        <mxCell id="uc_resturlaub_einsehen" value="Resturlaub einsehen" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=13;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="320" y="95" width="160" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="uc_abwesenheit_melden" value="Abwesenheit melden" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=13;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="320" y="200" width="160" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="uc_urlaub_beantragen" value="Urlaub beantragen" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=13;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="570" y="150" width="160" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="uc_krankheit_melden" value="Krankheit melden" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=13;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="570" y="250" width="160" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="akteur_auszubildende" value="Auszubildende/r" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=13;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="50" y="80" width="30" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="akteur_angestellte" value="Angestellte/r" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=13;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="50" y="220" width="30" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="akteur_mitarbeiter" value="Mitarbeiter/in" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=13;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="200" y="150" width="30" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="generalisierung_auszubildende" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=none;endArrow=block;endFill=0;endSize=14;startArrow=none;exitX=1;exitY=0.333;exitDx=0;exitDy=0;entryX=0;entryY=0.333;entryDx=0;entryDy=0;" edge="1" parent="1" source="akteur_auszubildende" target="akteur_mitarbeiter">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="generalisierung_angestellte" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=none;endArrow=block;endFill=0;endSize=14;startArrow=none;exitX=1;exitY=0.333;exitDx=0;exitDy=0;entryX=0;entryY=0.333;entryDx=0;entryDy=0;" edge="1" parent="1" source="akteur_angestellte" target="akteur_mitarbeiter">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="assoziation_mitarbeiter_resturlaub" value="" style="edgeStyle=none;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=none;exitX=1;exitY=0.333;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="akteur_mitarbeiter" target="uc_resturlaub_einsehen">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="assoziation_mitarbeiter_abwesenheit" value="" style="edgeStyle=none;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=none;exitX=1;exitY=0.333;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="akteur_mitarbeiter" target="uc_abwesenheit_melden">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="generalisierung_urlaub" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=none;endArrow=block;endFill=0;endSize=14;startArrow=none;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="uc_urlaub_beantragen" target="uc_abwesenheit_melden">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="generalisierung_krankheit" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=none;endArrow=block;endFill=0;endSize=14;startArrow=none;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="uc_krankheit_melden" target="uc_abwesenheit_melden">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

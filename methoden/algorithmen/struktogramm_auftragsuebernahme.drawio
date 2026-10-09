@@ -1,0 +1,82 @@
+<mxfile host="drawio" agent="Campus IT Solutions" version="24.0">
+  <diagram id="struktogramm_auftragsuebernahme" name="Angebot in Auftrag übernehmen als Struktogramm">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="titel" value="Struktogramm: Angebot in Auftrag übernehmen (Hausprojekt KALK)" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=14;fontStyle=1;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="700" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="untertitel" value="Eingang: angebot · Ausgang: Meldung an die Benutzerin" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#52626F;" vertex="1" parent="1">
+          <mxGeometry x="0" y="24" width="700" height="18" as="geometry"/>
+        </mxCell>
+        <mxCell id="struktogramm" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="0" y="52" width="700" height="272" as="geometry"/>
+        </mxCell>
+        <mxCell id="liste_anlegen" value="offenePositionen = leere Liste" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="struktogramm">
+          <mxGeometry x="0" y="0" width="700" height="32" as="geometry"/>
+        </mxCell>
+        <mxCell id="schleife_rahmen" value="FÜR JEDE position DES angebot" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E0F1F5;strokeColor=#0E7490;strokeWidth=1.5;verticalAlign=top;spacingTop=6;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="struktogramm">
+          <mxGeometry x="0" y="32" width="700" height="128" as="geometry"/>
+        </mxCell>
+        <mxCell id="pruefung_kopf" value="position.Stundensatz = 0,00 ?" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E0F1F5;strokeColor=#0E7490;strokeWidth=1.5;verticalAlign=top;spacingTop=2;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="struktogramm">
+          <mxGeometry x="24" y="64" width="676" height="48" as="geometry"/>
+        </mxCell>
+        <mxCell id="pruefung_linie_links" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#0E7490;strokeWidth=1.5;" edge="1" parent="struktogramm">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="24" y="64" as="sourcePoint"/>
+            <mxPoint x="362" y="112" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pruefung_linie_rechts" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#0E7490;strokeWidth=1.5;" edge="1" parent="struktogramm">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="700" y="64" as="sourcePoint"/>
+            <mxPoint x="362" y="112" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pruefung_ja" value="ja" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="struktogramm">
+          <mxGeometry x="30" y="94" width="30" height="16" as="geometry"/>
+        </mxCell>
+        <mxCell id="pruefung_nein" value="nein" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="struktogramm">
+          <mxGeometry x="654" y="94" width="40" height="16" as="geometry"/>
+        </mxCell>
+        <mxCell id="position_merken" value="offenePositionen = offenePositionen + position.Nummer" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="struktogramm">
+          <mxGeometry x="24" y="112" width="338" height="48" as="geometry"/>
+        </mxCell>
+        <mxCell id="nichts_tun" value="—" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="struktogramm">
+          <mxGeometry x="362" y="112" width="338" height="48" as="geometry"/>
+        </mxCell>
+        <mxCell id="ergebnis_kopf" value="offenePositionen ist leer ?" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E0F1F5;strokeColor=#0E7490;strokeWidth=1.5;verticalAlign=top;spacingTop=2;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="struktogramm">
+          <mxGeometry x="0" y="160" width="700" height="48" as="geometry"/>
+        </mxCell>
+        <mxCell id="ergebnis_linie_links" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#0E7490;strokeWidth=1.5;" edge="1" parent="struktogramm">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="0" y="160" as="sourcePoint"/>
+            <mxPoint x="350" y="208" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ergebnis_linie_rechts" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#0E7490;strokeWidth=1.5;" edge="1" parent="struktogramm">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="700" y="160" as="sourcePoint"/>
+            <mxPoint x="350" y="208" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ergebnis_ja" value="ja" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="struktogramm">
+          <mxGeometry x="6" y="190" width="30" height="16" as="geometry"/>
+        </mxCell>
+        <mxCell id="ergebnis_nein" value="nein" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="struktogramm">
+          <mxGeometry x="654" y="190" width="40" height="16" as="geometry"/>
+        </mxCell>
+        <mxCell id="status_setzen" value="Status des angebot = &quot;in Auftrag übernommen&quot;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="struktogramm">
+          <mxGeometry x="0" y="208" width="350" height="32" as="geometry"/>
+        </mxCell>
+        <mxCell id="ausgabe_angelegt" value="AUSGABE &quot;Auftrag angelegt&quot;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="struktogramm">
+          <mxGeometry x="0" y="240" width="350" height="32" as="geometry"/>
+        </mxCell>
+        <mxCell id="ausgabe_offen" value="AUSGABE &quot;Noch ohne Stundensatz:&quot;, offenePositionen" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="struktogramm">
+          <mxGeometry x="350" y="208" width="350" height="64" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

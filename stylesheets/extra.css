@@ -1,5 +1,61 @@
-/* Maximum space for text block */
-.md-grid {
-    max-width: 80%;
-    /* or 100%, if you want to stretch to full-width */
+/* Seitenbreite: Standard von Material (61rem). Frühere Einstellung: .md-grid { max-width: 80%; } */
+
+/* Startseite: Kopfbereich in der Primärfarbe */
+.md-typeset .startseite-hero {
+    margin: 0 0 1.6rem;
+    padding: 2rem 2.4rem;
+    border-radius: .4rem;
+    background: linear-gradient(135deg, var(--md-primary-fg-color), var(--md-primary-fg-color--dark));
+    color: var(--md-primary-bg-color);
+}
+
+.md-typeset .startseite-hero h1 {
+    margin: 0 0 .8rem;
+    color: inherit;
+    font-weight: 700;
+}
+
+.md-typeset .startseite-hero p {
+    max-width: 42rem;
+    font-size: .9rem;
+}
+
+.md-typeset .startseite-hero .md-button {
+    margin-top: .4rem;
+    border-color: var(--md-primary-bg-color);
+    color: var(--md-primary-bg-color);
+}
+
+.md-typeset .startseite-hero .md-button--primary {
+    background-color: var(--md-primary-bg-color);
+    color: var(--md-primary-fg-color);
+}
+
+.md-typeset .startseite-hero .md-button:hover,
+.md-typeset .startseite-hero .md-button:focus {
+    border-color: var(--md-accent-fg-color);
+    background-color: var(--md-accent-fg-color);
+    color: var(--md-accent-bg-color);
+}
+
+.md-typeset .startseite-hero .startseite-tipp {
+    font-size: .75rem;
+    opacity: .85;
+}
+
+@media screen and (max-width: 44.9375em) {
+    .md-typeset .startseite-hero {
+        padding: 1.2rem 1rem;
+    }
+}
+
+/* Diagramme im Fließtext verkleinert; ein Klick öffnet sie groß (glightbox) */
+.md-typeset img.diagramm {
+    display: block;
+    margin: 1rem auto;
+    width: auto;
+    height: auto;
+    max-width: min(100%, 560px);
+    max-height: 520px;
+    cursor: zoom-in;
 }

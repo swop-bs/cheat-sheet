@@ -1,0 +1,85 @@
+<mxfile host="drawio" agent="Campus IT Solutions" version="24.7.17">
+  <diagram id="klassendiagramm_aggregation_komposition" name="Aggregation und Komposition in der Projektverwaltung">
+    <mxGraphModel dx="1000" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="800" pageHeight="480" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="titel" value="Projektverwaltung – Aggregation und Komposition" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;strokeColor=none;fillColor=none;fontFamily=Helvetica;fontSize=14;fontStyle=1;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="20" y="10" width="600" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="klasse_projekt" value="Projekt" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fillColor=#FFFFFF;swimlaneFillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=13;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="230" y="50" width="330" height="124" as="geometry"/>
+        </mxCell>
+        <mxCell id="klasse_projekt_attr_bezeichnung" value="- _bezeichnung : string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="klasse_projekt">
+          <mxGeometry y="28" width="330" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="klasse_projekt_trennlinie" value="" style="line;strokeWidth=1.5;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#0E7490;" vertex="1" parent="klasse_projekt">
+          <mxGeometry y="50" width="330" height="8" as="geometry"/>
+        </mxCell>
+        <mxCell id="klasse_projekt_op_konstruktor" value="+ Projekt(bezeichnung : string)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="klasse_projekt">
+          <mxGeometry y="58" width="330" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="klasse_projekt_op_meilensteinanlegen" value="+ MeilensteinAnlegen(titel : string) : void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="klasse_projekt">
+          <mxGeometry y="80" width="330" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="klasse_projekt_op_mitarbeiterzuordnen" value="+ MitarbeiterZuordnen(person : Mitarbeiter) : void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="klasse_projekt">
+          <mxGeometry y="102" width="330" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="klasse_mitarbeiter" value="Mitarbeiter" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fillColor=#FFFFFF;swimlaneFillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=13;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="30" y="290" width="240" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="klasse_mitarbeiter_attr_name" value="- _name : string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="klasse_mitarbeiter">
+          <mxGeometry y="28" width="240" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="klasse_mitarbeiter_trennlinie" value="" style="line;strokeWidth=1.5;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#0E7490;" vertex="1" parent="klasse_mitarbeiter">
+          <mxGeometry y="50" width="240" height="8" as="geometry"/>
+        </mxCell>
+        <mxCell id="klasse_mitarbeiter_op_konstruktor" value="+ Mitarbeiter(name : string)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="klasse_mitarbeiter">
+          <mxGeometry y="58" width="240" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="klasse_meilenstein" value="Meilenstein" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fillColor=#FFFFFF;swimlaneFillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=13;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="520" y="290" width="250" height="124" as="geometry"/>
+        </mxCell>
+        <mxCell id="klasse_meilenstein_attr_titel" value="- _titel : string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="klasse_meilenstein">
+          <mxGeometry y="28" width="250" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="klasse_meilenstein_attr_erreicht" value="- _erreicht : bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="klasse_meilenstein">
+          <mxGeometry y="50" width="250" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="klasse_meilenstein_trennlinie" value="" style="line;strokeWidth=1.5;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#0E7490;" vertex="1" parent="klasse_meilenstein">
+          <mxGeometry y="72" width="250" height="8" as="geometry"/>
+        </mxCell>
+        <mxCell id="klasse_meilenstein_op_konstruktor" value="+ Meilenstein(titel : string)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="klasse_meilenstein">
+          <mxGeometry y="80" width="250" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="klasse_meilenstein_op_erreichen" value="+ AlsErreichtMarkieren() : void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="klasse_meilenstein">
+          <mxGeometry y="102" width="250" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="aggregation_projekt_mitarbeiter" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=none;endArrow=none;startArrow=diamondThin;startFill=0;startSize=16;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="klasse_projekt" target="klasse_mitarbeiter">
+          <mxGeometry relative="1" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="aggregation_mult_projekt" value="0..*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=none;" vertex="1" connectable="0" parent="aggregation_projekt_mitarbeiter">
+          <mxGeometry x="-1" relative="1" as="geometry"><mxPoint x="20" y="26" as="offset"/></mxGeometry>
+        </mxCell>
+        <mxCell id="aggregation_mult_mitarbeiter" value="1..*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=none;" vertex="1" connectable="0" parent="aggregation_projekt_mitarbeiter">
+          <mxGeometry x="1" relative="1" as="geometry"><mxPoint x="20" y="-12" as="offset"/></mxGeometry>
+        </mxCell>
+        <mxCell id="komposition_projekt_meilenstein" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=none;endArrow=none;startArrow=diamondThin;startFill=1;startSize=16;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="klasse_projekt" target="klasse_meilenstein">
+          <mxGeometry relative="1" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="komposition_mult_projekt" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=none;" vertex="1" connectable="0" parent="komposition_projekt_meilenstein">
+          <mxGeometry x="-1" relative="1" as="geometry"><mxPoint x="14" y="26" as="offset"/></mxGeometry>
+        </mxCell>
+        <mxCell id="komposition_mult_meilenstein" value="1..*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=none;" vertex="1" connectable="0" parent="komposition_projekt_meilenstein">
+          <mxGeometry x="1" relative="1" as="geometry"><mxPoint x="20" y="-12" as="offset"/></mxGeometry>
+        </mxCell>
+        <mxCell id="notiz_aggregation" value="Aggregation: Die Person gibt es auch ohne das Projekt, und sie kann in mehreren Projekten zugleich arbeiten." style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;strokeColor=none;fillColor=none;fontFamily=Helvetica;fontSize=12;fontColor=#52626F;" vertex="1" parent="1">
+          <mxGeometry x="30" y="380" width="240" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="notiz_komposition" value="Komposition: Ein Meilenstein gehört zu genau einem Projekt und endet mit ihm." style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;strokeColor=none;fillColor=none;fontFamily=Helvetica;fontSize=12;fontColor=#52626F;" vertex="1" parent="1">
+          <mxGeometry x="520" y="424" width="250" height="40" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

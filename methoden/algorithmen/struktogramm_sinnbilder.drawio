@@ -1,0 +1,163 @@
+<mxfile host="drawio" agent="Campus IT Solutions" version="24.0">
+  <diagram id="struktogramm_sinnbilder" name="Die Sinnbilder des Struktogramms">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="titel" value="Die Sinnbilder des Struktogramms (Nassi-Shneiderman)" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=14;fontStyle=1;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="780" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="folge" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="0" y="34" width="240" height="120" as="geometry"/>
+        </mxCell>
+        <mxCell id="folge_titel" value="1&#160;&#160;Folge" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=13;fontStyle=1;fontColor=#22303C;" vertex="1" parent="folge">
+          <mxGeometry x="0" y="0" width="240" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="folge_anweisung1" value="Anweisung 1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="folge">
+          <mxGeometry x="0" y="24" width="240" height="32" as="geometry"/>
+        </mxCell>
+        <mxCell id="folge_anweisung2" value="Anweisung 2" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="folge">
+          <mxGeometry x="0" y="56" width="240" height="32" as="geometry"/>
+        </mxCell>
+        <mxCell id="folge_anweisung3" value="Anweisung 3" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="folge">
+          <mxGeometry x="0" y="88" width="240" height="32" as="geometry"/>
+        </mxCell>
+        <mxCell id="verzweigung" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="270" y="34" width="240" height="120" as="geometry"/>
+        </mxCell>
+        <mxCell id="verzweigung_titel" value="2&#160;&#160;Verzweigung" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=13;fontStyle=1;fontColor=#22303C;" vertex="1" parent="verzweigung">
+          <mxGeometry x="0" y="0" width="240" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="verzweigung_kopf" value="Bedingung ?" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E0F1F5;strokeColor=#0E7490;strokeWidth=1.5;verticalAlign=top;spacingTop=2;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="verzweigung">
+          <mxGeometry x="0" y="24" width="240" height="48" as="geometry"/>
+        </mxCell>
+        <mxCell id="verzweigung_linie_links" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#0E7490;strokeWidth=1.5;" edge="1" parent="verzweigung">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="0" y="24" as="sourcePoint"/>
+            <mxPoint x="120" y="72" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="verzweigung_linie_rechts" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#0E7490;strokeWidth=1.5;" edge="1" parent="verzweigung">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="24" as="sourcePoint"/>
+            <mxPoint x="120" y="72" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="verzweigung_ja" value="ja" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="verzweigung">
+          <mxGeometry x="5" y="54" width="30" height="16" as="geometry"/>
+        </mxCell>
+        <mxCell id="verzweigung_nein" value="nein" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="verzweigung">
+          <mxGeometry x="195" y="54" width="40" height="16" as="geometry"/>
+        </mxCell>
+        <mxCell id="verzweigung_anweisung_a" value="Anweisung A" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="verzweigung">
+          <mxGeometry x="0" y="72" width="120" height="48" as="geometry"/>
+        </mxCell>
+        <mxCell id="verzweigung_anweisung_b" value="Anweisung B" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="verzweigung">
+          <mxGeometry x="120" y="72" width="120" height="48" as="geometry"/>
+        </mxCell>
+        <mxCell id="mehrfachauswahl" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="540" y="34" width="240" height="120" as="geometry"/>
+        </mxCell>
+        <mxCell id="mehrfachauswahl_titel" value="3&#160;&#160;Mehrfachauswahl" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=13;fontStyle=1;fontColor=#22303C;" vertex="1" parent="mehrfachauswahl">
+          <mxGeometry x="0" y="0" width="240" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="mehrfachauswahl_kopf" value="wert" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E0F1F5;strokeColor=#0E7490;strokeWidth=1.5;verticalAlign=top;spacingTop=2;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="mehrfachauswahl">
+          <mxGeometry x="0" y="24" width="240" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="mehrfachauswahl_linie_links" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#0E7490;strokeWidth=1.5;" edge="1" parent="mehrfachauswahl">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="0" y="24" as="sourcePoint"/>
+            <mxPoint x="160" y="80" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mehrfachauswahl_linie_rechts" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#0E7490;strokeWidth=1.5;" edge="1" parent="mehrfachauswahl">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="160" y="80" as="sourcePoint"/>
+            <mxPoint x="240" y="24" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mehrfachauswahl_wert1" value="= 1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="mehrfachauswahl">
+          <mxGeometry x="5" y="64" width="30" height="14" as="geometry"/>
+        </mxCell>
+        <mxCell id="mehrfachauswahl_wert2" value="= 2" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="mehrfachauswahl">
+          <mxGeometry x="84" y="64" width="22" height="14" as="geometry"/>
+        </mxCell>
+        <mxCell id="mehrfachauswahl_sonst" value="sonst" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="mehrfachauswahl">
+          <mxGeometry x="200" y="64" width="35" height="14" as="geometry"/>
+        </mxCell>
+        <mxCell id="mehrfachauswahl_anweisung_a" value="Anw. A" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="mehrfachauswahl">
+          <mxGeometry x="0" y="80" width="80" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="mehrfachauswahl_anweisung_b" value="Anw. B" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="mehrfachauswahl">
+          <mxGeometry x="80" y="80" width="80" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="mehrfachauswahl_anweisung_c" value="Anw. C" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="mehrfachauswahl">
+          <mxGeometry x="160" y="80" width="80" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="kopfschleife" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="0" y="180" width="240" height="142" as="geometry"/>
+        </mxCell>
+        <mxCell id="kopfschleife_titel" value="4&#160;&#160;Kopfgesteuerte Schleife" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=13;fontStyle=1;fontColor=#22303C;" vertex="1" parent="kopfschleife">
+          <mxGeometry x="0" y="0" width="240" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="kopfschleife_rahmen" value="SOLANGE bedingung" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E0F1F5;strokeColor=#0E7490;strokeWidth=1.5;verticalAlign=top;spacingTop=6;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="kopfschleife">
+          <mxGeometry x="0" y="24" width="240" height="96" as="geometry"/>
+        </mxCell>
+        <mxCell id="kopfschleife_anweisung1" value="Anweisung 1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="kopfschleife">
+          <mxGeometry x="24" y="56" width="216" height="32" as="geometry"/>
+        </mxCell>
+        <mxCell id="kopfschleife_anweisung2" value="Anweisung 2" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="kopfschleife">
+          <mxGeometry x="24" y="88" width="216" height="32" as="geometry"/>
+        </mxCell>
+        <mxCell id="kopfschleife_hinweis" value="Prüfung vor dem ersten Durchlauf" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#52626F;" vertex="1" parent="kopfschleife">
+          <mxGeometry x="0" y="124" width="240" height="18" as="geometry"/>
+        </mxCell>
+        <mxCell id="fussschleife" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="270" y="180" width="240" height="142" as="geometry"/>
+        </mxCell>
+        <mxCell id="fussschleife_titel" value="5&#160;&#160;Fußgesteuerte Schleife" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=13;fontStyle=1;fontColor=#22303C;" vertex="1" parent="fussschleife">
+          <mxGeometry x="0" y="0" width="240" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="fussschleife_rahmen" value="BIS bedingung" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E0F1F5;strokeColor=#0E7490;strokeWidth=1.5;verticalAlign=bottom;spacingBottom=6;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="fussschleife">
+          <mxGeometry x="0" y="24" width="240" height="96" as="geometry"/>
+        </mxCell>
+        <mxCell id="fussschleife_anweisung1" value="Anweisung 1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="fussschleife">
+          <mxGeometry x="24" y="24" width="216" height="32" as="geometry"/>
+        </mxCell>
+        <mxCell id="fussschleife_anweisung2" value="Anweisung 2" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="fussschleife">
+          <mxGeometry x="24" y="56" width="216" height="32" as="geometry"/>
+        </mxCell>
+        <mxCell id="fussschleife_hinweis" value="Läuft mindestens einmal" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#52626F;" vertex="1" parent="fussschleife">
+          <mxGeometry x="0" y="124" width="240" height="18" as="geometry"/>
+        </mxCell>
+        <mxCell id="zaehlschleife" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="540" y="180" width="240" height="142" as="geometry"/>
+        </mxCell>
+        <mxCell id="zaehlschleife_titel" value="6&#160;&#160;Zählschleife" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=13;fontStyle=1;fontColor=#22303C;" vertex="1" parent="zaehlschleife">
+          <mxGeometry x="0" y="0" width="240" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="zaehlschleife_rahmen" value="FÜR i VON 1 BIS n" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E0F1F5;strokeColor=#0E7490;strokeWidth=1.5;verticalAlign=top;spacingTop=6;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="zaehlschleife">
+          <mxGeometry x="0" y="24" width="240" height="96" as="geometry"/>
+        </mxCell>
+        <mxCell id="zaehlschleife_anweisung1" value="Anweisung 1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="zaehlschleife">
+          <mxGeometry x="24" y="56" width="216" height="64" as="geometry"/>
+        </mxCell>
+        <mxCell id="zaehlschleife_hinweis" value="Anzahl der Durchläufe steht vorher fest" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#52626F;" vertex="1" parent="zaehlschleife">
+          <mxGeometry x="0" y="124" width="240" height="18" as="geometry"/>
+        </mxCell>
+        <mxCell id="unterprogramm" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="0" y="346" width="240" height="64" as="geometry"/>
+        </mxCell>
+        <mxCell id="unterprogramm_titel" value="7&#160;&#160;Unterprogrammaufruf" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=13;fontStyle=1;fontColor=#22303C;" vertex="1" parent="unterprogramm">
+          <mxGeometry x="0" y="0" width="240" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="unterprogramm_aufruf" value="ergebnis = Name(parameter)" style="shape=process;size=0.05;backgroundOutline=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="unterprogramm">
+          <mxGeometry x="0" y="24" width="240" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="hinweis" value="Jedes Sinnbild ist ein Rechteck. Sinnbilder werden ineinandergesetzt, nie übereinandergelegt: Ein Struktogramm hat genau einen Eingang oben und genau einen Ausgang unten. Pfeile gibt es nicht." style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#52626F;" vertex="1" parent="1">
+          <mxGeometry x="270" y="362" width="510" height="52" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
