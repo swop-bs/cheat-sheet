@@ -6,7 +6,7 @@ Ein zentraler Aspekt von Reflection in C# ist die Fähigkeit, Objekte zur Laufze
 
 Die `Activator`-Klasse bietet mehrere Methoden, um Instanzen von Typen zur Laufzeit zu erstellen. Eine der gebräuchlichsten Methoden ist `CreateInstance`. Diese Methode hat mehrere Überladungen, die es ermöglichen, Objekte auf verschiedene Arten zu instanziieren, unter anderem durch Angabe des Typs, der Parameter für den Konstruktor und sogar durch Angabe des Assemblynamens, in dem sich der Typ befindet.
 
-Um ein Objekt vom Typ `Mitarbeiter` zur Laufzeit zu erstellen, können wir folgenden Ansatz verfolgen:
+Um ein Objekt vom Typ [`Mitarbeiter`](klasse-mitarbeiter.md) zur Laufzeit zu erstellen, können wir folgenden Ansatz verfolgen:
 
 ```csharp
 // Erstellen eines Objekts vom Typ Mitarbeiter ohne Parameter (nutzt den Standardkonstruktor)
@@ -34,7 +34,7 @@ mitarbeiter2.AnzeigenInformationen();
 
 ### Erklärung
 
-- **`Activator.CreateInstance(typeof(Mitarbeiter))`**: Diese Zeile erstellt eine neue Instanz von `Mitarbeiter` unter Verwendung des Standardkonstruktors. Da `CreateInstance` ein Objekt vom Typ `object` zurückgibt, ist ein explizites Casting auf den Typ `Mitarbeiter` notwendig.
+- **`Activator.CreateInstance(typeof(Mitarbeiter))`**: Diese Zeile erstellt eine neue Instanz von [`Mitarbeiter`](klasse-mitarbeiter.md) unter Verwendung des Standardkonstruktors. Da `CreateInstance` ein Objekt vom Typ `object` zurückgibt, ist ein explizites Casting auf den Typ `Mitarbeiter` notwendig.
   
 - **`Activator.CreateInstance(typeof(Mitarbeiter), parameters)`**: Hier wird eine neue Instanz von `Mitarbeiter` erstellt, wobei ein Array von Objekten als Parameter für den Konstruktor übergeben wird. Diese Methode ist nützlich, wenn der zu verwendende Konstruktor Parameter erwartet. Auch hier ist ein Casting erforderlich.
 
@@ -48,7 +48,7 @@ Es ist jedoch wichtig zu beachten, dass der Einsatz von Reflection und insbesond
 
 In Szenarien, wo die Properties eines Objekts zur Laufzeit nicht bekannt sind, bietet Reflection in C# die Möglichkeit, dynamisch auf diese Properties zuzugreifen und ihnen Werte zuzuweisen. Dies kann besonders nützlich sein, wenn man mit Objekten arbeitet, deren Struktur erst zur Laufzeit bestimmt wird, wie es beispielsweise bei der dynamischen Erzeugung von Objekten aus Datenbankabfragen oder bei der Deserialisierung von JSON-Objekten der Fall ist.
 
-Um dieses Konzept zu demonstrieren, verwenden wir wieder die `Mitarbeiter`-Klasse. Wir zeigen, wie man die Properties eines `Mitarbeiter`-Objekts dynamisch abfragen und mit Standardwerten initialisieren kann.
+Um dieses Konzept zu demonstrieren, verwenden wir wieder die [`Mitarbeiter`](klasse-mitarbeiter.md)-Klasse. Wir zeigen, wie man die Properties eines `Mitarbeiter`-Objekts dynamisch abfragen und mit Standardwerten initialisieren kann.
 
 ### Dynamische Initialisierung von Properties
 
@@ -84,7 +84,7 @@ mitarbeiter.AnzeigenInformationen();
 
 ### Erklärung
 
-- Zunächst wird ein `Mitarbeiter`-Objekt zur Laufzeit erstellt.
+- Zunächst wird ein [`Mitarbeiter`](klasse-mitarbeiter.md)-Objekt zur Laufzeit erstellt.
 - Anschließend wird das `Type`-Objekt des `Mitarbeiter`-Typs verwendet, um alle öffentlichen Properties zu erhalten.
 - Für jede Property wird überprüft, welchen Typ sie hat (`string`, `double` usw.), und es wird ein entsprechender Standardwert zugewiesen. Im Beispiel wird allen `string`-Properties der Wert `"Standardwert"` und allen `double`-Properties der Wert `0.0` zugewiesen.
 - Schließlich wird eine Methode des Objekts aufgerufen, um die Ergebnisse der dynamischen Property-Zuweisungen zu überprüfen.

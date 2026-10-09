@@ -50,6 +50,7 @@ nav:
         - Fortgeschritten:
             - Reflection:
                 - reflection/index.md
+                - Beispielklasse Mitarbeiter: reflection/klasse-mitarbeiter.md
                 - Datentyp dynamisch ermitteln: reflection/datentyp-ermitteln.md
                 - Objekte dynamisch erstellen: reflection/objekte-erstellen.md
         - Spieleentwicklung (Godot):

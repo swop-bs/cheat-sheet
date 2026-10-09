@@ -5,7 +5,7 @@
 Um den Typ eines Objekts zur Laufzeit zu ermitteln, können verschiedene Methoden verwendet werden. Diese Methoden geben ein `Type`-Objekt zurück, das alle relevanten Metainformationen über die Klasse bzw. das Objekt enthält.
 
 - **`m.GetType()`**: Ermittelt den Typ einer Instanz `m`.
-- **`typeof(Mitarbeiter)`**: Ermittelt den Typ der Klasse `Mitarbeiter`.
+- **`typeof(Mitarbeiter)`**: Ermittelt den Typ der Klasse [`Mitarbeiter`](klasse-mitarbeiter.md).
 - **`Type.GetType("Mitarbeiter")`**: Ermittelt den Typ basierend auf dem qualifizierten Namen der Klasse.
 
 !!! warning
@@ -13,7 +13,7 @@ Um den Typ eines Objekts zur Laufzeit zu ermitteln, können verschiedene Methode
 
 ### Typ eines Objekts ermitteln
 
-Nachdem wir die Klasse `Mitarbeiter` definiert haben, verwenden wir die Reflection-Methoden, um Metainformationen zur Laufzeit zu extrahieren.
+Nachdem wir die Klasse [`Mitarbeiter`](klasse-mitarbeiter.md) definiert haben, verwenden wir die Reflection-Methoden, um Metainformationen zur Laufzeit zu extrahieren.
 
 ```csharp
 Mitarbeiter mitarbeiter = new Mitarbeiter("Max", "Mustermann", 50000, "Berlin");
