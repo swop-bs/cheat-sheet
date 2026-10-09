@@ -2673,6 +2673,45 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Erweiterung: gleichzeitige Wege und Verantwortungsbereiche">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parallelitaet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parallelität: Aufteilung und Synchronisation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#swimlanes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Swimlanes (Verantwortungsbereiche)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#beispiel-lizenz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Beispiel: eine Lizenz bereitstellen
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -3538,6 +3577,45 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Erweiterung: gleichzeitige Wege und Verantwortungsbereiche">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parallelitaet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parallelität: Aufteilung und Synchronisation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#swimlanes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Swimlanes (Verantwortungsbereiche)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#beispiel-lizenz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Beispiel: eine Lizenz bereitstellen
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -3721,9 +3799,13 @@ eine Liste der offenen Positionen ausgegeben.</p>
 gezeichnet; Rücksprung direkt in eine Raute statt auf eine Zusammenführung; Schleife ohne
 Abbruchbedingung.</p>
 <h2 id="erweiterung-gleichzeitige-wege-und-verantwortungsbereiche">Erweiterung: gleichzeitige Wege und Verantwortungsbereiche<a class="headerlink" href="#erweiterung-gleichzeitige-wege-und-verantwortungsbereiche" title="Permanent link">#</a></h2>
-<p>Die Elemente aus dem Abschnitt <a href="#notation">Notation</a> reichen für einen Ablauf, der eine Stelle allein abarbeitet. Sobald mehrere
-Abteilungen beteiligt sind und Dinge nebeneinander laufen, kommen zwei Elemente dazu. Beide
-gehören zum Prüfungsstoff.</p>
+<p>Die Elemente aus dem Abschnitt <a href="#notation">Notation</a> reichen für einen Ablauf, den eine Stelle
+allein abarbeitet. Sobald Dinge nebeneinander laufen und mehrere Abteilungen beteiligt sind,
+kommen zwei Erweiterungen dazu: <a href="#parallelitaet">Parallelität</a> und <a href="#swimlanes">Swimlanes</a>. Das
+<a href="#beispiel-lizenz">Beispiel am Ende</a> zeigt beide zusammen mit den übrigen Elementen.</p>
+<h3 id="parallelitaet">Parallelität: Aufteilung und Synchronisation<a class="headerlink" href="#parallelitaet" title="Permanent link">#</a></h3>
+<p>Laufen Schritte gleichzeitig, wird der Ablauf an einem Balken aufgeteilt und an einem zweiten
+Balken wieder zusammengeführt.</p>
 <table>
 <thead>
 <tr>
@@ -3740,13 +3822,19 @@ gehören zum Prüfungsstoff.</p>
 <td>Synchronisation (waagerechter Balken, mehrere Eingänge, ein Ausgang)</td>
 <td>Es geht erst weiter, wenn <strong>alle</strong> eingehenden Wege angekommen sind.</td>
 </tr>
-<tr>
-<td>Verantwortungsbereich (senkrechte oder waagerechte Spalte mit Überschrift)</td>
-<td>Alles in dieser Spalte tut die genannte Stelle. Die Überschrift ist eine Rolle, kein Personenname.</td>
-</tr>
 </tbody>
 </table>
-<p><strong>Balken oder Raute?</strong> Das ist die Frage, an der die meisten Punkte verloren gehen.</p>
+<p><strong>Beispiel:</strong> Fängt jemand neu an, richtet die IT-Betreuung den Arbeitsplatz ein. Sobald das
+Ticket angelegt ist, wird das Notebook installiert, das Benutzerkonto samt Postfach eingerichtet
+und die Zugangskarte bestellt, alles gleichzeitig. Übergeben wird erst, wenn alle drei Dinge
+fertig sind.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="aktivitaetsdiagramm_parallel.png" data-desc-position="bottom"><img alt="Arbeitsplatz für neue Mitarbeitende einrichten, mit Aufteilung und Synchronisation" class="diagramm" src="aktivitaetsdiagramm_parallel.png"></a></p>
+<p>Die drei Wege laufen nebeneinander, der mittlere hat zwei Schritte nacheinander. Die
+Synchronisation wartet auf den Weg, der als letzter fertig wird, gleichgültig welcher es ist. Die
+Kanten an den Balken sind nicht beschriftet, weil nichts entschieden wird. Stünde an derselben
+Stelle eine Raute, ginge nur <strong>einer</strong> der drei Wege: Der Neuzugang hätte dann zum Beispiel ein
+Notebook, aber kein Konto.</p>
+<p><strong>Balken oder Raute?</strong> An dieser Frage entstehen die meisten Fehler.</p>
 <table>
 <thead>
 <tr>
@@ -3774,22 +3862,77 @@ gehören zum Prüfungsstoff.</p>
 </tbody>
 </table>
 <p>Merksatz: <strong>Raute heißt entweder-oder, Balken heißt sowohl-als-auch.</strong></p>
-<p>Zusätzliche Regeln für diese Elemente:</p>
+<p>Regeln für die Balken:</p>
 <ol>
 <li>Jede Aufteilung braucht eine Synchronisation. Ein Weg, der aus einem Balken herausläuft und
    nirgends wieder ankommt, ist ein Fehler.</li>
 <li>Aus einem gleichzeitigen Bereich wird nicht per Entscheidung herausgesprungen. Erst
    zusammenführen, dann entscheiden.</li>
-<li>Verantwortungsbereiche werden vor dem Zeichnen festgelegt und danach nicht mehr geändert.
-   Jede Aktion steht in genau einem Bereich, nämlich dem der Stelle, die sie ausführt.</li>
-<li>Eine Kante darf einen Bereich verlassen. Das ist der übliche Fall: Sie ist die Übergabe von
+</ol>
+<p><strong>Zum Schluss prüfen:</strong> Hat jede Aufteilung eine Synchronisation? Sind die Kanten am Balken
+unbeschriftet?</p>
+<h3 id="swimlanes">Swimlanes (Verantwortungsbereiche)<a class="headerlink" href="#swimlanes" title="Permanent link">#</a></h3>
+<p>Eine <strong>Swimlane</strong>, deutsch Verantwortungsbereich, ist eine senkrechte oder waagerechte Spalte mit
+Überschrift, wie eine Bahn im Schwimmbecken. Alles, was in dieser Spalte steht, tut die genannte
+Stelle. Die Überschrift ist eine Rolle, kein Personenname. So sieht man ohne Zusatztext, wer
+welchen Schritt ausführt und wo ein Vorgang von einer Stelle zur nächsten wechselt.</p>
+<p>Regeln für Swimlanes:</p>
+<ol>
+<li>Die Swimlanes werden vor dem Zeichnen festgelegt und danach nicht mehr geändert. Jede Aktion
+   steht in genau einer Swimlane, nämlich der der Stelle, die sie ausführt.</li>
+<li>Eine Kante darf eine Swimlane verlassen. Das ist der übliche Fall: Sie ist die Übergabe von
    einer Stelle an die nächste.</li>
 <li>Läuft ein Schritt außerhalb des Systems (Anruf, Papier, Zuruf), wird er trotzdem gezeichnet.
    Gerade solche Schritte sind der Grund, warum ein Ablauf aufgeschrieben werden muss.</li>
 </ol>
-<p><strong>Kurzreferenz zur Erweiterung:</strong> Hat jede Aufteilung eine Synchronisation? Sind die Kanten am
-Balken unbeschriftet? Steht jede Aktion im Bereich derjenigen Stelle, die sie tut? Ist jede
-Bereichsüberschrift eine Rolle und kein Name?</p>
+<p><strong>Zum Schluss prüfen:</strong> Steht jede Aktion in der Swimlane der Stelle, die sie tut? Ist jede
+Überschrift eine Rolle und kein Name?</p>
+<h3 id="beispiel-lizenz">Beispiel: eine Lizenz bereitstellen<a class="headerlink" href="#beispiel-lizenz" title="Permanent link">#</a></h3>
+<p>Die IT-Betreuung führt in der Lizenzübersicht <strong>LIZ</strong> die gekauften Softwarelizenzen des Hauses
+(siehe <a href="klassendiagramm.html">Klassendiagramm</a>). Braucht eine Fachabteilung ein Programm, sucht die
+IT-Betreuung zuerst einen freien Platz in LIZ. Gibt es keinen, kauft die Buchhaltung eine neue
+Lizenz; in der Zwischenzeit vereinbart die IT-Betreuung telefonisch einen Installationstermin.
+Erst wenn beides erledigt ist, wird die neue Lizenz in LIZ erfasst. Zum Schluss bestätigt die
+Fachabteilung die Übergabe auf dem Laufzettel.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="aktivitaetsdiagramm_lizenz.png" data-desc-position="bottom"><img alt="Lizenz für ein Programm bereitstellen, mit Swimlanes und gleichzeitigen Wegen" class="diagramm" src="aktivitaetsdiagramm_lizenz.png"></a></p>
+<table>
+<thead>
+<tr>
+<th>Im Diagramm</th>
+<th>Was es zeigt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Drei Swimlanes</td>
+<td>Fachabteilung, IT-Betreuung und Buchhaltung; jede Aktion steht bei der Stelle, die sie tut.</td>
+</tr>
+<tr>
+<td>Kante vom Antrag zur Suche in LIZ</td>
+<td>Eine Übergabe: Der Vorgang wechselt von der Fachabteilung zur IT-Betreuung.</td>
+</tr>
+<tr>
+<td>Raute „Freier Platz vorhanden?“</td>
+<td>Entweder-oder: Mit freiem Platz geht es auf dem [ja]-Weg direkt zur Installation.</td>
+</tr>
+<tr>
+<td>Balken nach [nein]</td>
+<td>Sowohl-als-auch: Kauf und Terminvereinbarung laufen gleichzeitig, in zwei Swimlanes; die Kanten am Balken sind unbeschriftet.</td>
+</tr>
+<tr>
+<td>Balken vor „Neue Lizenz in LIZ erfassen“</td>
+<td>Synchronisation: Es geht erst weiter, wenn der Schlüssel da ist <strong>und</strong> der Termin steht.</td>
+</tr>
+<tr>
+<td>Kleine Raute vor der Installation</td>
+<td>Zusammenführung: Der [ja]-Weg und der Weg über den Kauf laufen wieder zusammen.</td>
+</tr>
+<tr>
+<td>Anruf und Laufzettel</td>
+<td>Schritte außerhalb von LIZ, die trotzdem zum Ablauf gehören.</td>
+</tr>
+</tbody>
+</table>
 
 
 
