@@ -58,17 +58,35 @@ Abbruchbedingung.
 
 ## Erweiterung: gleichzeitige Wege und Verantwortungsbereiche
 
-Die Elemente aus dem Abschnitt [Notation](#notation) reichen für einen Ablauf, der eine Stelle allein abarbeitet. Sobald mehrere
-Abteilungen beteiligt sind und Dinge nebeneinander laufen, kommen zwei Elemente dazu. Beide
-gehören zum Prüfungsstoff.
+Die Elemente aus dem Abschnitt [Notation](#notation) reichen für einen Ablauf, den eine Stelle
+allein abarbeitet. Sobald Dinge nebeneinander laufen und mehrere Abteilungen beteiligt sind,
+kommen zwei Erweiterungen dazu: [Parallelität](#parallelitaet) und [Swimlanes](#swimlanes). Das
+[Beispiel am Ende](#beispiel-lizenz) zeigt beide zusammen mit den übrigen Elementen.
+
+### Parallelität: Aufteilung und Synchronisation { #parallelitaet }
+
+Laufen Schritte gleichzeitig, wird der Ablauf an einem Balken aufgeteilt und an einem zweiten
+Balken wieder zusammengeführt.
 
 | Element | Bedeutung |
 |--------------------------------------------|-------------------------------------------------------------|
 | Aufteilung (waagerechter Balken, ein Eingang, mehrere Ausgänge) | Ab hier laufen **alle** ausgehenden Wege gleichzeitig. Die Kanten werden **nicht** beschriftet. |
 | Synchronisation (waagerechter Balken, mehrere Eingänge, ein Ausgang) | Es geht erst weiter, wenn **alle** eingehenden Wege angekommen sind. |
-| Verantwortungsbereich (senkrechte oder waagerechte Spalte mit Überschrift) | Alles in dieser Spalte tut die genannte Stelle. Die Überschrift ist eine Rolle, kein Personenname. |
 
-**Balken oder Raute?** Das ist die Frage, an der die meisten Punkte verloren gehen.
+**Beispiel:** Fängt jemand neu an, richtet die IT-Betreuung den Arbeitsplatz ein. Sobald das
+Ticket angelegt ist, wird das Notebook installiert, das Benutzerkonto samt Postfach eingerichtet
+und die Zugangskarte bestellt, alles gleichzeitig. Übergeben wird erst, wenn alle drei Dinge
+fertig sind.
+
+![Arbeitsplatz für neue Mitarbeitende einrichten, mit Aufteilung und Synchronisation](aktivitaetsdiagramm_parallel.png){ .diagramm }
+
+Die drei Wege laufen nebeneinander, der mittlere hat zwei Schritte nacheinander. Die
+Synchronisation wartet auf den Weg, der als letzter fertig wird, gleichgültig welcher es ist. Die
+Kanten an den Balken sind nicht beschriftet, weil nichts entschieden wird. Stünde an derselben
+Stelle eine Raute, ginge nur **einer** der drei Wege: Der Neuzugang hätte dann zum Beispiel ein
+Notebook, aber kein Konto.
+
+**Balken oder Raute?** An dieser Frage entstehen die meisten Fehler.
 
 | Formulierung im Text | Element |
 |----------------------------------------------|-----------------------------|
@@ -79,19 +97,52 @@ gehören zum Prüfungsstoff.
 
 Merksatz: **Raute heißt entweder-oder, Balken heißt sowohl-als-auch.**
 
-Zusätzliche Regeln für diese Elemente:
+Regeln für die Balken:
 
 1. Jede Aufteilung braucht eine Synchronisation. Ein Weg, der aus einem Balken herausläuft und
    nirgends wieder ankommt, ist ein Fehler.
 2. Aus einem gleichzeitigen Bereich wird nicht per Entscheidung herausgesprungen. Erst
    zusammenführen, dann entscheiden.
-3. Verantwortungsbereiche werden vor dem Zeichnen festgelegt und danach nicht mehr geändert.
-   Jede Aktion steht in genau einem Bereich, nämlich dem der Stelle, die sie ausführt.
-4. Eine Kante darf einen Bereich verlassen. Das ist der übliche Fall: Sie ist die Übergabe von
+
+**Zum Schluss prüfen:** Hat jede Aufteilung eine Synchronisation? Sind die Kanten am Balken
+unbeschriftet?
+
+### Swimlanes (Verantwortungsbereiche) { #swimlanes }
+
+Eine **Swimlane**, deutsch Verantwortungsbereich, ist eine senkrechte oder waagerechte Spalte mit
+Überschrift, wie eine Bahn im Schwimmbecken. Alles, was in dieser Spalte steht, tut die genannte
+Stelle. Die Überschrift ist eine Rolle, kein Personenname. So sieht man ohne Zusatztext, wer
+welchen Schritt ausführt und wo ein Vorgang von einer Stelle zur nächsten wechselt.
+
+Regeln für Swimlanes:
+
+1. Die Swimlanes werden vor dem Zeichnen festgelegt und danach nicht mehr geändert. Jede Aktion
+   steht in genau einer Swimlane, nämlich der der Stelle, die sie ausführt.
+2. Eine Kante darf eine Swimlane verlassen. Das ist der übliche Fall: Sie ist die Übergabe von
    einer Stelle an die nächste.
-5. Läuft ein Schritt außerhalb des Systems (Anruf, Papier, Zuruf), wird er trotzdem gezeichnet.
+3. Läuft ein Schritt außerhalb des Systems (Anruf, Papier, Zuruf), wird er trotzdem gezeichnet.
    Gerade solche Schritte sind der Grund, warum ein Ablauf aufgeschrieben werden muss.
 
-**Kurzreferenz zur Erweiterung:** Hat jede Aufteilung eine Synchronisation? Sind die Kanten am
-Balken unbeschriftet? Steht jede Aktion im Bereich derjenigen Stelle, die sie tut? Ist jede
-Bereichsüberschrift eine Rolle und kein Name?
+**Zum Schluss prüfen:** Steht jede Aktion in der Swimlane der Stelle, die sie tut? Ist jede
+Überschrift eine Rolle und kein Name?
+
+### Beispiel: eine Lizenz bereitstellen { #beispiel-lizenz }
+
+Die IT-Betreuung führt in der Lizenzübersicht **LIZ** die gekauften Softwarelizenzen des Hauses
+(siehe [Klassendiagramm](klassendiagramm.md)). Braucht eine Fachabteilung ein Programm, sucht die
+IT-Betreuung zuerst einen freien Platz in LIZ. Gibt es keinen, kauft die Buchhaltung eine neue
+Lizenz; in der Zwischenzeit vereinbart die IT-Betreuung telefonisch einen Installationstermin.
+Erst wenn beides erledigt ist, wird die neue Lizenz in LIZ erfasst. Zum Schluss bestätigt die
+Fachabteilung die Übergabe auf dem Laufzettel.
+
+![Lizenz für ein Programm bereitstellen, mit Swimlanes und gleichzeitigen Wegen](aktivitaetsdiagramm_lizenz.png){ .diagramm }
+
+| Im Diagramm | Was es zeigt |
+|--------------------------------------------|-------------------------------------------------------------|
+| Drei Swimlanes | Fachabteilung, IT-Betreuung und Buchhaltung; jede Aktion steht bei der Stelle, die sie tut. |
+| Kante vom Antrag zur Suche in LIZ | Eine Übergabe: Der Vorgang wechselt von der Fachabteilung zur IT-Betreuung. |
+| Raute „Freier Platz vorhanden?“ | Entweder-oder: Mit freiem Platz geht es auf dem [ja]-Weg direkt zur Installation. |
+| Balken nach [nein] | Sowohl-als-auch: Kauf und Terminvereinbarung laufen gleichzeitig, in zwei Swimlanes; die Kanten am Balken sind unbeschriftet. |
+| Balken vor „Neue Lizenz in LIZ erfassen“ | Synchronisation: Es geht erst weiter, wenn der Schlüssel da ist **und** der Termin steht. |
+| Kleine Raute vor der Installation | Zusammenführung: Der [ja]-Weg und der Weg über den Kauf laufen wieder zusammen. |
+| Anruf und Laufzettel | Schritte außerhalb von LIZ, die trotzdem zum Ablauf gehören. |

@@ -30,7 +30,7 @@ Die meisten Beispiele stammen aus dem **Hausprojekt KALK**, dem alten Konsolenwe
 Einige Seiten greifen auf andere interne Systeme der Firma zurück:
 
 - Die Seite zum Use-Case-Diagramm zeigt den **Servicedesk**, über den Kundinnen und Kunden Störungen melden.
-- Die Seite zum Klassendiagramm zeigt die **Lizenzübersicht LIZ**, in der die IT-Betreuung die gekauften Softwarelizenzen des Hauses führt.
+- Die Seiten zum Klassendiagramm und zum Aktivitätsdiagramm (Beispiel mit Swimlanes) zeigen die **Lizenzübersicht LIZ**, in der die IT-Betreuung die gekauften Softwarelizenzen des Hauses führt.
 - Die Seiten zu Phasenkonzept, Anforderungen und Vorgehensmodellen nehmen ihre Beispiele aus der Ablösung der internen **Geräteliste INVENT** im Jahr 2025.
 
 ## Lernen am Hausprojekt, Anwenden am Kundenprojekt
@@ -46,7 +46,7 @@ Eine Methode wird an KALK erarbeitet und danach auf den laufenden Kundenauftrag 
 
 ### UML
 
-- [**Aktivitätsdiagramm**](uml/aktivitaetsdiagramm.md): einen Ablauf als Bild zeigen, mit Entscheidungen, Wiederholungen, gleichzeitigen Wegen und Verantwortungsbereichen.
+- [**Aktivitätsdiagramm**](uml/aktivitaetsdiagramm.md): einen Ablauf als Bild zeigen, mit Entscheidungen, Wiederholungen, gleichzeitigen Wegen und Swimlanes (Verantwortungsbereichen).
 - [**Use-Case-Diagramm**](uml/usecase_diagramm.md): wofür ein System benutzt wird und von wem.
 - [**Klassendiagramm**](uml/klassendiagramm.md): woraus ein System besteht und wie die Teile zusammenhängen.
 

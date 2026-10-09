@@ -1,6 +1,6 @@
 site_name: Coding Cheat Sheet
 
-site_url: https://aeup-cs.github.io/CheatSheet/
+site_url: https://swop-bs.github.io/cheat-sheet/
 
 nav:
     - Start: index.md

@@ -1,0 +1,103 @@
+<mxfile host="drawio" agent="Campus IT Solutions" version="24.7.17">
+  <diagram id="aktivitaetsdiagramm_lizenz" name="Lizenz bereitstellen (LIZ)">
+    <mxGraphModel dx="1000" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="760" pageHeight="780" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="titel" value="LIZ: Lizenz für ein Programm bereitstellen" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;strokeColor=none;fillColor=none;fontFamily=Helvetica;fontSize=14;fontStyle=1;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="20" y="10" width="500" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="lane_fach" value="Fachabteilung" style="swimlane;html=1;startSize=30;horizontal=1;collapsible=0;fillColor=#E3F1F4;swimlaneFillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=13;fontStyle=1;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="20" y="44" width="200" height="716" as="geometry"/>
+        </mxCell>
+        <mxCell id="lane_it" value="IT-Betreuung" style="swimlane;html=1;startSize=30;horizontal=1;collapsible=0;fillColor=#E3F1F4;swimlaneFillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=13;fontStyle=1;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="220" y="44" width="300" height="716" as="geometry"/>
+        </mxCell>
+        <mxCell id="lane_buch" value="Buchhaltung" style="swimlane;html=1;startSize=30;horizontal=1;collapsible=0;fillColor=#E3F1F4;swimlaneFillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=13;fontStyle=1;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="520" y="44" width="220" height="716" as="geometry"/>
+        </mxCell>
+        <mxCell id="start" value="" style="ellipse;html=1;aspect=fixed;perimeter=ellipsePerimeter;fillColor=#22303C;strokeColor=#22303C;" vertex="1" parent="lane_fach">
+          <mxGeometry x="87" y="43" width="26" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="a_beantragen" value="Lizenz für ein&lt;br&gt;Programm beantragen" style="rounded=1;arcSize=24;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=13;fontColor=#22303C;" vertex="1" parent="lane_fach">
+          <mxGeometry x="20" y="90" width="160" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="b_suchen" value="Freien Platz&lt;br&gt;in LIZ suchen" style="rounded=1;arcSize=24;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=13;fontColor=#22303C;" vertex="1" parent="lane_it">
+          <mxGeometry x="65" y="90" width="170" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="d_frei" value="Freier Platz&lt;br&gt;vorhanden?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=13;fontColor=#22303C;" vertex="1" parent="lane_it">
+          <mxGeometry x="55" y="170" width="190" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="aufteilung" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#22303C;strokeColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="320" y="330" width="360" height="6" as="geometry"/>
+        </mxCell>
+        <mxCell id="b_termin" value="Installationstermin&lt;br&gt;telefonisch vereinbaren" style="rounded=1;arcSize=24;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=13;fontColor=#22303C;" vertex="1" parent="lane_it">
+          <mxGeometry x="60" y="328" width="180" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="c_kaufen" value="Lizenz kaufen und&lt;br&gt;Schlüssel weitergeben" style="rounded=1;arcSize=24;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=13;fontColor=#22303C;" vertex="1" parent="lane_buch">
+          <mxGeometry x="25" y="328" width="170" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="synchronisation" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#22303C;strokeColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="320" y="462" width="360" height="6" as="geometry"/>
+        </mxCell>
+        <mxCell id="b_erfassen" value="Neue Lizenz&lt;br&gt;in LIZ erfassen" style="rounded=1;arcSize=24;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=13;fontColor=#22303C;" vertex="1" parent="lane_it">
+          <mxGeometry x="65" y="452" width="170" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="m_zusammen" value="" style="rhombus;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;" vertex="1" parent="lane_it">
+          <mxGeometry x="135" y="534" width="30" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="b_installieren" value="Platz in LIZ zuweisen und&lt;br&gt;Programm installieren" style="rounded=1;arcSize=24;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=13;fontColor=#22303C;" vertex="1" parent="lane_it">
+          <mxGeometry x="45" y="586" width="210" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="a_unterschreiben" value="Übergabe auf dem&lt;br&gt;Laufzettel unterschreiben" style="rounded=1;arcSize=24;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=13;fontColor=#22303C;" vertex="1" parent="lane_fach">
+          <mxGeometry x="12" y="586" width="176" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="ende" value="" style="ellipse;html=1;shape=endState;fillColor=#22303C;strokeColor=#22303C;strokeWidth=1.5;" vertex="1" parent="lane_fach">
+          <mxGeometry x="85" y="668" width="30" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="k1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=open;endFill=0;endSize=10;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=#FFFFFF;exitX=0.5000;exitY=1;exitDx=0;exitDy=0;entryX=0.5000;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="start" target="a_beantragen">
+          <mxGeometry relative="1" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="k2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=open;endFill=0;endSize=10;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=#FFFFFF;exitX=1.0000;exitY=0.5;exitDx=0;exitDy=0;entryX=0.0000;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="a_beantragen" target="b_suchen">
+          <mxGeometry relative="1" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="k3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=open;endFill=0;endSize=10;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=#FFFFFF;exitX=0.5000;exitY=1;exitDx=0;exitDy=0;entryX=0.5000;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="b_suchen" target="d_frei">
+          <mxGeometry relative="1" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="k_nein" value="[nein]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=open;endFill=0;endSize=10;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=#FFFFFF;exitX=0.5000;exitY=1;exitDx=0;exitDy=0;entryX=0.1389;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="d_frei" target="aufteilung">
+          <mxGeometry x="-1" relative="1" as="geometry"><mxPoint x="26" y="12" as="offset"/></mxGeometry>
+        </mxCell>
+        <mxCell id="k_ja" value="[ja]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=open;endFill=0;endSize=10;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=#FFFFFF;exitX=0.0000;exitY=0.5;exitDx=0;exitDy=0;entryX=0.0000;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="d_frei" target="m_zusammen">
+          <mxGeometry x="-1" relative="1" as="geometry"><Array as="points"><mxPoint x="245" y="254"/><mxPoint x="245" y="593"/></Array><mxPoint x="-18" y="-11" as="offset"/></mxGeometry>
+        </mxCell>
+        <mxCell id="k4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=open;endFill=0;endSize=10;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=#FFFFFF;exitX=0.1389;exitY=1;exitDx=0;exitDy=0;entryX=0.5000;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="aufteilung" target="b_termin">
+          <mxGeometry relative="1" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="k5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=open;endFill=0;endSize=10;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=#FFFFFF;exitX=0.8611;exitY=1;exitDx=0;exitDy=0;entryX=0.5000;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="aufteilung" target="c_kaufen">
+          <mxGeometry relative="1" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="k6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=open;endFill=0;endSize=10;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=#FFFFFF;exitX=0.5000;exitY=1;exitDx=0;exitDy=0;entryX=0.1389;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="b_termin" target="synchronisation">
+          <mxGeometry relative="1" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="k7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=open;endFill=0;endSize=10;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=#FFFFFF;exitX=0.5000;exitY=1;exitDx=0;exitDy=0;entryX=0.8611;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="c_kaufen" target="synchronisation">
+          <mxGeometry relative="1" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="k8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=open;endFill=0;endSize=10;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=#FFFFFF;exitX=0.1389;exitY=1;exitDx=0;exitDy=0;entryX=0.5000;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="synchronisation" target="b_erfassen">
+          <mxGeometry relative="1" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="k9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=open;endFill=0;endSize=10;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=#FFFFFF;exitX=0.5000;exitY=1;exitDx=0;exitDy=0;entryX=0.5000;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="b_erfassen" target="m_zusammen">
+          <mxGeometry relative="1" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="k10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=open;endFill=0;endSize=10;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=#FFFFFF;exitX=0.5000;exitY=1;exitDx=0;exitDy=0;entryX=0.5000;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="m_zusammen" target="b_installieren">
+          <mxGeometry relative="1" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="k11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=open;endFill=0;endSize=10;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=#FFFFFF;exitX=0.0000;exitY=0.5;exitDx=0;exitDy=0;entryX=1.0000;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="b_installieren" target="a_unterschreiben">
+          <mxGeometry relative="1" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="k12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=open;endFill=0;endSize=10;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=#FFFFFF;exitX=0.5000;exitY=1;exitDx=0;exitDy=0;entryX=0.5000;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="a_unterschreiben" target="ende">
+          <mxGeometry relative="1" as="geometry"></mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
