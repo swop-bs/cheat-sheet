@@ -1,0 +1,133 @@
+<mxfile host="drawio" agent="Campus IT Solutions" version="24.0">
+  <diagram id="phasenkonzept_uebersicht" name="Phasen, Ergebnisse und Meilensteine am Beispiel INVENT">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="titel" value="Phasen, Ergebnisse und Meilensteine — Beispiel INVENT" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontFamily=Helvetica;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="560" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="analyse" value="Analyse" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontSize=13;fontStyle=1;fontFamily=Helvetica;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="0" y="40" width="150" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="ergebnis_analyse" value="Ist-Beschreibung, Anforderungsdokument (21)" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=6 4;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;align=left;spacingLeft=10;fontSize=12;fontFamily=Helvetica;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="200" y="40" width="300" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="entwurf" value="Entwurf" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontSize=13;fontStyle=1;fontFamily=Helvetica;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="0" y="144" width="150" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="ergebnis_entwurf" value="Entwurfsdokument, Klassendiagramm" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=6 4;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;align=left;spacingLeft=10;fontSize=12;fontFamily=Helvetica;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="200" y="144" width="300" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="implementierung" value="Implementierung" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontSize=13;fontStyle=1;fontFamily=Helvetica;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="0" y="248" width="150" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="ergebnis_implementierung" value="Quelltext im Repository, Kurzdoku" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=6 4;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;align=left;spacingLeft=10;fontSize=12;fontFamily=Helvetica;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="200" y="248" width="300" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="test" value="Test" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontSize=13;fontStyle=1;fontFamily=Helvetica;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="0" y="352" width="150" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="ergebnis_test" value="34 Testfälle, Testprotokoll" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=6 4;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;align=left;spacingLeft=10;fontSize=12;fontFamily=Helvetica;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="200" y="352" width="300" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="einfuehrung" value="Einführung" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontSize=13;fontStyle=1;fontFamily=Helvetica;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="0" y="456" width="150" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="ergebnis_einfuehrung" value="Abnahmeprotokoll, Anwenderdoku" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=6 4;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;align=left;spacingLeft=10;fontSize=12;fontFamily=Helvetica;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="200" y="456" width="300" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="wartung" value="Wartung" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontSize=13;fontStyle=1;fontFamily=Helvetica;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="0" y="560" width="150" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="ergebnis_wartung" value="Änderungsanträge, Versionsstände" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=6 4;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;align=left;spacingLeft=10;fontSize=12;fontFamily=Helvetica;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="200" y="560" width="300" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="meilenstein_m1" value="M1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#E0F1F5;strokeColor=#0E7490;strokeWidth=1.5;fontSize=12;fontStyle=1;fontFamily=Helvetica;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="55" y="90" width="40" height="32" as="geometry"/>
+        </mxCell>
+        <mxCell id="meilenstein_m1_text" value="Anforderungen freigegeben (D. Yilmaz)" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontFamily=Helvetica;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="106" y="90" width="394" height="32" as="geometry"/>
+        </mxCell>
+        <mxCell id="meilenstein_m2" value="M2" style="rhombus;whiteSpace=wrap;html=1;fillColor=#E0F1F5;strokeColor=#0E7490;strokeWidth=1.5;fontSize=12;fontStyle=1;fontFamily=Helvetica;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="55" y="194" width="40" height="32" as="geometry"/>
+        </mxCell>
+        <mxCell id="meilenstein_m2_text" value="Entwurf freigegeben (D. Yilmaz)" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontFamily=Helvetica;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="106" y="194" width="394" height="32" as="geometry"/>
+        </mxCell>
+        <mxCell id="meilenstein_m3" value="M3" style="rhombus;whiteSpace=wrap;html=1;fillColor=#E0F1F5;strokeColor=#0E7490;strokeWidth=1.5;fontSize=12;fontStyle=1;fontFamily=Helvetica;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="55" y="298" width="40" height="32" as="geometry"/>
+        </mxCell>
+        <mxCell id="meilenstein_m3_text" value="alle Muss-Anforderungen umgesetzt (A. Steiner)" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontFamily=Helvetica;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="106" y="298" width="394" height="32" as="geometry"/>
+        </mxCell>
+        <mxCell id="meilenstein_m4" value="M4" style="rhombus;whiteSpace=wrap;html=1;fillColor=#E0F1F5;strokeColor=#0E7490;strokeWidth=1.5;fontSize=12;fontStyle=1;fontFamily=Helvetica;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="55" y="402" width="40" height="32" as="geometry"/>
+        </mxCell>
+        <mxCell id="meilenstein_m4_text" value="Test bestanden (K. Kaiser)" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontFamily=Helvetica;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="106" y="402" width="394" height="32" as="geometry"/>
+        </mxCell>
+        <mxCell id="meilenstein_m5" value="M5" style="rhombus;whiteSpace=wrap;html=1;fillColor=#E0F1F5;strokeColor=#0E7490;strokeWidth=1.5;fontSize=12;fontStyle=1;fontFamily=Helvetica;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="55" y="506" width="40" height="32" as="geometry"/>
+        </mxCell>
+        <mxCell id="meilenstein_m5_text" value="abgenommen (D. Yilmaz)" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontFamily=Helvetica;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="106" y="506" width="394" height="32" as="geometry"/>
+        </mxCell>
+        <mxCell id="legende" value="Gestrichelt: das Ergebnis (Artefakt) der Phase.&lt;br&gt;Raute: Meilenstein — ein Zeitpunkt mit prüfbarem Ergebnis und einer Person, die entscheidet." style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontFamily=Helvetica;fontSize=12;fontColor=#52626F;" vertex="1" parent="1">
+          <mxGeometry x="0" y="616" width="560" height="34" as="geometry"/>
+        </mxCell>
+        <mxCell id="hinweis_wartung" value="Die Wartung beginnt mit der Abnahme und endet erst mit der Ablösung des Systems." style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontStyle=2;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="0" y="654" width="560" height="18" as="geometry"/>
+        </mxCell>
+        <mxCell id="kante_analyse_m1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#22303C;strokeWidth=1.5;endArrow=none;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="analyse" target="meilenstein_m1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="kante_m1_entwurf" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#22303C;strokeWidth=1.5;endArrow=block;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="meilenstein_m1" target="entwurf">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="kante_entwurf_m2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#22303C;strokeWidth=1.5;endArrow=none;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="entwurf" target="meilenstein_m2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="kante_m2_implementierung" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#22303C;strokeWidth=1.5;endArrow=block;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="meilenstein_m2" target="implementierung">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="kante_implementierung_m3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#22303C;strokeWidth=1.5;endArrow=none;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="implementierung" target="meilenstein_m3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="kante_m3_test" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#22303C;strokeWidth=1.5;endArrow=block;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="meilenstein_m3" target="test">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="kante_test_m4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#22303C;strokeWidth=1.5;endArrow=none;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="test" target="meilenstein_m4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="kante_m4_einfuehrung" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#22303C;strokeWidth=1.5;endArrow=block;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="meilenstein_m4" target="einfuehrung">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="kante_einfuehrung_m5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#22303C;strokeWidth=1.5;endArrow=none;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="einfuehrung" target="meilenstein_m5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="kante_m5_wartung" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#22303C;strokeWidth=1.5;endArrow=block;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="meilenstein_m5" target="wartung">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="kante_analyse_ergebnis" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#22303C;strokeWidth=1.5;endArrow=block;endFill=1;dashed=1;dashPattern=6 4;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="analyse" target="ergebnis_analyse">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="kante_entwurf_ergebnis" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#22303C;strokeWidth=1.5;endArrow=block;endFill=1;dashed=1;dashPattern=6 4;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="entwurf" target="ergebnis_entwurf">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="kante_implementierung_ergebnis" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#22303C;strokeWidth=1.5;endArrow=block;endFill=1;dashed=1;dashPattern=6 4;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="implementierung" target="ergebnis_implementierung">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="kante_test_ergebnis" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#22303C;strokeWidth=1.5;endArrow=block;endFill=1;dashed=1;dashPattern=6 4;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="test" target="ergebnis_test">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="kante_einfuehrung_ergebnis" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#22303C;strokeWidth=1.5;endArrow=block;endFill=1;dashed=1;dashPattern=6 4;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="einfuehrung" target="ergebnis_einfuehrung">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="kante_wartung_ergebnis" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#22303C;strokeWidth=1.5;endArrow=block;endFill=1;dashed=1;dashPattern=6 4;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="wartung" target="ergebnis_wartung">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

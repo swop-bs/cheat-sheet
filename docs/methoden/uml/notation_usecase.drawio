@@ -1,0 +1,46 @@
+<mxfile host="drawio" agent="Campus IT Solutions" version="24.7.17">
+  <diagram id="notation_usecase" name="Notation Use-Case-Diagramm">
+    <mxGraphModel dx="1000" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="680" pageHeight="360" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="titel" value="Elemente eines Use-Case-Diagramms" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;strokeColor=none;fillColor=none;fontFamily=Helvetica;fontSize=14;fontStyle=1;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="20" y="10" width="400" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="systemgrenze" value="Systemname" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;verticalAlign=top;align=center;spacingTop=6;fontFamily=Helvetica;fontSize=13;fontStyle=1;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="180" y="50" width="460" height="255" as="geometry"/>
+        </mxCell>
+        <mxCell id="akteur" value="Akteur" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=13;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="50" y="110" width="30" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="uc_anwendungsfall" value="Anwendungsfall" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=13;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="215" y="102" width="150" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="uc_eingebunden" value="eingebundener&lt;br&gt;Anwendungsfall" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=13;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="455" y="100" width="160" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="uc_erweiternd" value="erweiternder&lt;br&gt;Anwendungsfall" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=13;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="210" y="220" width="160" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="assoziation" value="Assoziation" style="edgeStyle=none;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=none;exitX=1;exitY=0.333;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="akteur" target="uc_anwendungsfall">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="-8" y="-11" as="offset"/></mxGeometry>
+        </mxCell>
+        <mxCell id="include" value="«include»" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;dashPattern=6 4;endArrow=open;endFill=0;endSize=10;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="uc_anwendungsfall" target="uc_eingebunden">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="0" y="-11" as="offset"/></mxGeometry>
+        </mxCell>
+        <mxCell id="extend" value="«extend»" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;dashPattern=6 4;endArrow=open;endFill=0;endSize=10;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=none;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="uc_erweiternd" target="uc_anwendungsfall">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="-34" y="0" as="offset"/></mxGeometry>
+        </mxCell>
+        <mxCell id="notiz_erweiterungspunkt" value="Erweiterungspunkt: Name&lt;br&gt;Bedingung: {Bedingung}" style="shape=note;whiteSpace=wrap;html=1;size=14;align=left;verticalAlign=middle;spacingLeft=8;fillColor=#FFFFFF;strokeColor=#0E7490;fontColor=#22303C;fontSize=12;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="420" y="182" width="200" height="48" as="geometry"/>
+        </mxCell>
+        <mxCell id="notiz_an_extend" value="" style="edgeStyle=none;html=1;dashed=1;dashPattern=1 3;endArrow=oval;endFill=0;endSize=8;strokeColor=#22303C;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="notiz_erweiterungspunkt" target="extend">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="text_systemgrenze" value="Systemgrenze" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;strokeColor=none;fillColor=none;fontFamily=Helvetica;fontSize=12;fontColor=#52626F;" vertex="1" parent="1">
+          <mxGeometry x="180" y="310" width="200" height="18" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

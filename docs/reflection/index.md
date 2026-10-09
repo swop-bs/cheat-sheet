@@ -7,3 +7,5 @@ Reflection bietet eine [introspektive](https://de.wiktionary.org/wiki/introspekt
 Die Verwendung von Reflection kann jedoch auch Nachteile haben, wie z.B. Leistungseinbußen, da der Zugriff auf Typinformationen zur Laufzeit mehr Ressourcen erfordert als der direkte Zugriff zur Kompilierungszeit. Zudem erfordert die Nutzung von Reflection ein tiefes Verständnis der Struktur des Zielprogramms, was die Komplexität erhöhen kann. Trotz dieser Herausforderungen bleibt Reflection ein unverzichtbares Werkzeug in der Toolbox eines C#-Entwicklers, das für spezielle Anwendungsfälle, wo Flexibilität und dynamische Typisierung erforderlich sind, von unschätzbarem Wert ist.
 
 Diese Dokumentation führt Sie durch die Grundlagen der Reflection in C#, einschließlich der Untersuchung von Typen, dem Zugriff auf Attribute, Properties und Methoden sowie deren Anwendung in realen Szenarien.
+
+Alle Beispiele auf den folgenden Seiten verwenden die [Beispielklasse Mitarbeiter](klasse-mitarbeiter.md). Am besten sehen Sie sich diese Klasse zuerst an.

@@ -1,0 +1,157 @@
+<mxfile host="drawio" agent="Campus IT Solutions" version="24.7.17">
+  <diagram id="klassendiagramm_lizenzuebersicht" name="Klassendiagramm der Lizenzübersicht LIZ">
+    <mxGraphModel dx="1000" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="820" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="titel" value="Lizenzübersicht LIZ der IT-Betreuung – Klassendiagramm" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;strokeColor=none;fillColor=none;fontFamily=Helvetica;fontSize=14;fontStyle=1;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="20" y="10" width="600" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="klasse_softwareprodukt" value="Softwareprodukt" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fillColor=#FFFFFF;swimlaneFillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=13;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="140" y="50" width="300" height="190" as="geometry"/>
+        </mxCell>
+        <mxCell id="klasse_softwareprodukt_attr_name" value="- _name : string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="klasse_softwareprodukt">
+          <mxGeometry y="28" width="300" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="klasse_softwareprodukt_attr_hersteller" value="- _hersteller : string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="klasse_softwareprodukt">
+          <mxGeometry y="50" width="300" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="klasse_softwareprodukt_prop_name" value="+ Name : string &amp;nbsp;{nur lesen}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="klasse_softwareprodukt">
+          <mxGeometry y="72" width="300" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="klasse_softwareprodukt_prop_hersteller" value="+ Hersteller : string &amp;nbsp;{nur lesen}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="klasse_softwareprodukt">
+          <mxGeometry y="94" width="300" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="klasse_softwareprodukt_trennlinie" value="" style="line;strokeWidth=1.5;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#0E7490;" vertex="1" parent="klasse_softwareprodukt">
+          <mxGeometry y="116" width="300" height="8" as="geometry"/>
+        </mxCell>
+        <mxCell id="klasse_softwareprodukt_op_konstruktor" value="+ Softwareprodukt(name : string, hersteller : string)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="klasse_softwareprodukt">
+          <mxGeometry y="124" width="300" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="klasse_softwareprodukt_op_anzahllizenzen" value="+ AnzahlLizenzen() : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="klasse_softwareprodukt">
+          <mxGeometry y="146" width="300" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="klasse_softwareprodukt_op_freieplaetze" value="+ FreiePlaetze() : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="klasse_softwareprodukt">
+          <mxGeometry y="168" width="300" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="klasse_lizenz" value="Lizenz" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fillColor=#FFFFFF;swimlaneFillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=13;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="160" y="330" width="260" height="234" as="geometry"/>
+        </mxCell>
+        <mxCell id="klasse_lizenz_attr_schluessel" value="- _schluessel : string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="klasse_lizenz">
+          <mxGeometry y="28" width="260" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="klasse_lizenz_attr_plaetze" value="- _plaetze : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="klasse_lizenz">
+          <mxGeometry y="50" width="260" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="klasse_lizenz_attr_belegt" value="- _belegt : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="klasse_lizenz">
+          <mxGeometry y="72" width="260" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="klasse_lizenz_prop_schluessel" value="+ Schluessel : string &amp;nbsp;{nur lesen}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="klasse_lizenz">
+          <mxGeometry y="94" width="260" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="klasse_lizenz_prop_plaetze" value="+ Plaetze : int &amp;nbsp;{nur lesen}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="klasse_lizenz">
+          <mxGeometry y="116" width="260" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="klasse_lizenz_trennlinie" value="" style="line;strokeWidth=1.5;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#0E7490;" vertex="1" parent="klasse_lizenz">
+          <mxGeometry y="138" width="260" height="8" as="geometry"/>
+        </mxCell>
+        <mxCell id="klasse_lizenz_op_konstruktor" value="+ Lizenz(schluessel : string, plaetze : int)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="klasse_lizenz">
+          <mxGeometry y="146" width="260" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="klasse_lizenz_op_istfrei" value="+ IstFrei() : bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="klasse_lizenz">
+          <mxGeometry y="168" width="260" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="klasse_lizenz_op_platzbelegen" value="+ PlatzBelegen() : bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="klasse_lizenz">
+          <mxGeometry y="190" width="260" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="klasse_lizenz_op_platzfreigeben" value="+ PlatzFreigeben() : void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="klasse_lizenz">
+          <mxGeometry y="212" width="260" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="klasse_arbeitsplatz" value="Arbeitsplatz" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fillColor=#FFFFFF;swimlaneFillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=13;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="520" y="330" width="270" height="146" as="geometry"/>
+        </mxCell>
+        <mxCell id="klasse_arbeitsplatz_attr_kennung" value="- _kennung : string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="klasse_arbeitsplatz">
+          <mxGeometry y="28" width="270" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="klasse_arbeitsplatz_attr_raum" value="- _raum : string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="klasse_arbeitsplatz">
+          <mxGeometry y="50" width="270" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="klasse_arbeitsplatz_prop_kennung" value="+ Kennung : string &amp;nbsp;{nur lesen}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="klasse_arbeitsplatz">
+          <mxGeometry y="72" width="270" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="klasse_arbeitsplatz_trennlinie" value="" style="line;strokeWidth=1.5;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#0E7490;" vertex="1" parent="klasse_arbeitsplatz">
+          <mxGeometry y="94" width="270" height="8" as="geometry"/>
+        </mxCell>
+        <mxCell id="klasse_arbeitsplatz_op_konstruktor" value="+ Arbeitsplatz(kennung : string, raum : string)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="klasse_arbeitsplatz">
+          <mxGeometry y="102" width="270" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="klasse_arbeitsplatz_op_tostring" value="+ ToString() : string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="klasse_arbeitsplatz">
+          <mxGeometry y="124" width="270" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="klasse_einzelplatzlizenz" value="Einzelplatzlizenz" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fillColor=#FFFFFF;swimlaneFillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=13;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="30" y="634" width="240" height="116" as="geometry"/>
+        </mxCell>
+        <mxCell id="klasse_einzelplatzlizenz_attr_arbeitsplatzkennung" value="- _arbeitsplatzKennung : string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="klasse_einzelplatzlizenz">
+          <mxGeometry y="28" width="240" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="klasse_einzelplatzlizenz_trennlinie" value="" style="line;strokeWidth=1.5;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#0E7490;" vertex="1" parent="klasse_einzelplatzlizenz">
+          <mxGeometry y="50" width="240" height="8" as="geometry"/>
+        </mxCell>
+        <mxCell id="klasse_einzelplatzlizenz_op_konstruktor" value="+ Einzelplatzlizenz(schluessel : string,&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;arbeitsplatzKennung : string)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="klasse_einzelplatzlizenz">
+          <mxGeometry y="58" width="240" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="klasse_einzelplatzlizenz_op_istfrei" value="+ IstFrei() : bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="klasse_einzelplatzlizenz">
+          <mxGeometry y="94" width="240" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="klasse_netzwerklizenz" value="Netzwerklizenz" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fillColor=#FFFFFF;swimlaneFillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=13;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="310" y="634" width="240" height="116" as="geometry"/>
+        </mxCell>
+        <mxCell id="klasse_netzwerklizenz_attr_servername" value="- _servername : string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="klasse_netzwerklizenz">
+          <mxGeometry y="28" width="240" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="klasse_netzwerklizenz_trennlinie" value="" style="line;strokeWidth=1.5;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#0E7490;" vertex="1" parent="klasse_netzwerklizenz">
+          <mxGeometry y="50" width="240" height="8" as="geometry"/>
+        </mxCell>
+        <mxCell id="klasse_netzwerklizenz_op_konstruktor" value="+ Netzwerklizenz(schluessel : string,&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;plaetze : int, servername : string)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="klasse_netzwerklizenz">
+          <mxGeometry y="58" width="240" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="klasse_netzwerklizenz_op_istfrei" value="+ IstFrei() : bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="klasse_netzwerklizenz">
+          <mxGeometry y="94" width="240" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="komposition_produkt_lizenz" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=none;endArrow=none;startArrow=diamondThin;startFill=1;startSize=16;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="klasse_softwareprodukt" target="klasse_lizenz">
+          <mxGeometry relative="1" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="komposition_mult_produkt" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=none;" vertex="1" connectable="0" parent="komposition_produkt_lizenz">
+          <mxGeometry x="-1" relative="1" as="geometry"><mxPoint x="12" y="14" as="offset"/></mxGeometry>
+        </mxCell>
+        <mxCell id="komposition_mult_lizenz" value="1..*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=none;" vertex="1" connectable="0" parent="komposition_produkt_lizenz">
+          <mxGeometry x="1" relative="1" as="geometry"><mxPoint x="20" y="-12" as="offset"/></mxGeometry>
+        </mxCell>
+        <mxCell id="assoziation_lizenz_arbeitsplatz" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=none;endArrow=none;startArrow=none;exitX=1;exitY=0.312;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="klasse_lizenz" target="klasse_arbeitsplatz">
+          <mxGeometry relative="1" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="assoziation_mult_lizenz" value="0..*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=none;" vertex="1" connectable="0" parent="assoziation_lizenz_arbeitsplatz">
+          <mxGeometry x="-1" relative="1" as="geometry"><mxPoint x="20" y="-12" as="offset"/></mxGeometry>
+        </mxCell>
+        <mxCell id="assoziation_mult_arbeitsplatz" value="0..*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=none;" vertex="1" connectable="0" parent="assoziation_lizenz_arbeitsplatz">
+          <mxGeometry x="1" relative="1" as="geometry"><mxPoint x="-20" y="-12" as="offset"/></mxGeometry>
+        </mxCell>
+        <mxCell id="generalisierung_einzelplatz" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=none;endArrow=block;endFill=0;endSize=14;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="klasse_einzelplatzlizenz" target="klasse_lizenz">
+          <mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="150" y="599"/><mxPoint x="290" y="599"/></Array></mxGeometry>
+        </mxCell>
+        <mxCell id="generalisierung_netzwerk" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=none;endArrow=block;endFill=0;endSize=14;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="klasse_netzwerklizenz" target="klasse_lizenz">
+          <mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="430" y="599"/><mxPoint x="290" y="599"/></Array></mxGeometry>
+        </mxCell>
+        <mxCell id="notiz_komposition" value="Ein Produkt hat mindestens eine Lizenz; ohne das Produkt gibt es die Lizenz nicht (Komposition)." style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;strokeColor=none;fillColor=none;fontFamily=Helvetica;fontSize=12;fontColor=#52626F;" vertex="1" parent="1">
+          <mxGeometry x="330" y="262" width="300" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="notiz_assoziation" value="Ein Arbeitsplatz kann mehrere Lizenzen belegen, eine Netzwerklizenz mehrere Arbeitsplätze." style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;strokeColor=none;fillColor=none;fontFamily=Helvetica;fontSize=12;fontColor=#52626F;" vertex="1" parent="1">
+          <mxGeometry x="520" y="486" width="270" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="notiz_generalisierung" value="Beide Unterklassen erben Schluessel, Plaetze und die Operationen; sie beantworten IstFrei() nur unterschiedlich." style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;strokeColor=none;fillColor=none;fontFamily=Helvetica;fontSize=12;fontColor=#52626F;" vertex="1" parent="1">
+          <mxGeometry x="30" y="764" width="760" height="20" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

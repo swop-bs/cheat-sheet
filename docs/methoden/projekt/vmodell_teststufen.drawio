@@ -1,0 +1,88 @@
+<mxfile host="drawio" agent="Campus IT Solutions" version="24.0">
+  <diagram id="vmodell_teststufen" name="V-Modell mit Teststufen">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="titel" value="V-Modell: jede Konstruktionsstufe hat ihre Teststufe" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontFamily=Helvetica;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="560" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="systemanforderungen" value="Systemanforderungen" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#0E7490;strokeWidth=1.5;fontSize=13;fontFamily=Helvetica;fontColor=#22303C;fillColor=#FFFFFF;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="0" y="52" width="200" height="48" as="geometry"/>
+        </mxCell>
+        <mxCell id="systementwurf" value="Systementwurf" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#0E7490;strokeWidth=1.5;fontSize=13;fontFamily=Helvetica;fontColor=#22303C;fillColor=#FFFFFF;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="28" y="128" width="200" height="48" as="geometry"/>
+        </mxCell>
+        <mxCell id="architektur" value="Architektur" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#0E7490;strokeWidth=1.5;fontSize=13;fontFamily=Helvetica;fontColor=#22303C;fillColor=#FFFFFF;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="56" y="204" width="200" height="48" as="geometry"/>
+        </mxCell>
+        <mxCell id="komponenten_spezifikation" value="Komponenten-Spezifikation" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#0E7490;strokeWidth=1.5;fontSize=13;fontFamily=Helvetica;fontColor=#22303C;fillColor=#FFFFFF;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="84" y="280" width="200" height="48" as="geometry"/>
+        </mxCell>
+        <mxCell id="implementierung" value="Implementierung" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#0E7490;strokeWidth=1.5;fontSize=13;fontFamily=Helvetica;fontColor=#22303C;fillColor=#FFFFFF;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="295" y="356" width="200" height="48" as="geometry"/>
+        </mxCell>
+        <mxCell id="abnahmetest" value="Abnahmetest" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#0E7490;strokeWidth=1.5;fontSize=13;fontFamily=Helvetica;fontColor=#22303C;fillColor=#E0F1F5;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="52" width="200" height="48" as="geometry"/>
+        </mxCell>
+        <mxCell id="systemtest" value="Systemtest" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#0E7490;strokeWidth=1.5;fontSize=13;fontFamily=Helvetica;fontColor=#22303C;fillColor=#E0F1F5;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="562" y="128" width="200" height="48" as="geometry"/>
+        </mxCell>
+        <mxCell id="integrationstest" value="Integrationstest" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#0E7490;strokeWidth=1.5;fontSize=13;fontFamily=Helvetica;fontColor=#22303C;fillColor=#E0F1F5;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="534" y="204" width="200" height="48" as="geometry"/>
+        </mxCell>
+        <mxCell id="komponententest" value="&lt;b&gt;Komponententest&lt;/b&gt;&lt;br&gt;(Modul-, Unit-Test)" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#0E7490;strokeWidth=1.5;fontSize=13;fontFamily=Helvetica;fontColor=#22303C;fillColor=#E0F1F5;" vertex="1" parent="1">
+          <mxGeometry x="506" y="280" width="200" height="48" as="geometry"/>
+        </mxCell>
+        <mxCell id="ast_systemanforderungen_systementwurf" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#22303C;strokeWidth=1.5;endArrow=block;endFill=1;exitX=0.57;exitY=1;exitDx=0;exitDy=0;entryX=0.43;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="systemanforderungen" target="systementwurf">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="ast_systementwurf_architektur" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#22303C;strokeWidth=1.5;endArrow=block;endFill=1;exitX=0.57;exitY=1;exitDx=0;exitDy=0;entryX=0.43;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="systementwurf" target="architektur">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="ast_architektur_komponenten_spezifikation" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#22303C;strokeWidth=1.5;endArrow=block;endFill=1;exitX=0.57;exitY=1;exitDx=0;exitDy=0;entryX=0.43;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="architektur" target="komponenten_spezifikation">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="ast_komponenten_spezifikation_implementierung" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#22303C;strokeWidth=1.5;endArrow=block;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="komponenten_spezifikation" target="implementierung">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="ast_implementierung_komponententest" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#22303C;strokeWidth=1.5;endArrow=block;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="implementierung" target="komponententest">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="ast_komponententest_integrationstest" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#22303C;strokeWidth=1.5;endArrow=block;endFill=1;exitX=0.57;exitY=0;exitDx=0;exitDy=0;entryX=0.43;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="komponententest" target="integrationstest">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="ast_integrationstest_systemtest" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#22303C;strokeWidth=1.5;endArrow=block;endFill=1;exitX=0.57;exitY=0;exitDx=0;exitDy=0;entryX=0.43;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="integrationstest" target="systemtest">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="ast_systemtest_abnahmetest" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#22303C;strokeWidth=1.5;endArrow=block;endFill=1;exitX=0.57;exitY=0;exitDx=0;exitDy=0;entryX=0.43;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="systemtest" target="abnahmetest">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="prueft_abnahmetest" value="prüft gegen die Systemanforderungen&lt;br&gt;des Auftraggebers (Validierung)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#22303C;strokeWidth=1.5;endArrow=none;dashed=1;dashPattern=6 4;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=none;verticalAlign=bottom;spacingBottom=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="systemanforderungen" target="abnahmetest">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="prueft_systemtest" value="prüft das Gesamtsystem&lt;br&gt;gegen den Systementwurf" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#22303C;strokeWidth=1.5;endArrow=none;dashed=1;dashPattern=6 4;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=none;verticalAlign=bottom;spacingBottom=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="systementwurf" target="systemtest">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="prueft_integrationstest" value="prüft das Zusammenspiel der Bausteine&lt;br&gt;gegen die Architektur" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#22303C;strokeWidth=1.5;endArrow=none;dashed=1;dashPattern=6 4;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=none;verticalAlign=bottom;spacingBottom=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="architektur" target="integrationstest">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="prueft_komponententest" value="prüft den einzelnen Baustein gegen&lt;br&gt;seine Komponenten-Spezifikation" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#22303C;strokeWidth=1.5;endArrow=none;dashed=1;dashPattern=6 4;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=none;verticalAlign=bottom;spacingBottom=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="komponenten_spezifikation" target="komponententest">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="ast_konstruktion" value="Konstruktion: von grob nach fein" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;fontFamily=Helvetica;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="0" y="420" width="260" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="ast_pruefung" value="Prüfung: von fein nach grob" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=13;fontStyle=1;fontFamily=Helvetica;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="530" y="420" width="260" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="regel" value="Regel: Die Testfälle einer Stufe entstehen zusammen mit dem Dokument dieser Stufe — nicht erst mit dem Code." style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=2;fontFamily=Helvetica;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="0" y="452" width="790" height="18" as="geometry"/>
+        </mxCell>
+        <mxCell id="begriffe" value="Verifikation: Bauen wir das Produkt richtig? (Komponenten-, Integrations-, Systemtest)&lt;br&gt;Validierung: Bauen wir das richtige Produkt? (Abnahmetest)" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontFamily=Helvetica;fontSize=12;fontColor=#52626F;" vertex="1" parent="1">
+          <mxGeometry x="0" y="474" width="790" height="34" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

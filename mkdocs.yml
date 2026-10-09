@@ -3,70 +3,90 @@ site_name: Coding Cheat Sheet
 site_url: https://aeup-cs.github.io/CheatSheet/
 
 nav:
-    - Übersicht: index.md
-    - Grundlagen:
-        - String: grundlagen/string.md
-        - Verzweigung: grundlagen/verzweigung.md
-        - Schleifen: grundlagen/schleifen.md
-        - Dictionary: grundlagen/dictionary.md
-        - Enum: grundlagen/enum.md
-        - Datum und Zeit: grundlagen/datum_zeit.md
-        - Zufall: grundlagen/zufall.md
-        - Dateien: grundlagen/dateien.md
-        - Exception Handling: grundlagen/exceptions.md
-        - Events: grundlagen/events.md
+    - Start: index.md
+    - Programmieren:
+        - Sprachgrundlagen:
+            - Verzweigung: grundlagen/verzweigung.md
+            - Schleifen: grundlagen/schleifen.md
+            - String: grundlagen/string.md
+            - Enum: grundlagen/enum.md
+            - Dictionary: grundlagen/dictionary.md
+            - Datum und Zeit: grundlagen/datum_zeit.md
+            - Zufall: grundlagen/zufall.md
+            - Exception Handling: grundlagen/exceptions.md
+        - Objektorientierung:
+            - oop/index.md
+            - Klassen & Objekte: oop/klasse_objekt.md
+            - Kapselung: oop/kapselung.md
+            - Vererbung: oop/vererbung.md
+            - Polymorphie: oop/polymorphie.md
+            - Abstraktion und Interfaces: oop/abstraktion.md
+            - Events: grundlagen/events.md
+        - Daten speichern und austauschen:
+            - Dateien: grundlagen/dateien.md
+            - Serialisierung:
+                - serialisierung/index.md
+                - JSON (System.Text.Json): serialisierung/json.md
+                - XML (System.Xml.Serialization): serialisierung/xml.md
+            - Datenbank (MySQL):
+                - db/index.md
+                - Paket installieren: db/datenbankanbindung.md
+                - Verbindung herstellen: db/verbindung.md
+                - Daten lesen: db/daten-lesen.md
+                - Daten schreiben: db/daten-schreiben.md
+                - Beispiel: db/beispiel.md
+        - Oberflächen mit WPF:
+            - ui/index.md
+            - Projekt erstellen: ui/create_wpf_project.md
+            - Grundlagen: ui/wpf_grundlagen.md
+            - Steuerelemente und Layout: ui/elemente.md
+            - Ereignisse: ui/ereignisse.md
+            - Liste anzeigen: ui/liste_anzeigen.md
+            - Dialoge: ui/dialoge.md
+            - Datenbindung:
+                - Vorbereitung: ui/databinding.md
+                - Daten an Label binden: ui/label_binding.md
+                - Text mit Button ändern: ui/button_binding.md
+        - Fortgeschritten:
+            - Reflection:
+                - reflection/index.md
+                - Datentyp dynamisch ermitteln: reflection/datentyp-ermitteln.md
+                - Objekte dynamisch erstellen: reflection/objekte-erstellen.md
+        - Spieleentwicklung (Godot):
+            - gamedev/index.md
+            - Einrichtung des Projekts: gamedev/einrichtung.md
+            - Projektübersicht: gamedev/uebersicht.md
+            - Spielobjekt hinzufügen: gamedev/objekt_hinzufuegen.md
+            - Spielobjekt bewegen: gamedev/objekt_bewegen.md
+            - Signale (Events): gamedev/godot_events.md
+    - Methoden:
+        - methoden/index.md
+        - Algorithmen darstellen:
+            - Pseudocode und Struktogramm: methoden/algorithmen/pseudocode_struktogramm.md
+            - Entscheidungstabelle: methoden/algorithmen/entscheidungstabelle.md
+        - UML:
+            - Aktivitätsdiagramm: methoden/uml/aktivitaetsdiagramm.md
+            - Use-Case-Diagramm: methoden/uml/usecase_diagramm.md
+            - Klassendiagramm: methoden/uml/klassendiagramm.md
+        - Testen:
+            - Schreibtischtest: methoden/testen/schreibtischtest.md
+        - Projekt und Vorgehen:
+            - Phasenkonzept: methoden/projekt/phasenkonzept.md
+            - Lastenheft und Pflichtenheft: methoden/projekt/lastenheft_pflichtenheft.md
+            - "Vorgehensmodelle I: klassisch": methoden/projekt/vorgehensmodelle_klassisch.md
+            - "Vorgehensmodelle II: iterativ": methoden/projekt/vorgehensmodelle_iterativ.md
+            - "Vorgehensmodelle III: agil": methoden/projekt/vorgehensmodelle_agil.md
+    - Werkzeuge und Standards:
+        - Git:
+            - Bestehendes Projekt unter Git stellen: git/bestehendes_projekt.md
+            - Git auf der Kommandozeile: git/git_cmd.md
+            - Kommandozeile – Kurzübersicht: git/git_cmd_short.md
+            - Git in Visual Studio: git/git_vs.md
+            - Visual Studio – Kurzübersicht: git/git_vs_short.md
         - Coding Conventions:
             - C#: grundlagen/coding_convention_cs.md
             - Java: grundlagen/coding_convention_java.md
-    - Objektorientierung:
-        - Übersicht: oop/index.md
-        - Klassen & Objekte: oop/klasse_objekt.md
-        - Kapselung: oop/kapselung.md
-        - Vererbung: oop/vererbung.md
-        - Polymorphie: oop/polymorphie.md
-        - Abstraktion: oop/abstraktion.md
-    - Oberflächenprogrammierung (WPF):
-      - ui/index.md
-      - WPF Projekt erstellen in Visual Studio: ui/create_wpf_project.md
-      - WPF Grundlagen: ui/wpf_grundlagen.md
-      - WPF Elemente: ui/elemente.md
-      - Ereignisse: ui/ereignisse.md
-      - Liste anzeigen: ui/liste_anzeigen.md
-      - Dialoge: ui/dialoge.md
-      - Datenbindung: 
-        - Vorbereitung: ui/databinding.md
-        - Daten an Label binden: ui/label_binding.md
-        - Text mit Button ändern: ui/button_binding.md
-    - Git:
-      - Bestehendes Projekt unter Git stellen: git/bestehendes_projekt.md
-      - Git Kommandozeile: git/git_cmd.md
-      - Git Kommandozeile Kurzübersicht: git/git_cmd_short.md
-      - Git Visual Studio: git/git_vs.md
-      - Git Visual Studio Kurzübersicht: git/git_vs_short.md
-    - Datenbankanbindung:
-      - db/index.md
-      - Installation: db/datenbankanbindung.md
-      - Verbindung herstellen: db/verbindung.md
-      - Daten lesen: db/daten-lesen.md
-      - Daten schreiben: db/daten-schreiben.md
-      - Beispiel: db/beispiel.md
-    - Serialisierung:
-      - serialisierung/index.md
-      - JSON (System.Text.Json): serialisierung/json.md
-      - XML (System.Xml.Serialization): serialisierung/xml.md
-    - Reflection:
-      - reflection/index.md
-      - Beispielklasse Mitarbeiter: reflection/klasse-mitarbeiter.md
-      - Datentyp dynamisch ermitteln: reflection/datentyp-ermitteln.md
-      - Objekte dynamisch erstellen: reflection/objekte-erstellen.md
-    - Spieleentwicklung:
-      - gamedev/index.md
-      - Einrichtung des Projekts: gamedev/einrichtung.md
-      - Projektübersicht: gamedev/uebersicht.md
-      - Spielobjekt hinzufügen: gamedev/objekt_hinzufuegen.md
-      - Spielobjekt bewegen: gamedev/objekt_bewegen.md
-      - Signale (Events): gamedev/godot_events.md
-      
+
 theme: 
     name: material
     palette:
@@ -82,6 +102,7 @@ theme:
             name: Switch to dark mode
     language: de
     features:
+      - navigation.tabs
       - content.code.copy
       - content.code.annotate
       - content.tabs.link
@@ -120,6 +141,9 @@ markdown_extensions:
   # Annotations
   - attr_list
   - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
@@ -129,7 +153,7 @@ markdown_extensions:
 plugins:
   - offline
   - search
-  - glightbox 
+  - glightbox
 
 extra_css:
   - stylesheets/extra.css

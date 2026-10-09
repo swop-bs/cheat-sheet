@@ -1,0 +1,88 @@
+<mxfile host="drawio" agent="Campus IT Solutions" version="24.0">
+  <diagram id="anforderungen_lasten_pflichtenheft" name="Vom Lastenheft zum Pflichtenheft">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="titel" value="Vom Lastenheft zum Pflichtenheft" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=14;fontStyle=1;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="500" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="auftraggeber" value="Auftraggeber" style="rounded=1;absoluteArcSize=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="80" y="34" width="140" height="28" as="geometry"/>
+        </mxCell>
+        <mxCell id="auftragnehmer" value="Auftragnehmer (wir)" style="rounded=1;absoluteArcSize=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="500" y="34" width="160" height="28" as="geometry"/>
+        </mxCell>
+        <mxCell id="lastenheft" value="&lt;b&gt;Lastenheft&lt;/b&gt;&lt;br&gt;Was wird gebraucht — und wofür?" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=48;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginTop=4;marginBottom=26;whiteSpace=wrap;html=1;fillColor=#E0F1F5;swimlaneFillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=13;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="0" y="92" width="300" height="188" as="geometry"/>
+        </mxCell>
+        <mxCell id="lastenheft_ziele" value="• Ausgangslage und Ziele" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=6;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="lastenheft">
+          <mxGeometry y="52" width="300" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="lastenheft_anforderungen" value="• Anforderungen in der Sprache des Kunden" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=6;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="lastenheft">
+          <mxGeometry y="74" width="300" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="lastenheft_prioritaet" value="• Priorität Muss / Soll / Kann" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=6;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="lastenheft">
+          <mxGeometry y="96" width="300" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="lastenheft_randbedingungen" value="• Randbedingungen" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=6;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="lastenheft">
+          <mxGeometry y="118" width="300" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="lastenheft_abgrenzung" value="• Abgrenzung: was nicht Gegenstand ist" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=6;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="lastenheft">
+          <mxGeometry y="140" width="300" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="pflichtenheft" value="&lt;b&gt;Pflichtenheft&lt;/b&gt;&lt;br&gt;Wie und womit setzen wir es um?" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=48;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginTop=4;marginBottom=4;whiteSpace=wrap;html=1;fillColor=#E0F1F5;swimlaneFillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=13;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="430" y="92" width="300" height="188" as="geometry"/>
+        </mxCell>
+        <mxCell id="pflichtenheft_pruefbar" value="• jede Anforderung prüfbar formuliert" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=6;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="pflichtenheft">
+          <mxGeometry y="52" width="300" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="pflichtenheft_attribute" value="• ID, Quelle, Priorität, Status, Akzeptanzkriterium" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=6;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="pflichtenheft">
+          <mxGeometry y="74" width="300" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="pflichtenheft_nfa" value="• nicht-funktionale Anforderungen mit Messgröße" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=6;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="pflichtenheft">
+          <mxGeometry y="96" width="300" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="pflichtenheft_annahmen" value="• getroffene Annahmen" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=6;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="pflichtenheft">
+          <mxGeometry y="118" width="300" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="pflichtenheft_offene_punkte" value="• offene Punkte mit klärender Person" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=6;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="pflichtenheft">
+          <mxGeometry y="140" width="300" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="pflichtenheft_lieferumfang" value="• Lieferumfang" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=6;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="pflichtenheft">
+          <mxGeometry y="162" width="300" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="beispiel_lastenheft" value="Beispiel INVENT, Satz im Lastenheft" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginTop=4;marginBottom=4;whiteSpace=wrap;html=1;fillColor=#FFFFFF;swimlaneFillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="0" y="312" width="300" height="66" as="geometry"/>
+        </mxCell>
+        <mxCell id="beispiel_lastenheft_satz" value="„Die Geräteliste soll übersichtlich sein.“" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=6;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="beispiel_lastenheft">
+          <mxGeometry y="32" width="300" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="beispiel_pflichtenheft" value="Daraus im Pflichtenheft" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginTop=4;marginBottom=4;whiteSpace=wrap;html=1;fillColor=#FFFFFF;swimlaneFillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="430" y="312" width="300" height="128" as="geometry"/>
+        </mxCell>
+        <mxCell id="beispiel_fa004" value="&lt;b&gt;FA-004 (Muss)&lt;/b&gt; Die Übersicht zeigt je Gerät eine Zeile mit Inventarnummer, Bezeichnung, Standort, Zustand." style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=6;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="beispiel_pflichtenheft">
+          <mxGeometry y="32" width="300" height="54" as="geometry"/>
+        </mxCell>
+        <mxCell id="beispiel_akzeptanzkriterium" value="&lt;i&gt;Akzeptanzkriterium:&lt;/i&gt; alle vier ohne Scrollen nach rechts lesbar." style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=6;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="beispiel_pflichtenheft">
+          <mxGeometry y="86" width="300" height="38" as="geometry"/>
+        </mxCell>
+        <mxCell id="folgesatz" value="Das freigegebene Pflichtenheft ist die Grundlage von Entwurf (RL-SE-005), Testfällen (RL-SE-003) und Abnahme." style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontStyle=2;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="0" y="460" width="730" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="kante_auftraggeber_lastenheft" value="schreibt" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#52626F;align=left;spacingLeft=8;labelBackgroundColor=none;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="auftraggeber" target="lastenheft">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="kante_auftragnehmer_pflichtenheft" value="schreibt" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#52626F;align=left;spacingLeft=8;labelBackgroundColor=none;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="auftragnehmer" target="pflichtenheft">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="kante_konkretisieren" value="konkretisieren&lt;br&gt;prüfbar machen&lt;br&gt;nichts raten" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#22303C;strokeWidth=2;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=none;verticalAlign=bottom;spacingBottom=6;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="lastenheft" target="pflichtenheft">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="kante_beispiel" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;dashed=1;dashPattern=6 4;strokeColor=#22303C;strokeWidth=1.5;exitX=1;exitY=0.7121;exitDx=0;exitDy=0;entryX=0;entryY=0.3672;entryDx=0;entryDy=0;" edge="1" parent="1" source="beispiel_lastenheft" target="beispiel_pflichtenheft">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

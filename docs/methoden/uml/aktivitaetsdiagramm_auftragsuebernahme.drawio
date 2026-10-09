@@ -1,0 +1,91 @@
+<mxfile host="drawio" agent="Campus IT Solutions" version="24.7.17">
+  <diagram id="aktivitaetsdiagramm_auftragsuebernahme" name="Angebot in Auftrag übernehmen (KALK)">
+    <mxGraphModel dx="1000" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="780" pageHeight="920" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="titel" value="KALK: Angebot in Auftrag übernehmen" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;strokeColor=none;fillColor=none;fontFamily=Helvetica;fontSize=14;fontStyle=1;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="20" y="10" width="500" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="startknoten" value="" style="ellipse;html=1;aspect=fixed;perimeter=ellipsePerimeter;fillColor=#22303C;strokeColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="237" y="47" width="26" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="a_liste_leeren" value="Liste der offenen&lt;br&gt;Positionen leeren" style="rounded=1;arcSize=24;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=13;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="175" y="100" width="150" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="m_schleife_anfang" value="" style="rhombus;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="235" y="170" width="30" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="d_weitere_position" value="Weitere Position&lt;br&gt;vorhanden?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=13;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="155" y="225" width="190" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="d_stundensatz_null" value="Stundensatz der&lt;br&gt;Position = 0,00 €?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=13;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="145" y="345" width="210" height="84" as="geometry"/>
+        </mxCell>
+        <mxCell id="a_position_aufnehmen" value="Positionsnummer in die&lt;br&gt;Liste aufnehmen" style="rounded=1;arcSize=24;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=13;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="165" y="469" width="170" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="m_schleife_ende" value="" style="rhombus;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="235" y="540" width="30" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="d_liste_leer" value="Liste der offenen&lt;br&gt;Positionen ist leer?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=13;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="375" y="600" width="210" height="84" as="geometry"/>
+        </mxCell>
+        <mxCell id="a_auftrag_anlegen" value="Angebot als übernommen&lt;br&gt;kennzeichnen und&lt;br&gt;„Auftrag angelegt“ ausgeben" style="rounded=1;arcSize=24;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=13;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="200" y="715" width="200" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="a_liste_ausgeben" value="Liste der offenen&lt;br&gt;Positionen ausgeben" style="rounded=1;arcSize=24;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=13;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="580" y="715" width="160" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="m_ende" value="" style="rhombus;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="465" y="800" width="30" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="endknoten" value="" style="ellipse;html=1;shape=endState;fillColor=#22303C;strokeColor=#22303C;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="465" y="855" width="30" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="k_start_liste" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=open;endFill=0;endSize=10;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="startknoten" target="a_liste_leeren">
+          <mxGeometry relative="1" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="k_liste_schleife" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=open;endFill=0;endSize=10;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="a_liste_leeren" target="m_schleife_anfang">
+          <mxGeometry relative="1" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="k_schleife_weitere" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=open;endFill=0;endSize=10;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="m_schleife_anfang" target="d_weitere_position">
+          <mxGeometry relative="1" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="k_weitere_ja" value="[ja]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=open;endFill=0;endSize=10;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="d_weitere_position" target="d_stundensatz_null">
+          <mxGeometry x="-1" relative="1" as="geometry"><mxPoint x="18" y="12" as="offset"/></mxGeometry>
+        </mxCell>
+        <mxCell id="k_stundensatz_ja" value="[ja]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=open;endFill=0;endSize=10;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="d_stundensatz_null" target="a_position_aufnehmen">
+          <mxGeometry x="-1" relative="1" as="geometry"><mxPoint x="18" y="12" as="offset"/></mxGeometry>
+        </mxCell>
+        <mxCell id="k_aufnehmen_zusammen" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=open;endFill=0;endSize=10;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="a_position_aufnehmen" target="m_schleife_ende">
+          <mxGeometry relative="1" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="k_stundensatz_nein" value="[nein]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=open;endFill=0;endSize=10;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="d_stundensatz_null" target="m_schleife_ende">
+          <mxGeometry x="-1" relative="1" as="geometry"><Array as="points"><mxPoint x="425" y="387"/><mxPoint x="425" y="555"/></Array><mxPoint x="26" y="-11" as="offset"/></mxGeometry>
+        </mxCell>
+        <mxCell id="k_schleife_zurueck" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=open;endFill=0;endSize=10;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="m_schleife_ende" target="m_schleife_anfang">
+          <mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="110" y="555"/><mxPoint x="110" y="185"/></Array></mxGeometry>
+        </mxCell>
+        <mxCell id="k_weitere_nein" value="[nein]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=open;endFill=0;endSize=10;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="d_weitere_position" target="d_liste_leer">
+          <mxGeometry x="-1" relative="1" as="geometry"><Array as="points"><mxPoint x="480" y="265"/></Array><mxPoint x="26" y="-11" as="offset"/></mxGeometry>
+        </mxCell>
+        <mxCell id="k_leer_ja" value="[ja]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=open;endFill=0;endSize=10;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="d_liste_leer" target="a_auftrag_anlegen">
+          <mxGeometry x="-1" relative="1" as="geometry"><Array as="points"><mxPoint x="300" y="642"/></Array><mxPoint x="-18" y="-11" as="offset"/></mxGeometry>
+        </mxCell>
+        <mxCell id="k_leer_nein" value="[nein]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=open;endFill=0;endSize=10;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="d_liste_leer" target="a_liste_ausgeben">
+          <mxGeometry x="-1" relative="1" as="geometry"><Array as="points"><mxPoint x="660" y="642"/></Array><mxPoint x="24" y="-11" as="offset"/></mxGeometry>
+        </mxCell>
+        <mxCell id="k_auftrag_ende" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=open;endFill=0;endSize=10;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="a_auftrag_anlegen" target="m_ende">
+          <mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="300" y="815"/></Array></mxGeometry>
+        </mxCell>
+        <mxCell id="k_ausgeben_ende" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=open;endFill=0;endSize=10;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="a_liste_ausgeben" target="m_ende">
+          <mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="660" y="815"/></Array></mxGeometry>
+        </mxCell>
+        <mxCell id="k_zusammen_endknoten" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=open;endFill=0;endSize=10;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="m_ende" target="endknoten">
+          <mxGeometry relative="1" as="geometry"></mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

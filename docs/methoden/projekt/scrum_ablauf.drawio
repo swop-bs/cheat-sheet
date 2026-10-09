@@ -1,0 +1,78 @@
+<mxfile host="drawio" agent="Campus IT Solutions" version="24.0">
+  <diagram id="scrum_ablauf" name="Scrum: Rollen, Ereignisse, Artefakte">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="titel" value="Scrum: ein Sprint von Anfang bis Ende" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=14;fontStyle=1;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="560" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="rollen" value="&lt;b&gt;Rollen:&lt;/b&gt; Product Owner — entscheidet das Was · Scrum Master — sorgt für den Rahmen · Entwicklungsteam — entscheidet das Wie" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="0" y="26" width="788" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="product_backlog" value="&lt;b&gt;Product Backlog&lt;/b&gt;&lt;br&gt;alle bekannten&lt;br&gt;Anforderungen, nach&lt;br&gt;Nutzen geordnet&lt;br&gt;(Product Owner)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="0" y="95" width="140" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="sprint" value="Sprint · 1 bis 4 Wochen, immer gleich lang" style="rounded=1;absoluteArcSize=1;arcSize=16;whiteSpace=wrap;html=1;dashed=1;dashPattern=6 4;fillColor=none;strokeColor=#0E7490;strokeWidth=1.5;container=1;collapsible=0;recursiveResize=0;align=left;verticalAlign=top;spacingLeft=12;spacingTop=4;fontFamily=Helvetica;fontSize=13;fontStyle=1;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="180" y="60" width="608" height="276" as="geometry"/>
+        </mxCell>
+        <mxCell id="sprint_planning" value="&lt;b&gt;Sprint Planning&lt;/b&gt;&lt;br&gt;Was wird fertig — und wie?" style="rounded=1;absoluteArcSize=1;arcSize=24;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="sprint">
+          <mxGeometry x="20" y="40" width="160" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="sprint_backlog" value="&lt;b&gt;Sprint Backlog&lt;/b&gt;&lt;br&gt;ausgewählte Einträge&lt;br&gt;samt Plan (Team)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="sprint">
+          <mxGeometry x="224" y="40" width="160" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="daily_scrum" value="&lt;b&gt;Daily Scrum&lt;/b&gt;&lt;br&gt;15 Minuten: Hindernisse&lt;br&gt;benennen, nicht lösen" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="sprint">
+          <mxGeometry x="428" y="40" width="160" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="increment" value="&lt;b&gt;Increment&lt;/b&gt;&lt;br&gt;brauchbares Ergebnis&lt;br&gt;am Sprintende, erfüllt die&lt;br&gt;Definition of Done" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="sprint">
+          <mxGeometry x="428" y="176" width="160" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="sprint_review" value="&lt;b&gt;Sprint Review&lt;/b&gt;&lt;br&gt;Zuwachs vorführen,&lt;br&gt;Rückmeldung einholen" style="rounded=1;absoluteArcSize=1;arcSize=24;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="sprint">
+          <mxGeometry x="224" y="176" width="160" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="sprint_retrospective" value="&lt;b&gt;Sprint Retrospective&lt;/b&gt;&lt;br&gt;Zusammenarbeit&lt;br&gt;verbessern, eine&lt;br&gt;Maßnahme beschließen" style="rounded=1;absoluteArcSize=1;arcSize=24;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="sprint">
+          <mxGeometry x="20" y="176" width="160" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="definition_of_done" value="&lt;b&gt;Definition of Done:&lt;/b&gt;&lt;br&gt;die gemeinsame Liste,&lt;br&gt;wann etwas „fertig“ heißt" style="shape=note;size=12;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="608" y="356" width="160" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="legende" value="Rechteck: Artefakt · abgerundet: Ereignis · Ellipse: tägliches Ereignis" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#52626F;" vertex="1" parent="1">
+          <mxGeometry x="0" y="392" width="520" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="kante_backlog_planning" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#22303C;strokeWidth=1.5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="product_backlog" target="sprint_planning">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="kante_planning_sprintbacklog" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#22303C;strokeWidth=1.5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="sprint_planning" target="sprint_backlog">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="kante_sprintbacklog_daily" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#22303C;strokeWidth=1.5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="sprint_backlog" target="daily_scrum">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="kante_daily_increment" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#22303C;strokeWidth=1.5;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="daily_scrum" target="increment">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="kante_increment_review" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#22303C;strokeWidth=1.5;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="increment" target="sprint_review">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="kante_review_retro" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#22303C;strokeWidth=1.5;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="sprint_review" target="sprint_retrospective">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="kante_naechster_sprint" value="nächster Sprint" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;dashed=1;dashPattern=6 4;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="sprint_retrospective" target="sprint_planning">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="kante_backlog_fortschreiben" value="Backlog wird fortgeschrieben" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;dashed=1;dashPattern=6 4;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="sprint_review" target="product_backlog">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="484" y="366"/>
+              <mxPoint x="70" y="366"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kante_increment_dod" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;dashed=1;dashPattern=3 3;strokeColor=#22303C;strokeWidth=1.5;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="increment" target="definition_of_done">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
