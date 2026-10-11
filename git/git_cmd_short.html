@@ -3049,6 +3049,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -3107,6 +3111,62 @@
     
   
     Bestehendes Projekt unter Git stellen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="zu_zweit.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zu zweit an einem Repository arbeiten
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="repository_lesen.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ein Repository lesen
   
 
     
@@ -3252,6 +3312,28 @@
     <span class="md-ellipsis">
       
         4. Code in eigenen Branch pushen:
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-anderungen-holen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Änderungen holen:
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-branch-zuruckfuhren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Branch zurückführen:
       
     </span>
   </a>
@@ -3528,6 +3610,28 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#5-anderungen-holen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Änderungen holen:
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-branch-zuruckfuhren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Branch zurückführen:
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3641,6 +3745,23 @@
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p><code>-u origin</code> ist nur beim <strong>ersten</strong> Push eines Branches nötig. Danach genügt <code>git push</code>.</p>
+</div>
+<h2 id="5-anderungen-holen">5. Änderungen holen:<a class="headerlink" href="#5-anderungen-holen" title="Permanent link">#</a></h2>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>git pull
+</span></code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p><code>git pull</code> holt die neuen Commits vom Server und baut sie in deinen aktuellen Branch ein. Lehnt Git einen Push mit <code>! [rejected] ... (fetch first)</code> ab, liegt auf dem Server ein Commit, den du noch nicht hast: <code>git pull</code>, danach wieder <code>git push</code>. Mehr dazu in <a href="zu_zweit.html#wenn-der-push-abgelehnt-wird">Zu zweit an einem Repository arbeiten</a>.</p>
+</div>
+<h2 id="6-branch-zuruckfuhren">6. Branch zurückführen:<a class="headerlink" href="#6-branch-zuruckfuhren" title="Permanent link">#</a></h2>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>git switch main
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>git pull
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>git merge bfi11a_max_mustermann
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>git push
+</span></code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Git führt in den Branch zurück, in dem du gerade bist; <code>git switch main</code> wechselt dorthin. Fast-Forward, Merge-Commit und das Löschen des Branches erklärt <a href="zu_zweit.html#mit-einem-branch-arbeiten-und-zuruckfuhren">Zu zweit an einem Repository arbeiten</a>.</p>
 </div>
 
 

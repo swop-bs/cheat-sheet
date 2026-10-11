@@ -1,0 +1,40 @@
+<mxfile host="drawio" agent="Campus IT Solutions" version="24.0">
+  <diagram id="zu_zweit_ueberblick" name="Zwei Rechner, ein Repository">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="titel" value="Zwei Rechner, ein Repository auf dem Server" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=14;fontStyle=1;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="540" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="server" value="&lt;b&gt;Firmenserver (Gitea)&lt;/b&gt;&lt;br&gt;Repository Zufallsgenerator, in Git &lt;i&gt;origin&lt;/i&gt; genannt" style="rounded=1;absoluteArcSize=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#E0F1F5;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="0" y="40" width="540" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="rechner1" value="&lt;b&gt;Rechner 1 – Max&lt;/b&gt;&lt;br&gt;lokales Repository" style="rounded=1;absoluteArcSize=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="0" y="236" width="220" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="rechner2" value="&lt;b&gt;Rechner 2 – Erika&lt;/b&gt;&lt;br&gt;lokales Repository (Klon)" style="rounded=1;absoluteArcSize=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="320" y="236" width="220" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="r1_push" value="push" style="endArrow=block;endFill=1;endSize=8;html=1;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=#FFFFFF;exitX=0.3;exitY=0;exitDx=0;exitDy=0;entryX=0.12222;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="rechner1" target="server">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="r1_pull" value="pull" style="endArrow=block;endFill=1;endSize=8;html=1;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=#FFFFFF;exitX=0.28519;exitY=1;exitDx=0;exitDy=0;entryX=0.7;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="server" target="rechner1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="r2_clone" value="clone&lt;br&gt;(einmal)" style="endArrow=block;endFill=1;endSize=8;dashed=1;html=1;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=#FFFFFF;exitX=0.67407;exitY=1;exitDx=0;exitDy=0;entryX=0.2;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="server" target="rechner2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="r2_pull" value="pull" style="endArrow=block;endFill=1;endSize=8;html=1;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=#FFFFFF;exitX=0.7963;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="server" target="rechner2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="r2_push" value="push" style="endArrow=block;endFill=1;endSize=8;html=1;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=#FFFFFF;exitX=0.8;exitY=0;exitDx=0;exitDy=0;entryX=0.91852;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="rechner2" target="server">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="legende" value="push: eigene Commits zum Server schicken&lt;br&gt;pull: neue Commits vom Server holen und einbauen&lt;br&gt;clone: vollständige Kopie samt Historie anlegen" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontFamily=Helvetica;fontSize=12;fontColor=#52626F;" vertex="1" parent="1">
+          <mxGeometry x="0" y="306" width="540" height="54" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

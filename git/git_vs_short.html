@@ -3049,6 +3049,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -3107,6 +3111,62 @@
     
   
     Bestehendes Projekt unter Git stellen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="zu_zweit.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zu zweit an einem Repository arbeiten
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="repository_lesen.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ein Repository lesen
   
 
     
@@ -3308,6 +3368,28 @@
     <span class="md-ellipsis">
       
         4. Code in eigenen Branch pushen:
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-anderungen-holen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Änderungen holen:
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-branch-zuruckfuhren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Branch zurückführen:
       
     </span>
   </a>
@@ -3528,6 +3610,28 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#5-anderungen-holen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Änderungen holen:
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-branch-zuruckfuhren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Branch zurückführen:
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3639,6 +3743,19 @@
 <h2 id="4-code-in-eigenen-branch-pushen">4. Code in eigenen Branch pushen:<a class="headerlink" href="#4-code-in-eigenen-branch-pushen" title="Permanent link">#</a></h2>
 <p>Um die Änderungen jetzt im Remote Repository hochzuladen, muss der Branch mit den Änderungen noch gepusht werden:</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="git_push_branch.png" data-desc-position="bottom"><img alt="alt text" src="git_push_branch.png" width="500"></a></p>
+<h2 id="5-anderungen-holen">5. Änderungen holen:<a class="headerlink" href="#5-anderungen-holen" title="Permanent link">#</a></h2>
+<p>Im Fenster <code>Git Changes</code> auf die Schaltfläche <code>Pull</code> (zweite von links) klicken oder im Menü <code>Git</code> → <code>Pull</code> wählen. <code>Fetch</code> (ganz links) holt nur und zeigt unter dem Branchnamen an, wie viele Commits auf dem Server neu sind (<em>incoming</em>), ohne sie einzubauen.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Liegt dein Branch hinter dem auf dem Server, pusht Visual Studio nicht, sondern bietet <code>Pull then Push</code> an. Mehr dazu in <a href="zu_zweit.html#dasselbe-in-visual-studio">Zu zweit an einem Repository arbeiten</a>.</p>
+</div>
+<h2 id="6-branch-zuruckfuhren">6. Branch zurückführen:<a class="headerlink" href="#6-branch-zuruckfuhren" title="Permanent link">#</a></h2>
+<p>Im Menü <code>Git</code> → <code>Manage Branches</code>:</p>
+<ol>
+<li>Rechtsklick auf <code>main</code> → <code>Checkout</code>, danach <code>Pull</code>.</li>
+<li>Rechtsklick auf den eigenen Branch → <code>Merge 'bfi11a_max_mustermann' into 'main'</code>.</li>
+<li><code>Push</code>.</li>
+</ol>
 
 
 
