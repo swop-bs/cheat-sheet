@@ -3808,10 +3808,10 @@
 <ol>
 <li><code>Owner</code> sagt, über welchem Fenster der Dialog liegt. Ohne das steht er irgendwo auf dem Bildschirm.</li>
 <li><code>ShowDialog</code> hält den Aufruf an dieser Stelle an, bis der Dialog geschlossen wird. <code>Show()</code> täte das nicht — dann liefe die nächste Zeile sofort.</li>
-<li>Der Rückgabewert ist das <code>DialogResult</code>, das der Dialog selbst gesetzt hat.</li>
+<li>Der Rückgabewert ist das <code>DialogResult</code>, das beim Schließen im Dialog steht.</li>
 </ol>
 <h2 id="dialogresult-ok-oder-abbrechen"><code>DialogResult</code>: OK oder Abbrechen<a class="headerlink" href="#dialogresult-ok-oder-abbrechen" title="Permanent link">#</a></h2>
-<p><code>DialogResult</code> ist ein <code>bool?</code> und hat drei mögliche Werte:</p>
+<p><code>DialogResult</code> ist ein <code>bool?</code>. Solange der Dialog offen ist, steht darin <code>null</code>. <code>ShowDialog()</code> gibt zurück, was beim Schließen darin steht:</p>
 <table>
 <thead>
 <tr>
@@ -3826,11 +3826,7 @@
 </tr>
 <tr>
 <td><code>false</code></td>
-<td>Der Dialog wurde abgebrochen.</td>
-</tr>
-<tr>
-<td><code>null</code></td>
-<td>Der Dialog wurde über das Kreuz oder mit Esc geschlossen, ohne dass etwas gesetzt wurde.</td>
+<td>Der Dialog wurde abgebrochen: über den Abbrechen-Knopf, mit Esc (wenn ein Knopf <code>IsCancel="True"</code> hat) oder über das Kreuz. Schließt sich der Dialog, ohne dass <code>DialogResult</code> gesetzt wurde, setzt WPF selbst <code>false</code>.</td>
 </tr>
 </tbody>
 </table>
@@ -3851,8 +3847,8 @@
 <li>Das <strong>Setzen</strong> von <code>DialogResult</code> schließt das Fenster von selbst. Ein zusätzliches <code>Close()</code> braucht es nicht.</li>
 </ol>
 <div class="admonition warning">
-<p class="admonition-title">Auf <code>== true</code> prüfen, nicht auf <code>!= false</code></p>
-<p>Weil <code>null</code> möglich ist, prüft man immer auf <code>ergebnis == true</code>. Wer <code>if (ergebnis != false)</code> schreibt, behandelt das Schließen über das Kreuz wie ein OK.</p>
+<p class="admonition-title">Auf <code>== true</code> prüfen</p>
+<p><code>ShowDialog()</code> liefert ein <code>bool?</code>, und ein <code>bool?</code> lässt sich nicht direkt in ein <code>if</code> setzen. Man prüft deshalb auf <code>ergebnis == true</code>: Das liest sich genau so, wie es gemeint ist – nur bei OK wird übernommen.</p>
 </div>
 <h2 id="werte-hinein-und-herausgeben">Werte hinein- und herausgeben<a class="headerlink" href="#werte-hinein-und-herausgeben" title="Permanent link">#</a></h2>
 <h3 id="hinein-uber-den-konstruktor">Hinein: über den Konstruktor<a class="headerlink" href="#hinein-uber-den-konstruktor" title="Permanent link">#</a></h3>
@@ -4036,7 +4032,7 @@
 </tr>
 <tr>
 <td>Das Schließen über das Kreuz wirkt wie OK</td>
-<td>Es wurde auf <code>!= false</code> statt auf <code>== true</code> geprüft.</td>
+<td>Der Rückgabewert von <code>ShowDialog()</code> wird gar nicht ausgewertet; die Zeilen danach laufen immer.</td>
 </tr>
 <tr>
 <td>Der Dialog erscheint an einer merkwürdigen Stelle</td>

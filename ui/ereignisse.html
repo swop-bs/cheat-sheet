@@ -3909,8 +3909,12 @@ deshalb braucht der Regler zusätzlich den Merker aus Weg 1.</p>
 <td>Ein Ereignis lief während <code>InitializeComponent</code>, siehe oben.</td>
 </tr>
 <tr>
-<td><em>„Der Name … ist im aktuellen Kontext nicht vorhanden"</em> in einer fremden Datei</td>
-<td>Methode umbenannt, Attribut im XAML nicht (oder umgekehrt).</td>
+<td>Übersetzungsfehler CS1061 <em>„… enthält keine Definition für …_Click“</em>, gemeldet an einer Zeile im XAML</td>
+<td>Die Ereignismethode wurde in der <code>.cs</code> umbenannt oder gelöscht, das Attribut im XAML nicht.</td>
+</tr>
+<tr>
+<td>Übersetzungsfehler CS0103 <em>„Der Name … ist im aktuellen Kontext nicht vorhanden“</em> in der eigenen <code>.cs</code></td>
+<td>Das <code>x:Name</code> im XAML wurde geändert oder nie vergeben; der Code benutzt den alten Namen.</td>
 </tr>
 <tr>
 <td>Beim Klick passiert nichts</td>
@@ -3929,8 +3933,8 @@ deshalb braucht der Regler zusätzlich den Merker aus Weg 1.</p>
 <td>Das Ereignis kommt auch bei <code>Items.Clear()</code>. Immer prüfen, ob überhaupt etwas ausgewählt ist.</td>
 </tr>
 <tr>
-<td><code>MouseEnter</code> reagiert nur auf dem Text, nicht auf der Fläche</td>
-<td>Kein <code>Background</code> gesetzt.</td>
+<td><code>MouseEnter</code> reagiert nur dort, wo Text steht, nicht auf der leeren Fläche</td>
+<td>Das Ereignis hängt an einem Container (<code>Border</code>, <code>StackPanel</code>, <code>Grid</code>) ohne <code>Background</code>. Ein unbemalter Container fängt auf leerer Fläche keine Maus ein; <code>Background="Transparent"</code> genügt. <code>Label</code> und <code>TextBlock</code> reagieren ohnehin auf ihrer ganzen Fläche.</td>
 </tr>
 <tr>
 <td>Beim Umschalten zweier Auswahlknöpfe läuft der Code zweimal</td>
