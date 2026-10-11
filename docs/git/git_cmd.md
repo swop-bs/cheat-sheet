@@ -5,7 +5,7 @@
   <figcaption>Quelle: https://www.getdbt.com/ui/img/guides/analytics-engineering/git-workflow-1.png</figcaption>
 </figure>
 
-##Schritt 1 - Klone das Original-Repository
+## Schritt 1 - Klone das Original-Repository
 
 Bevor du mit der lokalen Entwicklung beginnen kannst, solltest du eine Kopie des Repositories klonen, an dem du arbeitest.
 
@@ -23,7 +23,7 @@ In Kommandozeile:
 git clone https://bszw-git.ddns.net:3000/swopperer/Zufallsgenerator.git
 ```
 
-##Schritt 2 - Erstelle deinen Entwicklungs-Branch
+## Schritt 2 - Erstelle deinen Entwicklungs-Branch
 
 Anstatt auf dem Haupt-Produktions-Branch zu arbeiten, solltest du einen eigenen sicheren Bereich für deine Entwicklungsarbeit erstellen.
 
@@ -57,7 +57,7 @@ Da man eigentlich fast immer den neu erstellten Branch direkt danach auschecken 
 git checkout -b bfi11a_max_mustermann
 ```
 
-##Schritt 3 - Änderungen ins lokale Repository übernehmen
+## Schritt 3 - Änderungen ins lokale Repository übernehmen
 
 Mit dem Befehl `git add *` fügst du alle Änderungen in die Staging Area hinzu.
 
@@ -72,7 +72,7 @@ git commit -m "Ich habe viele tolle Änderungen gemacht"
 
 Wiederhole das Hinzufügen von Änderungen so oft du möchtest. Commite lieber zu oft als zu wenig!
 
-##Schritt 5 - Pushe deine Änderungen ins Remote-Repository
+## Schritt 4 - Pushe deine Änderungen ins Remote-Repository
 
 Um deine Änderungen in das Remote Repository hochzuladen, musst du diese `Pushen`.
 

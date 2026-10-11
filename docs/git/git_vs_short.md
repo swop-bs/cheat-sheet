@@ -37,3 +37,18 @@ Unter `Git Changes` Commit-Message eingegeben. Commit All fügt die angezeigten 
 Um die Änderungen jetzt im Remote Repository hochzuladen, muss der Branch mit den Änderungen noch gepusht werden:
 
 ![alt text](git_push_branch.png){ width="500" }
+
+## 5. Änderungen holen:
+
+Im Fenster `Git Changes` auf die Schaltfläche `Pull` (zweite von links) klicken oder im Menü `Git` → `Pull` wählen. `Fetch` (ganz links) holt nur und zeigt unter dem Branchnamen an, wie viele Commits auf dem Server neu sind (*incoming*), ohne sie einzubauen.
+
+!!! info
+    Liegt dein Branch hinter dem auf dem Server, pusht Visual Studio nicht, sondern bietet `Pull then Push` an. Mehr dazu in [Zu zweit an einem Repository arbeiten](zu_zweit.md#dasselbe-in-visual-studio).
+
+## 6. Branch zurückführen:
+
+Im Menü `Git` → `Manage Branches`:
+
+1. Rechtsklick auf `main` → `Checkout`, danach `Pull`.
+2. Rechtsklick auf den eigenen Branch → `Merge 'bfi11a_max_mustermann' into 'main'`.
+3. `Push`.
