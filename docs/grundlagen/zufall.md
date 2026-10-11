@@ -25,16 +25,18 @@ Ein Computer kann nicht wirklich würfeln. Er rechnet aus einem **Startwert** ei
 !!! warning "Nur **ein** Zufallsobjekt je Programm"
 	Legen Sie das Objekt **einmal** an – am besten als privates Feld Ihrer Klasse – und verwenden Sie es überall wieder.
 
-	Wer in einer Schleife jedes Mal ein neues `Random` anlegt, bekommt reihenweise **dieselbe** Zahl. Der Grund: Ohne Startwert nimmt `Random` die aktuelle Uhrzeit. Zwei Objekte, die im selben Augenblick entstehen, starten also mit demselben Startwert und rechnen dieselbe Folge aus.
+	Ein neues `Random` in jedem Schleifendurchlauf ist unnötige Arbeit und wird zur Falle, sobald ein [Startwert](#startwert-denselben-lauf-wiederholen) im Spiel ist: Jedes neue Objekt beginnt dieselbe Folge von vorn und liefert reihenweise **dieselbe** Zahl.
 
 	``` csharp
-	// FALSCH - liefert oft zehnmal dieselbe Zahl
+	// FALSCH - liefert zehnmal dieselbe Zahl
 	for (int i = 0; i < 10; i++)
 	{
-	    Random zufall = new Random();
+	    Random zufall = new Random(4711);
 	    Console.WriteLine(zufall.Next(1, 7));
 	}
 	```
+
+	In älteren Anleitungen steht, schon `new Random()` ohne Startwert liefere in einer schnellen Schleife dieselben Zahlen. Das galt für das alte .NET Framework, das die Uhrzeit als Startwert nahm. Unter .NET 8 und in Java ist das nicht mehr so.
 
 ## Ganze Zahlen ziehen
 
@@ -203,7 +205,7 @@ Zeitpunkte lassen sich nicht direkt auswürfeln. Der Weg führt über die **Anza
 
 | Fehlerbild | Ursache |
 | ---------- | ------- |
-| Alle Werte sind gleich | In der Schleife wird jedes Mal ein neues `Random` angelegt. |
+| Alle Werte sind gleich | In der Schleife wird jedes Mal ein neues `Random` mit demselben Startwert angelegt. |
 | Der größte Wert kommt nie vor | Die obere Grenze von `Next` ist ausgeschlossen; es fehlt das `+ 1`. |
 | `ArgumentOutOfRangeException` | Die untere Grenze ist größer als die obere. |
 | `IndexOutOfRangeException` beim Ziehen aus einer Liste | Es wurde `Next(liste.Count + 1)` gerechnet oder die Liste ist leer. |

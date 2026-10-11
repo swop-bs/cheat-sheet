@@ -226,10 +226,11 @@ deshalb braucht der Regler zusätzlich den Merker aus Weg 1.
 | Fehlerbild | Ursache |
 | --- | --- |
 | `NullReferenceException` sofort beim Start | Ein Ereignis lief während `InitializeComponent`, siehe oben. |
-| *„Der Name … ist im aktuellen Kontext nicht vorhanden"* in einer fremden Datei | Methode umbenannt, Attribut im XAML nicht (oder umgekehrt). |
+| Übersetzungsfehler CS1061 *„… enthält keine Definition für …_Click“*, gemeldet an einer Zeile im XAML | Die Ereignismethode wurde in der `.cs` umbenannt oder gelöscht, das Attribut im XAML nicht. |
+| Übersetzungsfehler CS0103 *„Der Name … ist im aktuellen Kontext nicht vorhanden“* in der eigenen `.cs` | Das `x:Name` im XAML wurde geändert oder nie vergeben; der Code benutzt den alten Namen. |
 | Beim Klick passiert nichts | Das Attribut fehlt im XAML. Die Methode allein reicht nicht — sie muss angehängt sein. |
 | Das Fenster lässt sich nicht mehr schließen | `e.Cancel = true` ohne Bedingung, oder auf `Yes` geprüft statt auf `No`. Notausgang: in Visual Studio das Debuggen beenden. |
 | Beim Beenden wird zweimal gefragt | Die Rückfrage steht in `Closing` **und** im `Click` der Schaltfläche. |
 | `SelectionChanged` läuft beim Füllen der Liste ins Leere | Das Ereignis kommt auch bei `Items.Clear()`. Immer prüfen, ob überhaupt etwas ausgewählt ist. |
-| `MouseEnter` reagiert nur auf dem Text, nicht auf der Fläche | Kein `Background` gesetzt. |
+| `MouseEnter` reagiert nur dort, wo Text steht, nicht auf der leeren Fläche | Das Ereignis hängt an einem Container (`Border`, `StackPanel`, `Grid`) ohne `Background`. Ein unbemalter Container fängt auf leerer Fläche keine Maus ein; `Background="Transparent"` genügt. `Label` und `TextBlock` reagieren ohnehin auf ihrer ganzen Fläche. |
 | Beim Umschalten zweier Auswahlknöpfe läuft der Code zweimal | Beim Wechsel wird der eine `Unchecked` und der andere `Checked`. Reagieren Sie nur auf `Checked`. |

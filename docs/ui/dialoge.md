@@ -53,17 +53,16 @@ private void btBearbeiten_Click(object sender, RoutedEventArgs e)
 
 1. `Owner` sagt, über welchem Fenster der Dialog liegt. Ohne das steht er irgendwo auf dem Bildschirm.
 2. `ShowDialog` hält den Aufruf an dieser Stelle an, bis der Dialog geschlossen wird. `Show()` täte das nicht — dann liefe die nächste Zeile sofort.
-3. Der Rückgabewert ist das `DialogResult`, das der Dialog selbst gesetzt hat.
+3. Der Rückgabewert ist das `DialogResult`, das beim Schließen im Dialog steht.
 
 ## `DialogResult`: OK oder Abbrechen
 
-`DialogResult` ist ein `bool?` und hat drei mögliche Werte:
+`DialogResult` ist ein `bool?`. Solange der Dialog offen ist, steht darin `null`. `ShowDialog()` gibt zurück, was beim Schließen darin steht:
 
 | Wert | Bedeutung |
 | --- | --- |
 | `true` | Der Dialog wurde mit OK verlassen. |
-| `false` | Der Dialog wurde abgebrochen. |
-| `null` | Der Dialog wurde über das Kreuz oder mit Esc geschlossen, ohne dass etwas gesetzt wurde. |
+| `false` | Der Dialog wurde abgebrochen: über den Abbrechen-Knopf, mit Esc (wenn ein Knopf `IsCancel="True"` hat) oder über das Kreuz. Schließt sich der Dialog, ohne dass `DialogResult` gesetzt wurde, setzt WPF selbst `false`. |
 
 Im Dialog:
 
@@ -83,8 +82,8 @@ private void btAbbrechen_Click(object sender, RoutedEventArgs e)
 
 1. Das **Setzen** von `DialogResult` schließt das Fenster von selbst. Ein zusätzliches `Close()` braucht es nicht.
 
-!!! warning "Auf `== true` prüfen, nicht auf `!= false`"
-	Weil `null` möglich ist, prüft man immer auf `ergebnis == true`. Wer `if (ergebnis != false)` schreibt, behandelt das Schließen über das Kreuz wie ein OK.
+!!! warning "Auf `== true` prüfen"
+	`ShowDialog()` liefert ein `bool?`, und ein `bool?` lässt sich nicht direkt in ein `if` setzen. Man prüft deshalb auf `ergebnis == true`: Das liest sich genau so, wie es gemeint ist – nur bei OK wird übernommen.
 
 ## Werte hinein- und herausgeben
 
@@ -240,6 +239,6 @@ if (antwort == MessageBoxResult.Yes)
 | `InvalidOperationException: DialogResult can be set only after Window is created and shown as dialog` | `DialogResult` in einem Fenster gesetzt, das mit `Show()` geöffnet wurde. |
 | Der Dialog schließt sich trotz fehlerhafter Eingabe | Nach dem Hinweis fehlt das `return`, oder `DialogResult` wird vor der Prüfung gesetzt. |
 | Nach dem Abbrechen ist trotzdem etwas geändert | Eingaben wurden schon beim Tippen in das Objekt übernommen statt erst im OK-Zweig. |
-| Das Schließen über das Kreuz wirkt wie OK | Es wurde auf `!= false` statt auf `== true` geprüft. |
+| Das Schließen über das Kreuz wirkt wie OK | Der Rückgabewert von `ShowDialog()` wird gar nicht ausgewertet; die Zeilen danach laufen immer. |
 | Der Dialog erscheint an einer merkwürdigen Stelle | `Owner` nicht gesetzt oder `WindowStartupLocation` nicht auf `CenterOwner`. |
 | Die Eingabetaste tut nichts | `IsDefault="True"` am OK-Knopf fehlt. |
