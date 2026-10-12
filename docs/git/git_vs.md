@@ -1,9 +1,6 @@
 # Git in Visual Studio
 
-<figure markdown="span">
-  ![Image title](git-workflow-1.png)
-  <figcaption>Quelle: https://www.getdbt.com/ui/img/guides/analytics-engineering/git-workflow-1.png</figcaption>
-</figure>
+![Arbeitsordner, Staging-Area, lokales Repository und Server; Pfeile für git add, commit, push, fetch, merge und pull](zu_zweit_ablauf.png){ .diagramm }
 
 ## 1. Repository von Remote kopieren:
 

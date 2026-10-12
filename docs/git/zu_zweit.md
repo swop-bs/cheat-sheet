@@ -112,6 +112,10 @@ Die letzte Zeile heißt: Der Branch `main` auf dem Server zeigte bisher auf den 
 
 Zeilen, die mit `remote:` beginnen, schreibt der Server dazu. Für den Push selbst spielen sie keine Rolle.
 
+Wohin die Änderung bei jedem Befehl wandert, zeigt das Bild. Die Pfeile ④ und ⑤ gehören zu Schritt 3.
+
+![Arbeitsordner, Staging-Area, lokales Repository und Server; Pfeile für git add, commit, push, fetch, merge und pull](zu_zweit_ablauf.png){ .diagramm }
+
 ## Schritt 3 – Änderungen der anderen Person holen
 
 Max' Rechner weiß von Erikas Commit noch nichts. Auch `git status` meldet bei ihm weiterhin *Your branch is up to date with 'origin/main'* – Git vergleicht nur mit dem Stand des Servers, den es zuletzt gesehen hat.
@@ -135,6 +139,8 @@ Fast-forward
 
 1. **Holen** (`git fetch`): Git lädt die neuen Commits vom Server und merkt sich den Stand des Servers als `origin/main` (die ersten beiden Zeilen). Die Dateien in deinem Ordner ändern sich dabei noch nicht.
 2. **Einbauen** (`git merge`): Git führt `origin/main` in deinen Branch `main` zusammen. Erst jetzt ändern sich die Dateien im Projektordner; die letzten Zeilen zeigen, welche.
+
+Im [Bild bei Schritt 2](#schritt-2-andern-committen-pushen) sind das die Pfeile ④ und ⑤.
 
 *Fast-forward* heißt: Max hatte seit dem letzten Abgleich nichts Eigenes committet, Git musste seinen Branch nur auf Erikas Commit vorsetzen (siehe [Fast-Forward und Merge-Commit](#fast-forward-und-merge-commit)).
 
@@ -188,6 +194,8 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 ```
 
 **Was die Meldung bedeutet:** Auf dem Server liegt ein Commit, den Max nicht hat (Erikas README). Würde Git Max' Stand trotzdem hochladen, wäre Erikas Commit auf dem Server verloren. Deshalb lehnt Git ab (`rejected`) und nennt die Ursache: erst holen (`fetch first`). Weder auf dem Server noch bei Max hat sich durch den Versuch etwas geändert.
+
+![Links: Server und Max haben auf 26b2182 je einen eigenen Commit. Rechts: Nach git pull führt der Merge-Commit 65f497b beide zusammen](zu_zweit_push_abgelehnt.png){ .diagramm }
 
 **Was hilft:** holen, dann erneut pushen. Öffnet sich beim Holen ein Editor, lies [weiter unten](#wenn-sich-beim-holen-ein-editor-offnet).
 
@@ -387,6 +395,8 @@ Merge made by the 'ort' strategy.
  1 file changed, 9 insertions(+)
  create mode 100644 Wuerfel.cs
 ```
+
+![Links: Fast-Forward, main wird auf 95015b2 vorgesetzt. Rechts: Merge-Commit 1a33dc4 mit zwei Vorgängern](zu_zweit_fast_forward_merge.png){ .diagramm }
 
 Wie beides in der Historie aussieht, zeigt der Graph in [Ein Repository lesen](repository_lesen.md#historie-als-graph-uber-alle-branches).
 

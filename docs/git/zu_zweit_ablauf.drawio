@@ -1,0 +1,49 @@
+<mxfile host="drawio" agent="Campus IT Solutions" version="24.0">
+  <diagram id="zu_zweit_ablauf" name="Wo eine Änderung landet">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="titel" value="Wo eine Änderung landet" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=14;fontColor=#22303C;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="600" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="rechner" value="Dein Rechner" style="rounded=1;absoluteArcSize=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#0E7490;strokeWidth=1;dashed=1;verticalAlign=top;align=left;spacingLeft=8;spacingTop=2;fontFamily=Helvetica;fontSize=12;fontColor=#52626F;" vertex="1" parent="1">
+          <mxGeometry x="0" y="34" width="444" height="336" as="geometry"/>
+        </mxCell>
+        <mxCell id="ordner" value="&lt;b&gt;Arbeitsordner&lt;/b&gt;&lt;br&gt;deine Dateien" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;size=44;rounded=1;absoluteArcSize=1;arcSize=12;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="6" y="66" width="132" height="294" as="geometry"/>
+        </mxCell>
+        <mxCell id="staging" value="&lt;b&gt;Staging-Area&lt;/b&gt;&lt;br&gt;vorgemerkt" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;size=44;rounded=1;absoluteArcSize=1;arcSize=12;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="156" y="66" width="132" height="294" as="geometry"/>
+        </mxCell>
+        <mxCell id="lokal" value="&lt;b&gt;Lokales Repository&lt;/b&gt;&lt;br&gt;main, origin/main" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;size=44;rounded=1;absoluteArcSize=1;arcSize=12;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="306" y="66" width="132" height="294" as="geometry"/>
+        </mxCell>
+        <mxCell id="server" value="&lt;b&gt;Server (Gitea)&lt;/b&gt;&lt;br&gt;&lt;i&gt;origin&lt;/i&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;size=44;rounded=1;absoluteArcSize=1;arcSize=12;fillColor=#E0F1F5;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="462" y="66" width="132" height="294" as="geometry"/>
+        </mxCell>
+        <mxCell id="p_add" value="① git add" style="endArrow=block;endFill=1;endSize=8;html=1;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=#FFFFFF;exitPerimeter=0;entryPerimeter=0;exitX=0.5;exitY=0.28571;exitDx=0;exitDy=0;entryX=0.5;entryY=0.28571;entryDx=0;entryDy=0;" edge="1" parent="1" source="ordner" target="staging">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="p_commit" value="② git commit" style="endArrow=block;endFill=1;endSize=8;html=1;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=#FFFFFF;exitPerimeter=0;entryPerimeter=0;exitX=0.5;exitY=0.42177;exitDx=0;exitDy=0;entryX=0.5;entryY=0.42177;entryDx=0;entryDy=0;" edge="1" parent="1" source="staging" target="lokal">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="p_push" value="③ git push" style="endArrow=block;endFill=1;endSize=8;html=1;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=#FFFFFF;exitPerimeter=0;entryPerimeter=0;exitX=0.5;exitY=0.55782;exitDx=0;exitDy=0;entryX=0.5;entryY=0.55782;entryDx=0;entryDy=0;" edge="1" parent="1" source="lokal" target="server">
+          <mxGeometry x="0.25" relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="p_fetch" value="④ git fetch" style="endArrow=block;endFill=1;endSize=8;html=1;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=#FFFFFF;exitPerimeter=0;entryPerimeter=0;exitX=0.5;exitY=0.72789;exitDx=0;exitDy=0;entryX=0.5;entryY=0.72789;entryDx=0;entryDy=0;" edge="1" parent="1" source="server" target="lokal">
+          <mxGeometry x="-0.25" relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="p_merge" value="⑤ git merge" style="endArrow=block;endFill=1;endSize=8;html=1;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=#FFFFFF;exitPerimeter=0;entryPerimeter=0;exitX=0.5;exitY=0.86395;exitDx=0;exitDy=0;entryX=0.5;entryY=0.86395;entryDx=0;entryDy=0;" edge="1" parent="1" source="lokal" target="ordner">
+          <mxGeometry x="0.5" relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="p_pull" value="git pull = ④ + ⑤" style="endArrow=block;endFill=1;endSize=8;html=1;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=#FFFFFF;exitPerimeter=0;entryPerimeter=0;dashed=1;exitX=0.5;exitY=0.94898;exitDx=0;exitDy=0;entryX=0.5;entryY=0.94898;entryDx=0;entryDy=0;" edge="1" parent="1" source="server" target="ordner">
+          <mxGeometry x="0" relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="legende" value="① git add: Änderungen für den nächsten Commit vormerken&lt;br&gt;② git commit: Commit anlegen, nur im lokalen Repository&lt;br&gt;③ git push: neue Commits zum Server schicken&lt;br&gt;④ git fetch: neue Commits vom Server holen (&lt;i&gt;origin/main&lt;/i&gt;), die Dateien bleiben unverändert&lt;br&gt;⑤ git merge: &lt;i&gt;origin/main&lt;/i&gt; in &lt;i&gt;main&lt;/i&gt; einbauen, erst jetzt ändern sich die Dateien" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontFamily=Helvetica;fontSize=12;fontColor=#52626F;" vertex="1" parent="1">
+          <mxGeometry x="0" y="382" width="600" height="82" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

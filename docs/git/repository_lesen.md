@@ -102,6 +102,8 @@ git log --oneline --graph --all
 * 92de581 Projekt unter Versionsverwaltung gestellt
 ```
 
+![Derselbe Verlauf mit Kreisen für Commits und Linien zum Vorgänger, zwei Abzweigungen mit Merge-Commit](repository_lesen_graph.png){ .diagramm }
+
 So liest du den Graphen, von unten nach oben:
 
 - Jeder `*` ist ein Commit, die Linien verbinden ihn mit seinem Vorgänger.
