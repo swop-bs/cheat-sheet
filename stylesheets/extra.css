@@ -59,3 +59,13 @@
     max-height: 520px;
     cursor: zoom-in;
 }
+
+/* Brotkrumen ohne „Start“: Die Startseite ist über Logo und Reiter erreichbar.
+   Material setzt sie fest an den Anfang; ausgeblendet wird sie samt dem Trennzeichen danach. */
+.md-path__item:first-child {
+    display: none;
+}
+
+.md-path__item:nth-child(2)::before {
+    display: none;
+}

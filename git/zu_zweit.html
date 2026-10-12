@@ -4059,6 +4059,8 @@
 </span></code></pre></div>
 <p>Die letzte Zeile heißt: Der Branch <code>main</code> auf dem Server zeigte bisher auf den Commit mit der Kennung <code>92de581</code> und zeigt jetzt auf Erikas neuen Commit <code>26b2182</code>. Weil der Branch schon beim Klonen mit dem Server verbunden wurde, braucht Erika kein <code>-u origin main</code>.</p>
 <p>Zeilen, die mit <code>remote:</code> beginnen, schreibt der Server dazu. Für den Push selbst spielen sie keine Rolle.</p>
+<p>Wohin die Änderung bei jedem Befehl wandert, zeigt das Bild. Die Pfeile ④ und ⑤ gehören zu Schritt 3.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="zu_zweit_ablauf.png" data-desc-position="bottom"><img alt="Arbeitsordner, Staging-Area, lokales Repository und Server; Pfeile für git add, commit, push, fetch, merge und pull" class="diagramm" src="zu_zweit_ablauf.png"></a></p>
 <h2 id="schritt-3-anderungen-der-anderen-person-holen">Schritt 3 – Änderungen der anderen Person holen<a class="headerlink" href="#schritt-3-anderungen-der-anderen-person-holen" title="Permanent link">#</a></h2>
 <p>Max' Rechner weiß von Erikas Commit noch nichts. Auch <code>git status</code> meldet bei ihm weiterhin <em>Your branch is up to date with 'origin/main'</em> – Git vergleicht nur mit dem Stand des Servers, den es zuletzt gesehen hat.</p>
 <p>Max holt die Änderung:</p>
@@ -4076,6 +4078,7 @@
 <li><strong>Holen</strong> (<code>git fetch</code>): Git lädt die neuen Commits vom Server und merkt sich den Stand des Servers als <code>origin/main</code> (die ersten beiden Zeilen). Die Dateien in deinem Ordner ändern sich dabei noch nicht.</li>
 <li><strong>Einbauen</strong> (<code>git merge</code>): Git führt <code>origin/main</code> in deinen Branch <code>main</code> zusammen. Erst jetzt ändern sich die Dateien im Projektordner; die letzten Zeilen zeigen, welche.</li>
 </ol>
+<p>Im <a href="#schritt-2-andern-committen-pushen">Bild bei Schritt 2</a> sind das die Pfeile ④ und ⑤.</p>
 <p><em>Fast-forward</em> heißt: Max hatte seit dem letzten Abgleich nichts Eigenes committet, Git musste seinen Branch nur auf Erikas Commit vorsetzen (siehe <a href="#fast-forward-und-merge-commit">Fast-Forward und Merge-Commit</a>).</p>
 <p>Kontrolle mit der Historie:</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>git log --oneline
@@ -4109,6 +4112,7 @@
 </span><span id="__span-17-8"><a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a>hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 </span></code></pre></div>
 <p><strong>Was die Meldung bedeutet:</strong> Auf dem Server liegt ein Commit, den Max nicht hat (Erikas README). Würde Git Max' Stand trotzdem hochladen, wäre Erikas Commit auf dem Server verloren. Deshalb lehnt Git ab (<code>rejected</code>) und nennt die Ursache: erst holen (<code>fetch first</code>). Weder auf dem Server noch bei Max hat sich durch den Versuch etwas geändert.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="zu_zweit_push_abgelehnt.png" data-desc-position="bottom"><img alt="Links: Server und Max haben auf 26b2182 je einen eigenen Commit. Rechts: Nach git pull führt der Merge-Commit 65f497b beide zusammen" class="diagramm" src="zu_zweit_push_abgelehnt.png"></a></p>
 <p><strong>Was hilft:</strong> holen, dann erneut pushen. Öffnet sich beim Holen ein Editor, lies <a href="#wenn-sich-beim-holen-ein-editor-offnet">weiter unten</a>.</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>git pull
 </span></code></pre></div>
@@ -4250,6 +4254,7 @@
 </span><span id="__span-42-3"><a id="__codelineno-42-3" name="__codelineno-42-3" href="#__codelineno-42-3"></a> 1 file changed, 9 insertions(+)
 </span><span id="__span-42-4"><a id="__codelineno-42-4" name="__codelineno-42-4" href="#__codelineno-42-4"></a> create mode 100644 Wuerfel.cs
 </span></code></pre></div>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="zu_zweit_fast_forward_merge.png" data-desc-position="bottom"><img alt="Links: Fast-Forward, main wird auf 95015b2 vorgesetzt. Rechts: Merge-Commit 1a33dc4 mit zwei Vorgängern" class="diagramm" src="zu_zweit_fast_forward_merge.png"></a></p>
 <p>Wie beides in der Historie aussieht, zeigt der Graph in <a href="repository_lesen.html#historie-als-graph-uber-alle-branches">Ein Repository lesen</a>.</p>
 <h3 id="branch-loschen-optional">Branch löschen (optional)<a class="headerlink" href="#branch-loschen-optional" title="Permanent link">#</a></h3>
 <p>Nach dem Zurückführen stecken alle Commits des Branches in <code>main</code>. Ob der Branch danach bestehen bleibt oder gelöscht wird, ändert an <code>main</code> nichts.</p>

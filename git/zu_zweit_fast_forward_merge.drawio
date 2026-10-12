@@ -1,0 +1,112 @@
+<mxfile host="drawio" agent="Campus IT Solutions" version="24.0">
+  <diagram id="zu_zweit_fast_forward_merge" name="Fast-Forward und Merge-Commit">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="titel" value="Fast-Forward und Merge-Commit" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=14;fontColor=#22303C;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="600" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="teil_a" value="Fast-Forward: &lt;i&gt;git merge bereich&lt;/i&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="0" y="36" width="290" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="ff_text" value="Kein neuer Commit: &lt;i&gt;main&lt;/i&gt; wird auf 95015b2 vorgesetzt." style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontFamily=Helvetica;fontSize=12;fontColor=#52626F;" vertex="1" parent="1">
+          <mxGeometry x="0" y="60" width="280" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="ff_c_95015b2" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="6" y="110" width="14" height="14" as="geometry"/>
+        </mxCell>
+        <mxCell id="ff_h_95015b2" value="95015b2" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="32" y="107" width="60" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="ff_b_95015b2_main" value="main" style="rounded=1;absoluteArcSize=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="92" y="107" width="41" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="ff_b_95015b2_bereich" value="bereich" style="rounded=1;absoluteArcSize=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="139" y="107" width="55" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="ff_c_5ebbff8" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="6" y="140" width="14" height="14" as="geometry"/>
+        </mxCell>
+        <mxCell id="ff_h_5ebbff8" value="5ebbff8" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="32" y="137" width="60" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="ff_c_65f497b" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="6" y="170" width="14" height="14" as="geometry"/>
+        </mxCell>
+        <mxCell id="ff_h_65f497b" value="65f497b" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="32" y="167" width="60" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="ff_b_65f497b_main_vorher" value="main (vorher)" style="rounded=1;absoluteArcSize=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;spacing=0;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="92" y="167" width="87" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="ff_k_95015b2_5ebbff8" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#22303C;strokeWidth=1.5;" edge="1" parent="1" source="ff_c_95015b2" target="ff_c_5ebbff8">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="ff_k_5ebbff8_65f497b" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#22303C;strokeWidth=1.5;" edge="1" parent="1" source="ff_c_5ebbff8" target="ff_c_65f497b">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="trenner" value="" style="line;strokeWidth=1;direction=south;html=1;strokeColor=#52626F;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="298" y="36" width="10" height="192" as="geometry"/>
+        </mxCell>
+        <mxCell id="teil_b" value="Merge-Commit: &lt;i&gt;git merge wuerfel&lt;/i&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="36" width="280" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="mc_text" value="Neuer Commit 1a33dc4 mit zwei Vorgängern: 5119c6e und bb45ab2." style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontFamily=Helvetica;fontSize=12;fontColor=#52626F;" vertex="1" parent="1">
+          <mxGeometry x="320" y="60" width="280" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="mc_hell_1a33dc4" value="" style="rounded=1;absoluteArcSize=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E0F1F5;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="320" y="104" width="163" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="mc_c_1a33dc4" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="326" y="110" width="14" height="14" as="geometry"/>
+        </mxCell>
+        <mxCell id="mc_h_1a33dc4" value="1a33dc4" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="376" y="107" width="60" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="mc_b_1a33dc4_main" value="main" style="rounded=1;absoluteArcSize=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="436" y="107" width="41" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="mc_c_bb45ab2" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="350" y="140" width="14" height="14" as="geometry"/>
+        </mxCell>
+        <mxCell id="mc_h_bb45ab2" value="bb45ab2" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="376" y="137" width="60" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="mc_b_bb45ab2_wuerfel" value="wuerfel" style="rounded=1;absoluteArcSize=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="436" y="137" width="54" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="mc_c_5119c6e" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="326" y="170" width="14" height="14" as="geometry"/>
+        </mxCell>
+        <mxCell id="mc_h_5119c6e" value="5119c6e" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="376" y="167" width="60" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="mc_b_5119c6e_main_vorher" value="main (vorher)" style="rounded=1;absoluteArcSize=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;spacing=0;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="436" y="167" width="87" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="mc_c_95015b2" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="326" y="200" width="14" height="14" as="geometry"/>
+        </mxCell>
+        <mxCell id="mc_h_95015b2" value="95015b2" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="376" y="197" width="60" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="mc_k_1a33dc4_5119c6e" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#22303C;strokeWidth=1.5;" edge="1" parent="1" source="mc_c_1a33dc4" target="mc_c_5119c6e">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="mc_k_1a33dc4_bb45ab2" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#22303C;strokeWidth=1.5;" edge="1" parent="1" source="mc_c_1a33dc4" target="mc_c_bb45ab2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="mc_k_bb45ab2_95015b2" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#22303C;strokeWidth=1.5;" edge="1" parent="1" source="mc_c_bb45ab2" target="mc_c_95015b2">
+          <mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="357" y="177"/></Array></mxGeometry>
+        </mxCell>
+        <mxCell id="mc_k_5119c6e_95015b2" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#22303C;strokeWidth=1.5;" edge="1" parent="1" source="mc_c_5119c6e" target="mc_c_95015b2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="legende" value="Kreis: Commit, unten alt, oben neu · Kasten: Branch&lt;br&gt;gestrichelt: Stand vor dem Merge · hellblau: neuer Commit" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontFamily=Helvetica;fontSize=12;fontColor=#52626F;" vertex="1" parent="1">
+          <mxGeometry x="0" y="240" width="600" height="36" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
