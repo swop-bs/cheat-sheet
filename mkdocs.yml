@@ -79,6 +79,7 @@ nav:
             - "Vorgehensmodelle III: agil": methoden/projekt/vorgehensmodelle_agil.md
     - Werkzeuge und Standards:
         - Git:
+            - Wie Git funktioniert: git/grundlagen.md
             - Bestehendes Projekt unter Git stellen: git/bestehendes_projekt.md
             - Zu zweit an einem Repository arbeiten: git/zu_zweit.md
             - Ein Repository lesen: git/repository_lesen.md

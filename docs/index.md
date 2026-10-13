@@ -51,6 +51,7 @@ wir arbeiten – erklärt an kleinen Beispielen. Zum Nachschlagen, wenn eine Fra
 
     Womit und nach welchen Regeln arbeite ich?
 
+    - [Wie Git funktioniert](git/grundlagen.md)
     - [Git in Visual Studio](git/git_vs.md)
     - [Git auf der Kommandozeile](git/git_cmd.md)
     - [Bestehendes Projekt unter Git stellen](git/bestehendes_projekt.md)
@@ -74,5 +75,5 @@ wir arbeiten – erklärt an kleinen Beispielen. Zum Nachschlagen, wenn eine Fra
 | festhalten, wer ein System wofür benutzt und woraus es besteht | [Use-Case-Diagramm](methoden/uml/usecase_diagramm.md), [Klassendiagramm](methoden/uml/klassendiagramm.md) |
 | prüfen, ob ein Ablauf richtig rechnet und keinen Fall vergisst | [Schreibtischtest](methoden/testen/schreibtischtest.md), [Entscheidungstabelle](methoden/algorithmen/entscheidungstabelle.md) |
 | ein Projekt planen | [Phasenkonzept](methoden/projekt/phasenkonzept.md), [Lastenheft und Pflichtenheft](methoden/projekt/lastenheft_pflichtenheft.md), [Vorgehensmodelle](methoden/projekt/vorgehensmodelle_klassisch.md) |
-| meinen Code versionieren und mit anderen teilen | [Git](git/bestehendes_projekt.md) |
+| meinen Code versionieren und mit anderen teilen | [Wie Git funktioniert](git/grundlagen.md) |
 | wissen, wie Code bei uns aussehen soll | [Coding Conventions C#](grundlagen/coding_convention_cs.md) |

@@ -1,0 +1,130 @@
+<mxfile host="drawio" agent="Campus IT Solutions" version="24.0">
+  <diagram id="grundlagen_schnappschuesse" name="Ein Commit ist ein Schnappschuss">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="titel" value="Ein Commit ist ein Schnappschuss des ganzen Projekts" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=14;fontColor=#22303C;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="580" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="spalte_karten" value="Schnappschüsse im Repository" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#52626F;" vertex="1" parent="1">
+          <mxGeometry x="0" y="30" width="320" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="spalte_kreise" value="So zeichnen es&lt;br&gt;die anderen Git-Seiten" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontFamily=Helvetica;fontSize=12;fontColor=#52626F;" vertex="1" parent="1">
+          <mxGeometry x="400" y="30" width="180" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="karte_d693a9a" value="&lt;b&gt;d693a9a&lt;/b&gt; · Erika&lt;br&gt;README angelegt" style="swimlane;startSize=38;html=1;whiteSpace=wrap;rounded=1;absoluteArcSize=1;arcSize=12;fillColor=#FFFFFF;swimlaneFillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;fontStyle=0;collapsible=0;" vertex="1" parent="1">
+          <mxGeometry x="0" y="66" width="330" height="136" as="geometry"/>
+        </mxCell>
+        <mxCell id="karte_d693a9a_0" value=".gitignore" style="shape=note;size=8;whiteSpace=wrap;html=1;align=left;spacingLeft=8;spacingRight=8;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="karte_d693a9a">
+          <mxGeometry x="10" y="41" width="210" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="karte_d693a9a_0_status" value="unverändert" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#52626F;" vertex="1" parent="karte_d693a9a">
+          <mxGeometry x="230" y="41" width="90" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="karte_d693a9a_1" value="Program.cs" style="shape=note;size=8;whiteSpace=wrap;html=1;align=left;spacingLeft=8;spacingRight=8;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="karte_d693a9a">
+          <mxGeometry x="10" y="64" width="210" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="karte_d693a9a_1_status" value="unverändert" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#52626F;" vertex="1" parent="karte_d693a9a">
+          <mxGeometry x="230" y="64" width="90" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="karte_d693a9a_2" value="README.md" style="shape=note;size=8;whiteSpace=wrap;html=1;align=left;spacingLeft=8;spacingRight=8;fillColor=#E0F1F5;strokeColor=#0E7490;strokeWidth=1;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="karte_d693a9a">
+          <mxGeometry x="10" y="87" width="210" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="karte_d693a9a_2_status" value="neu" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#52626F;" vertex="1" parent="karte_d693a9a">
+          <mxGeometry x="230" y="87" width="90" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="karte_d693a9a_3" value="Zufallsgenerator.csproj" style="shape=note;size=8;whiteSpace=wrap;html=1;align=left;spacingLeft=8;spacingRight=8;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="karte_d693a9a">
+          <mxGeometry x="10" y="110" width="210" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="karte_d693a9a_3_status" value="unverändert" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#52626F;" vertex="1" parent="karte_d693a9a">
+          <mxGeometry x="230" y="110" width="90" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="karte_26b2182" value="&lt;b&gt;26b2182&lt;/b&gt; · Erika&lt;br&gt;Anzahl der Zahlen abfragen" style="swimlane;startSize=38;html=1;whiteSpace=wrap;rounded=1;absoluteArcSize=1;arcSize=12;fillColor=#FFFFFF;swimlaneFillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;fontStyle=0;collapsible=0;" vertex="1" parent="1">
+          <mxGeometry x="0" y="230" width="330" height="113" as="geometry"/>
+        </mxCell>
+        <mxCell id="karte_26b2182_0" value=".gitignore" style="shape=note;size=8;whiteSpace=wrap;html=1;align=left;spacingLeft=8;spacingRight=8;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="karte_26b2182">
+          <mxGeometry x="10" y="41" width="210" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="karte_26b2182_0_status" value="unverändert" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#52626F;" vertex="1" parent="karte_26b2182">
+          <mxGeometry x="230" y="41" width="90" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="karte_26b2182_1" value="Program.cs" style="shape=note;size=8;whiteSpace=wrap;html=1;align=left;spacingLeft=8;spacingRight=8;fillColor=#E0F1F5;strokeColor=#0E7490;strokeWidth=1;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="karte_26b2182">
+          <mxGeometry x="10" y="64" width="210" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="karte_26b2182_1_status" value="geändert" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#52626F;" vertex="1" parent="karte_26b2182">
+          <mxGeometry x="230" y="64" width="90" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="karte_26b2182_2" value="Zufallsgenerator.csproj" style="shape=note;size=8;whiteSpace=wrap;html=1;align=left;spacingLeft=8;spacingRight=8;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="karte_26b2182">
+          <mxGeometry x="10" y="87" width="210" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="karte_26b2182_2_status" value="unverändert" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#52626F;" vertex="1" parent="karte_26b2182">
+          <mxGeometry x="230" y="87" width="90" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="karte_92de581" value="&lt;b&gt;92de581&lt;/b&gt; · Max&lt;br&gt;Projekt unter Versionsverwaltung gestellt" style="swimlane;startSize=38;html=1;whiteSpace=wrap;rounded=1;absoluteArcSize=1;arcSize=12;fillColor=#FFFFFF;swimlaneFillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;fontStyle=0;collapsible=0;" vertex="1" parent="1">
+          <mxGeometry x="0" y="371" width="330" height="113" as="geometry"/>
+        </mxCell>
+        <mxCell id="karte_92de581_0" value=".gitignore" style="shape=note;size=8;whiteSpace=wrap;html=1;align=left;spacingLeft=8;spacingRight=8;fillColor=#E0F1F5;strokeColor=#0E7490;strokeWidth=1;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="karte_92de581">
+          <mxGeometry x="10" y="41" width="210" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="karte_92de581_0_status" value="neu" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#52626F;" vertex="1" parent="karte_92de581">
+          <mxGeometry x="230" y="41" width="90" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="karte_92de581_1" value="Program.cs" style="shape=note;size=8;whiteSpace=wrap;html=1;align=left;spacingLeft=8;spacingRight=8;fillColor=#E0F1F5;strokeColor=#0E7490;strokeWidth=1;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="karte_92de581">
+          <mxGeometry x="10" y="64" width="210" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="karte_92de581_1_status" value="neu" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#52626F;" vertex="1" parent="karte_92de581">
+          <mxGeometry x="230" y="64" width="90" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="karte_92de581_2" value="Zufallsgenerator.csproj" style="shape=note;size=8;whiteSpace=wrap;html=1;align=left;spacingLeft=8;spacingRight=8;fillColor=#E0F1F5;strokeColor=#0E7490;strokeWidth=1;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="karte_92de581">
+          <mxGeometry x="10" y="87" width="210" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="karte_92de581_2_status" value="neu" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#52626F;" vertex="1" parent="karte_92de581">
+          <mxGeometry x="230" y="87" width="90" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="vorg_d693a9a_26b2182" value="" style="endArrow=block;endFill=1;endSize=8;html=1;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=#FFFFFF;endArrow=open;endFill=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="karte_d693a9a" target="karte_26b2182">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="vorg_26b2182_92de581" value="" style="endArrow=block;endFill=1;endSize=8;html=1;strokeColor=#22303C;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;labelBackgroundColor=#FFFFFF;endArrow=open;endFill=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="karte_26b2182" target="karte_92de581">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="k_d693a9a" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="413" y="127" width="14" height="14" as="geometry"/>
+        </mxCell>
+        <mxCell id="k_d693a9a_text" value="d693a9a" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="439" y="124" width="70" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="k_26b2182" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="413" y="279.5" width="14" height="14" as="geometry"/>
+        </mxCell>
+        <mxCell id="k_26b2182_text" value="26b2182" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="439" y="276.5" width="70" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="k_92de581" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="413" y="420.5" width="14" height="14" as="geometry"/>
+        </mxCell>
+        <mxCell id="k_92de581_text" value="92de581" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="439" y="417.5" width="70" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="kl_d693a9a_26b2182" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#22303C;strokeWidth=1.5;" edge="1" parent="1" source="k_d693a9a" target="k_26b2182">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="kl_26b2182_92de581" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#22303C;strokeWidth=1.5;" edge="1" parent="1" source="k_26b2182" target="k_92de581">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="zu_d693a9a" value="" style="endArrow=none;html=1;dashed=1;strokeColor=#52626F;strokeWidth=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="karte_d693a9a" target="k_d693a9a">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="zu_26b2182" value="" style="endArrow=none;html=1;dashed=1;strokeColor=#52626F;strokeWidth=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="karte_26b2182" target="k_26b2182">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="zu_92de581" value="" style="endArrow=none;html=1;dashed=1;strokeColor=#52626F;strokeWidth=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="karte_92de581" target="k_92de581">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="legende" value="Pfeil: zeigt auf den Vorgänger · hellblau: in diesem Commit neu oder geändert&lt;br&gt;Unveränderte Dateien legt Git nicht doppelt ab, der Schnappschuss verweist auf die vorhandene Fassung." style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontFamily=Helvetica;fontSize=12;fontColor=#52626F;" vertex="1" parent="1">
+          <mxGeometry x="0" y="498" width="580" height="36" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
