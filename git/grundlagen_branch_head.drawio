@@ -1,0 +1,115 @@
+<mxfile host="drawio" agent="Campus IT Solutions" version="24.0">
+  <diagram id="grundlagen_branch_head" name="Branch und HEAD">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="titel" value="Branch und HEAD" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=14;fontColor=#22303C;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="600" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="vorher_titel" value="Vor dem Commit" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="0" y="36" width="192" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="vorher_text" value="HEAD steht auf main." style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontFamily=Helvetica;fontSize=12;fontColor=#52626F;" vertex="1" parent="1">
+          <mxGeometry x="0" y="56" width="192" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="vorher_c_26b2182" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="6" y="138" width="14" height="14" as="geometry"/>
+        </mxCell>
+        <mxCell id="vorher_h_26b2182" value="26b2182" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="32" y="135" width="60" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="vorher_b_26b2182_HEAD_main" value="HEAD -&gt; main" style="rounded=1;absoluteArcSize=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="92" y="135" width="92" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="vorher_c_92de581" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="6" y="168" width="14" height="14" as="geometry"/>
+        </mxCell>
+        <mxCell id="vorher_h_92de581" value="92de581" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="32" y="165" width="60" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="vorher_k_26b2182_92de581" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#22303C;strokeWidth=1.5;" edge="1" parent="1" source="vorher_c_26b2182" target="vorher_c_92de581">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="nachher_titel" value="Nach &lt;i&gt;git commit&lt;/i&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="204" y="36" width="192" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="nachher_text" value="main wandert mit, HEAD bleibt auf main." style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontFamily=Helvetica;fontSize=12;fontColor=#52626F;" vertex="1" parent="1">
+          <mxGeometry x="204" y="56" width="192" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="nachher_hell_d693a9a" value="" style="rounded=1;absoluteArcSize=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E0F1F5;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="204" y="102" width="190" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="nachher_c_d693a9a" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="210" y="108" width="14" height="14" as="geometry"/>
+        </mxCell>
+        <mxCell id="nachher_h_d693a9a" value="d693a9a" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="236" y="105" width="60" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="nachher_b_d693a9a_HEAD_main" value="HEAD -&gt; main" style="rounded=1;absoluteArcSize=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="296" y="105" width="92" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="nachher_c_26b2182" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="210" y="138" width="14" height="14" as="geometry"/>
+        </mxCell>
+        <mxCell id="nachher_h_26b2182" value="26b2182" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="236" y="135" width="60" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="nachher_b_26b2182_main_vorher" value="main (vorher)" style="rounded=1;absoluteArcSize=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;spacing=0;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="296" y="135" width="87" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="nachher_c_92de581" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="210" y="168" width="14" height="14" as="geometry"/>
+        </mxCell>
+        <mxCell id="nachher_h_92de581" value="92de581" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="236" y="165" width="60" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="nachher_k_d693a9a_26b2182" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#22303C;strokeWidth=1.5;" edge="1" parent="1" source="nachher_c_d693a9a" target="nachher_c_26b2182">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="nachher_k_26b2182_92de581" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#22303C;strokeWidth=1.5;" edge="1" parent="1" source="nachher_c_26b2182" target="nachher_c_92de581">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="branch_titel" value="Commit auf Branch &lt;i&gt;bereich&lt;/i&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="408" y="36" width="192" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="branch_text" value="Nur der Branch, auf dem HEAD steht, wandert." style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontFamily=Helvetica;fontSize=12;fontColor=#52626F;" vertex="1" parent="1">
+          <mxGeometry x="408" y="56" width="192" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="branch_hell_5ebbff8" value="" style="rounded=1;absoluteArcSize=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E0F1F5;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="408" y="132" width="204" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="branch_c_5ebbff8" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="414" y="138" width="14" height="14" as="geometry"/>
+        </mxCell>
+        <mxCell id="branch_h_5ebbff8" value="5ebbff8" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="440" y="135" width="60" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="branch_b_5ebbff8_HEAD_bereich" value="HEAD -&gt; bereich" style="rounded=1;absoluteArcSize=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="500" y="135" width="106" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="branch_c_65f497b" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="414" y="168" width="14" height="14" as="geometry"/>
+        </mxCell>
+        <mxCell id="branch_h_65f497b" value="65f497b" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;" vertex="1" parent="1">
+          <mxGeometry x="440" y="165" width="60" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="branch_b_65f497b_main" value="main" style="rounded=1;absoluteArcSize=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0E7490;strokeWidth=1;fontFamily=Helvetica;fontSize=12;fontColor=#22303C;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="500" y="165" width="41" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="branch_k_5ebbff8_65f497b" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#22303C;strokeWidth=1.5;" edge="1" parent="1" source="branch_c_5ebbff8" target="branch_c_65f497b">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="trenner_0" value="" style="line;strokeWidth=1;direction=south;html=1;strokeColor=#52626F;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="194" y="36" width="10" height="158" as="geometry"/>
+        </mxCell>
+        <mxCell id="trenner_1" value="" style="line;strokeWidth=1;direction=south;html=1;strokeColor=#52626F;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="398" y="36" width="10" height="158" as="geometry"/>
+        </mxCell>
+        <mxCell id="legende" value="Kreis: Commit, unten alt, oben neu · Kasten: Branch · hellblau: neuer Commit&lt;br&gt;HEAD -&gt; main: Du stehst auf main; aus diesem Commit stammen die Dateien im Arbeitsordner." style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontFamily=Helvetica;fontSize=12;fontColor=#52626F;" vertex="1" parent="1">
+          <mxGeometry x="0" y="206" width="600" height="36" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
