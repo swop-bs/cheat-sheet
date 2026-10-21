@@ -23,11 +23,11 @@ muss, warum ein Programm sich so verhält.
 
 ## Vorgehen
 
-1. Festlegen, was geprüft wird: welche Methode, welcher Fall, welche Eingabewerte.
-2. Vorgabe bereitlegen: Was müsste bei diesen Werten herauskommen? Diese Antwort stammt aus der Anforderung, nicht aus dem Code.
-3. Alle Größen bestimmen, die sich während des Ablaufs ändern. Für jede eine Spalte anlegen, dazu eine Spalte für die Ausgabe.
-4. Zeile für Zeile durchgehen. Nach jeder Zeile, die einen Wert ändert, eine neue Protokollzeile schreiben. Nichts im Kopf rechnen und nichts überspringen.
-5. Bei jeder Bedingung notieren, ob sie zutrifft, und welchen Weg der Ablauf nimmt.
+1. Festlegen, was geprüft wird: welche Methode mit welchen Eingabewerten. Die Eingabewerte in eine kleine Tabelle schreiben.
+2. Vorgabe bereitlegen: Was müsste bei diesen Werten herauskommen? Die Antwort stammt aus der Anforderung, nicht aus dem Code.
+3. Spalten anlegen: je eine für jede Größe, die sich ändert, für jede Bedingung (WENN) und für die Ausgabe.
+4. Zeile für Zeile durchgehen. Für jede Zeile, die einen Wert ändert oder etwas prüft, eine Protokollzeile mit ihrer Zeilennummer schreiben. Zeilen wie ENDE WENN ändern nichts und bekommen keine. Nichts im Kopf rechnen und nichts überspringen.
+5. Bei einer geprüften Bedingung „ja“ oder „nein“ eintragen. Was in dieser Zeile nicht geprüft wird oder keine Rolle spielt, bekommt einen Strich „–“.
 6. Am Ende das Ergebnis des Codes und die Vorgabe nebeneinanderstellen.
 7. Bei Abweichung die Zeilennummer angeben, die Stelle wörtlich zitieren und aufschreiben, wie sie richtig lauten müsste.
 
@@ -41,15 +41,14 @@ darüber. Bei einer Regel „höchstens 2.000,00 €“ sind das 1.999,99 €, 2
 
 Aus dem Altsystem KALK, Menüpunkt „Preisliste pflegen“: Die folgende Funktion zählt, wie viele
 Stundensätze der Preisliste über 100,00 € liegen, und meldet zusätzlich, wenn die Summe aller
-Sätze über 400,00 € liegt. Kommentiert ist im Quelltext nichts; was die Funktion tut, muss man
-ihr absehen.
+Sätze über 400,00 € liegt.
 
-```
+```text linenums="1"
 FUNKTION ZaehleHoheSaetze(stundensaetze)
-  // stundensaetze enthält die vier Sätze der Preisliste in Euro
+  // stundensaetze enthält die drei Sätze der Preisliste in Euro
   anzahl = 0
   summe = 0
-  FÜR i VON 1 BIS 4
+  FÜR i VON 1 BIS 3
     summe = summe + stundensaetze[i]
     WENN stundensaetze[i] > 100 DANN
       anzahl = anzahl + 1
@@ -62,38 +61,67 @@ FUNKTION ZaehleHoheSaetze(stundensaetze)
 ENDE FUNKTION
 ```
 
-Geprüfter Fall: `stundensaetze = [95, 120, 75, 110]` – die Preisliste, Stand 01/2024. Vorgabe aus
-der Kalkulationsrichtlinie: zwei Sätze über 100,00 €, Summe 400,00 €, also **keine** Meldung.
+**Eingaben:** die Preisliste, Stand 01/2024.
 
-| Nr. | Zeile | i | stundensaetze[i] | summe | anzahl | Bedingung > 100 | Ausgabe |
-|-----|----------------------|---|------|-------|--------|-----------------|------------------------------|
-| 0 | anzahl = 0 / summe = 0 | – | – | 0 | 0 | – | |
-| 1 | Schleifendurchlauf | 1 | 95 | 95 | 0 | nein | |
-| 2 | Schleifendurchlauf | 2 | 120 | 215 | 1 | ja | |
-| 3 | Schleifendurchlauf | 3 | 75 | 290 | 1 | nein | |
-| 4 | Schleifendurchlauf | 4 | 110 | 400 | 2 | ja | |
-| 5 | WENN summe > 400 | – | – | 400 | 2 | nein (400 > 400 ist falsch) | keine Ausgabe |
-| 6 | RÜCKGABE anzahl | – | – | 400 | 2 | – | Rückgabe: 2 |
+| Eingabe | Wert in € |
+|---------|----------:|
+| `stundensaetze[1]` | 95 |
+| `stundensaetze[2]` | 180 |
+| `stundensaetze[3]` | 125 |
 
-Ergebnis: Der Ablauf liefert 2 und keine Meldung. Die Vorgabe lautet 2 und keine Meldung. Beides
-stimmt überein, an dieser Stelle ist kein Fehler.
+**Vorgabe** aus der Kalkulationsrichtlinie: zwei Sätze über 100,00 €, Summe 400,00 €, also
+**keine** Meldung.
 
-Beachten Sie den Grenzwert: Die Summe beträgt **genau** 400,00 €, und trotzdem passiert nichts,
-weil dort `> 400` und nicht `>= 400` steht. Ob das richtig ist, entscheidet nicht der Code,
-sondern die Kalkulationsrichtlinie. Genau solche Stellen sucht der Schreibtischtest.
+**Protokoll:** „–“ heißt, in dieser Zeile nicht geprüft oder ohne Bedeutung.
+
+<div class="protokoll" markdown>
+
+| Nr. | Zeile | i | stundensaetze[i] | summe | anzahl | stundensaetze[i] > 100 | summe > 400 | Ausgabe |
+|----:|------:|---|------:|------:|-------:|------|------|------|
+| 1 | 3 | – | – | – | 0 | – | – | – |
+| 2 | 4 | – | – | 0 | 0 | – | – | – |
+| 3 | 5 | 1 | 95 | 0 | 0 | – | – | – |
+| 4 | 6 | 1 | 95 | 95 | 0 | – | – | – |
+| 5 | 7 | 1 | 95 | 95 | 0 | nein | – | – |
+| 6 | 5 | 2 | 180 | 95 | 0 | – | – | – |
+| 7 | 6 | 2 | 180 | 275 | 0 | – | – | – |
+| 8 | 7 | 2 | 180 | 275 | 0 | ja | – | – |
+| 9 | 8 | 2 | 180 | 275 | 1 | – | – | – |
+| 10 | 5 | 3 | 125 | 275 | 1 | – | – | – |
+| 11 | 6 | 3 | 125 | 400 | 1 | – | – | – |
+| 12 | 7 | 3 | 125 | 400 | 1 | ja | – | – |
+| 13 | 8 | 3 | 125 | 400 | 2 | – | – | – |
+| 14 | 11 | – | – | 400 | 2 | – | nein (400 > 400 ist falsch) | – |
+| 15 | 14 | – | – | 400 | 2 | – | – | Rückgabe: 2 |
+
+</div>
+
+**Ergebnis:** Der Ablauf liefert 2 und keine Meldung, genau wie die Vorgabe. Kein Fehler.
+
+Beachten Sie den Grenzwert: Die Summe ist **genau** 400,00 €. Weil im Code `> 400` steht und nicht
+`>= 400`, kommt keine Meldung. Ob das richtig ist, entscheidet die Kalkulationsrichtlinie, nicht
+der Code. Genau solche Stellen sucht der Schreibtischtest.
+
+!!! info "Andere Eingabewerte, neue Tabelle"
+    Ein Protokoll gilt nur für die Eingabewerte darüber. Für andere Werte, etwa eine Summe knapp
+    über 400,00 €, legen Sie eine neue Eingabetabelle und ein neues Protokoll an. Welche Werte Sie
+    brauchen, zeigt die
+    [Entscheidungstabelle](../algorithmen/entscheidungstabelle.md#von-der-tabelle-zu-den-testfallen).
 
 ## Kurzreferenz
 
 | Prüfen Sie zum Schluss | Frage |
 |--------------------|-------------------------------------------------------------|
-| Spalten | Hat jede veränderliche Größe eine eigene Spalte? |
-| Startwerte | Steht in der ersten Zeile der Startwert jeder Größe? |
-| Lückenlos | Ist jeder Schleifendurchlauf als eigene Zeile erfasst? |
-| Bedingungen | Steht bei jeder Bedingung, ob sie zutrifft? |
+| Eingaben | Stehen die Eingabewerte in einer Tabelle über dem Protokoll? |
+| Spalten | Hat jede Größe, die sich ändert, und jede Bedingung eine eigene Spalte? |
+| Startwerte | Steht am Anfang der Startwert jeder Größe? |
+| Lückenlos | Hat jede Zeile, die etwas ändert oder prüft, eine Protokollzeile mit ihrer Zeilennummer? |
+| Bedingungen | Steht bei jeder geprüften Bedingung „ja“ oder „nein“, sonst „–“? |
 | Möglichkeit | Kann jeder Zwischenwert in der Wirklichkeit überhaupt vorkommen? |
 | Vergleich | Stehen Ergebnis des Codes und Vorgabe nebeneinander? |
 | Fundstelle | Ist bei einer Abweichung die Zeilennummer genannt? |
 
-Typische Fehler: Zwischenschritte im Kopf gerechnet; der letzte Schleifendurchlauf fehlt; das
-erwartete Ergebnis wird aus dem Code abgelesen statt aus der Anforderung; die Abweichung wird
-beschrieben, aber die Stelle nicht benannt.
+Typische Fehler: Zwischenschritte im Kopf gerechnet; der letzte Schleifendurchlauf fehlt; in der
+Spalte „Zeile“ steht Code statt der Zeilennummer; das erwartete Ergebnis wird aus dem Code
+abgelesen statt aus der Anforderung; die Abweichung wird beschrieben, aber die Stelle nicht
+benannt.

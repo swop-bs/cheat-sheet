@@ -69,3 +69,14 @@
 .md-path__item:nth-child(2)::before {
     display: none;
 }
+
+/* Ablaufprotokolle (Schreibtischtest): viele schmale Spalten, je Größe und je Bedingung eine.
+   Ohne Mindestbreite je Kopfzelle passt das Protokoll ohne Querscrollen in den Inhaltsbereich. */
+.md-typeset .protokoll table:not([class]) th {
+    min-width: 0;
+}
+
+.md-typeset .protokoll table:not([class]) th,
+.md-typeset .protokoll table:not([class]) td {
+    padding: .6em .7em;
+}
